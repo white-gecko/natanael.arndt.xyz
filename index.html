@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <h1>Posts</h1>
+
+    <ul class="posts">
+    {% for post in site.posts %}
+        <li>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
+    <div class="exhibit-filter-tools">
+        <!-- use this for lists containing only a few publications and authors -->
+        <div ex:facetClass="Cloud" ex:role="facet" ex:showMissing="false" ex:expression=".year" ex:facetLabel="Year"></div> <!-- ex:sortDirection="reverse" -->
+        <!--div ex:facetClass="Cloud" ex:role="facet" ex:showMissing="false" ex:expression=".pub-type" ex:facetLabel="Type" ex:sortMode="count"></div-->
+        <!--div ex:facetClass="Cloud" ex:role="facet" ex:showMissing="false" ex:expression=".author" ex:facetLabel="(Co-)Authors" ex:sortMode="count"></div-->
+    </div>
+
+    <!-- ex:viewClass="Thumbnail" -->
+    <div ex:role="view" ex:viewClass="Tile" ex:grouped="false" ex:orders=".year,.label" ex:directions="descending,ascending" ex:showSummary="true" ex:showDuplicates="false"  class="posts">
+        <div ex:role="lens" ex:itemTypes="Publication" style="display: none">
+            <span ex:content="if(exists(.url), concat('<a href=', .url, '>', .label, '</a>'), .label)" class="post-link"></span>
+            <span ex:if-exists=".author"><br/>
+                <span class="meta post-date"><em>by</em> <span class="author" ex:content=".author"></span></span>
+            </span>
+            <span class="meta  post-date">
+                <span ex:content="if(exists(.booktitle), concat('<em>in</em> ', .booktitle), '')"></span>
+                <span class="journal" ex:content="if(exists(.journal), concat('<em>in</em> ', .journal), '')"></span>
+                <span ex:if-exists=".editor">(Editors: <span class="editor" ex:content=".editor"></span>)</span>
+                <a ex:href-content="concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user)" >[BibTex]</a>
+            </span>
+            <span class="note" ex:content="if(exists(.note), concat('<br/><em>Note:</em> ', .note), '')"></span>
+            <p class="abstract" ex:content="if(exists(.abstract), concat('<details><summary>Abstract:</summary> ', .abstract, '</details>'), '')"></p>
+        </div>
+    </div>
+
+
+</div>
+
+<!--script src="http://api.simile-widgets.org/exhibit/3.0.0/exhibit-api.js" type="text/javascript"></script-->
+<script src="scripts/exhibit/scripted/dist/exhibit-api.js" type="text/javascript"></script>

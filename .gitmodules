@@ -1,0 +1,6 @@
+[submodule "exhibit"]
+	path = exhibit
+	url = ./scripts/exhibit
+[submodule "scripts/exhibit"]
+	path = scripts/exhibit
+	url = https://github.com/simile-widgets/exhibit.git
