@@ -1,0 +1,40 @@
+- name: OntoWiki
+  url: "http://aksw.org/Projects/OntoWiki"
+  subtitle: "a tool providing support for agile, distributed knowledge engineering scenarios"
+  image: "https://cdn.rawgit.com/AKSW/OntoWiki/develop/application/logo/logo-symbol.svg"
+  abstract: "OntoWiki is a system for collaborative knowledge management and creation.
+It provides different views to the data and can even be extended by plugins, for example a map plugin to provide a geo spacial view to the data.
+The underlying data model is a graph database using the Resource Description Framework (RDF).
+I like to say, what phpmyadmin is for Relation Databases, is OntoWiki for RDF databases."
+
+- name: DSSN
+  subtitle: "Towards a global Distributed Semantic Social Network"
+  url: "http://aksw.org/Projects/DSSN"
+  abstract: "Online social networking has become one of the most popular services on the Web.
+However, current social networks are like walled gardens in which users do not have full control over their data,
+are bound to specific usage terms of the social network operator and suffer from a lock-in effect due to the lack of interoperability and
+standards compliance between social networks.
+A Distributed Semantic Social Network architecture combines vocabularies and protocols such as WebID, FOAF, Semantic Pingback and PubSubHubbub
+into a coherent distributed semantic social network, which is capable to provide all crucial functionalities known from centralized social networks."
+
+- name: Xodx
+  subtitle: "A basic DSSN node implementation"
+  url: "http://aksw.org/Projects/Xodx"
+  image: "https://cdn.rawgit.com/AKSW/xodx/develop/resources/img/xodx.svg"
+  abstract: "Xodx is an implementation of the basic functionality of a DSSN node with profile provider and browser.
+It can be used both for a single-user setup (e.g. on a Freedom Box) and a multi-user setup.
+The software is written in PHP and based on the Erfurt-Framework and lib-dssn-php."
+
+- name: "MSSW"
+  subtitle: "weaving a distributed, semantic social network for mobile users"
+  image: "https://cdn.rawgit.com/AKSW/mssw/master/logo/icon_v4.svg"
+  url: "http://aksw.org/Projects/MobileSocialSemanticWeb"
+  abstract: "An Android-based social web client as well as a contacts provider,
+  which integrates your distributed FOAF/WebID social network into your mobile phone"
+
+- name: "ShareNote"
+  image: "https://rawgit.com/white-gecko/ShareNote/master/res/drawable-hdpi/text.png"
+  url: "github.com/white-gecko/ShareNote"
+
+- name: "Pfarrerbuch"
+  url: "http://aksw.org/Projects/Pfarrerbuch"

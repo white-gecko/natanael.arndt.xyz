@@ -1,0 +1,12 @@
+---
+layout: page
+title: Notes
+abstract: "I am sometimes taking notes about things which are to bad to forget."
+---
+
+{% for node in site.pages %}
+  {% if "notes" == node.parent %}
+<h3><a href="{{ node.url }}">{{ node.title }}</a></h3>
+{{ node.abstract }}
+  {% endif %}
+{% endfor %}
