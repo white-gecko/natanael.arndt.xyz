@@ -2,7 +2,7 @@
 layout: post
 title:  "My New Webpage"
 date:   2016-02-21 23:48:00
-categories: jekyll update
+categories: blog
 ---
 
 Welcome to my new web page and blog.
