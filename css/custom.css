@@ -1,9 +1,3 @@
-ol.exhibit-tileView-body {
-    list-style-type: none;
-    padding-left: 0pt;
-}
-
-
 html, body {
     /*background-color: #36b2d9;*/
     /* akzente: #e3c085 */
@@ -48,6 +42,14 @@ th, td {
 
 tr:nth-child(odd) {
     background-color: #f2f2f2
+}
+
+/*
+ * Bibsonomy
+ */
+ol.exhibit-tileView-body {
+    list-style-type: none;
+    padding-left: 0pt;
 }
 
 /*
