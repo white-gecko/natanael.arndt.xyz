@@ -6,7 +6,7 @@ categories: blog
 ---
 
 Welcome to my new web page and blog.
-This time I've build the page using [jekyll](https://jekyllrb.com/) and using a custom theme, based on bootstrap, by taking some inspirations and HTML/CSS snippets from bootstrap's [blog](https://getbootstrap.com/examples/blog/) and [carousel](https://getbootstrap.com/examples/carousel/) examples.
+This time I've built the page using [jekyll](https://jekyllrb.com/) and using a custom theme, based on bootstrap, by taking some inspirations and HTML/CSS snippets from bootstrap's [blog](https://getbootstrap.com/examples/blog/) and [carousel](https://getbootstrap.com/examples/carousel/) examples.
 For the typography I'm using [Open Sans](https://en.wikipedia.org/wiki/Open_Sans) and [Lato](http://www.latofonts.com/) and [Font Awesome](https://fortawesome.github.io/Font-Awesome/) for the icons.
 The Publications section was implemented using [Exhibit](http://www.simile-widgets.org/exhibit3/) and taking my publications from [bibsonomy](http://www.bibsonomy.org/user/white_gecko).
 
