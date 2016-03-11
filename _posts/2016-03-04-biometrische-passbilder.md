@@ -3,6 +3,7 @@ layout: post
 title: Biometrische Passbilder Herstellen
 abstract: "Eine kleine Anleitung, wie man selbst mit einfachen Mitteln biometrische Passbilder herstellen kann"
 categories: notes
+tags: ["photo", "gimp"]
 date:   2016-03-04 22:50:00
 ---
 
