@@ -14,4 +14,4 @@ Die entsprechenden Regeln, die man beachten muss sind als [„Passbild-Schablone
 Außer einer vernünftigen Kamera und einem Bildbearbeitungsprogramm (ich verwende [GIMP](https://www.gimp.org/)) ist so mit einem Fotodrucker und Fotopapier oder den Foto-Druckangeboten in einigen Drogerien die Herstellung eines biometrische Passbilds für unter einem Euro möglich.
 
 Für meine eigene Dokumentation und, um anderen eine hoffentlich hilfreiche Anleitung zu geben, habe ich eine entsprechende Notiz angelegt:
-[Biometrische Passbilder Herstellen]({{ "/notes/biometrische-passbilder" | prepend: site.baseurl }})
+[Biometrische Passbilder Herstellen]({{ "/notes/biometrische-passbilder.html" | prepend: site.baseurl }})
