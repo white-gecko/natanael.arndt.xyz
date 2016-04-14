@@ -22,7 +22,10 @@ Für die Bildbearbeitung verwende ich [GIMP](https://www.gimp.org/). GIMP ist Op
 
 ## Bild Vorbereiten
 
+Bevor man mit dem zuschneiden des Bildes beginnt, kann man einen Weißabgleich durchführen oder den Kontrast erhöhen.
+
 1. Bild drehen, so dass Augen auf einer Linie sind und Mund-Mitte, Nasen-Mitte und Stirn-Mitte
+    * Dazu nehme ich meist eine waagerechte Hilfslinie, die ich auf der Mitte der beiden Puppillen platziere und eine senkrechte Hilfslinie, die ich an der Nasenspitze ausrichte
 
 2. Ausschnitthöhe durch Skalierungsverhältniss Berechnen
     1. Kinnhöhe auf dem Bild ausmessen (Gimp Werkzeug: Maßband), die Höhe -> X (X ist die Kinnhöhe)
@@ -49,4 +52,5 @@ Für die Bildbearbeitung verwende ich [GIMP](https://www.gimp.org/). GIMP ist Op
     Tipp: Evtl. muss die Kette rechts von den zwei Eingabefeldern noch angeklickt werden
     4. „Skalieren“ drücken
 
-5. Datei Exportieren
+5. Ja nach Geschmack, kann das Bild in Schwarz-Weiß umgewandelt werden (siehe auch: „[Schwarz Weiß Fotos mit Gimp](/2016/03/11/schwarz-weiss/)“)
+6. Datei Exportieren
