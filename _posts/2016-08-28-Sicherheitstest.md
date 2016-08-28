@@ -33,10 +33,10 @@ So gravierend hätte ich das nicht erwartet, es zeigt mir aber, dass es sich dur
 
 Die Schwachstellen liegen offenbar in den Headern:
 
-* Content Security Policy (CSP) header not implemented
-* X-Content-Type-Options header not implemented
-* X-Frame-Options (XFO) header not implemented
-* X-XSS-Protection header not implemented
+* [Content Security Policy (CSP) header not implemented](https://wiki.mozilla.org/Security/Guidelines/Web_Security#Content_Security_Policy)
+* [X-Content-Type-Options header not implemented](https://wiki.mozilla.org/Security/Guidelines/Web_Security#X-Content-Type-Options)
+* [X-Frame-Options (XFO) header not implemented](https://wiki.mozilla.org/Security/Guidelines/Web_Security#X-Frame-Options)
+* [X-XSS-Protection header not implemented](https://wiki.mozilla.org/Security/Guidelines/Web_Security#X-XSS-Protection)
 
 Da muss ich mich jetzt entsprechend zu den Techniken belesen und sehen, wie sie in Jekyll umsetzbar sind.
 Immerhin setzt meine Seite keine Cookies und HTTPS passt im Standardtest auch.
