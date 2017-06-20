@@ -6,6 +6,13 @@ weight: 0
 
 <div class="home">
   {% for post in site.posts %}
+  {% if post.layout == "status" %}
+  <div class="status">
+    <div class="user-circle"></div>
+    <div><span class="author">@{{post.author}}</span> · <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%Y-%m-%d %H.%M" }}</a></div>
+    {{post.content}}
+  </div>
+  {% else %}
   <div class="post">
     <header class="post-header">
       <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -13,5 +20,6 @@ weight: 0
     </header>
     {{post.content}}
   </div>
+  {% endif %}
   {% endfor %}
 </div>

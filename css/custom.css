@@ -136,19 +136,41 @@ ol.exhibit-tileView-body {
 }
 
 
-.post-header
-.poststempel {
+.post-header .poststempel {
   position: relative;
   display: inline-block;
   float: right;
 }
 
-.post-header
-.poststempel svg {
+.post-header .poststempel svg {
     width: 120px;
     height: 120px;
 }
 
+.user-circle svg {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px
+}
+
+.status {
+    padding: 10px;
+    margin: 10px;
+    min-height: 60px;
+    display: block;
+    background-color: #eee;
+}
+
+.status .user-circle {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+
+.status .author {
+    font-weight: bold;
+}
 
 @media screen and (max-width: 600px) {
     .post-header
