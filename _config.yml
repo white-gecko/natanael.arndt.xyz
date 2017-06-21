@@ -13,6 +13,7 @@ wikipedia-de_username: "white_gecko"
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title
+timezone: Europe/Berlin
 
 # Build settings
 #theme: minima
