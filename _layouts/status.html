@@ -3,6 +3,9 @@ layout: default
 ---
 <div class="status">
   <div class="user-circle"></div>
-  <div><span class="author">@{{page.author}}</span> · <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.date | date: "%Y-%m-%d  %H.%M" }}</a></div>
+  <div class="status-header">
+      <span class="author">@{{page.author}}</span><br/>
+      <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.date | date: "%Y-%m-%d  %H.%M" }}</a>
+  </div>
   {{content}}
 </div>
