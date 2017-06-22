@@ -9,7 +9,10 @@ weight: 0
   {% if post.layout == "status" %}
   <div class="status">
     <div class="user-circle"></div>
-    <div><span class="author">@{{post.author}}</span> · <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%Y-%m-%d %H.%M" }}</a></div>
+    <div class="status-header">
+        <span class="author">@{{post.author}}</span><br/>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%Y-%m-%d %H.%M" }}</a>
+    </div>
     {{post.content}}
   </div>
   {% else %}
