@@ -126,6 +126,13 @@ ol.exhibit-tileView-body {
     border-width: 0 0 0 1px;
     border-style: solid;
 }
+.post:after,
+.status:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .status {
     border-color: black;
 }
@@ -183,16 +190,28 @@ ol.exhibit-tileView-body {
     margin-bottom: 1em;
 }
 
-
 .status .user-circle {
   position: relative;
   display: inline-block;
   float: left;
 }
 
-
 .status .author {
     font-weight: bold;
+}
+
+.sidenote {
+    position: relative;
+    display: inline-block;
+    float: right;
+    color: #555;
+    background-color: #eef5fa;
+    border-color: #eef5fa;
+    padding: 15px;
+    margin: 1em;
+    width: 40%;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 600px) {
@@ -200,5 +219,9 @@ ol.exhibit-tileView-body {
     .poststempel svg {
         width: 90px;
         height: 90px;
+    }
+
+    .sidenote {
+        width: 100%;
     }
 }
