@@ -1,0 +1,234 @@
+---
+layout: post
+title: Netzneutralität <i class="fa fa-spinner" aria-hidden="true"></i>
+tags: ["netneutrality"]
+date:   2017-07-12 16:31:00+02:00
+---
+
+<p>
+Gerade auf meinem Weg durch das Netz bin ich bei <a href="https://stackoverflow.com/questions/28219746/support-of-custom-backends-in-libgit2sharp-bindings">StackOverflow</a> vorbeigeschländert.
+Eigentlich war ich <a href="https://stackoverflow.com/questions/44804653/using-libgit2-memcached-backend-with-pygit2">dienstlich unterwegs</a>, dabei wurde ich durch einen schwarzen Balken ganz oben auf der Seite abgelenkt.
+</p>
+
+<style>
+#DIV_1 {
+    background-position: 100% 50%;
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: 55px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    top: 0px;
+    width: 1060px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 530px 27.5px;
+    transform-origin: 530px 27.5px;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(53, 58, 62) linear-gradient(to right, rgb(47, 51, 55) 0px, rgb(59, 64, 69) 100%) no-repeat scroll 100% 50% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 2px 2px 2px 2px;
+    font: normal normal normal normal 15px / 23px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0px 0px 24px;
+    outline: rgb(255, 255, 255) none 0px;
+    overflow: hidden;
+}/*#DIV_1*/
+
+#DIV_1:after {
+    bottom: 76.8px;
+    color: rgb(255, 255, 255);
+    content: '""';
+    display: none;
+    height: 55px;
+    left: 38.4px;
+    pointer-events: none;
+    position: absolute;
+    right: -38.4px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    top: -76.8px;
+    width: 1060px;
+    z-index: 1;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 530px 27.5px;
+    transform-origin: 530px 27.5px;
+    caret-color: rgb(255, 255, 255);
+    background: rgba(5, 6, 7, 0.0588235) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 50% 50% 50% 50%;
+    font: normal normal normal normal 15px / 23px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#DIV_1:after*/
+
+#DIV_2 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: 55px;
+    left: 0px;
+    max-width: 1090px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    top: 0px;
+    width: 1060px;
+    z-index: 2;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 530px 27.5px;
+    transform-origin: 530px 27.5px;
+    caret-color: rgb(255, 255, 255);
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal normal 15px / 23px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 16px;
+}/*#DIV_2*/
+
+#A_3 {
+    box-sizing: border-box;
+    color: rgb(51, 170, 255);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none solid rgb(51, 170, 255);
+    column-rule-color: rgb(51, 170, 255);
+    caret-color: rgb(51, 170, 255);
+    border: 0px none rgb(51, 170, 255);
+    font: normal normal bold normal 15px / 23px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(51, 170, 255) none 0px;
+}/*#A_3*/
+
+#A_4 {
+    bottom: 21px;
+    box-sizing: border-box;
+    color: rgb(53, 58, 62);
+    cursor: pointer;
+    display: block;
+    height: 18px;
+    left: 1026px;
+    opacity: 0.65;
+    position: absolute;
+    right: 16px;
+    text-align: center;
+    text-decoration: none solid rgb(53, 58, 62);
+    top: 16px;
+    width: 18px;
+    column-rule-color: rgb(53, 58, 62);
+    perspective-origin: 9px 9px;
+    transform-origin: 9px 9px;
+    caret-color: rgb(53, 58, 62);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(53, 58, 62);
+    font: normal normal normal normal 15px / 15px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(53, 58, 62) none 0px;
+    transition: opacity 0.25s ease-in-out 0s;
+}/*#A_4*/
+
+#svg_5 {
+    box-sizing: border-box;
+    color: rgb(53, 58, 62);
+    cursor: pointer;
+    height: 18px;
+    text-align: center;
+    text-decoration: none solid rgb(53, 58, 62);
+    vertical-align: bottom;
+    width: 18px;
+    column-rule-color: rgb(53, 58, 62);
+    perspective-origin: 9px 9px;
+    transform-origin: 9px 9px;
+    caret-color: rgb(53, 58, 62);
+    border: 0px none rgb(53, 58, 62);
+    font: normal normal normal normal 15px / 15px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(53, 58, 62) none 0px;
+    overflow: hidden;
+}/*#svg_5*/
+
+#path_6 {
+    box-sizing: border-box;
+    color: rgb(53, 58, 62);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none solid rgb(53, 58, 62);
+    column-rule-color: rgb(53, 58, 62);
+    fill: rgb(53, 58, 62);
+    d: path('M 15 4.41 L 13.59 3 L 9 7.59 L 4.41 3 L 3 4.41 L 7.59 9 L 3 13.59 L 4.41 15 L 9 10.41 L 13.59 15 L 15 13.59 L 10.41 9 Z');
+    caret-color: rgb(53, 58, 62);
+    border: 0px none rgb(53, 58, 62);
+    font: normal normal normal normal 15px / 15px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(53, 58, 62) none 0px;
+}/*#path_6*/
+
+#SCRIPT_7 {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    column-rule-color: rgb(255, 255, 255);
+    caret-color: rgb(255, 255, 255);
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal normal 15px / 23px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#SCRIPT_7*/
+</style>
+<div id="DIV_1">
+	<div id="DIV_2">
+		Join Stack Overflow in <a href="https://stackoverflow.blog/2017/06/30/raise-voice-proclaim-need-net-neutrality" id="A_3">Standing Up for Net Neutrality</a>
+        <a id="A_4" href="#">
+		<svg id="svg_5">
+			<path d="M15 4.41L13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9z" id="path_6">
+			</path>
+		</svg>
+        </a>
+	</div>
+</div>
+
+<p> Es geht um <a href="https://de.wikipedia.org/wiki/Netzneutralit%C3%A4t">Netzneutralität</a>, was einfach gesagt die Gleichberechtigung aller Datenpakete im Internet bezeichnet.
+In erster Linie ist das eine <a href="https://networkengineering.stackexchange.com/questions/7924/network-neutrality-how-does-it-actually-work-technically-speaking">technische Angelegenheit</a> aber dennoch hat diese Angelegenheit viel mit unserer heutigen Realität zu tun.
+Ein Großteil unserer Kommunikation einschließlich des Medienkonsums läuft heutzutage über das Internet.
+<strong>Die Netzneutralität repräsentiert also heute in großen Stücken die Redefreiheit!</strong></p>
+
+<p>Tim Berner-Lee, der Begründer des <em>Web</em> (also alles was ihr mit eurem Browser erreicht) und des <em>Semantic Web</em> (das ist woran ich arbeite ;-) ), hat in seinem Blog geschrieben
+<div class="quote">
+    When I invented the Web, I didn't have to ask anyone's permission.
+    <span class="source">(<a href="http://dig.csail.mit.edu/breadcrumbs/node/144">Net Neutrality: This is serious</a>)</span>
+</div>
+</p>
+
+<p>Wenn bestimmte Diensteanbieter dafür bezahlen können dass ihre Daten mit einer höheren Geschwindigkeit durchgeleitet werden bedeutet dies automatisch, dass andere Angebote ausgebremst werden.
+Julia Rede (Mitglied des Europäischen Parlaments) sagt dazu:
+<div class="quote">
+    Makeing the Internet slower or limiting Internet capacity can't be turned into a businessmodel that is more profitable than improveing the quality of the services.
+    <span class="source">(<a href="https://www.youtube.com/watch?v=njVzRph3JJs">YouTube: Julia Reda MEP - Net Neutrality</a>)</span>
+</div>
+</p>
+
+<p>
+Das Thema ist akut, da die <a href="https://de.wikipedia.org/wiki/Federal_Communications_Commission">Zulassungsbehörde für Kommunikationsgeräte in den USA <em>Federal Communications Commission</em> (FCC)</a> eine <a href="https://apps.fcc.gov/edocs_public/Query.do?numberFld=&numberFld2=&docket=17-108&dateFld=&docTitleDesc=">Änderung ihrer Regeln mit dem ironischen Title „Restoring Internet Freedom.“</a> herbeiführen möchte.
+Durch diese Regeln würde die Netzneutralität in den USA abgeschafft werden.
+Klar das sind nur die USA, ein Saat mit etwa 3/5 der Einwohner im Vergleich zur Europäischen Union, aber dennoch haben die Entwicklungen im Bezug auf das Internet auf der anderen Seite des Teiches meist auch Einfluss auf unser Leben.
+</p>
+
+<p>
+    Wer es bis jetzt nicht begriffen hat, so würde das Internet ohne Netzneutralität aussehen:
+    <div  style="text-align: center">
+    <img src="img/battleforthenet-avatar-black.gif" alt="Loading …" />
+</div>
+</p>
+
+<p>
+Da dieses Thema also von großer und weltweiter Bedeutung ist, findet heute am <em>12. Juli 2017</em> ein <a href="https://www.battleforthenet.com/"><em>Day of Action for Net Neutrality</em></a> statt.
+Natürlich wird die Aktion von Initialitiven unterstützt, von denen ich das auch erwarte, wie Mozilla, die Open Source Initiative, die Free Software Foundation, die Electronic Fronteer Foundation.
+Aber auch viele große Unternehmen, die ihr sicher besser kennt (und evtl. öfter nutzt als ich) unterstützen die Aktion, etwa Sound Cloud, Spotify, youporn, Netflix, Greenpeace, Dropbox, Amazon, <a href="https://www.battleforthenet.com/july12/#participants">… sehr selbst</a>
+Wenn ihr euch für Netzneutralität einsetzen möchtet, dann solltet ihr
+    <ul>
+        <li>euch mit dem Thema befassen und euch angucken was in Deutschland und der Europäischen Union der Stand der Debatte ist.</li>
+        <li>Wenn ihr sowas mögt könnt ihr bestimmt auch den <a href="https://advocacy.mozilla.org/de/net-neutrality/">Brief von Mozilla an die FCC unterzeichnen</a></li>
+        <li>oder euch der <a href="https://www.battleforthenet.com/">Battle for Net Neutrality</a> Kampagne anschließen</li>
+        <li>oder direkt auf der <a href="https://www.fcc.gov/ecfs/search/filings?proceedings_name=17-108">Seite der FCC</a> einen Eintrag hinterlassen</li>
+    </ul> (Bei den letzten beiden Optionen weiß ich nicht, ob das nur für US-Bürger gedacht ist).</p>
+
+<p>
+Viel Spass im Netz!
+</p>

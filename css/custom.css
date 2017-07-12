@@ -146,7 +146,8 @@ ol.exhibit-tileView-body {
   display: block;
 }
 
-.post-header:after {
+.post-header:after,
+.quote:after {
   content: "";
   display: block;
   clear: both;
@@ -212,6 +213,27 @@ ol.exhibit-tileView-body {
     width: 40%;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+
+.quote {
+    color: #555;
+    background-color: #eef5fa;
+    border-color: #eef5fa;
+    padding: 5px;
+    margin: 1em 0 1em 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.quote .source {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 1em;
+    font-style: normal;
 }
 
 @media screen and (max-width: 600px) {
