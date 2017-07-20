@@ -41,7 +41,7 @@
     <nav class="blog-nav">
       {% assign pages = site.pages | sort:"weight"  %}
       {% for node in pages %}
-        {% if node.parent %}
+        {% if node.hide_from_menu or node.parent %}
         {% else %}
             {% if page.url == node.url %}
                 {% if node.title %}<a class="blog-nav-item active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>{% endif %}
