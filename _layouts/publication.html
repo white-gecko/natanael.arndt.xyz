@@ -1,0 +1,25 @@
+---
+layout: default
+rdf_prefix_path: "rdf_prefixes.pref"
+---
+<div class="post">
+  <header class="post-header">
+    <h2>{{ page.rdf | rdf_property: "dct:title" }}</h2>
+    <div>{% assign authors = page.rdf | rdf_property: "dct:creator", nil, true %}
+    {% for author in authors %}
+        <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>
+    {% endfor %}
+    </div>
+    <div>
+        in {{ page.rdf | rdf_property: "dct:isPartOf" | rdf_property: "dct:title" }}
+    </div>
+    <div>
+        <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}">download</a>
+    </div>
+  </header>
+
+  <article class="post-content">
+      <h2>Abstract</h2>
+  {{ page.rdf | rdf_property: "dct:abstract" }}
+  </article>
+</div>

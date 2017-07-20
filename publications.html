@@ -1,8 +1,17 @@
 ---
 layout: page
 title: Publications
+rdf_prefix_path: "rdf_prefixes.pref"
 weight: 100
 ---
+
+{% assign query = 'SELECT ?publication WHERE { ?publication dct:creator <http://aksw.org/NatanaelArndt> }' %}
+{% assign resultset = page.rdf | sparql_query: query %}
+<ul>
+{% for result in resultset %}
+    <li>{{ result.publication }}</li>
+{% endfor %}
+</ul>
 
 <div class="exhibit-filter-tools">
     <!-- use this for lists containing only a few publications and authors -->

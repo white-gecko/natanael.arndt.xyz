@@ -24,3 +24,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+jekyll_rdf:
+    path: "_data/bib.ttl"
+    class_template_mappings:
+        "http://purl.org/dc/terms/BibliographicResource" : "publication.html"
+        "http://xmlns.com/foaf/0.1/Document" : "page.html"

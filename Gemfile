@@ -20,5 +20,5 @@ gem "jekyll", "3.3.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-rdf", "~> 2.0.0"
+   gem "jekyll-rdf", "~> 2.1.0"
 end
