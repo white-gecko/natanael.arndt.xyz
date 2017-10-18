@@ -1,0 +1,45 @@
+---
+layout: post
+title: #DigitalisierungFirstBedenkenSecond
+tags: ["Digitalisierung","DigitalisierungFirstBedenkenSecond","Überwachung"]
+date: 2017-19-11 15:34:00+02:00
+---
+
+So sieht #DigitalisierungFirstBedenkenSecond (FDP) aus: https://rodlzdf-a.akamaihd.net/none/zdf/17/09/170921_clip_1_vks/1/170921_clip_1_vks_2328k_p35v13.mp4
+
+Müssen wir es tatsächlich in Kauf nehmen ungefragt dazu beizutragen unsere Freiheit einzuschränken?
+Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Weise gläsern wird, wird ihm sein Stimme in der liberalen Marktwirtschaft genommen?
+
+Die Regeln aus dem Video:
+
+1. Schalten Sie Bluethooth und W-LAN im Laden ab
+2. Nehmen Sie keine Kundenkarten
+3. Zahlen Sie bar
+4. Beschweren Sie sich, wenn sie ein kleines Löchlein finden
+    a. bei der Supermarktleitung
+    b. bei dem Landesdatenschutzbeauftragten
+
+Da hänge ich gleich noch eine Liste der [Landesdatenschutzbeauftragten](https://de.wikipedia.org/wiki/Landesbeauftragter_f%C3%BCr_den_Datenschutz) an:
+
+**B:**
+* [Baden-Württemberg](https://www.baden-wuerttemberg.datenschutz.de/)
+* [Bayern](https://www.datenschutz-bayern.de/)
+* [Berlin](https://datenschutz-berlin.de/)
+* [Brandenburg](http://www.lda.brandenburg.de/)
+* [Bremen](http://www.datenschutz.bremen.de/)
+
+**H, M, N, R:**
+* [Hamburg](https://www.datenschutz-hamburg.de/)
+* [Mecklenburg-Vorpommern](https://www.datenschutz-mv.de/)
+* [Niedersachsen](http://www.lfd.niedersachsen.de/)
+* [Nordrhein-Westfalen](https://www.ldi.nrw.de/)
+* [Rheinladn-Pfalz](https://www.datenschutz.rlp.de/)
+
+**S:**
+* [Saarland](https://datenschutz.saarland.de/)
+* [Sachsen](https://www.saechsdsb.de/)
+* [Sachsen-Anhalt](https://datenschutz.sachsen-anhalt.de/nc/datenschutz-sachsen-anhalt/)
+* [Schleswig-Holstein](https://www.datenschutzzentrum.de/)
+
+**T:**
+* [Thüringen](https://www.tlfdi.de/tlfdi/)
