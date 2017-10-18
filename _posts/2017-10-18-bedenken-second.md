@@ -2,7 +2,7 @@
 layout: post
 title: #DigitalisierungFirstBedenkenSecond
 tags: ["Digitalisierung","DigitalisierungFirstBedenkenSecond","Überwachung"]
-date: 2017-11-18 16:03:00+02:00
+date: 2017-10-18 16:03:00+02:00
 ---
 
 So sieht #DigitalisierungFirstBedenkenSecond (FDP) aus: https://rodlzdf-a.akamaihd.net/none/zdf/17/09/170921_clip_1_vks/1/170921_clip_1_vks_2328k_p35v13.mp4
