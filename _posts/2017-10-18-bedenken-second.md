@@ -12,7 +12,7 @@ Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Wei
 
 Die Regeln aus dem Video sind ein Möglichkeit sich deren Wirkung bewusst zu machen:
 
-1. Schalten Sie Bluetooth und W-LAN im Laden ab
+1. Schalten Sie Bluetooth und W-LAN im Laden ab (Anmerkung: [Das ist mit aktuellen iOS Versionen gar nicht so einfach](https://www.heise.de/mac-and-i/meldung/Buergerrechtler-Apples-neuer-Bluetooth-und-WLAN-Schalter-schlecht-fuer-Sicherheit-3852464.html))
 2. Nehmen Sie keine Kundenkarten
 3. Zahlen Sie bar
 4. Beschweren Sie sich, wenn sie ein kleines Löchlein finden
