@@ -1,11 +1,11 @@
 ---
 layout: post
-title: #DigitalisierungFirstBedenkenSecond
+title: \#DigitalisierungFirstBedenkenSecond
 tags: ["Digitalisierung","DigitalisierungFirstBedenkenSecond","Überwachung"]
 date: 2017-10-18 16:03:00+02:00
 ---
 
-So sieht #DigitalisierungFirstBedenkenSecond (FDP) aus: [ZDF „volle kanne“: „Heimliche Videoüberwachung im Supermarkt“ Beitrag vom 21.09.2017](https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html)
+So sieht #DigitalisierungFirstBedenkenSecond (FDP) in der Praxis aus: [ZDF „volle kanne“: „Heimliche Videoüberwachung im Supermarkt“ Beitrag vom 21.09.2017](https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html)
 
 https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html
 
