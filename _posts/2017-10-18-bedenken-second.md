@@ -5,14 +5,14 @@ tags: ["Digitalisierung","DigitalisierungFirstBedenkenSecond","Überwachung"]
 date: 2017-10-18 16:03:00+02:00
 ---
 
-So sieht #DigitalisierungFirstBedenkenSecond (FDP) in der Praxis aus: [ZDF „volle kanne“: „Heimliche Videoüberwachung im Supermarkt“ Beitrag vom 21.09.2017](https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html)
-
+Als ich den Beitrag [ZDF „volle kanne“: „Heimliche Videoüberwachung im Supermarkt“ Beitrag vom 21.09.2017](https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html) gesehen habe war eine meiner ersten Assoziationen das Wahlkampf-Motto der FDP im Bundestagswahlkampf: „Digitalisierung first Bedenken second“.
+Ich denk, dass vor der Installation oder Akzeptanz von dem was digital Möglich ist durchaus Bedenken hinsichtlich der gesellschaftlichen Auswirkungen angebracht sind:
 Müssen wir es tatsächlich in Kauf nehmen ungefragt dazu beizutragen unsere Freiheit einzuschränken?
 Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Weise gläsern wird, wird ihm sein Stimme in der liberalen Marktwirtschaft genommen?
 
-Die Regeln aus dem Video:
+Die Regeln aus dem Video sind ein Möglichkeit sich deren Wirkung bewusst zu machen:
 
-1. Schalten Sie Bluethooth und W-LAN im Laden ab
+1. Schalten Sie Bluetooth und W-LAN im Laden ab
 2. Nehmen Sie keine Kundenkarten
 3. Zahlen Sie bar
 4. Beschweren Sie sich, wenn sie ein kleines Löchlein finden
