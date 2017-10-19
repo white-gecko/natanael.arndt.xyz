@@ -5,7 +5,9 @@ tags: ["Digitalisierung","DigitalisierungFirstBedenkenSecond","Überwachung"]
 date: 2017-10-18 16:03:00+02:00
 ---
 
-So sieht #DigitalisierungFirstBedenkenSecond (FDP) aus: [ZDF volle kanne Beitrag](https://rodlzdf-a.akamaihd.net/none/zdf/17/09/170921_clip_1_vks/1/170921_clip_1_vks_2328k_p35v13.mp4)
+So sieht #DigitalisierungFirstBedenkenSecond (FDP) aus: [ZDF „volle kanne“: „Heimliche Videoüberwachung im Supermarkt“ Beitrag vom 21.09.2017](https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html)
+
+https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html
 
 Müssen wir es tatsächlich in Kauf nehmen ungefragt dazu beizutragen unsere Freiheit einzuschränken?
 Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Weise gläsern wird, wird ihm sein Stimme in der liberalen Marktwirtschaft genommen?
