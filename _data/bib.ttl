@@ -4,10 +4,11 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 
 <https://natanael.arndt.xyz/publications> a foaf:Document .
 
-<icwe2017decentralized> a dct:BibliographicResource  ;
+<icwe2017decentralized> a dct:BibliographicResource , bibo:Article ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
     dct:creator <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
     foaf:maker <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
