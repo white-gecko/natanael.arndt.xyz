@@ -62,5 +62,3 @@ Damit ich es wiederfinde habe ich es jetzt hier gespeichert und noch etwas angep
 * Das Dressing zu den Kartoffeln geben, vermengen und ruhen lassen. (Es kann sein, dass die ganze Sache zu flüssig wirkt, das Dressing wird aber von den Kartoffeln über die Zeit aufgenommen).
 * Die übrigen Zutaten dazugeben, vermengen und salzen und pfeffern
 * Mit Kresse dekorieren.
-
-Ich habe das Rezept von: http://www.sueddeutsche.de/stil/rezepte-von-attila-hildmann-fuenf-vegane-gerichte-die-jedem-gelingen-1.2699518-5
