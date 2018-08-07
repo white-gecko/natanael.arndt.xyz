@@ -3,6 +3,7 @@ layout: post
 title: "Jekyll RDF Tutorial Screencast"
 tags: ["JekyllRDF","Ruby","Jekyll", "RDF", "Screencast", "Video", "Tutorial", "Basic", "Introduction"]
 date: 2018-08-07 10:13:00+02:00
+description: "Today I've released my #jekyllrdf Tutorial Screencast on Vimeo"
 ogp-image: "/img/2018-08-07-JekyllRDF-VideoFrame.png"
 ---
 

@@ -1,7 +1,7 @@
 # Site settings
 title: natanael.arndt.xyz
 email:
-description: "This is my part of the web, where I publish some ideas. Some in form of longer posts and some in short status messages, which should be somehow my part of a distributed twitter."
+description: "This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter."
 baseurl: ""
 url: "https://natanael.arndt.xyz"
 twitter_username: white_gecko
