@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}: {% if page.title %}{{ page.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+    {% if page.ogp-image %}
+    <meta content="{{ page.ogp-image | prepend: site.baseurl }}" property="http://ogp.me/ns#image">
+    <meta content="{{ page.ogp-image | prepend: site.baseurl }}" name="twitter:image">
+    {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href="https://bibsonomyproxy.arndt.xyz/exhibit-proxy.php?suffix=user/white_gecko/myown&amp;callback=cb" type="application/jsonp" rel="exhibit/data" ex:jsonp-callback="cb" />
 
