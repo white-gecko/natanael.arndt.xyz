@@ -1,3 +1,18 @@
+- name: Quit–Quads in Git
+  url: "http://aksw.org/Projects/Quit"
+  subtitle: "Distributed Version Control for RDF Knowledge Bases"
+  abstract: "The Quit Store is a triple store capable of performing version control on RDF knowledge
+  graphs. Is especially supports distributed collaboration setups for distributed evolving RDF
+  knowledge bases."
+
+- name: Jekyll RDF
+  url: "http://aksw.org/Projects/JekyllRDF"
+  subtitle: "Transform your RDF Knowledge Graph into static websites and blogs"
+  abstract: "With Jekyll-RDF we took the slogan of Jekyll “Transform your plain text into static
+  websites and blogs” and transformed it to “Transform your RDF Knowledge Graph into static websites
+  and blogs”. This enables people without deep programming knowledge to publish data, which is
+  encoded in complicated RDF structures, on the web in an easy to browse format."
+
 - name: OntoWiki
   url: "http://aksw.org/Projects/OntoWiki"
   subtitle: "a tool providing support for agile, distributed knowledge engineering scenarios"
