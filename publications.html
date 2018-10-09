@@ -1,42 +1,64 @@
 ---
 layout: page
 title: Publications
-rdf_prefix_path: "rdf_prefixes.pref"
+rdf_prefix_path: "_data/prefix.sparql"
 weight: 100
 ---
 
-{% assign query = 'SELECT ?publication WHERE { ?publication dct:creator <http://aksw.org/NatanaelArndt> }' %}
+{% capture query %}
+SELECT DISTINCT ?publication WHERE {
+  {
+    ?publication dct:creator <http://aksw.org/NatanaelArndt>
+  } UNION {
+    ?publication dct:creator [ ?num <http://aksw.org/NatanaelArndt> ]
+  }
+  OPTIONAL {
+    {
+      ?publication dct:issued ?issued
+    } UNION {
+      ?publication dct:isPartOf ?collection .
+      ?collection dct:issued ?issued
+    }
+  }
+}
+ORDER BY DESC(?issued)
+{% endcapture %}
 {% assign resultset = page.rdf | sparql_query: query %}
-<ul>
+
 {% for result in resultset %}
-    <li>{{ result.publication }}</li>
-{% endfor %}
-</ul>
-
-<div class="exhibit-filter-tools">
-    <!-- use this for lists containing only a few publications and authors -->
-    <div ex:facetClass="Cloud" ex:role="facet" ex:showMissing="false" ex:expression=".year" ex:facetLabel="Year"></div> <!-- ex:sortDirection="reverse" -->
-    <!--div ex:facetClass="Cloud" ex:role="facet" ex:showMissing="false" ex:expression=".pub-type" ex:facetLabel="Type" ex:sortMode="count"></div-->
-    <!--div ex:facetClass="Cloud" ex:role="facet" ex:showMissing="false" ex:expression=".author" ex:facetLabel="(Co-)Authors" ex:sortMode="count"></div-->
-</div>
-
-<!-- ex:viewClass="Thumbnail" -->
-<div ex:role="view" ex:viewClass="Tile" ex:grouped="false" ex:orders=".year,.label" ex:directions="descending,ascending" ex:showSummary="true" ex:showDuplicates="false"  class="posts">
-    <div ex:role="lens" ex:itemTypes="Publication" style="display: none">
-        <h3 ex:content="if(exists(.url), concat('<a href=', .url, '>', .label, '</a>'), .label)" class="post-link"></h3>
-        <span ex:if-exists=".author"><br/>
-            <span class="meta post-date"><em>by</em> <span class="author" ex:content=".author"></span></span>
+<!-- {{ result.publication }} -->
+<div class="posts">
+    <div>
+        <a href="{{ result.publication.page_url }}">
+          <h3 class="post-link">{{ result.publication | rdf_property: "dct:title" }}</h3>
+        </a>
+        {% assign creators = result.publication | rdf_container: "dct:creator" %}
+        <span class="meta post-date">
+          <em>by</em>
+          {% for creator in creators %}
+            <span class="author">{{ creator | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+          <br/>
+          {% assign collection = result.publication | rdf_property: "dct:isPartOf" %}
+          {% if collection %}
+            <em>in</em>
+            {% if collection.iri %}
+            <span class="journal">
+            {% assign editors = collection | rdf_container: "bibtex:editor" %}
+            {{ collection | rdf_property: "dct:title" }}
+            {% if editors.size > 0 %}
+            (Editors:
+              {% for editor in editors %}
+              <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            )
+            {% endif %}</span>
+            {% else %}
+            <span class="journal">{{ collection }}</span>
+            {% endif %}
+          <br/>
+          {% endif %}
         </span>
-        <span class="meta  post-date">
-            <span ex:content="if(exists(.booktitle), concat('<em>in</em> ', .booktitle), '')"></span>
-            <span class="journal" ex:content="if(exists(.journal), concat('<em>in</em> ', .journal), '')"></span>
-            <span ex:if-exists=".editor">(Editors: <span class="editor" ex:content=".editor"></span>)</span>
-            <a ex:href-content="concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user)" >[BibTex]</a>
-        </span>
-        <span class="note" ex:content="if(exists(.note), concat('<br/><em>Note:</em> ', .note), '')"></span>
-        <p class="abstract" ex:content="if(exists(.abstract), concat('<details><summary>Abstract:</summary> ', .abstract, '</details>'), '')"></p>
     </div>
 </div>
-
-<!--script src="http://api.simile-widgets.org/exhibit/3.0.0/exhibit-api.js" type="text/javascript"></script-->
-<script src="{{ "/scripts/exhibit-dist/exhibit-api.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+{% endfor %}

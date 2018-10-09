@@ -1,34 +1,1195 @@
-@base <https://natanael.arndt.xyz/bib/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 
-<https://natanael.arndt.xyz/publications> a foaf:Document .
+<http://aksw.org/MichaelMartin>
+    foaf:name "Michael Martin" .
 
-<icwe2017decentralized> a dct:BibliographicResource , bibo:Article ;
+<http://aksw.org/NatanaelArndt>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Arndt" ;
+        vcard:Given "Natanael"
+    ] ;
+    foaf:name "Natanael Arndt" .
+
+<http://aksw.org/NormanRadtke>
+    foaf:name "Norman Radtke" .
+
+dct:BibliographicResource
+    rdfs:subClassOf foaf:Document .
+
+bibtex:InCollection
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:InProceedings
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:Manual
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:Publication
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:Unpublished
+    rdfs:subClassOf foaf:Document .
+
+bibo:AcademicArticle
+    rdfs:subClassOf bibo:Article .
+
+bibo:Article
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Book
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Chapter
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Conference
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Document
+    rdfs:subClassOf foaf:Document .
+
+bibo:Periodical
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Proceedings
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Report
+    rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Thesis
+    rdfs:subClassOf dct:BibliographicResource .
+
+<https://natanael.arndt.xyz/bib/AndreDBpediaSameAs>
+    dc:identifier "http://svn.aksw.org/papers/2015/SEMANTICS_DBpediaSameAs/public.pdf" ;
+    dct:abstract "The DBpedia dataset has multiple URIs within the dataset and from other datasets connected with (transitive) owl:sameAs relations and thus referring to the same concepts. With this heterogeneity of identifiers it is complicated for users and agents to find the unique identifier which should be preferably used. We are introducing the concept of DBpedia Unique Identifier (DUI) and a dataset of linksets relating URIs to DUIs. In order to improve the quality of our dataset we developed a mechanism that allows the user to rate and suggest links. As proof of concept an implementation with a graphical web user interface is provided for accessing the linkset and rating the links. The DBpedia sameAs service is available at http://dbpsa.aksw.org/SameAsService." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_Valdestilhas_Andre> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_Kontokostas_Dimitris> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015> ;
+    dct:title "DBpediaSameAs: An approach to tackle heterogeneity in DBpedia identifiers" ;
+    bibtex:keywords "group_aksw myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2196e47de2ffc69623c70433d5d779da7/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_Kontokostas_Dimitris>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Kontokostas" ;
+        vcard:Given "Dimitris"
+    ] ;
+    foaf:name "Dimitris Kontokostas" .
+
+<https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015>
+    dct:issued "2015" ;
+    dct:title "SEMANTiCS 2015" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_Valdestilhas_Andre>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Valdestilhas" ;
+        vcard:Given "Andre"
+    ] ;
+    foaf:name "Andre Valdestilhas" .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb>
+    dc:identifier "http://svn.aksw.org/papers/2016/LREC_MMoOnHebrew/public.pdf" ;
+    dct:abstract "The development of standard models for describing general lexical resources has led to the emergence of numerous lexical datasets of various languages in the Semantic Web. However, there are no models that describe the domain of morphology in a similar manner. As a result, there are hardly any language resources of morphemic data available in RDF to date. This paper presents the creation of the Hebrew Morpheme Inventory from a manually compiled tabular dataset comprising around 52.000 entries. It is an ongoing effort of representing the lexemes, word-forms and morphologigal patterns together with their underlying relations based on the newly created Multilingual Morpheme Ontology (MMoOn). It will be shown how segmented Hebrew language data can be granularly described in a Linked Data format, thus, serving as an exemplary case for creating morpheme inventories of any inflectional language with MMoOn. The resulting dataset is described a) according to the structure of the underlying data format, b) with respect to the Hebrew language characteristic of building word-forms directly from roots, c) by exemplifying how inflectional information is realized and d) with regard to its enrichment with external links to sense resources." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/MMoOnHeb_Klimek_Bettina> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/MMoOnHeb_Krause_Sebastian> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/MMoOnHeb_Arndt_Timotheus> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož> ;
+    dct:title "Creating Linked Data Morphological Language Resources with MMoOn. The Hebrew Morpheme Inventory." ;
+    bibtex:keywords "myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2b38463c8cbf803ee7538277ca35253b1/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb_Arndt_Timotheus>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Arndt" ;
+        vcard:Given "Timotheus"
+    ] ;
+    foaf:name "Timotheus Arndt" .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb_Klimek_Bettina>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Klimek" ;
+        vcard:Given "Bettina"
+    ] ;
+    foaf:name "Bettina Klimek" .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb_Krause_Sebastian>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Krause" ;
+        vcard:Given "Sebastian"
+    ] ;
+    foaf:name "Sebastian Krause" .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož>
+    dct:issued "2016" ;
+    dct:title "The 10th edition of the Language Resources and Evaluation Conference, 23-28 May 2016, Slovenia, Portorož" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs>
+    dc:identifier "https://dl.gi.de/bitstream/handle/20.500.12116/3960/B26-6.pdf" ;
+    dct:abstract "In this paper we present CubeViz.js, the successor of CubeViz, as an approach for lightweight visualization and exploration of statistical data using the RDF Data Cube vocabulary. In several use cases, such as the European Unions Open Data Portal, in which we deployed CubeViz, we were able to gather various requirements that eventually led to the decision of reimplementing CubeViz as JavaScript-only application. As part of this paper we showcase major functionalities of CubeViz.js and its improvements in comparison to the prior version." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Abicht_Konrad> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Alkhouri_Georges> ;
+        rdf:_3 <http://aksw.org/NatanaelArndt> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Meissner_Roy> ;
+        rdf:_5 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>, <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Lecture_Notes_in_Informatics_(LNI)> ;
+    dct:title "CubeViz.js: A Lightweight Framework for Discovering and Visualizing RDF Data Cubes" ;
+    bibtex:keywords "2017 group_aksw myown" ;
+    bibtex:pages "1915-1921" ;
+    bibo:doi "10.18420/in2017_191" ;
+    bibo:isbn "978-3-88579-669-5" ;
+    bibo:issn "1617-5468" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/220b44b8de52df76ee27cc3118bcf52c6/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Abicht_Konrad>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Abicht" ;
+        vcard:Given "Konrad"
+    ] ;
+    foaf:name "Konrad Abicht" .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Alkhouri_Georges>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Alkhouri" ;
+        vcard:Given "Georges"
+    ] ;
+    foaf:name "Georges Alkhouri" .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>
+    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
+    dct:issued "2017-09" ;
+    dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Lecture_Notes_in_Informatics_(LNI)>
+    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dct:isPartOf "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
+    dct:issued "2017-09" ;
+    dct:title "Lecture Notes in Informatics (LNI)" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    a bibo:Series .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Meissner_Roy>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Meissner" ;
+        vcard:Given "Roy"
+    ] ;
+    foaf:name "Roy Meissner" .
+
+<https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback-->
+    dc:identifier "http://svn.aksw.org/papers/2016/LDOW_StructuredFeedback/public.pdf" ;
+    dct:abstract "The World Wide Web is an infrastructure to publish and retrieve information through web resources. It evolved from a static Web 1.0 to a multimodal and interactive communication and information space used to collaboratively contribute and discuss web resources, which is better known as Web 2.0. The evolution into a Semantic Web (Web 3.0) proceeds. One of its remarkable advantages is the decentralized and interlinked data composition. Hence, in contrast to its data distribution, workflows and technologies for decentralized collaborative contribution are missing. In this paper we propose the Structured Feedback protocol as an interactive addition to the Web of Data. It offers support for users to contribute to the evolution of web resources, by providing structured data artifacts as patches for web resources, as well as simple plain text comments. Based on this approach it enables crowd-supported quality assessment and web data cleansing processes in an ad-hoc fashion most web users are familiar with." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Junghanns_Kurt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Meissner_Roy> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Frischmuth_Philipp> ;
+        rdf:_5 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        rdf:_6 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Frommhold_Marvin> ;
+        rdf:_7 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)> ;
+    dct:title "Structured Feedback: A Distributed Protocol for Feedback and Patches on the Web of Data" ;
+    bibtex:keywords "2016 arndt dssn myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/29fada0d625f02fa03f4aecd9686b6111/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Junghanns_Kurt>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Junghanns" ;
+        vcard:Given "Kurt"
+    ] ;
+    foaf:name "Kurt Junghanns" .
+
+<https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)>
+    dct:issued "2016-04" ;
+    dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
+    bibtex:month "April" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010-->
+    dc:identifier "http://lips.informatik.uni-leipzig.de/files/skil-extended-abstract.pdf" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2010--_GI-Edition---Lecture_Notes_in_Informatics>, <https://natanael.arndt.xyz/bib/arndt-n-2010--_Proceedings_of_the_INFORMATIK_2010__Service_Science_--_Neue_Perspektiven_für_die_Informatik> ;
+    dct:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
+    bibtex:keywords "dssn myown" ;
+    bibtex:note "2010 Gesellschaft für Informatik" ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    bibtex:pages "1004-1005" ;
+    bibo:isbn "978-3-88579-270-3" ;
+    bibo:issn "1617-5468" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/268fe7fb4d031c441fda37ba835b94308/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_Franczyk_Bogdan>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Franczyk" ;
+        vcard:Given "Bogdan"
+    ] ;
+    foaf:name "Bogdan Franczyk" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_Fähnrich_Klaus-Peter>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Fähnrich" ;
+        vcard:Given "Klaus-Peter"
+    ] ;
+    foaf:name "Klaus-Peter Fähnrich" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_GI-Edition---Lecture_Notes_in_Informatics>
+    dct:isPartOf "Proceedings of the INFORMATIK 2010: Service Science -- Neue Perspektiven für die Informatik" ;
+    dct:issued "2010-09" ;
+    dct:title "GI-Edition---Lecture Notes in Informatics" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2010--_Fähnrich_Klaus-Peter> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2010--_Franczyk_Bogdan> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    bibtex:volume "P-176" ;
+    a bibo:Series .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_>
+    a bibtex:Organization ;
+    foaf:name "Gesellschaft für Informatik e.V." .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_Proceedings_of_the_INFORMATIK_2010__Service_Science_--_Neue_Perspektiven_für_die_Informatik>
+    dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
+    dct:issued "2010-09" ;
+    dct:title "Proceedings of the INFORMATIK 2010: Service Science -- Neue Perspektiven für die Informatik" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2010--_Fähnrich_Klaus-Peter> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2010--_Franczyk_Bogdan> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    bibtex:volume "P-176" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a>
+    dc:identifier "http://ceur-ws.org/Vol-1272/paper_66.pdf" ;
+    dct:abstract "Electronic resources (e.g. e-journals, e-books or databases) are gaining more an more importance in libraries. With AMSL we demonstrate a flexible electronic resource management system which enables libraries to manage their electronic resources with a domain adapted software based on the OntoWiki application framework. Due to its generic design and first of all flexible data model the AMSL system can be easily adjusted to upcoming requirements. The consequent use of Linked Data further enables libraries to build up a Linked Open Data infrastructure for exchange of meta data." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Nuck_Sebastian> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Nareike_Andreas> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        rdf:_5 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Seige_Leander> ;
+        rdf:_6 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_Riechert_Thomas> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2014--a_CEUR_Workshop_Proceedings>, <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track> ;
+    dct:title "AMSL: Creating a Linked Data Infrastructure for Managing Electronic Resources in Libraries" ;
+    bibtex:keywords "amsl group_aksw myown" ;
+    bibtex:pages "309-312" ;
+    bibo:doi "10.13140/2.1.2542.6882" ;
+    bibo:issn "1613-0073" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2a3a794a4682596491db17a6714e9c037/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_CEUR_Workshop_Proceedings>
+    dct:isPartOf "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
+    dct:issued "2014-10" ;
+    dct:title "CEUR Workshop Proceedings" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "October" ;
+    bibtex:volume "Vol-1272" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Italy" ;
+        vcard:Locality "Riva del Garda"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Horridge" ;
+        vcard:Given "Matthew"
+    ] ;
+    foaf:name "Matthew Horridge" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Nareike_Andreas>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Nareike" ;
+        vcard:Given "Andreas"
+    ] ;
+    foaf:name "Andreas Nareike" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Nuck_Sebastian>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Nuck" ;
+        vcard:Given "Sebastian"
+    ] ;
+    foaf:name "Sebastian Nuck" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track>
+    dct:isPartOf "CEUR Workshop Proceedings" ;
+    dct:issued "2014-10" ;
+    dct:title "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "October" ;
+    bibtex:volume "Vol-1272" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Italy" ;
+        vcard:Locality "Riva del Garda"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Rospocher" ;
+        vcard:Given "Marco"
+    ] ;
+    foaf:name "Marco Rospocher" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Seige_Leander>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Seige" ;
+        vcard:Given "Leander"
+    ] ;
+    foaf:name "Leander Seige" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Ossenbruggen" ;
+        vcard:Given "Jacco" ;
+        vcard:Prefix "van"
+    ] ;
+    foaf:name "Jacco van Ossenbruggen" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--b>
+    dc:identifier "http://ceur-ws.org/Vol-1272/paper_154.pdf" ;
+    dct:abstract "We present Xodx (http://aksw.org/Projects/Xodx) an implementation of a node for the Distributed Semantic Social Network (DSSN). DSSN is a general architecture for building an online social network using Semantic Web standards and additional protocols for real-time communication such as Semantic Pingback and PubSubHubbub. Xodx provides functionality for publishing and editing personal profiles, adding friends to the friend list, sending and receiving friendship requests, publishing posts and subscribing to update feeds across distributed nodes." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Tramp_Sebastian> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2014--b_CEUR_Workshop_Proceedings>, <https://natanael.arndt.xyz/bib/arndt-n-2014--b_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track> ;
+    dct:title "Xodx: A node for the Distributed Semantic Social Network" ;
+    bibtex:keywords "dssn group_aksw myown xodx" ;
+    bibtex:pages "465-468" ;
+    bibo:doi "10.13140/2.1.4115.5524" ;
+    bibo:issn "1613-0073" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/27e9c104a1d5b7fee5f28d4e92e5d2081/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--b_CEUR_Workshop_Proceedings>
+    dct:isPartOf "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
+    dct:issued "2014-10" ;
+    dct:title "CEUR Workshop Proceedings" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "October" ;
+    bibtex:volume "Vol-1272" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Italy" ;
+        vcard:Locality "Riva del Garda"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--b_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track>
+    dct:isPartOf "CEUR Workshop Proceedings" ;
+    dct:issued "2014-10" ;
+    dct:title "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "October" ;
+    bibtex:volume "Vol-1272" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Italy" ;
+        vcard:Locality "Riva del Garda"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k>
+    dc:identifier "http://svn.aksw.org/papers/2015/SEMANTICS_DockerizingLOD/public.pdf" ;
+    dct:abstract "Popular knowledge bases that provide SPARQL endpoints for the web are usually experiencing a high number of requests, which often results in low availability of their interfaces. A common approach to counter the availability issue is to run a local mirror of the knowledge base. Running a SPARQL endpoint is currently a complex task which requires a lot of effort and technical support for domain experts who just want to use the SPARQL interface. With our approach of containerised knowledge base shipping we are introducing a simple to setup methodology for running a local mirror of an RDF knowledge base and SPARQL endpoint with interchangeable exploration components. The flexibility of the presented approach further helps maintaining the publication infrastructure for dataset projects. We are demonstrating and evaluating the presented methodology at the example of the dataset projects DBpedia, Catalogus Professorum Lipsiensium and Sächsisches Pfarrerbuch." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_Ackermann_Markus> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_Brümmer_Martin> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_Riechert_Thomas> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings>, <https://natanael.arndt.xyz/bib/arndt-n-2015--k_International_Conference_on_Semantic_Systems_Proceedings> ;
+    dct:title "Knowledge Base Shipping to the Linked Open Data Cloud" ;
+    bibtex:keywords "docker group_aksw myown" ;
+    bibtex:pages "73–80" ;
+    bibo:doi "10.1145/2814864.2814885" ;
+    bibo:issn "1613-0073" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2b1e393a0bfd62e83b99704a52c20c877/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings>
+    dct:isPartOf "International Conference on Semantic Systems Proceedings" ;
+    dct:issued "2015-09" ;
+    dct:title "11th International Conference on Semantic Systems Proceedings" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Austria" ;
+        vcard:Locality "Vienna"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k_Ackermann_Markus>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Ackermann" ;
+        vcard:Given "Markus"
+    ] ;
+    foaf:name "Markus Ackermann" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k_Brümmer_Martin>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Brümmer" ;
+        vcard:Given "Martin"
+    ] ;
+    foaf:name "Martin Brümmer" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k_International_Conference_on_Semantic_Systems_Proceedings>
+    dct:isPartOf "11th International Conference on Semantic Systems Proceedings" ;
+    dct:issued "2015-09" ;
+    dct:title "International Conference on Semantic Systems Proceedings" ;
+    bibtex:month "September" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Austria" ;
+        vcard:Locality "Vienna"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k_Riechert_Thomas>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Riechert" ;
+        vcard:Given "Thomas"
+    ] ;
+    foaf:name "Thomas Riechert" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quit>
+    dc:identifier "http://svn.aksw.org/papers/2016/Semantics_Quit/public.pdf" ;
+    dct:abstract "Collaboration is one of the most important topics regarding the evolution of the World Wide Web and thus also for the Web of Data. In scenarios of distributed collaboration on datasets it is necessary to provide support for multiple different versions of datasets to exist simultaneously, while also providing support for merging diverged datasets. In this paper we present an approach that uses SPARQL 1.1 in combination with the version control system Git, that creates commits for all changes applied to an RDF dataset containing multiple named graphs. Further the operations provided by Git are used to distribute the commits among collaborators and merge diverged versions of the dataset. We show the advantages of (public) Git repositories for RDF datasets and how this represents a way to collaborate on RDF data and consume it. With SPARQL 1.1 and Git in combination, users are given several opportunities to participate in the evolution of RDF data." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_12th_International_Conference_on_Semantic_Systems_Proceedings>, <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_International_Conference_on_Semantic_Systems_Proceedings> ;
+    dct:title "Distributed Collaboration on RDF Datasets Using Git: Towards the Quit Store" ;
+    bibtex:keywords "2016 groupaksw myown" ;
+    bibo:doi "10.1145/2993318.2993328" ;
+    bibo:isbn "978-1-4503-4752-5" ;
+    bibo:issn "1613-0073" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/211231083a0a9f1c9b7777481bee404c9/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quit_12th_International_Conference_on_Semantic_Systems_Proceedings>
+    dct:isPartOf "International Conference on Semantic Systems Proceedings" ;
+    dct:issued "2016-09" ;
+    dct:title "12th International Conference on Semantic Systems Proceedings" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quit_International_Conference_on_Semantic_Systems_Proceedings>
+    dct:isPartOf "12th International Conference on Semantic Systems Proceedings" ;
+    dct:issued "2016-09" ;
+    dct:title "International Conference on Semantic Systems Proceedings" ;
+    bibtex:month "September" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff>
+    dc:identifier "https://svn.aksw.org/papers/2016/Semantics_Demo_QuitDiff/public.pdf" ;
+    dct:abstract "Distributed actors working on a common RDF dataset regularly encounter the issue to compare the status of one graph with another or generally to synchronize copies of a dataset. A versioning system helps to synchronize the copies of a dataset, combined with a difference calculation system it is also possible to compare versions in a log and to determine, in which version a certain statement was introduced or removed. In this demo we present Quit Diff, a tool to compare versions of a Git versioned quad store, while it is also applicable to simple unversioned RDF datasets. We are following an approach to abstract from differences on a syntactical level to differences on the level of the RDF data model, while we leave further semantic interpretation on the schema and instance level to specialized applications. Quit Diff can generate patches in various output formats and can be directly integrated in the distributed version control system Git which provides a foundation for a comprehensive co-evolution work flow on RDF datasets." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>, <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_SEMANTiCS_'16> ;
+    dct:title "Quit Diff: Calculating the Delta Between RDF Datasets under Version Control" ;
+    bibtex:keywords "myown quit" ;
+    bibo:doi "10.1145/2993318.2993349" ;
+    bibo:isbn "978-1-4503-4752-5/16/09" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/268eb3df728434976c30f2fed138a2f03/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>
+    dct:isPartOf "SEMANTiCS '16" ;
+    dct:issued "2016-09" ;
+    dct:title "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_SEMANTiCS_'16>
+    dct:isPartOf "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
+    dct:issued "2016-09" ;
+    dct:title "SEMANTiCS '16" ;
+    bibtex:month "September" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized>
+    dc:identifier "https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf" ;
+    dct:abstract "The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets. In this network and its genesis, collaboration played and still plays a crucial role. But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases. Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed. The system is based on Git and provides distributed collaboration on RDF graphs. This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>, <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_ICWE_2017> ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
-    dct:creator <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
-    foaf:maker <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:isPartOf <icwe2017> ;
-    dct:language "en-US" ;
-    dct:publisher <https://springer.com/> ;
-    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
-    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    bibtex:keywords "leds myown quit" ;
+    bibo:doi "10.1007/978-3-319-60131-1_2" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/27d67a40a45533c30b6bd4ea3a8ce525b/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>
+    dct:isPartOf "ICWE 2017" ;
+    dct:issued "2017-06" ;
+    dct:title "17th International Conference on Web Engineering (ICWE 2017)" ;
+    bibtex:month "June" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Italy" ;
+        vcard:Locality "Rome"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_ICWE_2017>
+    dct:isPartOf "17th International Conference on Web Engineering (ICWE 2017)" ;
+    dct:issued "2017-06" ;
+    dct:title "ICWE 2017" ;
+    bibtex:month "June" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Italy" ;
+        vcard:Locality "Rome"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance>
+    dc:identifier "http://ceur-ws.org/Vol-1824/mepdaw_paper_2.pdf" ;
+    dct:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Marx_Edgard> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017> ;
+    dct:title "Exploring the Evolution and Provenance of Git Versioned RDF Data" ;
+    bibtex:keywords "leds myown quit" ;
+    bibo:issn "1613-0073" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/221142bb1e3a2650439e68b10f631ec92/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Debattista_Jeremy>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Debattista" ;
+        vcard:Given "Jeremy"
+    ] ;
+    foaf:name "Jeremy Debattista" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Fernández_Javier_D_>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Fernández" ;
+        vcard:Given "Javier" ;
+        vcard:Other "D."
+    ] ;
+    foaf:name "Javier D. Fernández" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017>
+    dct:issued "2017-05" ;
+    dct:title "Joint proceedings of the 3rd Workshop on Managing the Evolution and Preservation of the Data Web (MEPDaW 2017) and the 4th Workshop on Linked Data Quality (LDQ 2017) co-located with 14th European Semantic Web Conference (ESWC 2017)" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Fernández_Javier_D_> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Debattista_Jeremy> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Umbrich_Jürgen> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "May" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Slovenia" ;
+        vcard:Locality "Portoroz"
+    ] .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Umbrich_Jürgen>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Umbrich" ;
+        vcard:Given "Jürgen"
+    ] ;
+    foaf:name "Jürgen Umbrich" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack>
+    dc:identifier "https://dl.gi.de/bitstream/handle/20.500.12116/3955/B26-2.pdf" ;
+    dct:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>, <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Lecture_Notes_in_Informatics_(LNI)> ;
+    dct:title "A Method for Distributed and Collaborative Curation of RDF Datasets Utilizing the Quit Stack" ;
+    bibtex:keywords "2017 group_aksw myown quit" ;
+    bibtex:pages "1873-1881" ;
+    bibo:doi "10.18420/in2017_187" ;
+    bibo:isbn "978-3-88579-669-5" ;
+    bibo:issn "1617-5468" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2b35ee2852d8ca02f8ccf7210b70b2b01/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Eibl" ;
+        vcard:Given "Maximilian"
+    ] ;
+    foaf:name "Maximilian Eibl" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Gaedke" ;
+        vcard:Given "Martin"
+    ] ;
+    foaf:name "Martin Gaedke" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik>
+    a bibtex:Organization ;
+    foaf:name "Gesellschaft für Informatik" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>
+    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
+    dct:issued "2017-09" ;
+    dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Lecture_Notes_in_Informatics_(LNI)>
+    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dct:isPartOf "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
+    dct:issued "2017-09" ;
+    dct:title "Lecture Notes in Informatics (LNI)" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    a bibo:Series .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws>
+    dc:identifier "https://arxiv.org/pdf/1805.03721" ;
+    dct:abstract "The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets. The distributed character of the Web brings manifold collaborative possibilities to interchange data. The commonly adopted collaborative solutions for RDF data are centralized (e.g. SPARQL endpoints and wiki systems). But to support distributed collaboration, a system is needed, that supports divergence of datasets, brings the possibility to conflate diverged states, and allows distributed datasets to be synchronized. In this paper, we present Quit Store, it was inspired by and it builds upon the successful Git system. The approach is based on a formal expression of evolution and consolidation of distributed datasets. During the collaborative curation process, the system automatically versions the RDF dataset and tracks provenance information. It also provides support to branch, merge, and synchronize distributed RDF datasets. The merging process is guarded by specific merge strategies for RDF data. Finally, we use our reference implementation to show overall good performance and demonstrate the practical usability of the system." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        rdf:_5 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Marx_Edgard> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_to_appear_in_Journal_of_Web_Semantics> ;
+    dct:title "Decentralized Collaborative Knowledge Management using Git" ;
+    bibtex:keywords "myown quit versioning" ;
+    bibtex:note "preprint" ;
+    a bibo:AcademicArticle ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2f5067fc9d347e3106e5fd3cbc9dcf367/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Martin" ;
+        vcard:Given "Michael"
+    ] ;
+    foaf:name "Michael Martin" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Marx_Edgard>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Marx" ;
+        vcard:Given "Edgard"
+    ] ;
+    foaf:name "Edgard Marx" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Naumann" ;
+        vcard:Given "Patrick"
+    ] ;
+    foaf:name "Patrick Naumann" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Radtke" ;
+        vcard:Given "Norman"
+    ] ;
+    foaf:name "Norman Radtke" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_to_appear_in_Journal_of_Web_Semantics>
+    dct:issued "2018" ;
+    dct:title "to appear in Journal of Web Semantics" ;
+    bibtex:volume "preprint" ;
+    a bibo:Journal .
+
+<https://natanael.arndt.xyz/bib/bibfile>
+    bibtex:absolutePath "file:/home/natanael/Dokumente/Projekte/natanael.arndt.xyz/_data/white_gecko.bib" ;
+    a bibtex:SourceFile .
+
+<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki>
+    dc:identifier "https://svn.aksw.org/papers/2016/Semantics_Demo_OntoWiki/public.pdf" ;
+    dct:abstract "In this demonstration (with supportive poster) we present the semantic data wiki OntoWiki, which was released in version 1.0 just recently. We focus on the changes introduced to the tool in the latest release and showcase the generic data wiki, improvements we made with regard to the documentation as well as three success stories where OntoWiki was adapted and deployed." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Frischmuth_Philipp> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>, <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_Proceedings_of_the_Posters_and_Demos_Track_of_the_12th_International_Conference_on_Semantic_Systems_-_SEMANTiCS2016_and_the_1st_International_Workshop_on_Semantic_Change_&_Evolving_Semantics_(SuCCESS'16)> ;
+    dct:title "OntoWiki 1.0: 10 Years of Development - What's New in OntoWiki" ;
+    bibtex:keywords "myown" ;
+    bibo:issn "1613-0073" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2c69d11a47f1527c783969305de7ce348/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>
+    dct:isPartOf "Joint Proceedings of the Posters and Demos Track of the 12th International Conference on Semantic Systems - SEMANTiCS2016 and the 1st International Workshop on Semantic Change & Evolving Semantics (SuCCESS'16)" ;
+    dct:issued "2016-09" ;
+    dct:title "CEUR Workshop Proceedings" ;
+    bibtex:month "September" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Frischmuth_Philipp>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Frischmuth" ;
+        vcard:Given "Philipp"
+    ] ;
+    foaf:name "Philipp Frischmuth" .
+
+<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_Proceedings_of_the_Posters_and_Demos_Track_of_the_12th_International_Conference_on_Semantic_Systems_-_SEMANTiCS2016_and_the_1st_International_Workshop_on_Semantic_Change_&_Evolving_Semantics_(SuCCESS'16)>
+    dct:isPartOf "CEUR Workshop Proceedings" ;
+    dct:issued "2016-09" ;
+    dct:title "Joint Proceedings of the Posters and Demos Track of the 12th International Conference on Semantic Systems - SEMANTiCS2016 and the 1st International Workshop on Semantic Change & Evolving Semantics (SuCCESS'16)" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016>
+    dc:identifier "http://events.linkeddata.org/ldow2016/papers/LDOW2016_paper_05.pdf" ;
+    dct:abstract "Sharing information securely between business partners and managing large supply chains efficiently will be a crucial competitive advantage for enterprises in the near future. In this paper, we present a concept that allows for building value networks between business partners in a distributed manner. Companies are able to publish Linked Data which participants of the network can clone and subscribe to. Subscribers get notified as soon as new information becomes available. This provides a technical infrastructure for business communication acts such as supply chain communication or master data management. In addition to the conceptual analysis, we provide an implementation enabling companies to create such dynamic semantic value networks." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Frommhold_Marvin> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Tramp_Sebastian> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)> ;
+    dct:title "Publish and Subscribe for RDF in Enterprise Value Networks" ;
+    bibtex:keywords "myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/212f9a15e107b422d7df136b518bf2035/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Frommhold_Marvin>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Frommhold" ;
+        vcard:Given "Marvin"
+    ] ;
+    foaf:name "Marvin Frommhold" .
+
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Petersen" ;
+        vcard:Given "Niklas"
+    ] ;
+    foaf:name "Niklas Petersen" .
+
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)>
+    dct:issued "2016" ;
+    dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Tramp_Sebastian>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Tramp" ;
+        vcard:Given "Sebastian"
+    ] ;
+    foaf:name "Sebastian Tramp" .
+
+<https://natanael.arndt.xyz/bib/icwe2017>
+    dct:title "17th International Conference on Web Engineering (ICWE 2017)" ;
+    a dct:BibliographicResource .
+
+<https://natanael.arndt.xyz/bib/icwe2017decentralized>
     dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
         In this network and its genesis, collaboration played and still plays a crucial role.
         But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
         Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
         The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/MichaelMartin>
+    ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/icwe2017> ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    dct:publisher <https://springer.com/> ;
+    dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+    a dct:BibliographicResource, bibo:AcademicArticle, bibo:Article ;
+    foaf:maker <http://aksw.org/MichaelMartin>, <http://aksw.org/NatanaelArndt> .
 
-<icwe2017> a dct:BibliographicResource  ;
-    dct:title "17th International Conference on Web Engineering (ICWE 2017)" .
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a>
+    dc:identifier "http://svn.aksw.org/papers/2014/DERM_AMSL/public.pdf" ;
+    dct:abstract "In libraries a change from physical resources to electronic resources, with new licensing models and lending processes, has taken places. The existing managing infrastructure is not yet suitable for the upcoming requirements and does not provide support for flexible and extensible data models for being future-proof. In this paper we present a system that uses the generic RDF resource management system OntoWiki for managing library resources. OntoWiki is extended by components for adapting the generic system to the given domain, e.g. by using data templates. In addition the Linked Data capability of OntoWiki is used and extended to import various metadata to enrich the managing resource. Consequently using Linked Data further enables libraries to build up a Linked Data infrastructure in the library domain." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Nareike_Andreas> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Radtke_Norman> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Nuck_Sebastian> ;
+        rdf:_5 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Seige_Leander> ;
+        rdf:_6 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_Riechert_Thomas> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>, <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern> ;
+    dct:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
+    bibtex:keywords "amsl erm group_aksw myown" ;
+    bibtex:note "2014 Gesellschaft für Informatik" ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    bibtex:pages "1017-1026" ;
+    bibo:isbn "978-3-88579-626-8" ;
+    bibo:issn "1617-5468" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2730def1c1c357cb906a5a6c1f35d4987/white_gecko" .
 
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>
+    dct:isPartOf "Proceedings of the INFORMATIK 2014: Big Data -- Komplexität meistern" ;
+    dct:issued "2014-09" ;
+    dct:title "GI-Edition---Lecture Notes in Informatics" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Grunske_Lars> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Schneider_Eric> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Ull_Dominik> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    bibtex:volume "P-232" ;
+    a bibo:Series .
 
-<http://aksw.org/NatanaelArndt> foaf:name "Natanael Arndt" .
-<http://aksw.org/MichaelMartin> foaf:name "Michael Martin" .
-<http://aksw.org/NormanRadtke> foaf:name "Norman Radtke" .
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Grunske_Lars>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Grunske" ;
+        vcard:Given "Lars"
+    ] ;
+    foaf:name "Lars Grunske" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Plödereder" ;
+        vcard:Given "Erhard"
+    ] ;
+    foaf:name "Erhard Plödereder" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern>
+    dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
+    dct:issued "2014-09" ;
+    dct:title "Proceedings of the INFORMATIK 2014: Big Data -- Komplexität meistern" ;
+    bibtex:editor [
+        rdf:_1 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Grunske_Lars> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Schneider_Eric> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Ull_Dominik> ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "September" ;
+    bibtex:volume "P-232" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Schneider_Eric>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Schneider" ;
+        vcard:Given "Eric"
+    ] ;
+    foaf:name "Eric Schneider" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Ull_Dominik>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Ull" ;
+        vcard:Given "Dominik"
+    ] ;
+    foaf:name "Dominik Ull" .
+
+<https://natanael.arndt.xyz/bib/rex_pd>
+    dc:identifier "http://jens-lehmann.org/files/2015/semantics_pd_rex.pdf" ;
+    dct:abstract "While several tools for simplifying the task of visualizing (SPARQL accessible) RDF data on the Web are available today, there is a lack of corresponding tools for exploiting standard HTML forms directly for RDF editing. The few related existing systems roughly fall in the categories of (a) applications that are not aimed at being reused as components, (b) form generators, which automatically create forms from a given schema -- possibly derived from instance data -- or (c) form template processors which create forms from a manually created specification. Furthermore, these systems usually come with their own widget library, which can only be extended by wrapping existing widgets. In this paper, we present the AngularJS-based Rdf Edit eXtension (REX) system, which facilitates the enhancement of standard HTML forms as well as many existing AngularJS widgets with RDF editing support by means of a set of HTML attributes. We demonstrate our system though the realization of several usage scenarios." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/rex_pd_Stadler_Claus> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/rex_pd_Lehmann_Jens> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015>, <https://natanael.arndt.xyz/bib/rex_pd_SEM_'15> ;
+    dct:title "RDF Editing on the Web with REX" ;
+    bibtex:keywords "group_aksw myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2ec130f8992ea778eec487e84aea8dfd4/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/rex_pd_ACM>
+    a bibtex:Organization ;
+    foaf:name "ACM" .
+
+<https://natanael.arndt.xyz/bib/rex_pd_Lehmann_Jens>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Lehmann" ;
+        vcard:Given "Jens"
+    ] ;
+    foaf:name "Jens Lehmann" .
+
+<https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015>
+    dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
+    dct:isPartOf "SEM '15" ;
+    dct:issued "2015-09" ;
+    dct:title "SEMANTICS 2015" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Austria" ;
+        vcard:Locality "Vienna"
+    ] .
+
+<https://natanael.arndt.xyz/bib/rex_pd_SEM_'15>
+    dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
+    dct:isPartOf "SEMANTICS 2015" ;
+    dct:issued "2015-09" ;
+    dct:title "SEM '15" ;
+    bibtex:month "September" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Austria" ;
+        vcard:Locality "Vienna"
+    ] .
+
+<https://natanael.arndt.xyz/bib/rex_pd_Stadler_Claus>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Stadler" ;
+        vcard:Given "Claus"
+    ] ;
+    foaf:name "Claus Stadler" .
+
+<https://natanael.arndt.xyz/bib/towardsversioning>
+    dc:identifier "https://www.researchgate.net/publication/303924732_Towards_Versioning_of_Arbitrary_RDF_Data" ;
+    dct:abstract "Coherent and consistent tracking of provenance data and in particular update history information is a crucial building block for any serious information system architecture. Version Control Systems can be a part of such an architecture enabling users to query and manipulate versioning information as well as content revisions. In this paper, we introduce an RDF versioning approach as a foundation for a full featured RDF Version Control System. We argue that such a system needs support for all concepts of the RDF specification including support for RDF datasets and blank nodes. Furthermore, we placed special emphasis on the protection against unperceived history manipulation by hashing the resulting patches. In addition to the conceptual analysis and an RDF vocabulary for representing versioning information, we present a mature implementation which captures versioning information for changes to arbitrary RDF datasets." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Frommhold_Marvin> ;
+        rdf:_2 <https://natanael.arndt.xyz/bib/towardsversioning_Piris_Rubén_Navarro> ;
+        rdf:_3 <http://aksw.org/NatanaelArndt> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Tramp_Sebastian> ;
+        rdf:_5 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas> ;
+        rdf:_6 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Martin_Michael> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>, <https://natanael.arndt.xyz/bib/towardsversioning_SEMANTiCS_'16> ;
+    dct:title "Towards Versioning of Arbitrary RDF Data" ;
+    bibtex:keywords "myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/26a024a32f54be804f25665598bc97376/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>
+    dct:isPartOf "SEMANTiCS '16" ;
+    dct:issued "2016-09" ;
+    dct:title "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/towardsversioning_Piris_Rubén_Navarro>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Piris" ;
+        vcard:Given "Rubén" ;
+        vcard:Other "Navarro"
+    ] ;
+    foaf:name "Rubén Navarro Piris" .
+
+<https://natanael.arndt.xyz/bib/towardsversioning_SEMANTiCS_'16>
+    dct:isPartOf "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
+    dct:issued "2016-09" ;
+    dct:title "SEMANTiCS '16" ;
+    bibtex:month "September" ;
+    a bibo:Series ;
+    vcard:ADR [
+        vcard:Country "Germany" ;
+        vcard:Locality "Leipzig"
+    ] .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch>
+    dct:abstract "Scholars often need to search for matching, high-profile scientific events to publish their research results. Information about topical focus and quality of events is not made sufficiently explicit in the existing communication channels where events are announced. Therefore, scholars have to spend a lot of time on reading and assessing calls for papers but might still not find the right event. Additionally, events might be overlooked because of the large number of events announced every day. We introduce OpenResearch, a crowd sourcing platform that supports researchers in collecting, organizing, sharing and disseminating information about scientific events in a structured way. It enables quality-related queries over a multidisciplinary collection of events according to a broad range of criteria such as acceptance rate, sustainability of event series, and reputation of people and organizations. Events are represented in different views using map extensions, calendar and time-line visualizations. We have systematically evaluated the timeliness, usability and performance of OpenResearch." ;
+    dct:creator [
+        rdf:_1 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Vahdati_Sahar> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Auer_Sören> ;
+        rdf:_4 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Lange_Christoph> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> ;
+    dct:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
+    bibtex:keywords "myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Auer_Sören>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Auer" ;
+        vcard:Given "Sören"
+    ] ;
+    foaf:name "Sören Auer" .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Lange_Christoph>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Lange" ;
+        vcard:Given "Christoph"
+    ] ;
+    foaf:name "Christoph Lange" .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)>
+    dct:isPartOf "ekaw2016" ;
+    dct:issued "2016" ;
+    dct:title "Proceedings of 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW'2016)" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Vahdati_Sahar>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Vahdati" ;
+        vcard:Given "Sahar"
+    ] ;
+    foaf:name "Sahar Vahdati" .
+

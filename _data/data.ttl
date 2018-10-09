@@ -1,0 +1,53 @@
+@base <https://natanael.arndt.xyz/bib/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+
+<icwe2017decentralized> a dct:BibliographicResource , bibo:AcademicArticle, bibo:Article ;
+    dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/MichaelMartin>
+    ] ;
+    foaf:maker <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-US" ;
+    dct:publisher <https://springer.com/> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
+<icwe2017> a dct:BibliographicResource  ;
+    dct:title "17th International Conference on Web Engineering (ICWE 2017)" .
+
+
+<http://aksw.org/NatanaelArndt> foaf:name "Natanael Arndt" .
+<http://aksw.org/MichaelMartin> foaf:name "Michael Martin" .
+<http://aksw.org/NormanRadtke> foaf:name "Norman Radtke" .
+
+bibo:AcademicArticle rdfs:subClassOf bibo:Article .
+bibo:Article rdfs:subClassOf dct:BibliographicResource .
+bibo:Book rdfs:subClassOf dct:BibliographicResource .
+bibo:Chapter rdfs:subClassOf dct:BibliographicResource .
+bibo:Thesis rdfs:subClassOf dct:BibliographicResource .
+bibo:Periodical rdfs:subClassOf dct:BibliographicResource .
+bibo:Proceedings rdfs:subClassOf dct:BibliographicResource .
+bibo:Report rdfs:subClassOf dct:BibliographicResource .
+bibo:Conference rdfs:subClassOf dct:BibliographicResource .
+bibtex:Publication rdfs:subClassOf dct:BibliographicResource .
+bibtex:Manual rdfs:subClassOf dct:BibliographicResource .
+bibtex:InCollection rdfs:subClassOf dct:BibliographicResource .
+bibtex:InProceedings rdfs:subClassOf dct:BibliographicResource .
+bibo:Document rdfs:subClassOf foaf:Document .
+bibtex:Unpublished rdfs:subClassOf foaf:Document .
+dct:BibliographicResource rdfs:subClassOf foaf:Document .

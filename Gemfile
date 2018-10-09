@@ -20,5 +20,6 @@ gem "jekyll", "3.3.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-rdf", "~> 3.0.0.a"
+  gem "jekyll-rdf", path: "../JekyllRDF/jekyll-rdf/"
+   # gem "jekyll-rdf", "~> 3.0.0.a"
 end

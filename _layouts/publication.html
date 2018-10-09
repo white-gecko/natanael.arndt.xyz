@@ -1,25 +1,55 @@
 ---
 layout: default
-rdf_prefix_path: "rdf_prefixes.pref"
+rdf_prefix_path: "_data/prefix.sparql"
 ---
 <div class="post">
   <header class="post-header">
     <h2>{{ page.rdf | rdf_property: "dct:title" }}</h2>
-    <div>{% assign authors = page.rdf | rdf_property: "dct:creator", nil, true %}
+    <div>
+    {% assign authors = page.rdf | rdf_container: "dct:creator" %}
     {% for author in authors %}
         <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>
     {% endfor %}
     </div>
+    {% assign collection = page.rdf | rdf_property: "dct:isPartOf" %}
+    {% if collection %}
+      <em>in</em>
+      {% if collection.iri %}
+      <span class="journal">
+      {% assign editors = collection | rdf_container: "bibtex:editor" %}
+      {{ collection | rdf_property: "dct:title" }}
+      {% if editors.size > 0 %}
+      (Editors:
+        {% for editor in editors %}
+        <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      )
+      {% endif %}</span>
+      {% else %}
+      <span class="journal">{{ collection }}</span>
+      {% endif %}
+    <br/>
+    {% endif %}
     <div>
-        in {{ page.rdf | rdf_property: "dct:isPartOf" | rdf_property: "dct:title" }}
-    </div>
-    <div>
-        <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}">download</a>
+        <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}"><i class="fa fa-download"></i> Download Paper</a>,
+        <a href="{{ page.rdf | rdf_property: "rdfs:seeAlso" }}"><i class="fa fa-book"></i> Bibsonomy</a>
+        <!-- concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user) -->
     </div>
   </header>
 
   <article class="post-content">
-      <h2>Abstract</h2>
-  {{ page.rdf | rdf_property: "dct:abstract" }}
+      <h3>Abstract</h3>
+      {{ page.rdf | rdf_property: "dct:abstract" }}
   </article>
+
+  <!-- https://stackoverflow.com/questions/14690000/embed-a-pdf-in-html5 -->
+  <!-- does not work -->
+  <!--//
+  <div>
+    <embed src="{{ page.rdf | rdf_property: "dct:hasFormat" }}" type="application/pdf" />
+    <object data="{{ page.rdf | rdf_property: "dct:hasFormat" }}" type="application/pdf" width="300" height="200">
+      <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}">Download</a>
+    </object>
+  </div>
+  //-->
 </div>
