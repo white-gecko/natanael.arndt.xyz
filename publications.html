@@ -51,8 +51,8 @@ ORDER BY DESC(?issued)
               {% for editor in editors %}
               <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}
               {% endfor %}
-            )
-            {% endif %}</span>
+            ){% endif %}</span>,
+            <span class="date">{{ collection | rdf_property: "dct:issued" }}</span>
             {% else %}
             <span class="journal">{{ collection }}</span>
             {% endif %}

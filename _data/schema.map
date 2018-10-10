@@ -234,8 +234,8 @@ organization=bibtex:organization
 school=bibtex:school
 
 # identifier fields
-url=dc:identifier
-key=dc:identifier
+url=dct:hasFormat
+key=dct:identifier
 
 
 # all other bibtex fields
