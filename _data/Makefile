@@ -29,6 +29,7 @@ keep_log:
 	sed -i -e 's/<https:[^<>]*_Lehmann_Jens>/<http:\/\/aksw.org\/JensLehmann>/g' white_gecko_bib.ttl
 	sed -i -e 's/<https:[^<>]*_Seige_Leander>/<http:\/\/aksw.org\/Partner\/LeanderSeige>/g' white_gecko_bib.ttl
 	sed -i -e 's/Joint_proceedings_of_the_3rd_Workshop_on_Managing_the_Evolution_and_Preservation_of_the_Data_Web_(MEPDaW_2017)_and_the_4th_Workshop_on_Linked_Data_Quality_(LDQ_2017)_co-located_with_14th_European_Semantic_Web_Conference_(ESWC_2017)>/Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017>/g' white_gecko_bib.ttl
+	sed -i -e "s/Joint_Proceedings_of_the_Posters_and_Demos_Track_of_the_12th_International_Conference_on_Semantic_Systems_-_SEMANTiCS2016_and_the_1st_International_Workshop_on_Semantic_Change_&_Evolving_Semantics_(SuCCESS'16)>/Joint_PD_SEMANTiCS2016_and_SuCCESS16>/g" white_gecko_bib.ttl
 	cat data.ttl white_gecko_bib.ttl > graph.ttl
 	rapper -i turtle -o turtle graph.ttl > bib.ttl
 	rm white_gecko_bib.rdf white_gecko_bib.ttl graph.ttl

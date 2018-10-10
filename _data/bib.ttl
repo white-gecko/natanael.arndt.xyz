@@ -897,7 +897,7 @@ bibo:Thesis
         a rdf:Seq
     ] ;
     dct:hasFormat "https://svn.aksw.org/papers/2016/Semantics_Demo_OntoWiki/public.pdf" ;
-    dct:isPartOf <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>, <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_Proceedings_of_the_Posters_and_Demos_Track_of_the_12th_International_Conference_on_Semantic_Systems_-_SEMANTiCS2016_and_the_1st_International_Workshop_on_Semantic_Change_&_Evolving_Semantics_(SuCCESS'16)> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>, <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_PD_SEMANTiCS2016_and_SuCCESS16> ;
     dct:title "OntoWiki 1.0: 10 Years of Development - What's New in OntoWiki" ;
     bibtex:keywords "myown" ;
     bibo:issn "1613-0073" ;
@@ -915,7 +915,7 @@ bibo:Thesis
         vcard:Locality "Leipzig"
     ] .
 
-<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_Proceedings_of_the_Posters_and_Demos_Track_of_the_12th_International_Conference_on_Semantic_Systems_-_SEMANTiCS2016_and_the_1st_International_Workshop_on_Semantic_Change_&_Evolving_Semantics_(SuCCESS'16)>
+<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_PD_SEMANTiCS2016_and_SuCCESS16>
     dct:isPartOf "CEUR Workshop Proceedings" ;
     dct:issued "2016-09" ;
     dct:title "Joint Proceedings of the Posters and Demos Track of the 12th International Conference on Semantic Systems - SEMANTiCS2016 and the 1st International Workshop on Semantic Change & Evolving Semantics (SuCCESS'16)" ;
