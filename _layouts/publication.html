@@ -32,7 +32,11 @@ rdf_prefix_path: "_data/prefix.sparql"
     {% endif %}
     <div>
         <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}"><i class="fa fa-download"></i> Download Paper</a>,
-        <a href="{{ page.rdf | rdf_property: "rdfs:seeAlso" }}"><i class="fa fa-book"></i> Bibsonomy</a>
+        {% assign doi = page.rdf | rdf_property: "bibo:doi" %}
+        {% if doi %}<a href="https://dx.doi.org/{{ page.rdf | rdf_property: "bibo:doi" }}"><i class="fa fa-circle"></i> DOI</a>,{% endif %}
+        {% assign isbn = page.rdf | rdf_property: "bibo:isbn" %}
+        {% if isbn %}<a href="https://en.wikipedia.org/wiki/Special:BookSources/{{ page.rdf | rdf_property: "bibo:isbn" }}"><i class="fa fa-info-circle"></i> ISBN</a>,{% endif %}
+        <a href="{{ page.rdf | rdf_property: "rdfs:seeAlso" }}"><i class="fa fa-database"></i> Bibsonomy</a>
         <!-- concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user) -->
     </div>
   </header>
