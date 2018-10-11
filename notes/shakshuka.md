@@ -19,7 +19,7 @@ Kaffee, vielleicht noch schöne Musik, Kerze anzünden nicht vergessen und dazu 
 | 1 TL |  Kumin/Kreuzkümmel |
 | 1 TL |  Paprikapulver, süß |
 | 1 TL |  Salz |
-|      |  Chili, Cayenpfeffer, Pfeffer |
+|      |  Chili, Cayennepfeffer, Pfeffer |
 | 4    |  Eier |
 |      |  Koriander, frisch, grün |
 |      |  Feta |
