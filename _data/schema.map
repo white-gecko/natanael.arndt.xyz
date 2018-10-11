@@ -192,7 +192,7 @@ Collection=bibo:Collection
 EtAl=bibtex:EtAl
 
 # type of resource which represents the source file
-BibFile=bibtex:SourceFile
+#BibFile=bibtex:SourceFile
 
 
 ##########################################################
@@ -300,8 +300,8 @@ defaultLabelPattern=<title>
 # articleLabelPattern=(<author>:<author>+'. ')+<title>+(<journal>:'. '+<journal>+(<volume>:' '+<volume>+(<number>:'('+<number>+')')))+(<year>:', '+<year>)
 
 # property used to attach source file information
-sourceFile=bibtex:sourceFile
+#sourceFile=bibtex:sourceFile
 
 # property used to add the absolute path as string
 # to the source file resource
-fileAbsolutePath=bibtex:absolutePath
+#fileAbsolutePath=bibtex:absolutePath

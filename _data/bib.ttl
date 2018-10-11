@@ -863,13 +863,17 @@ bibo:Thesis
         a rdf:Seq
     ] ;
     dct:hasFormat "https://arxiv.org/pdf/1805.03721" ;
-    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_to_appear_in_Journal_of_Web_Semantics> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Journal_of_Web_Semantics> ;
     dct:title "Decentralized Collaborative Knowledge Management using Git" ;
-    bibo:doi "10.1016/j.websem.2018.08.002" ;
     bibtex:keywords "myown quit versioning" ;
-    bibtex:note "preprint" ;
+    bibo:doi "10.1016/j.websem.2018.08.002" ;
     a bibo:AcademicArticle ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2f5067fc9d347e3106e5fd3cbc9dcf367/white_gecko" .
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2a01687a0f7e5109fbd0df3d03661a99b/white_gecko" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Journal_of_Web_Semantics>
+    dct:issued "2018" ;
+    dct:title "Journal of Web Semantics" ;
+    a bibo:Journal .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick>
     a foaf:Person ;
@@ -878,16 +882,6 @@ bibo:Thesis
         vcard:Given "Patrick"
     ] ;
     foaf:name "Patrick Naumann" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_to_appear_in_Journal_of_Web_Semantics>
-    dct:issued "2018" ;
-    dct:title "to appear in Journal of Web Semantics" ;
-    bibtex:volume "preprint" ;
-    a bibo:Journal .
-
-<https://natanael.arndt.xyz/bib/bibfile>
-    bibtex:absolutePath "file:/home/natanael/Dokumente/Projekte/comiles.eu/natanael.arndt.xyz/_data/white_gecko.bib" ;
-    a bibtex:SourceFile .
 
 <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki>
     dct:abstract "In this demonstration (with supportive poster) we present the semantic data wiki OntoWiki, which was released in version 1.0 just recently. We focus on the changes introduced to the tool in the latest release and showcase the generic data wiki, improvements we made with regard to the documentation as well as three success stories where OntoWiki was adapted and deployed." ;
@@ -1174,3 +1168,4 @@ bibo:Thesis
         vcard:Given "Sahar"
     ] ;
     foaf:name "Sahar Vahdati" .
+
