@@ -248,8 +248,9 @@ bibo:Thesis
     rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2196e47de2ffc69623c70433d5d779da7/white_gecko" .
 
 <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015>
-    dct:issued "2015" ;
+    dct:issued "2015-09" ;
     dct:title "SEMANTiCS 2015" ;
+    bibtex:month "September" ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/MMoOnHeb>
@@ -285,8 +286,9 @@ bibo:Thesis
     foaf:name "Sebastian Krause" .
 
 <https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož>
-    dct:issued "2016" ;
+    dct:issued "2016-05" ;
     dct:title "The 10th edition of the Language Resources and Evaluation Conference, 23-28 May 2016, Slovenia, Portorož" ;
+    bibtex:month "May" ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs>
@@ -692,10 +694,6 @@ bibo:Thesis
         rdf:_1 <http://aksw.org/NatanaelArndt> ;
         rdf:_2 <http://aksw.org/MichaelMartin> ;
         a rdf:Seq
-    ], [
-        rdf:_1 <http://aksw.org/NatanaelArndt> ;
-        rdf:_2 <http://aksw.org/MichaelMartin> ;
-        a rdf:Seq
     ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf>, "https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf" ;
     dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2>, "https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf" ;
@@ -946,8 +944,9 @@ bibo:Thesis
     foaf:name "Niklas Petersen" .
 
 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)>
-    dct:issued "2016" ;
+    dct:issued "2016-04" ;
     dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
+    bibtex:month "April" ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/icwe2017>
@@ -1144,6 +1143,7 @@ bibo:Thesis
     dct:isPartOf <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> ;
     dct:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
     bibtex:keywords "myown" ;
+    bibo:isbn "978-3-319-49003-8" ;
     a bibtex:InProceedings ;
     rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko" .
 
@@ -1157,8 +1157,9 @@ bibo:Thesis
 
 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)>
     dct:isPartOf "ekaw2016" ;
-    dct:issued "2016" ;
+    dct:issued "2016-11" ;
     dct:title "Proceedings of 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW'2016)" ;
+    bibtex:month "November" ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Vahdati_Sahar>
