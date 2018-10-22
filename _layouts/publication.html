@@ -21,9 +21,7 @@ rdf_prefix_path: "_data/prefix.sparql"
       {% if editors.size > 0 %}
       (Editors:
         {% for editor in editors %}
-        <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      ){% endif %}</span>,
+        <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}){% endif %}</span>,
       <span class="date">{{ collection | rdf_property: "dct:issued" }}</span>
       {% else %}
       <span class="journal">{{ collection }}</span>
@@ -43,7 +41,7 @@ rdf_prefix_path: "_data/prefix.sparql"
 
   <article class="post-content">
       <h3>Abstract</h3>
-      {{ page.rdf | rdf_property: "dct:abstract" }}
+      <p>{{ page.rdf | rdf_property: "dct:abstract" }}</p>
   </article>
 
   <!-- https://stackoverflow.com/questions/14690000/embed-a-pdf-in-html5 -->
@@ -56,4 +54,6 @@ rdf_prefix_path: "_data/prefix.sparql"
     </object>
   </div>
   //-->
+
+  {{ content }}
 </div>
