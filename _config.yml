@@ -19,7 +19,7 @@ kramdown:
 
 # Build settings
 #theme: minima
-gems:
+plugins:
   - jekyll-rdf
 exclude:
   - Gemfile
