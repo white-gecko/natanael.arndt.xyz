@@ -49,7 +49,7 @@ The software is written in PHP and based on the Erfurt-Framework and lib-dssn-ph
 
 - name: "ShareNote"
   image: "https://rawgit.com/white-gecko/ShareNote/master/res/drawable-hdpi/text.png"
-  url: "github.com/white-gecko/ShareNote"
+  url: "https://github.com/white-gecko/ShareNote"
 
 - name: "Pfarrerbuch"
   url: "http://aksw.org/Projects/Pfarrerbuch"
