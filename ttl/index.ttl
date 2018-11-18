@@ -7,6 +7,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix aksw: <http://aksw.org/> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pim: <http://www.w3.org/ns/pim/space#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+
 
 <> a foaf:PersonalProfileDocument ;
   foaf:maker <#i> ;
@@ -17,5 +21,14 @@
   foaf:name "Natanael Arndt" ;
   foaf:image <https://avatars1.githubusercontent.com/u/1018168> ;
   foaf:nick "white_gecko", "white-gecko", "natanael" ;
-  foaf:knows aksw:NormanRadtke, aksw:MichaelMartin, aksw:SebastianTramp, aksw:SoerenAuer, aksw:RoyMeissner, aksw:KurtJunghanns, aksw:JoergUnbehauen, aksw:ThomasRiechert, aksw:PhilippFrishmuth, aksw:EdgardMarx .
+  foaf:knows aksw:NormanRadtke, aksw:MichaelMartin, aksw:SebastianTramp, aksw:SoerenAuer, aksw:RoyMeissner, aksw:KurtJunghanns, aksw:JoergUnbehauen, aksw:ThomasRiechert, aksw:PhilippFrishmuth, aksw:EdgardMarx ;
 
+  # taken from https://natanael.solid.community/profile/card
+  solid:account <https://natanael.solid.community/> ;  # link to the account uri
+  pim:storage <https://natanael.solid.community/> ;    # root storage
+
+  ldp:inbox <https://natanael.solid.community/inbox/> ;
+
+  pim:preferencesFile <https://natanael.solid.community/settings/prefs.ttl> ;  # private settings/preferences
+  solid:publicTypeIndex <https://natanael.solid.community/settings/publicTypeIndex.ttl> ;
+  solid:privateTypeIndex <https://natanael.solid.community/settings/privateTypeIndex.ttl> .
