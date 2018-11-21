@@ -2,7 +2,7 @@
 layout: page
 parent: notes
 title: The Semantic Web Layer Cake
-abstract: "The Semantic Web Layer Cake tries to visualize the interplay of componants on the Semantic Web"
+abstract: "The Semantic Web Layer Cake tries to visualize the interplay of components on the Semantic Web"
 date:   2018-11-21 16:46:00
 update: 2018-11-21 16:46:00
 ---
@@ -11,7 +11,7 @@ update: 2018-11-21 16:46:00
 The *Semantic Web Layer Cake* or *Semantic Web Layer Model* is an approach to visualize and define the interplay of the components on the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web).
 The most commonly known *layer model* probably is the [OSI model](https://en.wikipedia.org/wiki/OSI_model).
 The OSI model describes which tasks are performed in which layer and thus provides an abstraction of these tasks for the other layers.
-In this way it is not neccessary for every single application to implement the full stack.
+In this way it is not necessary for every single application to implement the full stack.
 Further it allows to make changes within one layer by keeping applications on the other layers in tact.
 
 Since abstraction simplifies aspects this is usually a good point for discussion.
@@ -24,7 +24,7 @@ If you know more examples or of you can give me “more original” sources, ple
 The first widely used and referenced model was [presented by Tim Berners-Lee in 2000](https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html).
 
 Based on the 2000 version of the model a model was proposed in 2005-2007 which is widely used with small variations:
-![If the alt texts of the pictures are helpeful for you please tell me. I will complete them as I have time. Sorry that they are not here at the moment.](https://www.w3.org/2007/03/layerCake.svg)
+![If the alt texts of the pictures are helpful for you please tell me. I will complete them as I have time. Sorry that they are not here at the moment.](https://www.w3.org/2007/03/layerCake.svg)
 
 ![](https://www.w3.org/DesignIssues/diagrams/sweb-stack/2006a.png)<br/>
 This one is referenced in the [MIT-W3C DAML program: Final Report](https://www.w3.org/2005/12/31-daml-final.html), in [Semantic Web Technologies in the Enterprise](http://www.thefigtrees.net/lee/blog/2006/11/semantic_web_technologies_in_t.html) by Lee Feigenbaum on November 28, 2006 and in the talks [Emerging Web Technologies to Watch](https://www.w3.org/2006/Talks/1023-sb-W3CTechSemWeb/Overview.html#(19)) by Steve Bratt. All around the same time, so I don't know who created it. ([Alternative URL of the figure](https://www.w3.org/2006/Talks/1023-sb-W3CTechSemWeb/SemWebStack-tbl-2006a.png).)
@@ -36,6 +36,7 @@ In the talks [Semantic Web, and Other Technologies to Watch](https://www.w3.org/
 
 ![](http://bnode.org/media/2009/07/08/semantic_web_technology_stack.png)<br/>
 In the article [The Semantic Web - Not a piece of cake...](http://bnode.org/blog/2009/07/08/the-semantic-web-not-a-piece-of-cake) by Benjamin Nowack from 2009, he puts some more dimensions into the layer model which provides nice angles to view on the things. He also provides Linked Data with an extra part of the Stack.
+A [slightly modified](https://smiy.files.wordpress.com/2011/01/sw_layercake.png) version was published together with a link collection in [The common, layered Semantic Web technology stack](https://smiy.wordpress.com/2011/01/10/the-common-layered-semantic-web-technology-stack/) by Thomas Gängler in 2011.
 
 ![](https://image.slidesharecdn.com/www2014tutorialwebsemv2-140408040534-phpapp02/95/an-introduction-to-semantic-web-and-linked-data-9-638.jpg?cb=1396930256)
 In the presentation [An introduction to Semantic Web and Linked Data ](https://www.slideshare.net/fabien_gandon/semantic-web-and-linked-data) by Fabian Gandon at the WWW2014, he categorizes the layers into the five groups: Abstract Language/Representation, Query & Update, Reasoning, Trust, and Application and Interaction.
