@@ -48,8 +48,12 @@ The software is written in PHP and based on the Erfurt-Framework and lib-dssn-ph
   which integrates your distributed FOAF/WebID social network into your mobile phone"
 
 - name: "ShareNote"
-  image: "https://rawgit.com/white-gecko/ShareNote/master/res/drawable-hdpi/text.png"
+  subtitle: "a simple and handy app to write down your idear and share them"
+  image: "https://github.com/white-gecko/ShareNote/raw/ae20bdf244eb83bb159f453ef922230059b53542/app/src/main/res/drawable-hdpi/text.png"
   url: "https://github.com/white-gecko/ShareNote"
+  abstract: "ShareNote is a simple and handy app to write down your ideas, thoughts and other notes.
+It can share the notes with other apps through the Android share functionality.
+I developed this App while I was travelling across Canada and had no pen nor paper with me but many thoughts."
 
 - name: "Pfarrerbuch"
   url: "http://aksw.org/Projects/Pfarrerbuch"
