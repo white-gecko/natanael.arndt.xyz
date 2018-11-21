@@ -1,0 +1,41 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+
+% Semantic Web Layer Cake: https://www.w3.org/2007/03/layerCake.svg
+% TikZ interpretation by Natanael Arndt <arndtn@gmail.com>
+% If you like: CC-by
+% If you don't want to place a name: CC-0
+
+\begin{document}
+
+\tikzstyle{label}=[align=center]
+\tikzstyle{layer}=[draw, label, anchor=south west, minimum height=.75cm, minimum width=1cm]
+
+\begin{tikzpicture}[]
+  %\draw[help lines,step=.25,color=gray!20] (0,0) grid (9,8.75);
+
+  % Representation
+  \draw (0,0) node    (iri)     [layer, minimum width=7.75cm]           {URI/IRI\strut};
+  \draw (4,1) node    (xml)     [layer, minimum width=3.75cm]           {XML\strut};
+  \draw (0,1) -- ++(0,1.75) -- ++(7.75,0) -- ++(0,-.75) -- ++(-4,0) -- ++(0,-1) -- cycle;
+  \node at (2,2)                [anchor=base, text width=3.5cm, label]  {Data interchange:\\RDF\strut};
+
+  % Query & Update
+  \draw (.5,3) node   (query)   [layer, minimum width=1.75cm, minimum height=1.75cm, text width=1.5cm] {Query: SPARQL\strut};
+
+  % Reasoning
+  \draw (2.5,3) node  (rdfs)    [layer, minimum width=3.25cm]           {RDFS\strut};
+  \draw (2.5,4) node  (owl)     [layer, minimum width=3.25cm]           {Ontology: OWL\strut};
+  \draw (6,3) node    (rif)     [layer, minimum width=1.75cm, minimum height=1.75cm, text width=1.5cm] {Rule: RIF\strut};
+  \draw (1.5,5) node  (logic)   [layer, minimum width=5.25cm]           {Unifying Logic\strut};
+
+  % Trust
+  \draw (4,6) -- ++(0,.75) -- ++(3.75,0) -- ++(0,-1.75) -- ++(-.75,0) -- ++(0,1) -- cycle;
+  \node at (6,6.25)             [anchor=base, text width=3.5cm, label]  {Proof\strut};
+  \draw (8,0) node    (crypto)  [layer, minimum height=6.75cm] {} node[below of=crypto, text width=.75cm, rotate=90] {Crypto\strut};
+  \draw (5.25,7) node (trust)   [layer, minimum width=3.75cm]           {Trust\strut};
+
+  % Interaction
+  \draw (0,8) node    (ui)      [layer, minimum width=9cm]              {User Interface \& Applications\strut};
+\end{tikzpicture}
+\end{document}
