@@ -93,7 +93,8 @@ I was looking for a [TikZ](https://www.ctan.org/pkg/pgf) version of the layer ca
   % Trust
   \draw (4,6) -- ++(0,.75) -- ++(3.75,0) -- ++(0,-1.75) -- ++(-.75,0) -- ++(0,1) -- cycle;
   \node at (6,6.25)             [anchor=base, text width=3.5cm, label]  {Proof\strut};
-  \draw (8,0) node    (crypto)  [layer, minimum height=6.75cm] {} node[below of=crypto, text width=.75cm, rotate=90] {Crypto\strut};
+  \draw (8,0) node    (crypto)  [layer, minimum height=6.75cm]          {};
+  \node at (8.5,3.5)            [label, rotate=90]                      {Crypto\strut};
   \draw (5.25,7) node (trust)   [layer, minimum width=3.75cm]           {Trust\strut};
 
   % Interaction
