@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.title %}
-      {% assign title = page.title | strip_html %}
+      {% assign title = page.title | strip_html | strip %}
     {% else %}
       {% if page.rdf %}
         {% assign title = page.rdf | rdf_property: "<http://purl.org/dc/terms/title>" %}
