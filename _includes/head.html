@@ -22,6 +22,9 @@
         {% assign description = page.rdf | rdf_property: "<http://purl.org/dc/terms/abstract>" | strip_html | strip %}
       {% endif %}
     {% endif %}
+    {% unless description %}
+      {% assign description = content | strip_html | strip_newlines | strip | truncate: 200, "…" %}
+    {% endunless %}
 
     <title>{{ html_title }}</title>
 
