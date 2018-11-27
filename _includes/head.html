@@ -23,7 +23,7 @@
       {% endif %}
     {% endif %}
     {% unless description %}
-      {% assign description = content | strip_html | strip_newlines | strip | truncate: 200, "…" %}
+      {% assign description = content | strip_newlines | strip_html | strip | truncate: 200, "…" %}
     {% endunless %}
 
     <title>{{ html_title }}</title>
