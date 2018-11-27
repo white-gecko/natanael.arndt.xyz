@@ -2,7 +2,7 @@
 layout: page
 parent: notes
 title: Biometrische Passbilder Herstellen
-abstract: "Eine kleine Anleitung, wie man selbst mit einfachen Mitteln biometrische Passbilder herstellen kann"
+description: "Eine kleine Anleitung, wie man selbst mit einfachen Mitteln biometrische Passbilder herstellen kann"
 date:   2016-02-21 23:48:00
 update: 2016-03-04 22:50:00
 ---

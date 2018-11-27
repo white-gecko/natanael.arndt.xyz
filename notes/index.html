@@ -8,6 +8,6 @@ description: "This is my private Wiki, shared with everybody. I am sometimes tak
 {% for node in site.pages %}
   {% if "notes" == node.parent %}
 <h3><a href="{{ node.url }}">{{ node.title }}</a></h3>
-{{ node.abstract }}
+{{ node.description }}
   {% endif %}
 {% endfor %}

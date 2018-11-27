@@ -2,7 +2,7 @@
 layout: page
 parent: notes
 title: Shakshuka
-abstract: "Das perfekte Frühstück"
+description: "Das perfekte Frühstück"
 date:   2018-09-06 14:16:00
 update: 2018-10-11 10:44:00
 ---

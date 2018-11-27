@@ -2,7 +2,7 @@
 layout: page
 parent: notes
 title: Schokokuchen
-abstract: "Ein Rezept für einen einfachen Schokokuchen"
+description: "Ein Rezept für einen einfachen Schokokuchen"
 date:   2016-08-28 20:08:00
 update: 2016-08-28 20:08:00
 ---
