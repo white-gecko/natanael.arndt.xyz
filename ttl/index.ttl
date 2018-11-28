@@ -22,6 +22,7 @@
   foaf:name "Natanael Arndt" ;
   foaf:image <https://avatars1.githubusercontent.com/u/1018168> ;
   foaf:nick "white_gecko", "white-gecko", "natanael" ;
+  foaf:img <https://www.gravatar.com/avatar/9bd2fa005d80986390510518f00476e8?s=500> ;
   foaf:knows aksw:NormanRadtke, aksw:MichaelMartin, aksw:SebastianTramp, aksw:SoerenAuer, aksw:RoyMeissner, aksw:KurtJunghanns, aksw:JoergUnbehauen, aksw:ThomasRiechert, aksw:PhilippFrishmuth, aksw:EdgardMarx ;
 
   # taken from https://natanael.solid.community/profile/card
