@@ -3,8 +3,8 @@ layout: page
 parent: notes
 title: Dealing with Blank Nodes
 description: "Blank Nodes are easy to introduce but hard to handle."
-date:   2018-12-12 12:00:00
-update: 2018-12-12 12:34:00
+date:   2018-12-12 12:00:00+01:00
+update: 2018-12-12 12:34:00+01:00
 ---
 
 ## Introduction
