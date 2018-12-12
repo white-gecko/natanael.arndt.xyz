@@ -4,7 +4,7 @@ parent: notes
 title: Dealing with Blank Nodes
 description: "Blank Nodes are easy to introduce but hard to handle."
 date:   2018-12-12 12:00:00+01:00
-update: 2018-12-12 12:34:00+01:00
+update: 2018-12-12 12:00:00+00:00
 ---
 
 ## Introduction
@@ -44,3 +44,9 @@ When the elements in *Ĝ* are disjoint, *Ĝ* is called an partition of *G*.
 **Minimum Self-Contained Graph**: Given an RDF statement *s*, the Minimum Self-Contained Graph (MSG) containing that statement, written *MSG(s)*, is the set of RDF statements comprised of the following:
 - The statement in question;
 - Recursively, for all the blank nodes involved by statements included in the description so far, the MSG of all the statements involving such blank nodes
+
+### CBD - Concise Bounded Description
+([CBD - Concise Bounded Description](https://www.w3.org/Submission/2005/SUBM-CBD-20050603/), W3C Member Submission, 2005)
+
+The aim of the *Concise Bounded Description* is similar to the approaches shown here in a way that it tries to include all edges which blank nodes which are outgoing from a resource.
+In contrast to the other approaches it starts with a node, while the other approaches start with a triple.
