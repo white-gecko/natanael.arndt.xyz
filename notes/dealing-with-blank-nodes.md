@@ -4,7 +4,7 @@ parent: notes
 title: Dealing with Blank Nodes
 description: "Blank Nodes are easy to introduce but hard to handle."
 date:   2018-12-12 12:00:00+01:00
-update: 2018-12-12 12:00:00+00:00
+update: 2018-12-12 13:02:00+01:00
 ---
 
 ## Introduction
@@ -50,3 +50,12 @@ When the elements in *Ĝ* are disjoint, *Ĝ* is called an partition of *G*.
 
 The aim of the *Concise Bounded Description* is similar to the approaches shown here in a way that it tries to include all edges which blank nodes which are outgoing from a resource.
 In contrast to the other approaches it starts with a node, while the other approaches start with a triple.
+
+**Concise Bounded Description**: Given a particular node (the starting node) in a particular RDF graph (the source graph), a subgraph of that particular graph, taken to comprise a *concise bounded description* of the resource denoted by the starting node, can be identified as follows:
+
+1. Include in the subgraph all statements in the source graph where the subject of the statement is the starting node;
+2. Recursively, for all statements identified in the subgraph thus far having a blank node object, include in the subgraph all statements in the source graph where the subject of the statement is the blank node in question and which are not already included in the subgraph.
+3. Recursively, for all statements included in the subgraph thus far, for all reifications of each statement in the source graph, include the *concise bounded description* beginning from the rdf:Statement node of each reification.
+
+This results in a subgraph where the object nodes are either URI references, literals, or blank nodes not serving as the subject of any statement in the graph.
+
