@@ -4,3 +4,4 @@ _data/white_gecko.bib
 _site/
 .vendor
 .bundle
+node_modules
