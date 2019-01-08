@@ -1,6 +1,7 @@
 @prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://purl.org/ontology/bibo/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns4: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,10 +10,11 @@
 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance> a ns3:InProceedings ;
     ns1:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
     ns1:creator [ ] ;
-    ns1:hasFormat "http://ceur-ws.org/Vol-1824/mepdaw_paper_2.pdf" ;
+    ns1:hasFormat <http://ceur-ws.org/Vol-1824/mepdaw_paper_2.pdf> ;
     ns1:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017> ;
     ns1:title "Exploring the Evolution and Provenance of Git Versioned RDF Data" ;
     ns3:keywords "leds myown quit" ;
-    ns2:issn "1613-0073" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/221142bb1e3a2650439e68b10f631ec92/white_gecko" .
+    ns4:issn "1613-0073" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/221142bb1e3a2650439e68b10f631ec92/white_gecko> ;
+    ns2:sameAs <http://ma-graph.org/entity/2724588376> .
 

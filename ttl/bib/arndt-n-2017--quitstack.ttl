@@ -1,22 +1,24 @@
-@prefix ns1: <http://purl.org/ontology/bibo/> .
-@prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns2: <http://purl.org/ontology/bibo/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack> a ns3:InProceedings ;
-    ns2:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
-    ns2:creator [ ] ;
-    ns2:hasFormat "https://dl.gi.de/bitstream/handle/20.500.12116/3955/B26-2.pdf" ;
-    ns2:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>,
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack> a ns1:InProceedings ;
+    ns3:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
+    ns3:creator [ ] ;
+    ns3:hasFormat <https://dl.gi.de/bitstream/handle/20.500.12116/3955/B26-2.pdf> ;
+    ns3:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>,
         <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Lecture_Notes_in_Informatics_(LNI)> ;
-    ns2:title "A Method for Distributed and Collaborative Curation of RDF Datasets Utilizing the Quit Stack" ;
-    ns3:keywords "2017 group_aksw myown quit" ;
-    ns3:pages "1873-1881" ;
-    ns1:doi "10.18420/in2017_187" ;
-    ns1:isbn "978-3-88579-669-5" ;
-    ns1:issn "1617-5468" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2b35ee2852d8ca02f8ccf7210b70b2b01/white_gecko" .
+    ns3:title "A Method for Distributed and Collaborative Curation of RDF Datasets Utilizing the Quit Stack" ;
+    ns1:keywords "2017 group_aksw myown quit" ;
+    ns1:pages "1873-1881" ;
+    ns2:doi "10.18420/in2017_187" ;
+    ns2:isbn "978-3-88579-669-5" ;
+    ns2:issn "1617-5468" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2b35ee2852d8ca02f8ccf7210b70b2b01/white_gecko> ;
+    ns4:sameAs <http://ma-graph.org/entity/2773313421> .
 

@@ -1,21 +1,23 @@
-@prefix ns1: <http://purl.org/ontology/bibo/> .
-@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/ontology/bibo/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2014--a> a ns2:InProceedings ;
-    ns3:abstract "Electronic resources (e.g. e-journals, e-books or databases) are gaining more an more importance in libraries. With AMSL we demonstrate a flexible electronic resource management system which enables libraries to manage their electronic resources with a domain adapted software based on the OntoWiki application framework. Due to its generic design and first of all flexible data model the AMSL system can be easily adjusted to upcoming requirements. The consequent use of Linked Data further enables libraries to build up a Linked Open Data infrastructure for exchange of meta data." ;
-    ns3:creator [ ] ;
-    ns3:hasFormat "http://ceur-ws.org/Vol-1272/paper_66.pdf" ;
-    ns3:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2014--a_CEUR_Workshop_Proceedings>,
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a> a ns4:InProceedings ;
+    ns1:abstract "Electronic resources (e.g. e-journals, e-books or databases) are gaining more an more importance in libraries. With AMSL we demonstrate a flexible electronic resource management system which enables libraries to manage their electronic resources with a domain adapted software based on the OntoWiki application framework. Due to its generic design and first of all flexible data model the AMSL system can be easily adjusted to upcoming requirements. The consequent use of Linked Data further enables libraries to build up a Linked Open Data infrastructure for exchange of meta data." ;
+    ns1:creator [ ] ;
+    ns1:hasFormat <http://ceur-ws.org/Vol-1272/paper_66.pdf> ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2014--a_CEUR_Workshop_Proceedings>,
         <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track> ;
-    ns3:title "AMSL: Creating a Linked Data Infrastructure for Managing Electronic Resources in Libraries" ;
-    ns2:keywords "amsl group_aksw myown" ;
-    ns2:pages "309-312" ;
-    ns1:doi "10.13140/2.1.2542.6882" ;
-    ns1:issn "1613-0073" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2a3a794a4682596491db17a6714e9c037/white_gecko" .
+    ns1:title "AMSL: Creating a Linked Data Infrastructure for Managing Electronic Resources in Libraries" ;
+    ns4:keywords "amsl group_aksw myown" ;
+    ns4:pages "309-312" ;
+    ns2:doi "10.13140/2.1.2542.6882" ;
+    ns2:issn "1613-0073" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2a3a794a4682596491db17a6714e9c037/white_gecko> ;
+    ns3:sameAs <http://ma-graph.org/entity/2401642794> .
 

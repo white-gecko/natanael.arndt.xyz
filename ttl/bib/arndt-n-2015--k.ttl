@@ -1,21 +1,23 @@
-@prefix ns1: <http://purl.org/ontology/bibo/> .
-@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://purl.org/ontology/bibo/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2015--k> a ns2:InProceedings ;
-    ns3:abstract "Popular knowledge bases that provide SPARQL endpoints for the web are usually experiencing a high number of requests, which often results in low availability of their interfaces. A common approach to counter the availability issue is to run a local mirror of the knowledge base. Running a SPARQL endpoint is currently a complex task which requires a lot of effort and technical support for domain experts who just want to use the SPARQL interface. With our approach of containerised knowledge base shipping we are introducing a simple to setup methodology for running a local mirror of an RDF knowledge base and SPARQL endpoint with interchangeable exploration components. The flexibility of the presented approach further helps maintaining the publication infrastructure for dataset projects. We are demonstrating and evaluating the presented methodology at the example of the dataset projects DBpedia, Catalogus Professorum Lipsiensium and Sächsisches Pfarrerbuch." ;
-    ns3:creator [ ] ;
-    ns3:hasFormat "http://svn.aksw.org/papers/2015/SEMANTICS_DockerizingLOD/public.pdf" ;
-    ns3:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings>,
+<https://natanael.arndt.xyz/bib/arndt-n-2015--k> a ns1:InProceedings ;
+    ns2:abstract "Popular knowledge bases that provide SPARQL endpoints for the web are usually experiencing a high number of requests, which often results in low availability of their interfaces. A common approach to counter the availability issue is to run a local mirror of the knowledge base. Running a SPARQL endpoint is currently a complex task which requires a lot of effort and technical support for domain experts who just want to use the SPARQL interface. With our approach of containerised knowledge base shipping we are introducing a simple to setup methodology for running a local mirror of an RDF knowledge base and SPARQL endpoint with interchangeable exploration components. The flexibility of the presented approach further helps maintaining the publication infrastructure for dataset projects. We are demonstrating and evaluating the presented methodology at the example of the dataset projects DBpedia, Catalogus Professorum Lipsiensium and Sächsisches Pfarrerbuch." ;
+    ns2:creator [ ] ;
+    ns2:hasFormat <http://svn.aksw.org/papers/2015/SEMANTICS_DockerizingLOD/public.pdf> ;
+    ns2:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings>,
         <https://natanael.arndt.xyz/bib/arndt-n-2015--k_International_Conference_on_Semantic_Systems_Proceedings> ;
-    ns3:title "Knowledge Base Shipping to the Linked Open Data Cloud" ;
-    ns2:keywords "docker group_aksw myown" ;
-    ns2:pages "73–80" ;
-    ns1:doi "10.1145/2814864.2814885" ;
-    ns1:issn "1613-0073" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2b1e393a0bfd62e83b99704a52c20c877/white_gecko" .
+    ns2:title "Knowledge Base Shipping to the Linked Open Data Cloud" ;
+    ns1:keywords "docker group_aksw myown" ;
+    ns1:pages "73–80" ;
+    ns3:doi "10.1145/2814864.2814885" ;
+    ns3:issn "1613-0073" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2b1e393a0bfd62e83b99704a52c20c877/white_gecko> ;
+    ns4:sameAs <http://ma-graph.org/entity/2085965157> .
 

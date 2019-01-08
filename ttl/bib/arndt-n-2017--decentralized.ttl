@@ -1,28 +1,28 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://purl.org/ontology/bibo/> .
-@prefix ns4: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized> a ns1:BibliographicResource,
-        ns4:InProceedings ;
-    ns1:abstract "The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets. In this network and its genesis, collaboration played and still plays a crucial role. But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases. Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed. The system is based on Git and provides distributed collaboration on RDF graphs. This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations." ;
-    ns1:creator [ ] ;
-    ns1:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf>,
-        "https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf" ;
-    ns1:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2>,
-        "https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf" ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>,
+<https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized> a ns2:BibliographicResource,
+        ns5:InProceedings ;
+    ns2:abstract "The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets. In this network and its genesis, collaboration played and still plays a crucial role. But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases. Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed. The system is based on Git and provides distributed collaboration on RDF graphs. This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations." ;
+    ns2:creator [ ] ;
+    ns2:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    ns2:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    ns2:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>,
         <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_ICWE_2017> ;
-    ns1:issued "2017-06-01"^^xsd:gYearMonth ;
-    ns1:language "en-US" ;
-    ns1:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
-    ns4:keywords "leds myown quit" ;
+    ns2:issued "2017-06-01"^^xsd:gYearMonth ;
+    ns2:language "en-US" ;
+    ns2:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+    ns5:keywords "leds myown quit" ;
     ns3:doi "10.1007/978-3-319-60131-1_2" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/27d67a40a45533c30b6bd4ea3a8ce525b/white_gecko" ;
-    ns2:maker <http://aksw.org/MichaelMartin>,
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/27d67a40a45533c30b6bd4ea3a8ce525b/white_gecko> ;
+    ns1:sameAs <http://ma-graph.org/entity/2618270959> ;
+    ns4:maker <http://aksw.org/MichaelMartin>,
         <http://aksw.org/NatanaelArndt> .
 

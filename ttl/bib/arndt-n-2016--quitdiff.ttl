@@ -1,20 +1,22 @@
-@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ns3: <http://purl.org/ontology/bibo/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff> a ns1:InProceedings ;
-    ns2:abstract "Distributed actors working on a common RDF dataset regularly encounter the issue to compare the status of one graph with another or generally to synchronize copies of a dataset. A versioning system helps to synchronize the copies of a dataset, combined with a difference calculation system it is also possible to compare versions in a log and to determine, in which version a certain statement was introduced or removed. In this demo we present Quit Diff, a tool to compare versions of a Git versioned quad store, while it is also applicable to simple unversioned RDF datasets. We are following an approach to abstract from differences on a syntactical level to differences on the level of the RDF data model, while we leave further semantic interpretation on the schema and instance level to specialized applications. Quit Diff can generate patches in various output formats and can be directly integrated in the distributed version control system Git which provides a foundation for a comprehensive co-evolution work flow on RDF datasets." ;
-    ns2:creator [ ] ;
-    ns2:hasFormat "https://svn.aksw.org/papers/2016/Semantics_Demo_QuitDiff/public.pdf" ;
-    ns2:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>,
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff> a ns2:InProceedings ;
+    ns1:abstract "Distributed actors working on a common RDF dataset regularly encounter the issue to compare the status of one graph with another or generally to synchronize copies of a dataset. A versioning system helps to synchronize the copies of a dataset, combined with a difference calculation system it is also possible to compare versions in a log and to determine, in which version a certain statement was introduced or removed. In this demo we present Quit Diff, a tool to compare versions of a Git versioned quad store, while it is also applicable to simple unversioned RDF datasets. We are following an approach to abstract from differences on a syntactical level to differences on the level of the RDF data model, while we leave further semantic interpretation on the schema and instance level to specialized applications. Quit Diff can generate patches in various output formats and can be directly integrated in the distributed version control system Git which provides a foundation for a comprehensive co-evolution work flow on RDF datasets." ;
+    ns1:creator [ ] ;
+    ns1:hasFormat <https://svn.aksw.org/papers/2016/Semantics_Demo_QuitDiff/public.pdf> ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>,
         <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_SEMANTiCS_'16> ;
-    ns2:title "Quit Diff: Calculating the Delta Between RDF Datasets under Version Control" ;
-    ns1:keywords "myown quit" ;
-    ns3:doi "10.1145/2993318.2993349" ;
-    ns3:isbn "978-1-4503-4752-5/16/09" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/268eb3df728434976c30f2fed138a2f03/white_gecko" .
+    ns1:title "Quit Diff: Calculating the Delta Between RDF Datasets under Version Control" ;
+    ns2:keywords "myown quit" ;
+    ns4:doi "10.1145/2993318.2993349" ;
+    ns4:isbn "978-1-4503-4752-5/16/09" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/268eb3df728434976c30f2fed138a2f03/white_gecko> ;
+    ns3:sameAs <http://ma-graph.org/entity/2528634545> .
 

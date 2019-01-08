@@ -1,5 +1,6 @@
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,9 +9,10 @@
 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016> a ns2:InProceedings ;
     ns1:abstract "Sharing information securely between business partners and managing large supply chains efficiently will be a crucial competitive advantage for enterprises in the near future. In this paper, we present a concept that allows for building value networks between business partners in a distributed manner. Companies are able to publish Linked Data which participants of the network can clone and subscribe to. Subscribers get notified as soon as new information becomes available. This provides a technical infrastructure for business communication acts such as supply chain communication or master data management. In addition to the conceptual analysis, we provide an implementation enabling companies to create such dynamic semantic value networks." ;
     ns1:creator [ ] ;
-    ns1:hasFormat "http://events.linkeddata.org/ldow2016/papers/LDOW2016_paper_05.pdf" ;
+    ns1:hasFormat <http://events.linkeddata.org/ldow2016/papers/LDOW2016_paper_05.pdf> ;
     ns1:isPartOf <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)> ;
     ns1:title "Publish and Subscribe for RDF in Enterprise Value Networks" ;
     ns2:keywords "myown" ;
-    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/212f9a15e107b422d7df136b518bf2035/white_gecko" .
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/212f9a15e107b422d7df136b518bf2035/white_gecko> ;
+    ns3:sameAs <http://ma-graph.org/entity/2551906201> .
 
