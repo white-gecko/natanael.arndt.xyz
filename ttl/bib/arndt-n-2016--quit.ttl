@@ -1,0 +1,21 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/ontology/bibo/> .
+@prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quit> a ns3:InProceedings ;
+    ns1:abstract "Collaboration is one of the most important topics regarding the evolution of the World Wide Web and thus also for the Web of Data. In scenarios of distributed collaboration on datasets it is necessary to provide support for multiple different versions of datasets to exist simultaneously, while also providing support for merging diverged datasets. In this paper we present an approach that uses SPARQL 1.1 in combination with the version control system Git, that creates commits for all changes applied to an RDF dataset containing multiple named graphs. Further the operations provided by Git are used to distribute the commits among collaborators and merge diverged versions of the dataset. We show the advantages of (public) Git repositories for RDF datasets and how this represents a way to collaborate on RDF data and consume it. With SPARQL 1.1 and Git in combination, users are given several opportunities to participate in the evolution of RDF data." ;
+    ns1:creator [ ] ;
+    ns1:hasFormat "http://svn.aksw.org/papers/2016/Semantics_Quit/public.pdf" ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_12th_International_Conference_on_Semantic_Systems_Proceedings>,
+        <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_International_Conference_on_Semantic_Systems_Proceedings> ;
+    ns1:title "Distributed Collaboration on RDF Datasets Using Git: Towards the Quit Store" ;
+    ns3:keywords "2016 groupaksw myown" ;
+    ns2:doi "10.1145/2993318.2993328" ;
+    ns2:isbn "978-1-4503-4752-5" ;
+    ns2:issn "1613-0073" ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/211231083a0a9f1c9b7777481bee404c9/white_gecko" .
+

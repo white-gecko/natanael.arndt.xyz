@@ -1,0 +1,17 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns3: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch> a ns2:InProceedings ;
+    ns1:abstract "Scholars often need to search for matching, high-profile scientific events to publish their research results. Information about topical focus and quality of events is not made sufficiently explicit in the existing communication channels where events are announced. Therefore, scholars have to spend a lot of time on reading and assessing calls for papers but might still not find the right event. Additionally, events might be overlooked because of the large number of events announced every day. We introduce OpenResearch, a crowd sourcing platform that supports researchers in collecting, organizing, sharing and disseminating information about scientific events in a structured way. It enables quality-related queries over a multidisciplinary collection of events according to a broad range of criteria such as acceptance rate, sustainability of event series, and reputation of people and organizations. Events are represented in different views using map extensions, calendar and time-line visualizations. We have systematically evaluated the timeliness, usability and performance of OpenResearch." ;
+    ns1:creator [ ] ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> ;
+    ns1:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
+    ns2:keywords "myown" ;
+    ns3:isbn "978-3-319-49003-8" ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko" .
+

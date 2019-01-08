@@ -1,0 +1,22 @@
+@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--> a ns1:InProceedings ;
+    ns2:creator [ ] ;
+    ns2:hasFormat "http://lips.informatik.uni-leipzig.de/files/skil-extended-abstract.pdf" ;
+    ns2:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2010--_GI-Edition---Lecture_Notes_in_Informatics>,
+        <https://natanael.arndt.xyz/bib/arndt-n-2010--_Proceedings_of_the_INFORMATIK_2010__Service_Science_--_Neue_Perspektiven_für_die_Informatik> ;
+    ns2:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
+    ns1:keywords "dssn myown" ;
+    ns1:note "2010 Gesellschaft für Informatik" ;
+    ns1:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    ns1:pages "1004-1005" ;
+    ns3:isbn "978-3-88579-270-3" ;
+    ns3:issn "1617-5468" ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/268fe7fb4d031c441fda37ba835b94308/white_gecko" .
+

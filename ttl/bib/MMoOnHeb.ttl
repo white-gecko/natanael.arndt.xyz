@@ -1,0 +1,16 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb> a ns2:InProceedings ;
+    ns1:abstract "The development of standard models for describing general lexical resources has led to the emergence of numerous lexical datasets of various languages in the Semantic Web. However, there are no models that describe the domain of morphology in a similar manner. As a result, there are hardly any language resources of morphemic data available in RDF to date. This paper presents the creation of the Hebrew Morpheme Inventory from a manually compiled tabular dataset comprising around 52.000 entries. It is an ongoing effort of representing the lexemes, word-forms and morphologigal patterns together with their underlying relations based on the newly created Multilingual Morpheme Ontology (MMoOn). It will be shown how segmented Hebrew language data can be granularly described in a Linked Data format, thus, serving as an exemplary case for creating morpheme inventories of any inflectional language with MMoOn. The resulting dataset is described a) according to the structure of the underlying data format, b) with respect to the Hebrew language characteristic of building word-forms directly from roots, c) by exemplifying how inflectional information is realized and d) with regard to its enrichment with external links to sense resources." ;
+    ns1:creator [ ] ;
+    ns1:hasFormat "http://svn.aksw.org/papers/2016/LREC_MMoOnHebrew/public.pdf" ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož> ;
+    ns1:title "Creating Linked Data Morphological Language Resources with MMoOn. The Hebrew Morpheme Inventory." ;
+    ns2:keywords "myown" ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2b38463c8cbf803ee7538277ca35253b1/white_gecko" .
+

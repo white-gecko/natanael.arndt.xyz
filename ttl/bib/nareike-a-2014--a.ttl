@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/ontology/bibo/> .
+@prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a> a ns3:InProceedings ;
+    ns1:abstract "In libraries a change from physical resources to electronic resources, with new licensing models and lending processes, has taken places. The existing managing infrastructure is not yet suitable for the upcoming requirements and does not provide support for flexible and extensible data models for being future-proof. In this paper we present a system that uses the generic RDF resource management system OntoWiki for managing library resources. OntoWiki is extended by components for adapting the generic system to the given domain, e.g. by using data templates. In addition the Linked Data capability of OntoWiki is used and extended to import various metadata to enrich the managing resource. Consequently using Linked Data further enables libraries to build up a Linked Data infrastructure in the library domain." ;
+    ns1:creator [ ] ;
+    ns1:hasFormat "http://svn.aksw.org/papers/2014/DERM_AMSL/public.pdf" ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>,
+        <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern> ;
+    ns1:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
+    ns3:keywords "amsl erm group_aksw myown" ;
+    ns3:note "2014 Gesellschaft für Informatik" ;
+    ns3:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    ns3:pages "1017-1026" ;
+    ns2:isbn "978-3-88579-626-8" ;
+    ns2:issn "1617-5468" ;
+    rdfs:seeAlso "https://www.bibsonomy.org/bibtex/2730def1c1c357cb906a5a6c1f35d4987/white_gecko" .
+
