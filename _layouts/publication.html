@@ -34,7 +34,8 @@ rdf_prefix_path: "_data/prefix.sparql"
         {% if doi %}<a href="https://dx.doi.org/{{ page.rdf | rdf_property: "bibo:doi" }}"><i class="fa fa-circle"></i> DOI</a>,{% endif %}
         {% assign isbn = page.rdf | rdf_property: "bibo:isbn" %}
         {% if isbn %}<a href="https://en.wikipedia.org/wiki/Special:BookSources/{{ page.rdf | rdf_property: "bibo:isbn" }}"><i class="fa fa-info-circle"></i> ISBN</a>,{% endif %}
-        <a href="{{ page.rdf | rdf_property: "rdfs:seeAlso" }}"><i class="fa fa-database"></i> Bibsonomy</a>
+        <a href="{{ page.rdf | rdf_property: "rdfs:seeAlso" }}"><i class="fa fa-database"></i> Bibsonomy</a>,
+        <a href="{{ page.url | remove: ".html" | prepend: "/ttl" | prepend: site.baseurl }}"><i class="fa fa-share-alt"></i> RDF (Turtle)</a>
         <!-- concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user) -->
     </div>
   </header>
