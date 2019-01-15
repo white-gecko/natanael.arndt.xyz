@@ -2,7 +2,6 @@ Gemfile.lock
 _data/bibtex2rdf.jar
 _data/white_gecko.bib
 _site/
-dist/
 .vendor
 .bundle
 node_modules
