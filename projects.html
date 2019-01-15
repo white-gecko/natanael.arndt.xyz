@@ -12,16 +12,15 @@ The software listed here are mainly scientific prototypes created, where I had a
 
 {% for member in site.data.projects %}
   <div class="row featurette">
-      <div class="col-md-9 {% cycle '', 'col-md-push-3' %}">
-        <h3 class="featurette-heading">{{ member.name }} {% if member.subtitle %}<small class="text-muted">{{ member.subtitle }}.</small>{% endif %}</h3>
-        <p>{{ member.abstract }}</p>
-        {% if member.url %}<a href="{{ member.url }}">Project Webpage</a>{% endif %}
-      </div>
-      <div class="col-md-3 {% cycle '', 'col-md-pull-9' %}">
-      {% if member.image %}
-        <img class="featurette-image img-responsive center-block" src="{{ member.image }}" alt="Generic placeholder image">{% endif %}
-      </div>
-    </a>
+    <div class="col-md-9 {% cycle '', 'order-2' %}">
+      <h3 class="featurette-heading">{{ member.name }} {% if member.subtitle %}<small class="text-muted">{{ member.subtitle }}.</small>{% endif %}</h3>
+      <p>{{ member.abstract }}</p>
+      {% if member.url %}<a href="{{ member.url }}">Project Webpage</a>{% endif %}
+    </div>
+    <div class="col-md-3 {% cycle '', 'col-md-pull-9' %}">
+    {% if member.image %}
+      <img class="featurette-image img-fluid center-block" src="{{ member.image }}" alt="Generic placeholder image">{% endif %}
+    </div>
   </div>
 
 <hr class="featurette-divider">
