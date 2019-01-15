@@ -5,6 +5,7 @@ module.exports = {
   mode: "production",
   entry: {
     main: './src',
+    'pdf.worker': 'pdfjs-dist/build/pdf.worker.entry'
   },
   module: {
     rules: [
