@@ -24,6 +24,9 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
 jekyll_rdf:
     path: "_data/bib.ttl"
     restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), \"https://natanael.arndt.xyz/\") }"

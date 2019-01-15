@@ -1,0 +1,9 @@
+$FontPathUnderwoodChampion: "./fonts" !default;
+
+@font-face {
+    font-family: 'Underwood Champion';
+    src: url('#{$FontPathUnderwoodChampion}/underwood_champion-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
