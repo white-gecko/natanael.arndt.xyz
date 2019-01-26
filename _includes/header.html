@@ -3,32 +3,32 @@
     <h1>{{ site.title }}</h1>
     <ul>
         {% if site.github_username %}<li>
-          <a href="https://github.com/{{ site.github_username }}">
+          <a rel="me" href="https://github.com/{{ site.github_username }}">
               <i class="fa fa-github" alt="{{ site.github_username }}"></i>
           </a>
         </li>{% endif %}
         {% if site.stackoverflow_uri %}<li>
-          <a href="{{ site.stackoverflow_uri }}">
+          <a rel="me" href="{{ site.stackoverflow_uri }}">
               <i class="fa fa-stack-overflow" alt="{{ site.stackoverflow_uri }}"></i>
           </a>
         </li>{% endif %}
         {% if site.wikipedia-de_username %}<li>
-          <a href="https://de.wikipedia.org/wiki/Benutzer:{{ site.wikipedia-de_username }}">
+          <a rel="me" href="https://de.wikipedia.org/wiki/Benutzer:{{ site.wikipedia-de_username }}">
               <i class="fa fa-wikipedia-w" alt="{{ site.wikipedia-de_username }}"></i>
           </a>
         </li>{% endif %}
+        {% if site.mastodon_user %}<li>
+          <a rel="me" href="https://{{ site.mastodon_user }}">
+              <i class="fa fa-mastodon" alt="{{ site.mastodon_user }}"></i>
+          </a>
+        </li>{% endif %}
         {% if site.twitter_username %}<li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
+          <a rel="me" href="https://twitter.com/{{ site.twitter_username }}">
               <i class="fa fa-twitter" alt="{{ site.twitter_username }}"></i>
           </a>
         </li>{% endif %}
-        {% if site.googleplus_uri %}<li>
-          <a href="{{ site.googleplus_uri }}">
-              <i class="fa fa-google-plus-square" alt="{{ site.googleplus_uri }}"></i>
-          </a>
-        </li>{% endif %}
         {% if site.email %}<li>
-            <a href="mailto:{{ site.email }}">
+            <a rel="me" href="mailto:{{ site.email }}">
                 <i class="fa fa-envelope" alt="{{ site.email }}"></i>
             </a>
         </li>{% endif %}
