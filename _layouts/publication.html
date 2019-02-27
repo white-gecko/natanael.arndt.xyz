@@ -2,10 +2,11 @@
 layout: default
 rdf_prefix_path: "_data/prefix.sparql"
 ---
-<div class="post">
+{% assign types = page.rdf | rdf_property: "rdf:type", nil, true %}
+<div prefix="dct: http://purl.org/dc/terms/" about="page.rdf" class="post" typeof="http://schema.org/CreativeWork {{ types | join: " " }}">
   <header class="post-header">
-    <h2>{{ page.rdf | rdf_property: "dct:title" }}</h2>
-    <div>
+    <h2 property="dct:title">{{ page.rdf | rdf_property: "dct:title" }}</h2>
+    <div property="dct:creator">
     {% assign authors = page.rdf | rdf_container: "dct:creator" %}
     {% for author in authors %}
         <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>{% unless forloop.last %}, {% endunless %}
@@ -40,7 +41,7 @@ rdf_prefix_path: "_data/prefix.sparql"
     </div>
   </header>
 
-  <article class="post-content">
+  <article about="" class="post-content" typeof="http://schema.org/Article">
       <h3>Abstract</h3>
       <p>{{ page.rdf | rdf_property: "dct:abstract" }}</p>
   </article>

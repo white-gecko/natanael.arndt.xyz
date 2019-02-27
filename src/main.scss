@@ -11,4 +11,8 @@ $FontPathLato: "./fonts";
 @import './fonts/Lato-stylesheet';
 $FontPathUnderwoodChampion: "./fonts";
 @import './fonts/Underwood_champion-stylesheet';
+
+@import '~dokieli/media/css/dokieli.css';
+
+
 @import "custom";
