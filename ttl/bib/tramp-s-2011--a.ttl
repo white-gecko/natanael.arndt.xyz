@@ -1,22 +1,27 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns3: <http://purl.org/ontology/bibo/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/tramp-s-2011--a> a ns2:InProceedings ;
-    ns1:abstract "Smartphones, which contain a large number of sensors and integrated devices, are becoming increasingly powerful and fully featured computing platforms in our pockets. For many people they already replace the computer as their window to the Internet, to the Web as well as to social networks. Hence, the management and presentation of information about contacts, social relationships and associated information is one of the main requirements and features of today's smartphones. The problem is currently solved only for centralized proprietary platforms (such as Google mail, contacts & calendar) as well as data-silo-like social networks (e.g. Facebook). Within the Semantic Web initiative standards and best-practices for social, Semantic Web applications such as FOAF emerged. However, there is no comprehensive strategy, how these technologies can be used efficiently in a mobile environment. In this paper we present the architecture as well as the implementation of a mobile Social Semantic Web framework, which weaves a distributed social network based on semantic technologies." ;
-    ns1:creator [ ] ;
-    ns1:hasFormat <http://svn.aksw.org/papers/2011/ESWC_MobileSocialSemanticWeb/public.pdf> ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/tramp-s-2011--a_Proceedings_of_the_ESWC2011> ;
-    ns1:title "Weaving a Distributed, Semantic Social Network for Mobile Users" ;
-    ns2:keywords "dssn",
+<https://natanael.arndt.xyz/bib/tramp-s-2011--a> a ns1:InProceedings ;
+    ns2:abstract "Smartphones, which contain a large number of sensors and integrated devices, are becoming increasingly powerful and fully featured computing platforms in our pockets. For many people they already replace the computer as their window to the Internet, to the Web as well as to social networks. Hence, the management and presentation of information about contacts, social relationships and associated information is one of the main requirements and features of today's smartphones. The problem is currently solved only for centralized proprietary platforms (such as Google mail, contacts & calendar) as well as data-silo-like social networks (e.g. Facebook). Within the Semantic Web initiative standards and best-practices for social, Semantic Web applications such as FOAF emerged. However, there is no comprehensive strategy, how these technologies can be used efficiently in a mobile environment. In this paper we present the architecture as well as the implementation of a mobile Social Semantic Web framework, which weaves a distributed social network based on semantic technologies." ;
+    ns2:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/SebastianTramp> ;
+            rdf:_2 <http://aksw.org/PhilippFrischmuth> ;
+            rdf:_3 <http://aksw.org/NatanaelArndt> ;
+            rdf:_4 <http://aksw.org/TimofeyErmilov> ;
+            rdf:_5 <http://aksw.org/SoerenAuer> ] ;
+    ns2:hasFormat <http://svn.aksw.org/papers/2011/ESWC_MobileSocialSemanticWeb/public.pdf> ;
+    ns2:isPartOf <https://natanael.arndt.xyz/bib/tramp-s-2011--a_Proceedings_of_the_ESWC2011> ;
+    ns2:title "Weaving a Distributed, Semantic Social Network for Mobile Users" ;
+    ns1:keywords "dssn",
         "mssw",
         "myown" ;
-    ns3:doi "10.1007/978-3-642-21034-1_14" ;
+    ns4:doi "10.1007/978-3-642-21034-1_14" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2d75ff571021495cf491f468f643a4597/white_gecko> ;
-    ns4:sameAs <http://ma-graph.org/entity/1573755910> .
+    ns3:sameAs <http://ma-graph.org/entity/1573755910> .
 

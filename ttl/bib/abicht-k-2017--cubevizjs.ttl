@@ -1,5 +1,5 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://purl.org/ontology/bibo/> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +7,21 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs> a ns2:InProceedings ;
-    ns1:abstract "In this paper we present CubeViz.js, the successor of CubeViz, as an approach for lightweight visualization and exploration of statistical data using the RDF Data Cube vocabulary. In several use cases, such as the European Unions Open Data Portal, in which we deployed CubeViz, we were able to gather various requirements that eventually led to the decision of reimplementing CubeViz as JavaScript-only application. As part of this paper we showcase major functionalities of CubeViz.js and its improvements in comparison to the prior version." ;
-    ns1:creator [ ] ;
-    ns1:hasFormat <https://dl.gi.de/bitstream/handle/20.500.12116/3960/B26-6.pdf> ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>,
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs> a ns1:InProceedings ;
+    ns2:abstract "In this paper we present CubeViz.js, the successor of CubeViz, as an approach for lightweight visualization and exploration of statistical data using the RDF Data Cube vocabulary. In several use cases, such as the European Unions Open Data Portal, in which we deployed CubeViz, we were able to gather various requirements that eventually led to the decision of reimplementing CubeViz as JavaScript-only application. As part of this paper we showcase major functionalities of CubeViz.js and its improvements in comparison to the prior version." ;
+    ns2:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/KonradAbicht> ;
+            rdf:_2 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Alkhouri_Georges> ;
+            rdf:_3 <http://aksw.org/NatanaelArndt> ;
+            rdf:_4 <http://aksw.org/RoyMeissner> ;
+            rdf:_5 <http://aksw.org/MichaelMartin> ] ;
+    ns2:hasFormat <https://dl.gi.de/bitstream/handle/20.500.12116/3960/B26-6.pdf> ;
+    ns2:isPartOf <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>,
         <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Lecture_Notes_in_Informatics_(LNI)> ;
-    ns1:title "CubeViz.js: A Lightweight Framework for Discovering and Visualizing RDF Data Cubes" ;
-    ns2:keywords "2017",
+    ns2:title "CubeViz.js: A Lightweight Framework for Discovering and Visualizing RDF Data Cubes" ;
+    ns1:keywords "2017",
         "group_aksw myown" ;
-    ns2:pages "1915-1921" ;
+    ns1:pages "1915-1921" ;
     ns3:doi "10.18420/in2017_191" ;
     ns3:isbn "978-3-88579-669-5" ;
     ns3:issn "1617-5468" ;

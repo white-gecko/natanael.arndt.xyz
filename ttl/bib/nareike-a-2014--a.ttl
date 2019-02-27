@@ -1,6 +1,6 @@
 @prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns2: <http://purl.org/ontology/bibo/> .
-@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://purl.org/ontology/bibo/> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,18 +8,24 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/nareike-a-2014--a> a ns1:InProceedings ;
-    ns3:abstract "In libraries a change from physical resources to electronic resources, with new licensing models and lending processes, has taken places. The existing managing infrastructure is not yet suitable for the upcoming requirements and does not provide support for flexible and extensible data models for being future-proof. In this paper we present a system that uses the generic RDF resource management system OntoWiki for managing library resources. OntoWiki is extended by components for adapting the generic system to the given domain, e.g. by using data templates. In addition the Linked Data capability of OntoWiki is used and extended to import various metadata to enrich the managing resource. Consequently using Linked Data further enables libraries to build up a Linked Data infrastructure in the library domain." ;
-    ns3:creator [ ] ;
-    ns3:hasFormat <http://svn.aksw.org/papers/2014/DERM_AMSL/public.pdf> ;
-    ns3:isPartOf <https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>,
+    ns2:abstract "In libraries a change from physical resources to electronic resources, with new licensing models and lending processes, has taken places. The existing managing infrastructure is not yet suitable for the upcoming requirements and does not provide support for flexible and extensible data models for being future-proof. In this paper we present a system that uses the generic RDF resource management system OntoWiki for managing library resources. OntoWiki is extended by components for adapting the generic system to the given domain, e.g. by using data templates. In addition the Linked Data capability of OntoWiki is used and extended to import various metadata to enrich the managing resource. Consequently using Linked Data further enables libraries to build up a Linked Data infrastructure in the library domain." ;
+    ns2:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/AndreasNareike> ;
+            rdf:_2 <http://aksw.org/NatanaelArndt> ;
+            rdf:_3 <http://aksw.org/NormanRadtke> ;
+            rdf:_4 <http://aksw.org/SebastianNuck> ;
+            rdf:_5 <http://aksw.org/Partner/LeanderSeige> ;
+            rdf:_6 <http://aksw.org/ThomasRiechert> ] ;
+    ns2:hasFormat <http://svn.aksw.org/papers/2014/DERM_AMSL/public.pdf> ;
+    ns2:isPartOf <https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>,
         <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern> ;
-    ns3:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
+    ns2:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
     ns1:keywords "amsl erm group_aksw myown" ;
     ns1:note "2014 Gesellschaft für Informatik" ;
     ns1:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
     ns1:pages "1017-1026" ;
-    ns2:isbn "978-3-88579-626-8" ;
-    ns2:issn "1617-5468" ;
+    ns3:isbn "978-3-88579-626-8" ;
+    ns3:issn "1617-5468" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2730def1c1c357cb906a5a6c1f35d4987/white_gecko> ;
     ns4:sameAs <http://ma-graph.org/entity/2401594210> .
 

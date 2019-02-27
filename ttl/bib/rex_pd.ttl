@@ -1,5 +1,5 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,13 +7,17 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/rex_pd> a ns3:InProceedings ;
-    ns2:abstract "While several tools for simplifying the task of visualizing (SPARQL accessible) RDF data on the Web are available today, there is a lack of corresponding tools for exploiting standard HTML forms directly for RDF editing. The few related existing systems roughly fall in the categories of (a) applications that are not aimed at being reused as components, (b) form generators, which automatically create forms from a given schema -- possibly derived from instance data -- or (c) form template processors which create forms from a manually created specification. Furthermore, these systems usually come with their own widget library, which can only be extended by wrapping existing widgets. In this paper, we present the AngularJS-based Rdf Edit eXtension (REX) system, which facilitates the enhancement of standard HTML forms as well as many existing AngularJS widgets with RDF editing support by means of a set of HTML attributes. We demonstrate our system though the realization of several usage scenarios." ;
-    ns2:creator [ ] ;
-    ns2:hasFormat <http://jens-lehmann.org/files/2015/semantics_pd_rex.pdf> ;
-    ns2:isPartOf <https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015>,
+    ns1:abstract "While several tools for simplifying the task of visualizing (SPARQL accessible) RDF data on the Web are available today, there is a lack of corresponding tools for exploiting standard HTML forms directly for RDF editing. The few related existing systems roughly fall in the categories of (a) applications that are not aimed at being reused as components, (b) form generators, which automatically create forms from a given schema -- possibly derived from instance data -- or (c) form template processors which create forms from a manually created specification. Furthermore, these systems usually come with their own widget library, which can only be extended by wrapping existing widgets. In this paper, we present the AngularJS-based Rdf Edit eXtension (REX) system, which facilitates the enhancement of standard HTML forms as well as many existing AngularJS widgets with RDF editing support by means of a set of HTML attributes. We demonstrate our system though the realization of several usage scenarios." ;
+    ns1:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/ClausStadler> ;
+            rdf:_2 <http://aksw.org/NatanaelArndt> ;
+            rdf:_3 <http://aksw.org/MichaelMartin> ;
+            rdf:_4 <http://aksw.org/JensLehmann> ] ;
+    ns1:hasFormat <http://jens-lehmann.org/files/2015/semantics_pd_rex.pdf> ;
+    ns1:isPartOf <https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015>,
         <https://natanael.arndt.xyz/bib/rex_pd_SEM_'15> ;
-    ns2:title "RDF Editing on the Web with REX" ;
+    ns1:title "RDF Editing on the Web with REX" ;
     ns3:keywords "group_aksw myown" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2ec130f8992ea778eec487e84aea8dfd4/white_gecko> ;
-    ns1:sameAs <http://ma-graph.org/entity/2407919997> .
+    ns2:sameAs <http://ma-graph.org/entity/2407919997> .
 
