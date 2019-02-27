@@ -4,37 +4,42 @@
     <ul>
         {% if site.github_username %}<li>
           <a rel="me" href="https://github.com/{{ site.github_username }}">
-              <i class="fa fa-github" alt="{{ site.github_username }}"></i>
+              <i class="fab fa-github" alt="github: {{ site.github_username }}"></i>
           </a>
         </li>{% endif %}
         {% if site.stackoverflow_uri %}<li>
           <a rel="me" href="{{ site.stackoverflow_uri }}">
-              <i class="fa fa-stack-overflow" alt="{{ site.stackoverflow_uri }}"></i>
+              <i class="fab fa-stack-overflow" alt="stackoverflow: {{ site.stackoverflow_uri }}"></i>
           </a>
         </li>{% endif %}
         {% if site.wikipedia-de_username %}<li>
           <a rel="me" href="https://de.wikipedia.org/wiki/Benutzer:{{ site.wikipedia-de_username }}">
-              <i class="fa fa-wikipedia-w" alt="{{ site.wikipedia-de_username }}"></i>
+              <i class="fab fa-wikipedia-w" alt="Wikipedia (de): {{ site.wikipedia-de_username }}"></i>
+          </a>
+        </li>{% endif %}
+        {% if site.webid %}<li>
+          <a rel="me" href="{{ site.webid }}">
+              <i class="fas fa-passport" alt="WebID: {{ site.webid }}"></i>
           </a>
         </li>{% endif %}
         {% if site.mastodon_user %}<li>
           <a rel="me" href="https://{{ site.mastodon_user }}">
-              <i class="fa fa-mastodon" alt="{{ site.mastodon_user }}"></i>
+              <i class="fab fa-mastodon" alt="mastodon: {{ site.mastodon_user }}"></i>
           </a>
         </li>{% endif %}
         {% if site.twitter_username %}<li>
           <a rel="me" href="https://twitter.com/{{ site.twitter_username }}">
-              <i class="fa fa-twitter" alt="{{ site.twitter_username }}"></i>
+              <i class="fab fa-twitter" alt="twitter: {{ site.twitter_username }}"></i>
           </a>
         </li>{% endif %}
         {% if site.email %}<li>
             <a rel="me" href="mailto:{{ site.email }}">
-                <i class="fa fa-envelope" alt="{{ site.email }}"></i>
+                <i class="fa fa-envelope" alt="email: {{ site.email }}"></i>
             </a>
         </li>{% endif %}
         <li>
             <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                <i class="fa fa-rss" alt="RSS-Feed"></i>
+                <i class="fas fa-rss" alt="RSS-Feed"></i>
             </a>
         </li>
     </ul>

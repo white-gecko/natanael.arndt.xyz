@@ -6,6 +6,7 @@ baseurl: ""
 url: "https://natanael.arndt.xyz"
 twitter_username: white_gecko
 github_username:  white-gecko
+webid: "https://natanael.arndt.xyz/#i"
 mastodon_user: "chaos.social/@white_gecko"
 stackoverflow_uri: https://stackoverflow.com/users/414075/white-gecko
 googleplus_uri: https://plus.google.com/109221747073615777107?rel=author
