@@ -21,6 +21,26 @@
     dct:language "en-US" ;
     foaf:maker <http://aksw.org/MichaelMartin>, <http://aksw.org/NatanaelArndt> .
 
+<https://natanael.arndt.xyz/bib/arndt-n-2019--collaborative>
+    dct:abstract """Collaboration of people and machines is a major aspect of the World Wide Web and as well of the Semantic Web.
+    As a result of the collaboration process, structural and content interferences as well as varying models and contradictory statements are inevitable.
+    Currently the collaboration on Linked Data Sets is mainly done by keeping a central version of a dataset.
+    This central approach for a synchronized state has drawbacks in scenarios in which the existence of different versions of the dataset is preferable.
+    Furthermore, the evolution of a dataset in a distributed setup is not necessarily happening in a linear manner.
+    We present a system that fosters the evolution of a dataset in a distributed collaborative setup and supports divergence of datasets as asynchrony and dissent; reconcile diverged states of datasets; and synchronize different distributed derivatives of the dataset.
+    The data is kept in a distributed version control system with support to branch, merge, and synchronize distributed RDF datasets.
+    Each version can be queried and updated via a standard SPARQL 1.1 Query & Update interfaces as well as the related provenance information.
+    The system allows to build knowledge engineering processes similar to well esatblished methods from the software engineering domain.""" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/MichaelMartin> ;
+        a rdf:Seq
+    ] ;
+    dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
+    bibtex:keywords "2017 group_aksw myown quit" ;
+    dct:issued "2019"^^xsd:gYear ;
+    a bibtex:InProceedings .
+
 <icwe2017> a dct:BibliographicResource  ;
     dct:title "17th International Conference on Web Engineering (ICWE 2017)" .
 

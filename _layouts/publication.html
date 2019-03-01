@@ -9,25 +9,28 @@ rdf_prefix_path: "_data/prefix.sparql"
     {% assign authors = page.rdf | rdf_container: "dct:creator" %}
     {% for author in authors %}
         <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-    </div>
-    {% assign collection = page.rdf | rdf_property: "dct:isPartOf" %}
-    {% if collection %}
+    {%- endfor -%}
+    {%- assign collection = page.rdf | rdf_property: "dct:isPartOf" -%}
+    {%- if collection -%}
+      </div>
+      <div>
       <em>in</em>
       {% if collection.iri %}
       <span class="journal">
-      {% assign editors = collection | rdf_container: "bibtex:editor" %}
+      {%- assign editors = collection | rdf_container: "bibtex:editor" -%}
       {{ collection | rdf_property: "dct:title" }}
-      {% if editors.size > 0 %}
+      {%- if editors.size > 0 %}
       (Editors:
-        {% for editor in editors %}
+        {%- for editor in editors -%}
         <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}){% endif %}</span>,
       <span class="date">{{ collection | rdf_property: "dct:issued" }}</span>
       {% else %}
       <span class="journal">{{ collection }}</span>
       {% endif %}
-    <br/>
+    {%- else -%}
+    ; <span class="date">{{ page.rdf | rdf_property: "dct:issued" }}</span>
     {% endif %}
+    </div>
     <div>
         <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}"><i class="fa fa-download"></i> Download Paper</a>,
         {% assign doi = page.rdf | rdf_property: "bibo:doi" %}
