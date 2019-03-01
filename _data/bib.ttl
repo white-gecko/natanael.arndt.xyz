@@ -456,6 +456,7 @@ bibo:Thesis
     dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
     bibtex:keywords "2017 group_aksw myown quit" ;
     dct:issued "2019" ;
+    bibo:doi "10.1145/3308560.3316523" ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a>

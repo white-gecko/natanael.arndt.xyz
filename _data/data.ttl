@@ -39,6 +39,7 @@
     dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
     bibtex:keywords "2017 group_aksw myown quit" ;
     dct:issued "2019"^^xsd:gYear ;
+    bibo:doi "10.1145/3308560.3316523" ;
     a bibtex:InProceedings .
 
 <icwe2017> a dct:BibliographicResource  ;
