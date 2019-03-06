@@ -32,12 +32,14 @@ rdf_prefix_path: "_data/prefix.sparql"
     {% endif %}
     </div>
     <div>
-        <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}"><i class="fa fa-download"></i> Download Paper</a>,
+        {% assign download = page.rdf | rdf_property: "dct:hasFormat" %}
         {% assign doi = page.rdf | rdf_property: "bibo:doi" %}
-        {% if doi %}<a href="https://dx.doi.org/{{ page.rdf | rdf_property: "bibo:doi" }}"><i class="fa fa-circle"></i> DOI</a>,{% endif %}
         {% assign isbn = page.rdf | rdf_property: "bibo:isbn" %}
-        {% if isbn %}<a href="https://en.wikipedia.org/wiki/Special:BookSources/{{ page.rdf | rdf_property: "bibo:isbn" }}"><i class="fa fa-info-circle"></i> ISBN</a>,{% endif %}
-        <a href="{{ page.rdf | rdf_property: "rdfs:seeAlso" }}"><i class="fa fa-database"></i> Bibsonomy</a>,
+        {% assign bibsonomy = page.rdf | rdf_property: "rdfs:seeAlso" %}
+        {% if download %}<a href="{{ download }}"><i class="fa fa-download"></i> Download Paper</a>,{% endif %}
+        {% if doi %}<a href="https://dx.doi.org/{{ doi }}"><i class="fa fa-circle"></i> DOI</a>,{% endif %}
+        {% if isbn %}<a href="https://en.wikipedia.org/wiki/Special:BookSources/{{ isbn }}"><i class="fa fa-info-circle"></i> ISBN</a>,{% endif %}
+        {% if bibsonomy %}<a href="{{ bibsonomy }}"><i class="fa fa-database"></i> Bibsonomy</a>,{% endif %}
         <a href="{{ page.url | remove: ".html" | prepend: "/ttl" | prepend: site.baseurl }}"><i class="fa fa-share-alt"></i> RDF (Turtle)</a>
         <!-- concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user) -->
     </div>
