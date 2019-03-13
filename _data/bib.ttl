@@ -453,6 +453,7 @@ bibo:Thesis
         rdf:_2 <http://aksw.org/MichaelMartin> ;
         a rdf:Seq
     ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf> ;
     dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
     bibtex:keywords "2019 group_aksw myown quit" ;
     dct:issued "2019" ;
