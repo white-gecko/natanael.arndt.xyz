@@ -2,7 +2,7 @@
 layout: page
 parent: notes
 title: Biometrische Passbilder Herstellen
-description: "Eine kleine Anleitung, wie man selbst mit einfachen Mitteln biometrische Passbilder herstellen kann"
+description: "Eine kleine Anleitung, wie man selbst mit einfachen Mitteln biometrische Passbilder herstellen kann."
 date:   2016-02-21 23:48:00
 update: 2016-03-04 22:50:00
 ---
@@ -35,7 +35,7 @@ Bevor man mit dem zuschneiden des Bildes beginnt, kann man einen Weißabgleich d
 
 3. Bild zuschneiden (Gimp Werkzeug: Zuschneiden)
 
-    1. Festes Seitenverhältnis einstellen: Hacken vor „Fest:“ setzen, in das Feld darunter „35:45“ eintragen (Bildbreite zu Bildhöhe).
+    1. Festes Seitenverhältnis einstellen: Haken vor „Fest:“ setzen, in das Feld darunter „35:45“ eintragen (Bildbreite zu Bildhöhe).
     2. Den Zuschnitt-Bereich mit der Maus aufziehen (In das Bild klicken und die Maus bewegen)
     3. Größe setzen: das zweite Eingabe-Feld bei „Größe“ auf Y setzen, dabei darauf achten, dass die Einheit darüber gleich zu der Einheit von X bzw. Y aus 2.b. gewählt ist (z.B. auch „mm“)
     Tipp: Falls der Wert so nicht angenommen wird, sollte man den Zuschnitt-Bereich in der Mitte Anfassen und in die Mitte des oberen Bildrandes schieben und den Wert neu eingeben
