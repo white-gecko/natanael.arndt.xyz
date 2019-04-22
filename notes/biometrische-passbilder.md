@@ -7,35 +7,35 @@ date:   2016-02-21 23:48:00
 update: 2016-03-04 22:50:00
 ---
 
-Das folgend Vorgehen nutze ich, um biometrische Fotos anzufertigen.
+Das folgende Vorgehen nutze ich, um biometrische Fotos anzufertigen.
 Ich kann aber nicht garantieren, dass die resultierenden Bilder tatsächlich biometrisch korrekt sind und von den entsprechenden Behörden akzeptiert werden.
 Die Quelle für die zugrunde liegenden Maße ist in diesem Fall die [„Passbild-Schablone für Personen ab einem Alter von 10 Jahren“](https://www.bundesdruckerei.de/sites/default/files/passbildschablone_erwachsene.pdf) der Bundesdruckerei.
 Es ist also ratsam, sich ebenfalls die Hinweise der Bundesdruckerei und der übrigen Behörden anzusehen.
 
 Vor der Bearbeitung des Bildes ist zudem auf eine gute Ausleuchtung des Gesichts zu achten.
-Der Hintergrund sollte gleichmäßig und einfarbig sein und ebenfalls keine Schatten aufweise.
+Der Hintergrund sollte gleichmäßig und einfarbig sein und ebenfalls keine Schatten aufweisen.
 Für die Bildbearbeitung verwende ich [GIMP](https://www.gimp.org/). GIMP ist Open Source und für [Linux, Mac OS X und Windows verfügbar](https://www.gimp.org/downloads/).
 
 | **Bildgröße:**              | 35mm×45mm            |
-| **Kinnhöhe/Gesichtshöhe:**  | 32mm–36mm -> 34mm    |
+| **Gesichtshöhe/Kinnhöhe:**  | 32mm–36mm -> 34mm    |
 | **Augenbereich:**           | 22mm–32mm (~0,5–0,7) |
 
 ## Bild Vorbereiten
 
-Bevor man mit dem zuschneiden des Bildes beginnt, kann man einen Weißabgleich durchführen oder den Kontrast erhöhen.
+Bevor man mit dem Zuschneiden des Bildes beginnt, kann man einen Weißabgleich durchführen oder den Kontrast erhöhen.
 
-1. Bild drehen, so dass Augen auf einer Linie sind und Mund-Mitte, Nasen-Mitte und Stirn-Mitte
+1. Bild drehen, so dass die Augen auf einer Linie sind und Mund-Mitte, Nasen-Mitte und Stirn-Mitte ebenfalls
     * Dazu nehme ich meist eine waagerechte Hilfslinie, die ich auf der Mitte der beiden Puppillen platziere und eine senkrechte Hilfslinie, die ich an der Nasenspitze ausrichte
 
-2. Ausschnitthöhe durch Skalierungsverhältniss Berechnen
-    1. Kinnhöhe auf dem Bild ausmessen (Gimp Werkzeug: Maßband), die Höhe -> X (X ist die Kinnhöhe)
+2. Ausschnitthöhe durch Skalierungsverhältnis Berechnen
+    1. Gesichtshöhe auf dem Bild ausmessen (Gimp Werkzeug: Maßband), die Höhe -> X (X ist die Gesichtshöhe)
     2. (X/34mm)×45mm = Y (Y ist die Ausschnitthöhe auf der Arbeitsfläche, es ist auch wichtig die Einheit von X zu notieren z.B. „mm“)
 
 ## Bild Zuschneiden
 
 3. Bild zuschneiden (Gimp Werkzeug: Zuschneiden)
 
-    1. Festes Seitenverhältnis einstellen: Haken vor „Fest:“ setzen, in das Feld darunter „35:45“ eintragen (Bildbreite zu Bildhöhe).
+    1. Festes Seitenverhältnis einstellen: Haken vor „Fixiert:“ bzw. „Fest:“ setzen, in das Feld darunter „35:45“ eintragen (Bildbreite zu Bildhöhe).
     2. Den Zuschnitt-Bereich mit der Maus aufziehen (In das Bild klicken und die Maus bewegen)
     3. Größe setzen: das zweite Eingabe-Feld bei „Größe“ auf Y setzen, dabei darauf achten, dass die Einheit darüber gleich zu der Einheit von X bzw. Y aus 2.b. gewählt ist (z.B. auch „mm“)
     Tipp: Falls der Wert so nicht angenommen wird, sollte man den Zuschnitt-Bereich in der Mitte Anfassen und in die Mitte des oberen Bildrandes schieben und den Wert neu eingeben
