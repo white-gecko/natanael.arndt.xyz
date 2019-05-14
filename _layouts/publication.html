@@ -58,7 +58,7 @@ rdf_prefix_path: "_data/prefix.sparql"
 
   <article class="post-content">
       <h3>Abstract</h3>
-      <p>{{ page.rdf | rdf_property: "dct:abstract" }}</p>
+      {{ page.rdf | rdf_property: "dct:abstract" | markdownify }}
   </article>
 
   <!-- https://stackoverflow.com/questions/14690000/embed-a-pdf-in-html5 -->
