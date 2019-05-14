@@ -1,0 +1,12 @@
+@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/WWW2019_companion> a <http://purl.org/ontology/bibo/Proceedings> ;
+    ns2:issued "2019-05" ;
+    ns2:title "Companion Proceedings of the 2019 World Wide Web Conference (WWW '19 Companion), San Francisco, CA, USA" ;
+    ns1:month "May" .
+

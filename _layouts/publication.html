@@ -30,6 +30,17 @@ rdf_prefix_path: "_data/prefix.sparql"
     {%- else -%}
     ; <span class="date">{{ page.rdf | rdf_property: "dct:issued" }}</span>
     {% endif %}
+    {%- assign call = page.rdf | rdf_property: "as:inReplyTo" -%}
+    {%- if call -%}
+      </div>
+      <div>
+      <em>in reply to (call)</em>
+      {% if call.iri %}
+      <span class="call">{{ call | rdf_property: "dct:title" }}</span>
+      {% else %}
+      <span class="call">{{ call }}</span>
+      {% endif %}
+    {%- endif -%}
     </div>
     <div>
         {% assign download = page.rdf | rdf_property: "dct:hasFormat" %}

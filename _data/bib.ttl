@@ -8,6 +8,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
 
 <http://aksw.org/AndreValdestilhas>
     a foaf:Person ;
@@ -438,6 +439,18 @@ bibo:Thesis
     bibtex:volume "P-176" ;
     a bibo:Proceedings .
 
+<https://natanael.arndt.xyz/bib/MEPDaW2019>
+    dct:issued "2019-05" ;
+    dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
+    bibtex:month "May" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/WWW2019_companion>
+    dct:issued "2019-05" ;
+    dct:title "Companion Proceedings of the 2019 World Wide Web Conference (WWW '19 Companion), San Francisco, CA, USA" ;
+    bibtex:month "May" ;
+    a bibo:Proceedings .
+
 <https://natanael.arndt.xyz/bib/arndt-n-2019--collaborative>
     dct:abstract """Collaboration of people and machines is a major aspect of the World Wide Web and as well of the Semantic Web.
     As a result of the collaboration process, structural and content interferences as well as varying models and contradictory statements are inevitable.
@@ -454,10 +467,34 @@ bibo:Thesis
         a rdf:Seq
     ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf> ;
+    as:inReplyTo <https://natanael.arndt.xyz/bib/MEPDaW2019> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
     dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
     bibtex:keywords "2019 group_aksw myown quit" ;
     dct:issued "2019" ;
     bibo:doi "10.1145/3308560.3316523" ;
+    a bibtex:InProceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2019--qeicc>
+    dct:abstract """The Semantic Web is about collaboration and exchange of information.
+While the data on the Semantic Web is constantly evolving and meant to be collaboratively edited there is no practical transactional concept or method to control concurrent writes to a dataset and avoid conflicts.
+Thus, we follow the question, how can we ensure a controlled state of a SPARQL Store when performing non transactional write operations?
+Based on the Distributed Version Control System for RDF data implemented in the Quit Store we present the Quit Editor Interface Concurrency Control (QEICC).
+QEICC provides a protocol on top of the SPARQL 1.1 standard to identify, avoid, and resolve conflicts.
+The strategies *reject*, *branch*, and *merge* are presented to allow different levels of control over the conflict resolution.
+While the *reject* strategy gives full control to the client, with *branch* and *merge* it is even possible to postpone the conflict resolution and integrate it into the date engineering process.""" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/NormanRadtke> ;
+        a rdf:Seq
+    ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_QEICC/public.pdf> ;
+    as:inReplyTo <https://natanael.arndt.xyz/bib/MEPDaW2019> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
+    dct:title "Conflict Detection, Avoidance, and Resolution in a Non-Linear RDF Version Control System: The Quit Editor Interface Concurrency Control" ;
+    bibtex:keywords "2019 group_aksw myown quit" ;
+    dct:issued "2019" ;
+    bibo:doi "10.1145/3308560.3316519" ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a>

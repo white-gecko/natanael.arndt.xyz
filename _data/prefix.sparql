@@ -5,3 +5,4 @@ prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix bibo: <http://purl.org/ontology/bibo/>
 prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#>
+prefix as: <https://www.w3.org/ns/activitystreams#>
