@@ -186,6 +186,22 @@
     ] ;
     foaf:name "Thomas Riechert" .
 
+<http://aksw.org/SebastianZaenker>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Zänker" ;
+        vcard:Given "Sebastian"
+    ] ;
+    foaf:name "Sebastian Zänker" .
+
+<http://aksw.org/GezimSejdiu>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Sejdiu" ;
+        vcard:Given "Gezim"
+    ] ;
+    foaf:name "Gezim Sejdiu" .
+
 dct:BibliographicResource
     rdfs:subClassOf foaf:Document .
 
@@ -495,6 +511,34 @@ While the *reject* strategy gives full control to the client, with *branch* and 
     bibtex:keywords "2019 group_aksw myown quit" ;
     dct:issued "2019" ;
     bibo:doi "10.1145/3308560.3316519" ;
+    a bibtex:InProceedings .
+
+<https://natanael.arndt.xyz/bib/icwe2019>
+    dct:issued "2019-06" ;
+    dct:title "Proceedings of the 19th International Conference on Web Engineering (ICWE 2019), Daejeon, South Korea" ;
+    bibtex:month "June" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2019--jekyll-rdf>
+    dct:abstract """Over the last decades the Web has evolved from a human–human communication network to a network of complex human–machine interactions.
+An increasing amount of data is available as Linked Data which allows machines to “understand” the data, but RDF is not meant to be understood by humans.
+With Jekyll RDF we present a method to close the gap between structured data and human accessible exploration interfaces by publishing RDF datasets as customizable static HTML sites.
+It consists of an RDF resource mapping system to serve the resources under their respective IRI, a template mapping based on schema classes, and a markup language to define templates to render customized resource pages.
+Using the template system, it is possible to create domain specific browsing interfaces for RDF data next to the Linked Data resources.
+This enables content management and knowledge management systems to serve datasets in a highly customizable, low effort, and scalable way to be consumed by machines as well as humans.""" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/SebastianZaenker> ;
+        rdf:_3 <http://aksw.org/GezimSejdiu> ;
+        rdf:_4 <http://aksw.org/SebastianTramp> ;
+        a rdf:Seq
+    ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2019/ICWE_JekyllRDF/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/icwe2019> ;
+    dct:title "Jekyll RDF: Template-Based Linked Data Publication with Minimized Effort and Maximum Scalability" ;
+    bibtex:keywords "2019 group_aksw myown" ;
+    dct:issued "2019" ;
+    bibo:doi "10.1007/978-3-030-19274-7_24" ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a>
