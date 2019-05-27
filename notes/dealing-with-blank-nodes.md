@@ -23,7 +23,7 @@ But what to do if you have blank nodes in your graph and you have to or want to 
 There are a various proposals which introduce the concepts of *RDF Molecules*, *Atomic Graphs*, and *Minimum Self-Contained Graph* (MSG). They are very different in their approach of defining it but basically all say the same.
 
 ### RDF molecule
-([Tracking RDF Graph Provenance using RDF Molecules](http://hdl.handle.net/11603/12181), 2005; [other version](https://ebiquity.umbc.edu/paper/html/id/263/Tracking-RDF-Graph-Provenance-using-RDF-Molecules))
+([Tracking RDF Graph Provenance using RDF Molecules](http://hdl.handle.net/11603/12181), 2005; [other version](https://ebiquity.umbc.edu/paper/html/id/263/Tracking-RDF-Graph-Provenance-using-RDF-Molecules)) ([different paper, same authors same title](http://www.ksl.stanford.edu/people/pp/papers/Ding_ISWC_2005.pdf), 2005)
 
 ***RDF graph decomposition (preliminary for RDF molecule)***: An RDF graph decomposition consists of three elements *(W, d, m)*: the background ontology *W*, the decompose operation *d(G, W)* which breaks an RDF graph *G* into a set of sub-graphs *Ĝ = {G1, G2, …, Gn}* using *W*, and the merge operation *m(Ĝ, W)* which combines all elements in *Ĝ* into the a unified RDF graph *G'* using *W*. In addition, a decomposition must be *lossless* such that,
 
