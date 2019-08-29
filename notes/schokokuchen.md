@@ -12,15 +12,21 @@ Da mir alle Rezepte zum Teil zugesagt haben, aber keins vollständig habe ich da
 
 
 |200 g |  Mehl |
-|200 g |  Zucker |
+|150 g |  Zucker |
 |200 g |  Nüsse, Mandeln oder ähnlich, gemahlene |
 | 80 g |  Kakaopulver |
 |1 Pck |  Backpulver |
 |1 Pck |  Vanillezucker |
 |1 Prs |  Salz |
-|  4-5 |  Eier |
+|    5 |  Eier |
 |200 g |  Butter |
 
 
-Ich glaube die 200 g Mehl, Zucker und Nüsse entsprechen jeweils etwa 2 Gläsern, Kakaopulver nach Gefühl wohl etwa ne halbe Tasse und dann kann man das ganze auch ohne Waage backen.
+Die 200 g Mehl und Nüsse entsprechen jeweils etwa 2 Gläsern, der Zucker etwa 1½ Gläsern, Kakaopulver nach Gefühl wohl etwa ein halbes Glas.
+Butter kommt in der Regel in 250 g Packungen und es sind manchmal Striche in 50 g Abständen aufgezeichnet, sonst nimmt man eben ein Lineal zu Hilfe.
+So kann man das ganze auch ohne Waage backen.
 In zwei der Ausgangsrezepte kommen noch 200 ml Wasser bzw. 1 Glas Milch dazu, die Komponente hatte ich aber vergessen und der Kuchen hat trotzdem super geschmeckt.
+
+Eine Backform (Katen- oder Gugelhupfform sind gut geeignet) fetten.
+In einer Schüssel die trockenen Zutaten vermengen und ebenso die flüssigen Zutaten vermengen und anschließend alles miteinander verkneten.
+Den Teig in die Backform füllen und bei 160°C für 45 min im Ofen backen.
