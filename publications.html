@@ -30,9 +30,9 @@ ORDER BY DESC(?issued)
 <!-- {{ result.publication }} -->
 <div class="posts">
     <div>
-        <a href="{{ result.publication.page_url }}">
-          <h3 class="post-link">{{ result.publication | rdf_property: "dct:title" }}</h3>
-        </a>
+        <h3 class="post-link">
+          <a href="{{ result.publication.page_url }}">{{ result.publication | rdf_property: "dct:title" }}</a>
+        </h3>
         {% assign creators = result.publication | rdf_container: "dct:creator" %}
         <span class="meta post-date">
           <em>by</em>
