@@ -38,11 +38,13 @@ parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--endpoint', dest='endpoint')
 parser.add_argument('--file', dest='file')
 parser.add_argument('--base', dest='base', help="The base for generating the files")
+parser.add_argument('--selection', dest='selection', help="A file with a SPARQL SELECT query that binds ?resourceUri to the resources to select")
 
 args = parser.parse_args()
 print(args.endpoint)
 print(args.file)
 print(args.base)
+print(args.selection)
 
 if args.endpoint:
     print("Sorry endpoint not yet supported")
@@ -53,8 +55,15 @@ if not args.file or not args.base:
 graph = rdflib.Graph()
 graph.parse(args.file, format="turtle")
 
+if args.selection:
+    with open(args.selection) as query_file:
+        read_data = query_file.read()
+    selection = (row['resourceUri'] for row in graph.query(read_data))
+else:
+    selection = graph.subjects()
+
 i = 0
-for sub in graph.subjects():
+for sub in selection:
     i += 1
     if not sub.startswith(args.base):
         print("skip")
@@ -64,7 +73,7 @@ for sub in graph.subjects():
     if i > 50:
         print("{} write to {}".format(sub, destTtl))
         i = 0
-    resGraph = rdflib.Graph()
+    resGraph = rdflib.Graph(namespace_manager=graph.namespace_manager)
     triples = bnc(graph, (sub, None, None))
     resGraph += triples
     if not os.path.exists(os.path.dirname(destTtl)):
