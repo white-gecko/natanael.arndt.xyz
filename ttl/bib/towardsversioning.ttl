@@ -1,25 +1,30 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/towardsversioning> a ns3:InProceedings ;
-    ns1:abstract "Coherent and consistent tracking of provenance data and in particular update history information is a crucial building block for any serious information system architecture. Version Control Systems can be a part of such an architecture enabling users to query and manipulate versioning information as well as content revisions. In this paper, we introduce an RDF versioning approach as a foundation for a full featured RDF Version Control System. We argue that such a system needs support for all concepts of the RDF specification including support for RDF datasets and blank nodes. Furthermore, we placed special emphasis on the protection against unperceived history manipulation by hashing the resulting patches. In addition to the conceptual analysis and an RDF vocabulary for representing versioning information, we present a mature implementation which captures versioning information for changes to arbitrary RDF datasets." ;
-    ns1:creator [ a rdf:Seq ;
+<https://natanael.arndt.xyz/bib/towardsversioning> a bibtex:InProceedings ;
+    dct:abstract "Coherent and consistent tracking of provenance data and in particular update history information is a crucial building block for any serious information system architecture. Version Control Systems can be a part of such an architecture enabling users to query and manipulate versioning information as well as content revisions. In this paper, we introduce an RDF versioning approach as a foundation for a full featured RDF Version Control System. We argue that such a system needs support for all concepts of the RDF specification including support for RDF datasets and blank nodes. Furthermore, we placed special emphasis on the protection against unperceived history manipulation by hashing the resulting patches. In addition to the conceptual analysis and an RDF vocabulary for representing versioning information, we present a mature implementation which captures versioning information for changes to arbitrary RDF datasets." ;
+    dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/MarvinFrommhold> ;
             rdf:_2 <https://natanael.arndt.xyz/bib/towardsversioning_Piris_Rubén_Navarro> ;
             rdf:_3 <http://aksw.org/NatanaelArndt> ;
             rdf:_4 <http://aksw.org/SebastianTramp> ;
             rdf:_5 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas> ;
             rdf:_6 <http://aksw.org/MichaelMartin> ] ;
-    ns1:hasFormat <https://www.researchgate.net/publication/303924732_Towards_Versioning_of_Arbitrary_RDF_Data> ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>,
+    dct:hasFormat <https://www.researchgate.net/publication/303924732_Towards_Versioning_of_Arbitrary_RDF_Data> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>,
         <https://natanael.arndt.xyz/bib/towardsversioning_SEMANTiCS_'16> ;
-    ns1:title "Towards Versioning of Arbitrary RDF Data" ;
-    ns3:keywords "myown" ;
+    dct:title "Towards Versioning of Arbitrary RDF Data" ;
+    bibtex:keywords "myown" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/26a024a32f54be804f25665598bc97376/white_gecko> ;
-    ns2:sameAs <http://ma-graph.org/entity/2528968297> .
+    owl:sameAs <http://ma-graph.org/entity/2528968297> .
 

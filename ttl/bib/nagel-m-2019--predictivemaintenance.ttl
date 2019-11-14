@@ -1,0 +1,29 @@
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/nagel-m-2019--predictivemaintenance> a bibtex:InProceedings ;
+    dct:abstract """Autonome Steuerungsverfahren gelten als vielversprechender Ansatz, um einer zunehmend dynamisch und komplexer werdenden Produktionsumgebung gerecht zu werden.
+    Während Steuerungsverfahren im Rahmen der Produktionsplanung immer kürzere Planungszyklen anstreben, konnte die Planbarkeit für Instandhaltungsmaßnahmen durch Predictive Maintenance-Ansätze erst gewonnen werden.
+    Um die Potenziale eines kombinierten Ansatzes nutzen zu können, stellt diese Arbeit eine Verhandlungsumgebung dar, die auf dem Contract Net Interaktionsprotokoll basiert.
+    Durch die Gewährleistung der Vergleichbarkeit zweier Auftragsarten soll eine bessere Integration von zustandsabhängigen Instandhaltungsaufträgen in die reaktive Maschinenbelegungsplanung von autonomen Steuerungsverfahren erreicht werden.""" ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <https://platona-m.technology/Nagel> ;
+            rdf:_2 <http://aksw.org/NatanaelArndt> ;
+            rdf:_3 <https://platona-m.technology/Foerster> ;
+            rdf:_4 "Matthes Nagel" ;
+            rdf:_5 "Ralph Riedel" ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2019/VPP_PredictiveMaintenance/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/vpp2019> ;
+    dct:issued "2019" ;
+    dct:title "Ein Plattform-Ökosystem für Predictive Maintenance zur Erhöhung der Effizienz und Effektivität der Instandhaltung in kleinen und mittleren Unternehmen (KMU)" .
+

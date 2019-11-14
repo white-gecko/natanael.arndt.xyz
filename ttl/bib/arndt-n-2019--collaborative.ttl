@@ -1,14 +1,18 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
-@prefix ns3: <http://purl.org/ontology/bibo/> .
-@prefix ns4: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2019--collaborative> a ns4:InProceedings ;
-    ns1:abstract """Collaboration of people and machines is a major aspect of the World Wide Web and as well of the Semantic Web.
+<https://natanael.arndt.xyz/bib/arndt-n-2019--collaborative> a bibtex:InProceedings ;
+    dct:abstract """Collaboration of people and machines is a major aspect of the World Wide Web and as well of the Semantic Web.
     As a result of the collaboration process, structural and content interferences as well as varying models and contradictory statements are inevitable.
     Currently the collaboration on Linked Data Sets is mainly done by keeping a central version of a dataset.
     This central approach for a synchronized state has drawbacks in scenarios in which the existence of different versions of the dataset is preferable.
@@ -17,14 +21,14 @@
     The data is kept in a distributed version control system with support to branch, merge, and synchronize distributed RDF datasets.
     Each version can be queried and updated via a standard SPARQL 1.1 Query & Update interfaces as well as the related provenance information.
     The system allows to build knowledge engineering processes similar to well established methods from the software engineering domain.""" ;
-    ns1:creator [ a rdf:Seq ;
+    dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/NatanaelArndt> ;
             rdf:_2 <http://aksw.org/MichaelMartin> ] ;
-    ns1:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf> ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
-    ns1:issued "2019" ;
-    ns1:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
-    ns4:keywords "2019 group_aksw myown quit" ;
-    ns3:doi "10.1145/3308560.3316523" ;
-    ns2:inReplyTo <https://natanael.arndt.xyz/bib/MEPDaW2019> .
+    dct:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
+    dct:issued "2019" ;
+    dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
+    bibtex:keywords "2019 group_aksw myown quit" ;
+    bibo:doi "10.1145/3308560.3316523" ;
+    as:inReplyTo <https://natanael.arndt.xyz/bib/MEPDaW2019> .
 

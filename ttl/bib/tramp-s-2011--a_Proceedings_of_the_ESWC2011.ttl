@@ -11,8 +11,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/MEPDaW2019> a bibo:Proceedings ;
-    dct:issued "2019-05" ;
-    dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
-    bibtex:month "May" .
+<https://natanael.arndt.xyz/bib/tramp-s-2011--a_Proceedings_of_the_ESWC2011> a bibo:Proceedings ;
+    dct:issued "2011" ;
+    dct:title "Proceedings of the ESWC2011" .
 

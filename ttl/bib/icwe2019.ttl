@@ -1,12 +1,18 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/icwe2019> a <http://purl.org/ontology/bibo/Proceedings> ;
-    ns1:issued "2019-06" ;
-    ns1:title "Proceedings of the 19th International Conference on Web Engineering (ICWE 2019), Daejeon, South Korea" ;
-    ns2:month "June" .
+<https://natanael.arndt.xyz/bib/icwe2019> a bibo:Proceedings ;
+    dct:issued "2019-06" ;
+    dct:title "Proceedings of the 19th International Conference on Web Engineering (ICWE 2019), Daejeon, South Korea" ;
+    bibtex:month "June" .
 

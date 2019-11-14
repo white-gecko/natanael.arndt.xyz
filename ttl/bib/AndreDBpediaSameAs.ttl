@@ -1,22 +1,27 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/AndreDBpediaSameAs> a ns3:InProceedings ;
-    ns1:abstract "The DBpedia dataset has multiple URIs within the dataset and from other datasets connected with (transitive) owl:sameAs relations and thus referring to the same concepts. With this heterogeneity of identifiers it is complicated for users and agents to find the unique identifier which should be preferably used. We are introducing the concept of DBpedia Unique Identifier (DUI) and a dataset of linksets relating URIs to DUIs. In order to improve the quality of our dataset we developed a mechanism that allows the user to rate and suggest links. As proof of concept an implementation with a graphical web user interface is provided for accessing the linkset and rating the links. The DBpedia sameAs service is available at http://dbpsa.aksw.org/SameAsService." ;
-    ns1:creator [ a rdf:Seq ;
+<https://natanael.arndt.xyz/bib/AndreDBpediaSameAs> a bibtex:InProceedings ;
+    dct:abstract "The DBpedia dataset has multiple URIs within the dataset and from other datasets connected with (transitive) owl:sameAs relations and thus referring to the same concepts. With this heterogeneity of identifiers it is complicated for users and agents to find the unique identifier which should be preferably used. We are introducing the concept of DBpedia Unique Identifier (DUI) and a dataset of linksets relating URIs to DUIs. In order to improve the quality of our dataset we developed a mechanism that allows the user to rate and suggest links. As proof of concept an implementation with a graphical web user interface is provided for accessing the linkset and rating the links. The DBpedia sameAs service is available at http://dbpsa.aksw.org/SameAsService." ;
+    dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/AndreValdestilhas> ;
             rdf:_2 <http://aksw.org/NatanaelArndt> ;
             rdf:_3 <http://aksw.org/DimitrisKontokostas> ] ;
-    ns1:hasFormat <http://svn.aksw.org/papers/2015/SEMANTICS_DBpediaSameAs/public.pdf> ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015> ;
-    ns1:title "DBpediaSameAs: An approach to tackle heterogeneity in DBpedia identifiers" ;
-    ns3:keywords "group_aksw",
+    dct:hasFormat <https://svn.aksw.org/papers/2015/SEMANTICS_DBpediaSameAs/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015> ;
+    dct:title "DBpediaSameAs: An approach to tackle heterogeneity in DBpedia identifiers" ;
+    bibtex:keywords "group_aksw",
         "myown" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2196e47de2ffc69623c70433d5d779da7/white_gecko> ;
-    ns2:sameAs <http://ma-graph.org/entity/2401032967> .
+    owl:sameAs <http://ma-graph.org/entity/2401032967> .
 

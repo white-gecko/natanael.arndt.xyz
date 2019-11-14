@@ -1,12 +1,18 @@
-@prefix ns1: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/WWW2019_companion> a <http://purl.org/ontology/bibo/Proceedings> ;
-    ns2:issued "2019-05" ;
-    ns2:title "Companion Proceedings of the 2019 World Wide Web Conference (WWW '19 Companion), San Francisco, CA, USA" ;
-    ns1:month "May" .
+<https://natanael.arndt.xyz/bib/WWW2019_companion> a bibo:Proceedings ;
+    dct:issued "2019-05" ;
+    dct:title "Companion Proceedings of the 2019 World Wide Web Conference (WWW '19 Companion), San Francisco, CA, USA" ;
+    bibtex:month "May" .
 

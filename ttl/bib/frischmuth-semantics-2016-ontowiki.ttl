@@ -1,24 +1,28 @@
-@prefix ns1: <http://purl.org/ontology/bibo/> .
-@prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki> a ns4:InProceedings ;
-    ns2:abstract "In this demonstration (with supportive poster) we present the semantic data wiki OntoWiki, which was released in version 1.0 just recently. We focus on the changes introduced to the tool in the latest release and showcase the generic data wiki, improvements we made with regard to the documentation as well as three success stories where OntoWiki was adapted and deployed." ;
-    ns2:creator [ a rdf:Seq ;
+<https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki> a bibtex:InProceedings ;
+    dct:abstract "In this demonstration (with supportive poster) we present the semantic data wiki OntoWiki, which was released in version 1.0 just recently. We focus on the changes introduced to the tool in the latest release and showcase the generic data wiki, improvements we made with regard to the documentation as well as three success stories where OntoWiki was adapted and deployed." ;
+    dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/PhilippFrischmuth> ;
             rdf:_2 <http://aksw.org/NatanaelArndt> ;
             rdf:_3 <http://aksw.org/MichaelMartin> ] ;
-    ns2:hasFormat <https://svn.aksw.org/papers/2016/Semantics_Demo_OntoWiki/public.pdf> ;
-    ns2:isPartOf <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>,
+    dct:hasFormat <https://svn.aksw.org/papers/2016/Semantics_Demo_OntoWiki/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>,
         <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_PD_SEMANTiCS2016_and_SuCCESS16> ;
-    ns2:title "OntoWiki 1.0: 10 Years of Development - What's New in OntoWiki" ;
-    ns4:keywords "myown" ;
-    ns1:issn "1613-0073" ;
+    dct:title "OntoWiki 1.0: 10 Years of Development - What's New in OntoWiki" ;
+    bibtex:keywords "myown" ;
+    bibo:issn "1613-0073" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2c69d11a47f1527c783969305de7ce348/white_gecko> ;
-    ns3:sameAs <http://ma-graph.org/entity/2572226092> .
+    owl:sameAs <http://ma-graph.org/entity/2572226092> .
 

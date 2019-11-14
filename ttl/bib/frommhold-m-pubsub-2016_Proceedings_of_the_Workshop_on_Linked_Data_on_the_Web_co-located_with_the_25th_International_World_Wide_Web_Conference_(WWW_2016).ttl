@@ -11,8 +11,8 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/MEPDaW2019> a bibo:Proceedings ;
-    dct:issued "2019-05" ;
-    dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
-    bibtex:month "May" .
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)> a bibo:Proceedings ;
+    dct:issued "2016-04" ;
+    dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
+    bibtex:month "April" .
 

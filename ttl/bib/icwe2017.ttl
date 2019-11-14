@@ -11,8 +11,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/MEPDaW2019> a bibo:Proceedings ;
-    dct:issued "2019-05" ;
-    dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
-    bibtex:month "May" .
+<https://natanael.arndt.xyz/bib/icwe2017> a dct:BibliographicResource ;
+    dct:title "17th International Conference on Web Engineering (ICWE 2017)" .
 

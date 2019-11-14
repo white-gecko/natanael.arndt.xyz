@@ -1,0 +1,25 @@
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern> a bibo:Proceedings ;
+    dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
+    dct:issued "2014-09" ;
+    dct:title "Proceedings of the INFORMATIK 2014: Big Data -- Komplexität meistern" ;
+    bibtex:editor [ a rdf:Seq ;
+            rdf:_1 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard> ;
+            rdf:_2 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Grunske_Lars> ;
+            rdf:_3 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Schneider_Eric> ;
+            rdf:_4 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Ull_Dominik> ] ;
+    bibtex:month "September" ;
+    bibtex:volume "P-232" .
+

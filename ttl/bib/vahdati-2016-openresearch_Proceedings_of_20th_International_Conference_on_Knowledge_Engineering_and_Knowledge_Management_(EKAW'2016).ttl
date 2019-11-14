@@ -11,8 +11,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/MEPDaW2019> a bibo:Proceedings ;
-    dct:issued "2019-05" ;
-    dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
-    bibtex:month "May" .
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> a bibo:Proceedings ;
+    dct:isPartOf "ekaw2016" ;
+    dct:issued "2016-11" ;
+    dct:title "Proceedings of 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW'2016)" ;
+    bibtex:month "November" .
 

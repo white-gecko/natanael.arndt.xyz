@@ -11,8 +11,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/MEPDaW2019> a bibo:Proceedings ;
-    dct:issued "2019-05" ;
-    dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
-    bibtex:month "May" .
+<https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)> a bibo:Proceedings ;
+    dct:isPartOf "SEMANTiCS '16" ;
+    dct:issued "2016-09" ;
+    dct:title "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
+    bibtex:month "September" ;
+    vcard:ADR [ vcard:Country "Germany" ;
+            vcard:Locality "Leipzig" ] .
 

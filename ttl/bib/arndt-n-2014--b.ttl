@@ -1,28 +1,33 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix ns4: <http://purl.org/ontology/bibo/> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2014--b> a ns3:InProceedings ;
-    ns1:abstract "We present Xodx (http://aksw.org/Projects/Xodx) an implementation of a node for the Distributed Semantic Social Network (DSSN). DSSN is a general architecture for building an online social network using Semantic Web standards and additional protocols for real-time communication such as Semantic Pingback and PubSubHubbub. Xodx provides functionality for publishing and editing personal profiles, adding friends to the friend list, sending and receiving friendship requests, publishing posts and subscribing to update feeds across distributed nodes." ;
-    ns1:creator [ a rdf:Seq ;
+<https://natanael.arndt.xyz/bib/arndt-n-2014--b> a bibtex:InProceedings ;
+    dct:abstract "We present Xodx (http://aksw.org/Projects/Xodx) an implementation of a node for the Distributed Semantic Social Network (DSSN). DSSN is a general architecture for building an online social network using Semantic Web standards and additional protocols for real-time communication such as Semantic Pingback and PubSubHubbub. Xodx provides functionality for publishing and editing personal profiles, adding friends to the friend list, sending and receiving friendship requests, publishing posts and subscribing to update feeds across distributed nodes." ;
+    dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/NatanaelArndt> ;
             rdf:_2 <http://aksw.org/SebastianTramp> ] ;
-    ns1:hasFormat <http://ceur-ws.org/Vol-1272/paper_154.pdf> ;
-    ns1:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2014--b_CEUR_Workshop_Proceedings>,
+    dct:hasFormat <http://ceur-ws.org/Vol-1272/paper_154.pdf>,
+        <https://svn.aksw.org/papers/2014/ISWC_Xodx/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2014--b_CEUR_Workshop_Proceedings>,
         <https://natanael.arndt.xyz/bib/arndt-n-2014--b_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track> ;
-    ns1:title "Xodx: A node for the Distributed Semantic Social Network" ;
-    ns3:keywords "dssn",
+    dct:title "Xodx: A node for the Distributed Semantic Social Network" ;
+    bibtex:keywords "dssn",
         "group_aksw",
         "myown",
         "xodx" ;
-    ns3:pages "465-468" ;
-    ns4:doi "10.13140/2.1.4115.5524" ;
-    ns4:issn "1613-0073" ;
+    bibtex:pages "465-468" ;
+    bibo:doi "10.13140/2.1.4115.5524" ;
+    bibo:issn "1613-0073" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/27e9c104a1d5b7fee5f28d4e92e5d2081/white_gecko> ;
-    ns2:sameAs <http://ma-graph.org/entity/2408059093> .
+    owl:sameAs <http://ma-graph.org/entity/2408059093> .
 
