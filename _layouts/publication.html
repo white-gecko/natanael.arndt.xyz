@@ -8,7 +8,7 @@ rdf_prefix_path: "_data/prefix.sparql"
     <div>
     {% assign authors = page.rdf | rdf_container: "dct:creator" %}
     {% for author in authors %}
-      {%- if creator.iri -%}
+      {%- if author.iri -%}
         <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>
       {%- else -%}
         <span>{{ author }}</span>
