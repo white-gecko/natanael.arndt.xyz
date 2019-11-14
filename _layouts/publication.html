@@ -61,10 +61,10 @@ rdf_prefix_path: "_data/prefix.sparql"
       {{ page.rdf | rdf_property: "dct:abstract" | markdownify }}
   </article>
 
-  {% unless content and content != "" %}
+  {% unless content and content != "" and download %}
   <h3>Preview</h3>
-  <object data="{{ page.rdf | rdf_property: "dct:hasFormat" }}" type="application/pdf" width="100%" style="height: 1000px">
-    <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}">Download</a>
+  <object data="{{ download }}" type="application/pdf" width="100%" style="height: 1000px">
+    <a href="{{ download }}">Download</a>
   </object>
   {% endunless %}
 
