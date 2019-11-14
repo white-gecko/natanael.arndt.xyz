@@ -64,11 +64,21 @@ rdf_prefix_path: "_data/prefix.sparql"
   </article>
   {% endif %}
 
-  {% unless content and content != "" and download %}
-  <h3>Preview</h3>
-  <object data="{{ download }}" type="application/pdf" width="100%" style="height: 1000px">
-    <a href="{{ download }}">Download</a>
-  </object>
+  {% unless content and content != "" %}
+  {% if download %}
+    {% unless download.iri contains "https://" %}
+      {% assign downloads = page.rdf | rdf_property: "dct:hasFormat", nil, true %}
+      {% for format in downloads %}
+        {% if format.iri contains "https://" %}
+          {% assign download = format %}
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
+    <h3>Preview</h3>
+    <object data="{{ download }}" type="application/pdf" width="100%" style="height: 1000px">
+      <a href="{{ download }}">Download</a>
+    </object>
+  {% endif %}
   {% endunless %}
 
   {{ content }}
