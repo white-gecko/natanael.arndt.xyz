@@ -8,7 +8,12 @@ rdf_prefix_path: "_data/prefix.sparql"
     <div>
     {% assign authors = page.rdf | rdf_container: "dct:creator" %}
     {% for author in authors %}
-        <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>{% unless forloop.last %}, {% endunless %}
+      {%- if creator.iri -%}
+        <a href="{{ author.iri }}">{{ author | rdf_property: "foaf:name" }}</a>
+      {%- else -%}
+        <span>{{ author }}</span>
+      {%- endif -%}
+      {% unless forloop.last %}, {% endunless %}
     {%- endfor -%}
     {%- assign collection = page.rdf | rdf_property: "dct:isPartOf" -%}
     {%- if collection -%}

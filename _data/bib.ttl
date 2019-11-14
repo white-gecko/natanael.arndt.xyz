@@ -202,6 +202,12 @@
     ] ;
     foaf:name "Gezim Sejdiu" .
 
+<https://platona-m.technology/Nagel> a foaf:Person;
+  foaf:name "Matthias Nagel" .
+
+<https://platona-m.technology/Foerster> a foaf:Person;
+  foaf:name "Fabian Förster" .
+
 dct:BibliographicResource
     rdfs:subClassOf foaf:Document .
 
@@ -249,6 +255,32 @@ bibo:Report
 
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
+
+<https://natanael.arndt.xyz/bib/vpp2019>
+    dct:issued "2019-11" ;
+    dct:title "Die hybride Fabrik – menschliche und künstliche Intelligenz im Einklang VPP2019 – Vernetzt planen und produzieren, Chemnitz" ;
+    bibtex:month "November" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/nagel-m-2019--predictivemaintenance>
+    dct:creator [
+        rdf:_1 <https://platona-m.technology/Nagel> ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
+        rdf:_3 <https://platona-m.technology/Foerster> ;
+        rdf:_4 "Matthes Nagel" ;
+        rdf:_5 "Ralph Riedel" ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/vpp2019> ;
+    dct:title "Ein Plattform-Ökosystem für Predictive Maintenance zur Erhöhung der Effizienz und Effektivität der Instandhaltung in kleinen und mittleren Unternehmen (KMU)" ;
+    dct:issued "2019" ;
+    dct:hasFormat <https://svn.aksw.org/papers/2019/VPP_PredictiveMaintenance/public.pdf> ;
+    a bibtex:InProceedings ;
+    dct:abstract """Autonome Steuerungsverfahren gelten als vielversprechender Ansatz, um einer zunehmend dynamisch und komplexer werdenden Produktionsumgebung gerecht zu werden.
+    Während Steuerungsverfahren im Rahmen der Produktionsplanung immer kürzere Planungszyklen anstreben, konnte die Planbarkeit für Instandhaltungsmaßnahmen durch Predictive Maintenance-Ansätze erst gewonnen werden.
+    Um die Potenziale eines kombinierten Ansatzes nutzen zu können, stellt diese Arbeit eine Verhandlungsumgebung dar, die auf dem Contract Net Interaktionsprotokoll basiert.
+    Durch die Gewährleistung der Vergleichbarkeit zweier Auftragsarten soll eine bessere Integration von zustandsabhängigen Instandhaltungsaufträgen in die reaktive Maschinenbelegungsplanung von autonomen Steuerungsverfahren erreicht werden.""" .
+
 
 <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs>
     dct:abstract "The DBpedia dataset has multiple URIs within the dataset and from other datasets connected with (transitive) owl:sameAs relations and thus referring to the same concepts. With this heterogeneity of identifiers it is complicated for users and agents to find the unique identifier which should be preferably used. We are introducing the concept of DBpedia Unique Identifier (DUI) and a dataset of linksets relating URIs to DUIs. In order to improve the quality of our dataset we developed a mechanism that allows the user to rate and suggest links. As proof of concept an implementation with a graphical web user interface is provided for accessing the linkset and rating the links. The DBpedia sameAs service is available at http://dbpsa.aksw.org/SameAsService." ;
