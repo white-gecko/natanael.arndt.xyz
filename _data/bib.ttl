@@ -258,7 +258,7 @@ bibo:Thesis
         rdf:_3 <http://aksw.org/DimitrisKontokostas> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2015/SEMANTICS_DBpediaSameAs/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2015/SEMANTICS_DBpediaSameAs/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015> ;
     dct:title "DBpediaSameAs: An approach to tackle heterogeneity in DBpedia identifiers" ;
     bibtex:keywords "group_aksw", "myown" ;
@@ -281,7 +281,7 @@ bibo:Thesis
         rdf:_4 <https://natanael.arndt.xyz/bib/MMoOnHeb_Arndt_Timotheus> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2016/LREC_MMoOnHebrew/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2016/LREC_MMoOnHebrew/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož> ;
     dct:title "Creating Linked Data Morphological Language Resources with MMoOn. The Hebrew Morpheme Inventory." ;
     bibtex:keywords "myown" ;
@@ -378,7 +378,7 @@ bibo:Thesis
         rdf:_7 <http://aksw.org/MichaelMartin> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2016/LDOW_StructuredFeedback/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2016/LDOW_StructuredFeedback/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)> ;
     dct:title "Structured Feedback: A Distributed Protocol for Feedback and Patches on the Web of Data" ;
     bibtex:keywords "2016 arndt dssn myown" ;
@@ -397,7 +397,7 @@ bibo:Thesis
         rdf:_1 <http://aksw.org/NatanaelArndt> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://lips.informatik.uni-leipzig.de/files/skil-extended-abstract.pdf> ;
+    dct:hasFormat <https://dl.gi.de/bitstream/handle/20.500.12116/19365/1004.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2010--_GI-Edition---Lecture_Notes_in_Informatics>, <https://natanael.arndt.xyz/bib/arndt-n-2010--_Proceedings_of_the_INFORMATIK_2010__Service_Science_--_Neue_Perspektiven_für_die_Informatik> ;
     dct:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
     bibtex:keywords "dssn myown" ;
@@ -687,7 +687,7 @@ This enables content management and knowledge management systems to serve datase
         rdf:_4 <http://aksw.org/ThomasRiechert> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2015/SEMANTICS_DockerizingLOD/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2015/SEMANTICS_DockerizingLOD/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings>, <https://natanael.arndt.xyz/bib/arndt-n-2015--k_International_Conference_on_Semantic_Systems_Proceedings> ;
     dct:title "Knowledge Base Shipping to the Linked Open Data Cloud" ;
     bibtex:keywords "docker group_aksw myown" ;
@@ -728,7 +728,7 @@ This enables content management and knowledge management systems to serve datase
         rdf:_3 <http://aksw.org/MichaelMartin> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2016/Semantics_Quit/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2016/Semantics_Quit/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_12th_International_Conference_on_Semantic_Systems_Proceedings>, <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_International_Conference_on_Semantic_Systems_Proceedings> ;
     dct:title "Distributed Collaboration on RDF Datasets Using Git: Towards the Quit Store" ;
     bibtex:keywords "2016 groupaksw myown" ;
@@ -1082,7 +1082,7 @@ This enables content management and knowledge management systems to serve datase
         rdf:_6 <http://aksw.org/ThomasRiechert> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2014/DERM_AMSL/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2014/DERM_AMSL/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>, <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern> ;
     dct:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
     bibtex:keywords "amsl erm group_aksw myown" ;
@@ -1307,7 +1307,7 @@ This enables content management and knowledge management systems to serve datase
         rdf:_5 <http://aksw.org/SoerenAuer> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <http://svn.aksw.org/papers/2011/ESWC_MobileSocialSemanticWeb/public.pdf> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2011/ESWC_MobileSocialSemanticWeb/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/tramp-s-2011--a_Proceedings_of_the_ESWC2011> ;
     dct:title "Weaving a Distributed, Semantic Social Network for Mobile Users" ;
     bibtex:keywords "dssn", "mssw", "myown" ;
