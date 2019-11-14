@@ -61,6 +61,12 @@ rdf_prefix_path: "_data/prefix.sparql"
       {{ page.rdf | rdf_property: "dct:abstract" | markdownify }}
   </article>
 
+  {% unless content and content != "" %}
+  <h2>Preview</h2>
+  <object data="{{ page.rdf | rdf_property: "dct:hasFormat" }}" type="application/pdf" width="100%" style="height: 1000px" data-component="SpringerLink.PdfPreview">
+    <a href="{{ page.rdf | rdf_property: "dct:hasFormat" }}">Download</a>
+  </object>
+  {% endunless %}
   <!-- https://stackoverflow.com/questions/14690000/embed-a-pdf-in-html5 -->
   <!-- does not work -->
   <!--//
