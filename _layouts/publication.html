@@ -56,10 +56,13 @@ rdf_prefix_path: "_data/prefix.sparql"
     </div>
   </header>
 
+  {% assign abstract = page.rdf | rdf_property: "dct:abstract" %}
+  {% if abstract %}
   <article class="post-content">
       <h3>Abstract</h3>
-      {{ page.rdf | rdf_property: "dct:abstract" | markdownify }}
+      {{ abstract | markdownify }}
   </article>
+  {% endif %}
 
   {% unless content and content != "" and download %}
   <h3>Preview</h3>
