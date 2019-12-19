@@ -16,6 +16,8 @@ Relevant Literature about the Linked Data Life-Cycle is:
 * Sören Auer et al. “Introduction to Linked Data and Its Lifecycle on the Web”. In: Reasoning Web. 2013, pp. 1–90. url: [http://jens- lehmann.org/files/2013/reasoning_web_linked_data.pdf](http://jens- lehmann.org/files/2013/reasoning_web_linked_data.pdf).
 * Sören Auer et al. “Managing the life-cycle of Linked Data with the LOD2 Stack”. In: Proceedings of International Semantic Web Conference (ISWC 2012). 2012. url: [http://iswc2012.semanticweb.org/sites/default/files/76500001.pdf](http://iswc2012.semanticweb.org/sites/default/files/76500001.pdf).
 
+There is also a page in the wiki of the [W3C Government Linked Data (GLD) working group](https://www.w3.org/2011/gld/wiki/Main_Page) that shows several proposals and evolutionary steps of a Linked Data life cycle model: [https://www.w3.org/2011/gld/wiki/GLD_Life_cycle](https://www.w3.org/2011/gld/wiki/GLD_Life_cycle).
+
 ## TikZ Version
 I was looking for a [TikZ](https://www.ctan.org/pkg/pgf) version of the life-cycle cake but coudn't find one, so here it is:
 
