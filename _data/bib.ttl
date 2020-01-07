@@ -278,7 +278,7 @@ bibo:Thesis
     dct:isPartOf <https://natanael.arndt.xyz/bib/rodbh2019> ;
     dct:title "Doctoral Symposium on Research on Online Databases in History (RODBH 2019)" ;
     dct:issued "2019" ;
-    dct:hasFormat <http://ceur-ws.org/Vol-2532/introduction.pdf> ;
+    dct:hasFormat <http://ceur-ws.org/Vol-2532/introduction.pdf>, <https://svn.aksw.org/papers/2019/RODBH_editorial/public.pdf> ;
     a bibtex:InProceedings ;
     dct:abstract """This editorial provides an introduction to the field of research of the Doctoral Symposiumon Research on Online Databases in History (RODBH 2019) which was collocated with the 3rdData for History workshop.
     The workshop series is situated in the field of digital humanities andtargets the interconnection of subjects of historical research, knowledge engineering, and informationscience.
