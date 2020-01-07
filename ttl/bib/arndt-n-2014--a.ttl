@@ -1,15 +1,9 @@
-@prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a> a bibtex:InProceedings ;
     dct:abstract "Electronic resources (e.g. e-journals, e-books or databases) are gaining more an more importance in libraries. With AMSL we demonstrate a flexible electronic resource management system which enables libraries to manage their electronic resources with a domain adapted software based on the OntoWiki application framework. Due to its generic design and first of all flexible data model the AMSL system can be easily adjusted to upcoming requirements. The consequent use of Linked Data further enables libraries to build up a Linked Open Data infrastructure for exchange of meta data." ;

@@ -1,0 +1,9 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://natanael.arndt.xyz/bib/rodbh2019> a bibo:Proceedings ;
+    dct:issued "2019-04" ;
+    dct:title "Proceedings of the Doctoral Symposium on Research on Online Databases in History co-located with 3rd Data for History Workshop, Leipzig" ;
+    bibtex:month "April" .
+

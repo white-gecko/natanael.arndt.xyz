@@ -256,6 +256,35 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+
+<https://natanael.arndt.xyz/bib/rodbh2019>
+    dct:issued "2019-04" ;
+    dct:title "Proceedings of the Doctoral Symposium on Research on Online Databases in History co-located with 3rd Data for History Workshop, Leipzig" ;
+    bibtex:month "April" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/riechert-t-2019--rodbh>
+    dct:creator [
+        rdf:_1 <http://aksw.org/ThomasRiechert> ;
+        rdf:_2 "Francesco Beretta" ;
+        rdf:_3 "George Bruseker" ;
+        rdf:_4 <http://aksw.org/EdgardMarx> ;
+        rdf:_5 "Jennifer Blanke" ;
+        rdf:_6 "Vincent Alamercery" ;
+        rdf:_7 "Tracy Hoffmann" ;
+        rdf:_8 <http://aksw.org/NatanaelArndt> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/rodbh2019> ;
+    dct:title "Doctoral Symposium on Research on Online Databases in History (RODBH 2019)" ;
+    dct:issued "2019" ;
+    dct:hasFormat <http://ceur-ws.org/Vol-2532/introduction.pdf> ;
+    a bibtex:InProceedings ;
+    dct:abstract """This editorial provides an introduction to the field of research of the Doctoral Symposiumon Research on Online Databases in History (RODBH 2019) which was collocated with the 3rdData for History workshop.
+    The workshop series is situated in the field of digital humanities andtargets the interconnection of subjects of historical research, knowledge engineering, and informationscience.
+    The common interlink of this disciplines is the use of research data, data management, andall accompanying activities as well as the organization of collaborative community processes.""" .
+
+
 <https://natanael.arndt.xyz/bib/vpp2019>
     dct:issued "2019-11" ;
     dct:title "Die hybride Fabrik – menschliche und künstliche Intelligenz im Einklang VPP2019 – Vernetzt planen und produzieren, Chemnitz" ;

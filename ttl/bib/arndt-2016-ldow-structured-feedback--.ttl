@@ -1,15 +1,8 @@
-@prefix as: <https://www.w3.org/ns/activitystreams#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--> a bibtex:InProceedings ;
     dct:abstract "The World Wide Web is an infrastructure to publish and retrieve information through web resources. It evolved from a static Web 1.0 to a multimodal and interactive communication and information space used to collaboratively contribute and discuss web resources, which is better known as Web 2.0. The evolution into a Semantic Web (Web 3.0) proceeds. One of its remarkable advantages is the decentralized and interlinked data composition. Hence, in contrast to its data distribution, workflows and technologies for decentralized collaborative contribution are missing. In this paper we propose the Structured Feedback protocol as an interactive addition to the Web of Data. It offers support for users to contribute to the evolution of web resources, by providing structured data artifacts as patches for web resources, as well as simple plain text comments. Based on this approach it enables crowd-supported quality assessment and web data cleansing processes in an ad-hoc fashion most web users are familiar with." ;
