@@ -18,7 +18,7 @@
   foaf:primaryTopic <#i> .
 
 <#i> a foaf:Person ;
-  owl:sameAs aksw:NatanaelArndt, <http://ma-graph.org/entity/2098112019> ;
+  owl:sameAs aksw:NatanaelArndt, <http://ma-graph.org/entity/2098112019>, <https://scigraph.springernature.com/person.014570654151.21> ;
   foaf:name "Natanael Arndt" ;
   foaf:image <https://avatars1.githubusercontent.com/u/1018168> ;
   foaf:nick "white_gecko", "white-gecko", "natanael" ;
