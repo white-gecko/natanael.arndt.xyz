@@ -13,7 +13,7 @@ The *Linked Data Life-Cycle*, *LOD2 Cycle*, or *LOD Cylce* tries to visualize th
 Relevant Literature about the Linked Data Life-Cycle is:
 
 * Sören Auer, Volha Bryl, and Sebastian Tramp, eds. Linked Open Data - Creating Knowledge Out of Interlinked Data - Results of the LOD2 Project. Vol. 8661. Lecture Notes in Computer Science. Springer, 2014. isbn: 978-3-319-09845-6. doi: 10.1007/978-3-319-09846-3. url: [http://dx.doi.org/10.1007/978-3-319-09846-3](http://dx.doi.org/10.1007/978-3-319-09846-3).
-* Sören Auer et al. “Introduction to Linked Data and Its Lifecycle on the Web”. In: Reasoning Web. 2013, pp. 1–90. url: [http://jens- lehmann.org/files/2013/reasoning_web_linked_data.pdf](http://jens- lehmann.org/files/2013/reasoning_web_linked_data.pdf).
+* Sören Auer et al. “Introduction to Linked Data and Its Lifecycle on the Web”. In: Reasoning Web. 2013, pp. 1–90. url: [http://jens- lehmann.org/files/2013/reasoning_web_linked_data.pdf](http://jens-lehmann.org/files/2013/reasoning_web_linked_data.pdf).
 * Sören Auer et al. “Managing the life-cycle of Linked Data with the LOD2 Stack”. In: Proceedings of International Semantic Web Conference (ISWC 2012). 2012. url: [http://iswc2012.semanticweb.org/sites/default/files/76500001.pdf](http://iswc2012.semanticweb.org/sites/default/files/76500001.pdf).
 
 The life cycle developed in the LOD2 project was also underpinned with the implementation of components for each step within the LOD2-stack.
