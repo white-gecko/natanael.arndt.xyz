@@ -1,0 +1,16 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://natanael.arndt.xyz/bib/arndt-2011-triple-place-> a bibtex:InProceedings ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <https://skil.informatik.uni-leipzig.de/blog/wp-content/uploads/proceedings/2011/Arndt2011.1.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/SKIL2011> ;
+    dct:title "TriplePlace: A flexible triple store for Android with six indices" ;
+    bibtex:keywords "dssn myown" ;
+    bibtex:pages "1-7" ;
+    bibo:isbn "978-3-941608-14-6" ;
+    bibo:issn "1617-5468" .
+
