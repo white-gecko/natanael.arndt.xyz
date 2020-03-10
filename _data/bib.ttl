@@ -1326,6 +1326,7 @@ This enables content management and knowledge management systems to serve datase
     dct:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
     bibtex:keywords "myown" ;
     bibo:isbn "978-3-319-49003-8" ;
+    bibo:doi "10.1007/978-3-319-49004-5_50" ;
     a bibtex:InProceedings ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2546689421> .

@@ -15,6 +15,7 @@
     dct:isPartOf <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> ;
     dct:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
     bibtex:keywords "myown" ;
+    bibo:doi "10.1007/978-3-319-49004-5_50" ;
     bibo:isbn "978-3-319-49003-8" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko> ;
     owl:sameAs <http://ma-graph.org/entity/2546689421> .
