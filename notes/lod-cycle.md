@@ -24,7 +24,7 @@ There is also a page in the wiki of the [W3C Government Linked Data (GLD) workin
 ## TikZ Version
 I was looking for a [TikZ](https://www.ctan.org/pkg/pgf) version of the life-cycle cake but coudn't find one, so here it is:
 
-<a href="/img/lod-cycle_tikz.svg"><img style="width: 60%" src="/img/lod-cycle_tikz.svg" /></a><br/>
+{% include img.html style="width: 60%" src="/img/lod-cycle_tikz.svg" href="/img/lod-cycle_tikz.svg" %}<br/>
 
 ```
 \documentclass[tikz]{standalone}
