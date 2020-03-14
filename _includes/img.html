@@ -6,13 +6,13 @@
 {%- assign style = "width: 30%" -%}
 {%- endunless -%}
 {%- if link -%}
-<a href="{{ link }}">
+<a href="{{ link }}" markdown="0">
   <noscript class="loading-lazy">
     <img src="{{ src }}" alt="{{ alt }}" style="{{ style }}" loading="lazy"/>
   </noscript>
 </a>
 {%- else -%}
-<noscript class="loading-lazy">
+<noscript class="loading-lazy" markdown="0">
   <img src="{{ src }}" alt="{{ alt }}" style="{{ style }}" loading="lazy"/>
 </noscript>
 {%- endif -%}
