@@ -1,5 +1,6 @@
 - name: Quit–Quads in Git
   url: "http://aksw.org/Projects/Quit"
+  image: "https://natanael.arndt.xyz/img/logos/quitstore.svg"
   subtitle: "Distributed Version Control for RDF Knowledge Bases"
   abstract: "The Quit Store is a triple store capable of performing version control on RDF knowledge
   graphs. Is especially supports distributed collaboration setups for distributed evolving RDF
@@ -16,7 +17,7 @@
 - name: OntoWiki
   url: "http://aksw.org/Projects/OntoWiki"
   subtitle: "a tool providing support for agile, distributed knowledge engineering scenarios"
-  image: "https://cdn.rawgit.com/AKSW/OntoWiki/develop/application/logo/logo-symbol.svg"
+  image: "https://natanael.arndt.xyz/img/logos/OntoWiki.svg"
   abstract: "OntoWiki is a system for collaborative knowledge management and creation.
 It provides different views to the data and can even be extended by plugins, for example a map plugin to provide a geo spacial view to the data.
 The underlying data model is a graph database using the Resource Description Framework (RDF).
@@ -35,21 +36,21 @@ into a coherent distributed semantic social network, which is capable to provide
 - name: Xodx
   subtitle: "A basic DSSN node implementation"
   url: "http://aksw.org/Projects/Xodx"
-  image: "https://cdn.rawgit.com/AKSW/xodx/develop/resources/img/xodx.svg"
+  image: "https://natanael.arndt.xyz/img/logos/xodx.svg"
   abstract: "Xodx is an implementation of the basic functionality of a DSSN node with profile provider and browser.
 It can be used both for a single-user setup (e.g. on a Freedom Box) and a multi-user setup.
 The software is written in PHP and based on the Erfurt-Framework and lib-dssn-php."
 
 - name: "MSSW"
   subtitle: "weaving a distributed, semantic social network for mobile users"
-  image: "https://cdn.rawgit.com/AKSW/mssw/master/logo/icon_v4.svg"
+  image: "https://natanael.arndt.xyz/img/logos/mssw.svg"
   url: "http://aksw.org/Projects/MobileSocialSemanticWeb"
   abstract: "An Android-based social web client as well as a contacts provider,
   which integrates your distributed FOAF/WebID social network into your mobile phone"
 
 - name: "ShareNote"
   subtitle: "a simple and handy app to write down your idear and share them"
-  image: "https://github.com/white-gecko/ShareNote/raw/ae20bdf244eb83bb159f453ef922230059b53542/app/src/main/res/drawable-hdpi/text.png"
+  image: "https://natanael.arndt.xyz/img/logos/ShareNote.svg"
   url: "https://github.com/white-gecko/ShareNote"
   abstract: "ShareNote is a simple and handy app to write down your ideas, thoughts and other notes.
 It can share the notes with other apps through the Android share functionality.
