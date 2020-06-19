@@ -19,21 +19,21 @@
   "homepage": "https://github.com/white-gecko/natanael.arndt.xyz#readme",
   "devDependencies": {
     "css-loader": "^2.1.1",
-    "pdfjs-dist": "^2.2.228",
+    "pdfjs-dist": "^2.4.456",
     "sass-loader": "^7.3.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "bootstrap": "^4.3.1",
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "bootstrap": "^4.5.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^3.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "less-loader": "^4.1.0",
-    "loading-attribute-polyfill": "^1.4.1",
-    "node-sass": "^4.13.0",
+    "loading-attribute-polyfill": "^1.5.4",
+    "node-sass": "^4.14.1",
     "npm-font-open-sans": "^1.1.0",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.1"
   }
 }
