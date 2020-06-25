@@ -1128,10 +1128,6 @@ This enables content management and knowledge management systems to serve datase
     bibtex:month "April" ;
     a bibo:Proceedings .
 
-<https://natanael.arndt.xyz/bib/icwe2017>
-    dct:title "17th International Conference on Web Engineering (ICWE 2017)" ;
-    a dct:BibliographicResource .
-
 <https://natanael.arndt.xyz/bib/nareike-a-2014--a>
     dct:abstract "In libraries a change from physical resources to electronic resources, with new licensing models and lending processes, has taken places. The existing managing infrastructure is not yet suitable for the upcoming requirements and does not provide support for flexible and extensible data models for being future-proof. In this paper we present a system that uses the generic RDF resource management system OntoWiki for managing library resources. OntoWiki is extended by components for adapting the generic system to the given domain, e.g. by using data templates. In addition the Linked Data capability of OntoWiki is used and extended to import various metadata to enrich the managing resource. Consequently using Linked Data further enables libraries to build up a Linked Data infrastructure in the library domain." ;
     dct:creator [
