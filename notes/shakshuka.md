@@ -4,7 +4,7 @@ parent: notes
 title: Shakshuka
 description: "Das perfekte Frühstück"
 date:   2018-09-06 14:16:00
-update: 2018-10-11 10:44:00
+update: 2020-06-25 13:25:00
 ---
 
 Ein perfektes Frühstück:
@@ -26,12 +26,12 @@ Kaffee, vielleicht noch schöne Musik, Kerze anzünden nicht vergessen und dazu 
 |      |  Pita oder Weißbrot |
 
 Zwiebeln, Knoblauch und Paprika klein schneiden oder hacken.
-Olivenöl, Zwiebeln, Knoblauch und Paprika zusammen mit Kumin, Paprikapulver, Salz und die weiteren Gewürze nach Belieben in eine Pfanne geben und etwa 5 Minuten glasig braten.
-Während dessen die Tomaten schneiden.
+Olivenöl, Zwiebeln, Knoblauch und Paprika zusammen mit etwas Salz, Kumin, Paprikapulver und den weiteren Gewürzen nach Belieben in eine Pfanne geben und etwa 5 Minuten glasig braten.
+Währenddessen die Tomaten schneiden.
 Anschließend die Tomaten und das Tomatenmark in die Pfanne geben und 10 Minuten köcheln lassen.
-Jetzt 4 Kuhlen in der Tomatenmasse mache und die Eier hineingeben.
+Jetzt 4 Kuhlen in der Tomatenmasse machen und die Eier hineingeben.
 Ab jetzt sollte die Pfanne nicht mehr aus den Augen gelassen werden, denn für ein gutes Shakshuka sind gut pochierte Eier entscheidend.
-Wenn das Eiweis fest geworden ist aber das Eigelb die genau richtige Konsistenz hat, ist das Essen fertig.
+Wenn das Eiweis fest geworden ist und das Eigelb die genau richtige Konsistenz hat, ist das Essen fertig.
 Jetzt großzüig zerbröselten Feta und frischen Koriander über das Gericht geben und mit Pita oder Weißbrot servieren.
 
 Wir essen das Shakshuka meist mit dem Brot gemeinsam direkt aus einer Pfanne.
