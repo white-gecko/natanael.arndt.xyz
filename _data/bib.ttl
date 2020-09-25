@@ -42,6 +42,14 @@
     ] ;
     foaf:name "Claus Stadler" .
 
+<http://aksw.org/DenisStreitmatter>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Streitmatter" ;
+        vcard:Given "Denis"
+    ] ;
+    foaf:name "Denis Streitmatter" .
+
 <http://aksw.org/DimitrisKontokostas>
     a foaf:Person ;
     vcard:N [
@@ -58,6 +66,14 @@
     ] ;
     foaf:name "Edgard Marx" .
 
+<http://aksw.org/FabianGötz>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Götz" ;
+        vcard:Given "Fabian"
+    ] ;
+    foaf:name "Fabian Götz" .
+
 <http://aksw.org/JensLehmann>
     a foaf:Person ;
     vcard:N [
@@ -65,6 +81,14 @@
         vcard:Given "Jens"
     ] ;
     foaf:name "Jens Lehmann" .
+
+<http://aksw.org/JohannesFrey>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Frey" ;
+        vcard:Given "Johannes"
+    ] ;
+    foaf:name "Johannes Frey" .
 
 <http://aksw.org/KonradAbicht>
     a foaf:Person ;
@@ -153,6 +177,14 @@
         vcard:Given "Roy"
     ] ;
     foaf:name "Roy Meissner" .
+
+<http://aksw.org/SebastianHellmann>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Hellmann" ;
+        vcard:Given "Sebastian"
+    ] ;
+    foaf:name "Sebastian Hellmann" .
 
 <http://aksw.org/SebastianNuck>
     a foaf:Person ;
@@ -256,6 +288,28 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+<https://natanael.arndt.xyz/bib/frey-j-2020-archivo>
+    dct:abstract "While thousands of ontologies exist on the web, a unified system for handling online ontologies – in particular with respect to discovery, versioning, access, quality-control, mappings – has not yet surfaced and users of ontologies struggle with many challenges. In this paper, we present an online ontology interface and augmented archive called DBpedia Archivo, that discovers, crawls, versions and archives ontologies on the DBpedia Databus. Based on this versioned crawl, different features, quality measures and, if possible, fixes are deployed to handle and stabilize the changes in the found ontologies at web-scale. A comparison to existing approaches and ontology repositories is given." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/JohannesFrey> ;
+        rdf:_2 <http://aksw.org/DenisStreitmatter> ;
+        rdf:_3 <http://aksw.org/FabianGötz> ;
+        rdf:_4 <http://aksw.org/SebastianHellmann> ;
+        rdf:_5 <http://aksw.org/NatanaelArndt> ;
+        a rdf:Seq
+    ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2020/semantics_archivo/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/SEMANTiCS_2020> ;
+    dct:title "DBpedia Archivo - A Web-Scale Interface for Ontology Archiving under Consumer-oriented Aspects" ;
+    bibtex:keywords "group_aksw", "myown" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/20773b0a3db90d1111c523172cbd75db4/white_gecko> .
+
+<https://natanael.arndt.xyz/bib/SEMANTiCS_2020>
+    dct:issued "2020-09" ;
+    dct:title "SEMANTiCS 2020" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/rodbh2019>
     dct:issued "2019-04" ;
