@@ -1,0 +1,20 @@
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://natanael.arndt.xyz/bib/frey-j-2020-archivo> a bibtex:InProceedings ;
+    dct:abstract "While thousands of ontologies exist on the web, a unified system for handling online ontologies – in particular with respect to discovery, versioning, access, quality-control, mappings – has not yet surfaced and users of ontologies struggle with many challenges. In this paper, we present an online ontology interface and augmented archive called DBpedia Archivo, that discovers, crawls, versions and archives ontologies on the DBpedia Databus. Based on this versioned crawl, different features, quality measures and, if possible, fixes are deployed to handle and stabilize the changes in the found ontologies at web-scale. A comparison to existing approaches and ontology repositories is given." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/JohannesFrey> ;
+            rdf:_2 <http://aksw.org/DenisStreitmatter> ;
+            rdf:_3 <http://aksw.org/FabianGötz> ;
+            rdf:_4 <http://aksw.org/SebastianHellmann> ;
+            rdf:_5 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <https://svn.aksw.org/papers/2020/semantics_archivo/public.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/SEMANTiCS_2020> ;
+    dct:title "DBpedia Archivo - A Web-Scale Interface for Ontology Archiving under Consumer-oriented Aspects" ;
+    bibtex:keywords "group_aksw",
+        "myown" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/20773b0a3db90d1111c523172cbd75db4/white_gecko> .
+
