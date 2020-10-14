@@ -4,7 +4,7 @@ parent: notes
 title: The Linked Data Life-Cycle
 description: "The Linked Data Life-Cycle tries to visualize the relevant steps performed to generate, manage, publish Linked Data."
 date:   2019-08-06 23:51:00+09:00
-update: 2019-08-06 23:51:00+09:00
+update: 2020-10-14 17:06:00+02:00
 ---
 
 ## Introduction
@@ -22,7 +22,7 @@ The life cycle and the LOD2-stack can be interactively explored on the [LOD2 web
 There is also a page in the wiki of the [W3C Government Linked Data (GLD) working group](https://www.w3.org/2011/gld/wiki/Main_Page) that shows several proposals and evolutionary steps of a Linked Data life cycle model: [https://www.w3.org/2011/gld/wiki/GLD_Life_cycle](https://www.w3.org/2011/gld/wiki/GLD_Life_cycle).
 
 ## TikZ Version
-I was looking for a [TikZ](https://www.ctan.org/pkg/pgf) version of the life-cycle cake but coudn't find one, so here it is:
+I was looking for a [TikZ](https://www.ctan.org/pkg/pgf) version of the life-cycle but couldn't find one, so here it is:
 
 {% include img.html style="width: 60%" src="/img/lod-cycle_tikz.svg" href="/img/lod-cycle_tikz.svg" %}<br/>
 
