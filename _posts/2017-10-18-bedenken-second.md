@@ -9,6 +9,7 @@ Als ich den Beitrag [ZDF „volle kanne“: „Heimliche Videoüberwachung im Su
 Ich denk, dass vor der Installation oder Akzeptanz von dem was digital Möglich ist durchaus Bedenken hinsichtlich der gesellschaftlichen Auswirkungen angebracht sind:
 Müssen wir es tatsächlich in Kauf nehmen ungefragt dazu beizutragen unsere Freiheit einzuschränken?
 Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Weise gläsern wird, wird ihm sein Stimme in der liberalen Marktwirtschaft genommen?
+<!--more-->
 
 Die Regeln aus dem Video sind ein Möglichkeit sich deren Wirkung bewusst zu machen:
 

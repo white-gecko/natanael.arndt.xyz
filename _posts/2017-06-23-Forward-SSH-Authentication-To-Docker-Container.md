@@ -8,6 +8,7 @@ date:   2017-06-23 15:30:00+02:00
 For my work on the *dockerjekyllpages* image ([docker hub](https://hub.docker.com/r/whitegecko/dockerjekyllpages/), [GitHub](https://github.com/white-gecko/dockerjekyllpages/)) I came across the issue that I also want to be able to build from private git repositories and thus want to authenticate using a private SSH key.
 During my research on this topic I came across [this stackoverflow post by Aistis](https://stackoverflow.com/questions/18136389/using-ssh-keys-inside-docker-container/36648428#36648428) which proposes forwarding the SSH authentication socket (or *authorization*, not sure about that) which allows the container to communicate with your hosts SSH authentication method.
 I think this is a very clean solution and thus I've implemented it as follows.
+<!--more-->
 Per default the `SSH_AUTH_SOCK` environment variable is set to `/var/run/ssh-agent.sock` in the image.
 
     # This is the respective line from the Dockerfile

@@ -26,6 +26,7 @@ float: left; margin-right: 25px">
 Bei meiner heutigen Presseschau bin ich auf die beiden [golem](http://www.golem.de/news/observatory-mozilla-bietet-sicherheitscheck-fuer-websites-1608-122923.html) und [heise/ix](http://www.heise.de/ix/meldung/Mozilla-bringt-kostenlosen-Sicherheitstest-fuer-Websites-3306197.html) Artikel zu einem neuen Sicherheitstest von Mozilla für Webseites gestoßen.
 Den Test erläutert die Entwicklerin April King ebenfalls in [einem Eintrag in ihrem eigenen Blog](https://pokeinthe.io/2016/08/25/observatory-by-mozilla-a-new-tool/).
 Über die Seite [https://observatory.mozilla.org/](https://observatory.mozilla.org/) kann man mit wenig Aufwand die eigene Seite überprüfen.
+<!--more-->
 
 Das ganze habe ich zuerst nicht für relevant erachtet, denn welcher Art sollen schon die Sicherheitslücken in einer statischen Jekyll seite sein, immerhin biete ich ja HTTPS über Let's Encrypt an (siehe [„My New Webpage“](2016-02-21-new_webpage)).
 Ich habe aber dennoch einen [test gewagt](https://observatory.mozilla.org/analyze.html?host=natanael.arndt.xyz) mit einem ernüchternden Ergebnis von **D+** :-(
