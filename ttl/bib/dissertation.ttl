@@ -1,0 +1,42 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://natanael.arndt.xyz/bib/dissertation> a bibo:Book,
+        bibo:Thesis ;
+    dc:identifier "(DE-101)1223389901" ;
+    dct:abstract """The aim of this thesis is to support the development of RDF knowledge bases in a distributed collaborative setup.
+In this thesis a new methodology for distributed collaborative knowledge engineering – called Quit – is presented.
+It follows the premise that it is necessity to express dissent throughout a collaboration process and to provide individual workspaces for each collaborator.
+The approach is inspired by and based on the Git methodology for collaboration in software engineering.
+The state of the art analysis shows that no system is consequently transferring the Git methodology to knowledge engineering.
+The key features of the Quit methodology are independent workspaces for each user and a shared distributed workspace for the collaboration.
+Throughout the whole collaboration process data provenance plays an important role.
+To support the methodology the Quit Stack is implemented as a collection of microservices, that allow to integrate the Semantic Web data structure and standard interfaces with the distributed collaborative process.
+To complement the distributed data authoring, appropriate methods to support the data management process are researched.
+These management processes are in particular the creation and authoring of data as well as the publication and exploration of data.
+The application of the methodology is shown in various use cases for the distributed collaboration on organizational data and on research data.
+Further, the implementation is quantitatively compared to the related work.
+Finally, it can be concluded that the consequent approach followed by the Quit methodology enables a wide range of distributed Semantic Web knowledge engineering scenarios.""" ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ] ;
+    dct:dateAccepted "2020-06" ;
+    dct:dateSubmitted "2020-02" ;
+    dct:hasFormat <https://oa-hochschulverlag.htwk-leipzig.de/fileadmin/portal/m_oa_hochschulverlag/Katalog/Arndt/2020-08-04-natanael-diss-final-pdfx.pdf> ;
+    dct:issued "2020-12" ;
+    dct:publisher "HTWK Open-Access-Hochschulverlag" ;
+    dct:title "Distributed Collaboration on Versioned Decentralized RDF Knowledge Bases" ;
+    bibtex:keywords "group_aksw",
+        "myown" ;
+    bibo:doi "10.33968/9783966270205-00" ;
+    bibo:gtin14 "9783966270199" ;
+    bibo:isbn "978-3-96627-019-9" ;
+    bibo:isbn10 "3966270196" ;
+    bibo:isbn13 "9783966270199" ;
+    rdfs:comment "Dissertation" ;
+    rdfs:seeAlso <http://d-nb.info/1223389901>,
+        <https://d-nb.info/1223389901> .
+

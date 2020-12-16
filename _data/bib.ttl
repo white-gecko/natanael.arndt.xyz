@@ -234,6 +234,14 @@
     ] ;
     foaf:name "Gezim Sejdiu" .
 
+<http://aksw.org/TimofeyErmilov>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Timofey" ;
+        vcard:Given "Ermilov"
+    ] ;
+    foaf:name "Timofey Ermilov" .
+
 <https://platona-m.technology/Nagel> a foaf:Person;
   foaf:name "Matthias Nagel" .
 
@@ -288,6 +296,41 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+<https://natanael.arndt.xyz/bib/dissertation>
+    dct:abstract """The aim of this thesis is to support the development of RDF knowledge bases in a distributed collaborative setup.
+In this thesis a new methodology for distributed collaborative knowledge engineering – called Quit – is presented.
+It follows the premise that it is necessity to express dissent throughout a collaboration process and to provide individual workspaces for each collaborator.
+The approach is inspired by and based on the Git methodology for collaboration in software engineering.
+The state of the art analysis shows that no system is consequently transferring the Git methodology to knowledge engineering.
+The key features of the Quit methodology are independent workspaces for each user and a shared distributed workspace for the collaboration.
+Throughout the whole collaboration process data provenance plays an important role.
+To support the methodology the Quit Stack is implemented as a collection of microservices, that allow to integrate the Semantic Web data structure and standard interfaces with the distributed collaborative process.
+To complement the distributed data authoring, appropriate methods to support the data management process are researched.
+These management processes are in particular the creation and authoring of data as well as the publication and exploration of data.
+The application of the methodology is shown in various use cases for the distributed collaboration on organizational data and on research data.
+Further, the implementation is quantitatively compared to the related work.
+Finally, it can be concluded that the consequent approach followed by the Quit methodology enables a wide range of distributed Semantic Web knowledge engineering scenarios.""" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        a rdf:Seq
+    ] ;
+    rdfs:comment "Dissertation" ;
+    dct:hasFormat <https://oa-hochschulverlag.htwk-leipzig.de/fileadmin/portal/m_oa_hochschulverlag/Katalog/Arndt/2020-08-04-natanael-diss-final-pdfx.pdf> ;
+    dct:title "Distributed Collaboration on Versioned Decentralized RDF Knowledge Bases" ;
+    dct:publisher "HTWK Open-Access-Hochschulverlag" ;
+    bibtex:keywords "group_aksw", "myown" ;
+    dc:identifier "(DE-101)1223389901";
+    bibo:isbn "978-3-96627-019-9";
+    bibo:isbn13 "9783966270199";
+    bibo:gtin14 "9783966270199";
+    bibo:isbn10 "3966270196";
+    bibo:doi "10.33968/9783966270205-00" ;
+    dct:issued "2020-12" ;
+    dct:dateAccepted "2020-06" ;
+    dct:dateSubmitted "2020-02" ;
+    a bibo:Thesis, bibo:Book ;
+    rdfs:seeAlso <http://d-nb.info/1223389901>, <https://d-nb.info/1223389901> .
+
 <https://natanael.arndt.xyz/bib/frey-j-2020-archivo>
     dct:abstract "While thousands of ontologies exist on the web, a unified system for handling online ontologies – in particular with respect to discovery, versioning, access, quality-control, mappings – has not yet surfaced and users of ontologies struggle with many challenges. In this paper, we present an online ontology interface and augmented archive called DBpedia Archivo, that discovers, crawls, versions and archives ontologies on the DBpedia Databus. Based on this versioned crawl, different features, quality measures and, if possible, fixes are deployed to handle and stabilize the changes in the found ontologies at web-scale. A comparison to existing approaches and ontology repositories is given." ;
     dct:creator [
@@ -298,6 +341,7 @@ bibo:Thesis
         rdf:_5 <http://aksw.org/NatanaelArndt> ;
         a rdf:Seq
     ] ;
+    dct:issued "2020-09" ;
     dct:hasFormat <https://svn.aksw.org/papers/2020/semantics_archivo/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/SEMANTiCS_2020> ;
     dct:title "DBpedia Archivo - A Web-Scale Interface for Ontology Archiving under Consumer-oriented Aspects" ;
@@ -444,7 +488,7 @@ bibo:Thesis
     bibo:isbn "978-3-88579-669-5" ;
     bibo:issn "1617-5468" ;
     a bibtex:InProceedings ;
-    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/220b44b8de52df76ee27cc3118bcf52c6/white_gecko>;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/220b44b8de52df76ee27cc3118bcf52c6/white_gecko> ;
     owl:sameAs <http://ma-graph.org/entity/2775705370> .
 
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Alkhouri_Georges>
