@@ -15,6 +15,17 @@ rdf_prefix_path: "_data/prefix.sparql"
       {%- endif -%}
       {% unless forloop.last %}, {% endunless %}
     {%- endfor -%}
+    {%- assign comment = page.rdf | rdf_property: "rdfs:comment" -%}
+    {%- if comment -%}
+    &ensp;<em>({{ comment }})</em>
+    {%- endif -%}
+    {%- assign publisher = page.rdf | rdf_property: "dct:publisher" -%}
+    {%- if publisher -%}
+      </div>
+      <div>
+      <em>at</em>
+      <span class="publisher">{{ publisher }}</span>
+    {%- endif -%}
     {%- assign collection = page.rdf | rdf_property: "dct:isPartOf" -%}
     {%- if collection -%}
       </div>
@@ -25,7 +36,7 @@ rdf_prefix_path: "_data/prefix.sparql"
       {%- assign editors = collection | rdf_container: "bibtex:editor" -%}
       {{ collection | rdf_property: "dct:title" }}
       {%- if editors.size > 0 %}
-      (Editors:
+      (Editors:&ensp;
         {%- for editor in editors -%}
         <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}){% endif %}</span>,
       <span class="date">{{ collection | rdf_property: "dct:issued" }}</span>
@@ -33,7 +44,13 @@ rdf_prefix_path: "_data/prefix.sparql"
       <span class="journal">{{ collection }}</span>
       {% endif %}
     {%- else -%}
+    {%- assign submitted = page.rdf | rdf_property: "dct:dateSubmitted" -%}
+    {%- assign accepted = page.rdf | rdf_property: "dct:dateAccepted" -%}
+    {%- if submitted or accepted -%}
+    ; submitted: <span class="date">{{ submitted }}</span>, accepted: <span class="date">{{ accepted }}</span>, published: <span class="date">{{ page.rdf | rdf_property: "dct:issued" }}</span>
+    {%- else -%}
     ; <span class="date">{{ page.rdf | rdf_property: "dct:issued" }}</span>
+    {%- endif -%}
     {% endif %}
     {%- assign call = page.rdf | rdf_property: "as:inReplyTo" -%}
     {%- if call -%}

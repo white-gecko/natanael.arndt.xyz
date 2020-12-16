@@ -22,7 +22,7 @@ description: "This is my part of the Web, where I publish some ideas. Some as lo
       <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
       <div class="poststempel" date="{{ post.date | date: "%Y-%m-%d" }}"></div>
     </header>
-    {{post.content}}
+    {{post.excerpt}} (<a href="{{ post.url | prepend: site.baseurl }}">read on …</a>)
   </div>
   {% endif %}
   {% endfor %}

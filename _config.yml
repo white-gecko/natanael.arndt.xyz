@@ -11,6 +11,7 @@ mastodon_user: "chaos.social/@white_gecko"
 stackoverflow_uri: https://stackoverflow.com/users/414075/white-gecko
 googleplus_uri: https://plus.google.com/109221747073615777107?rel=author
 wikipedia-de_username: "white_gecko"
+excerpt_separator: <!--more-->
 
 # Build settings
 permalink: /:year/:month/:day/:title

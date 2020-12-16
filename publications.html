@@ -44,6 +44,17 @@ ORDER BY DESC(?issued)
             {%- endif -%}
             {% unless forloop.last %}, {% endunless %}
           {%- endfor -%}
+          {%- assign comment = result.publication | rdf_property: "rdfs:comment" -%}
+          {%- if comment -%}
+          &ensp;<em>({{ comment }})</em>
+          {%- endif -%}
+          {%- assign publisher = result.publication | rdf_property: "dct:publisher" -%}
+          {%- if publisher -%}
+            </div>
+            <div>
+            <em>at</em>
+            <span class="publisher">{{ publisher }}</span>
+          {%- endif -%}
           {%- assign collection = result.publication | rdf_property: "dct:isPartOf" -%}
           {%- if collection -%}
             <br/>
@@ -53,7 +64,7 @@ ORDER BY DESC(?issued)
             {%- assign editors = collection | rdf_container: "bibtex:editor" -%}
             {{ collection | rdf_property: "dct:title" }}
             {%- if editors.size > 0 %}
-            (Editors:
+            (Editors:&ensp;
               {%- for editor in editors -%}
               <span class="editor">{{ editor | rdf_property: "foaf:name" }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}){% endif %}</span>,
             <span class="date">{{ collection | rdf_property: "dct:issued" }}</span>
@@ -62,7 +73,13 @@ ORDER BY DESC(?issued)
             {% endif %}
           <br/>
           {%- else -%}
+          {%- assign submitted = result.publication | rdf_property: "dct:dateSubmitted" -%}
+          {%- assign accepted = result.publication | rdf_property: "dct:dateAccepted" -%}
+          {%- if submitted or accepted -%}
+          ; submitted: <span class="date">{{ submitted }}</span>, accepted: <span class="date">{{ accepted }}</span>, published: <span class="date">{{ result.publication | rdf_property: "dct:issued" }}</span>
+          {%- else -%}
           ; <span class="date">{{ result.publication | rdf_property: "dct:issued" }}</span>
+          {%- endif -%}
           {% endif %}
         </span>
     </div>
