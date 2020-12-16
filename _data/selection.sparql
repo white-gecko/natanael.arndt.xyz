@@ -1,0 +1,8 @@
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX bibtex: <http://purl.org/net/nknouf/ns/bibtex#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+select distinct ?resourceUri {
+  ?resourceUri a ?bibResource .
+  ?bibResource rdfs:subClassOf* dct:BibliographicResource .
+}
