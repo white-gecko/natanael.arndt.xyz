@@ -14,11 +14,12 @@ layout: default
   {% if page.reply %}
   If you want to reply to this post, you can
   {% if page.reply_issue %}
-  comment on the <a href="https://github.com/white-gecko/natanael.arndt.xyz/issues/{{ page.reply_issue}}">GitHub issue</a>,
+  comment on the <a href="https://github.com/white-gecko/natanael.arndt.xyz/issues/{{ page.reply_issue}}"><i class="fab fa-github" alt="github icon"></i> GitHub issue</a>,
   {% else %}
-  create a <a href="https://github.com/white-gecko/natanael.arndt.xyz/issues/new">GitHub issue</a>,
+  create a <a href="https://github.com/white-gecko/natanael.arndt.xyz/issues/new"><i class="fab fa-github" alt="github icon"></i> GitHub issue</a>,
   {% endif %}
-  writing to me in the fediverse via <a href="https://chaos.social/@white_gecko">mastodon</a>, send <a href="https://twitter.com/intent/tweet?url={{page.url | absolute_url }}&text={{ " @white_gecko" | prepend: page.title | uri_escape}}">a tweet to me</a>, or use any other communication channel you share with me.
+  writing to me in the fediverse via <a href="https://chaos.social/@white_gecko"><i class="fab fa-mastodon" alt="mastodon icon"></i> mastodon</a>,
+  send <a href="https://twitter.com/intent/tweet?url={{page.url | absolute_url }}&text={{ " @white_gecko" | prepend: page.title | uri_escape}}">a <i class="fab fa-twitter" alt="twitter icon"></i> tweet to me</a>, or use any other communication channel you share with me.
   {% endif %}
   </article>
 </div>
