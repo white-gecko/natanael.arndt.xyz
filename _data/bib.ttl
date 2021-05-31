@@ -344,6 +344,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     dct:issued "2020-09" ;
     dct:hasFormat <https://svn.aksw.org/papers/2020/semantics_archivo/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/SEMANTiCS_2020> ;
+    bibo:doi "10.1007/978-3-030-59833-4_2" ;
     dct:title "DBpedia Archivo - A Web-Scale Interface for Ontology Archiving under Consumer-oriented Aspects" ;
     bibtex:keywords "group_aksw", "myown" ;
     a bibtex:InProceedings ;
