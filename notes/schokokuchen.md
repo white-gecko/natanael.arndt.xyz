@@ -27,6 +27,6 @@ Butter kommt in der Regel in 250 g Packungen und es sind manchmal Striche in 50 
 So kann man das ganze auch ohne Waage backen.
 In zwei der Ausgangsrezepte kommen noch 200 ml Wasser bzw. 1 Glas Milch dazu, die Komponente hatte ich aber vergessen und der Kuchen hat trotzdem super geschmeckt.
 
-Eine Backform (Katen- oder Gugelhupfform sind gut geeignet) fetten.
+Eine Backform (Kasten- oder Gugelhupfform sind gut geeignet) fetten.
 In einer Schüssel die trockenen Zutaten vermengen und ebenso die flüssigen Zutaten vermengen und anschließend alles miteinander verkneten.
 Den Teig in die Backform füllen und bei 160°C für 45 min im Ofen backen.
