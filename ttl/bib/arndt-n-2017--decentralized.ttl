@@ -17,7 +17,7 @@
     dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>,
         <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_ICWE_2017> ;
-    dct:issued "2017-06-01"^^xsd:gYearMonth ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:language "en-US" ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
     bibtex:keywords "leds myown quit" ;

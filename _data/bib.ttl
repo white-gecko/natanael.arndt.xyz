@@ -296,6 +296,28 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+<https://natanael.arndt.xyz/bib/sematnics-pd-2021>
+    dct:issued "2021-09" ;
+    dct:title "Joint Proceedings of the Semantics co-located events: Poster&Demo track and Workshop on Ontology-Driven Conceptual Modelling of Digital Twins co-located with Semantics 2021, Amsterdam" ;
+    bibtex:month "September" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2021--shacl>
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/AndreValdestilhas> ;
+        rdf:_3 <http://aksw.org/GustavoPublio> ;
+        rdf:_4 "Andrea Cimmino" ;
+        rdf:_5 <http://aksw.org/KonradHoeffner> ;
+        rdf:_6 <http://aksw.org/ThomasRiechert> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/sematnics-pd-2021> ;
+    dct:hasFormat <http://ceur-ws.org/Vol-2941/paper16.pdf> ;
+    dct:title "A Visual SHACL Shapes Editor Based On OntoPad" ;
+    dct:issued "2021" ;
+    a bibtex:InProceedings .
+
 <https://natanael.arndt.xyz/bib/dissertation>
     dct:abstract """The aim of this thesis is to support the development of RDF knowledge bases in a distributed collaborative setup.
 In this thesis a new methodology for distributed collaborative knowledge engineering – called Quit – is presented.
