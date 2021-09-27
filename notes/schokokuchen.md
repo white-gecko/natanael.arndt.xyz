@@ -7,7 +7,7 @@ date:   2016-08-28 20:08:00
 update: 2016-08-28 20:08:00
 ---
 
-Als ich vor einiger Zeit mal wieder einen Anlass hatte einen Kuchen zu backen und ich Schokokuchen sowieso mag, habe ich mich nach passenden Rezepten umgesehen und bin auf drei Rezepte gestoßen, ein [Schokokuchen mit Nüssen](http://www.chefkoch.de/rezepte/569031155564178/Schokokuchen-mit-Nuessen), ein [Türkicher Schokoladenkuchen](http://www.chefkoch.de/rezepte/647321165995536/Tuerkischer-Schokoladenkuchen) und einfach ein [Schokokuchen](http://www.chefkoch.de/rezepte/1609441268234831/Schokokuchen).
+Als ich vor einiger Zeit mal wieder einen Anlass hatte einen Kuchen zu backen und ich Schokokuchen sowieso mag, habe ich mich nach passenden Rezepten umgesehen und bin auf drei Rezepte gestoßen, ein [Schokokuchen mit Nüssen](http://www.chefkoch.de/rezepte/569031155564178/Schokokuchen-mit-Nuessen), ein [Türkischer Schokoladenkuchen](http://www.chefkoch.de/rezepte/647321165995536/Tuerkischer-Schokoladenkuchen) und einfach ein [Schokokuchen](http://www.chefkoch.de/rezepte/1609441268234831/Schokokuchen).
 Da mir alle Rezepte zum Teil zugesagt haben, aber keins vollständig habe ich daraus folgende Zusammenstellung komponiert:
 
 
@@ -27,6 +27,6 @@ Butter kommt in der Regel in 250 g Packungen und es sind manchmal Striche in 50 
 So kann man das ganze auch ohne Waage backen.
 In zwei der Ausgangsrezepte kommen noch 200 ml Wasser bzw. 1 Glas Milch dazu, die Komponente hatte ich aber vergessen und der Kuchen hat trotzdem super geschmeckt.
 
-Eine Backform (Katen- oder Gugelhupfform sind gut geeignet) fetten.
+Eine Backform (Kasten- oder Gugelhupfform sind gut geeignet) fetten.
 In einer Schüssel die trockenen Zutaten vermengen und ebenso die flüssigen Zutaten vermengen und anschließend alles miteinander verkneten.
 Den Teig in die Backform füllen und bei 160°C für 45 min im Ofen backen.
