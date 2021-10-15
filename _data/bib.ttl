@@ -237,10 +237,27 @@
 <http://aksw.org/TimofeyErmilov>
     a foaf:Person ;
     vcard:N [
-        vcard:Family "Timofey" ;
-        vcard:Given "Ermilov"
+        vcard:Family "Ermilov" ;
+        vcard:Given "Timofey"
     ] ;
     foaf:name "Timofey Ermilov" .
+
+
+<http://aksw.org/GustavoPublio>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Publio" ;
+        vcard:Given "Gustavo"
+    ] ;
+    foaf:name "Gustavo Publio" .
+
+<http://aksw.org/KonradHoeffner>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Höffner" ;
+        vcard:Given "Konrad"
+    ] ;
+    foaf:name "Konrad Höffner" .
 
 <https://platona-m.technology/Nagel> a foaf:Person;
   foaf:name "Matthias Nagel" .
