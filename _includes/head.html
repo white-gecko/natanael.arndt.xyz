@@ -56,6 +56,10 @@
     {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    {% if page.ttl %}
+    <meta rel="alternate" type="text/turtle" title="RDF 1.1 Turtle Representation" href="{{ page.url | remove: ".html" | prepend: "/ttl" | prepend: site.baseurl }}" >
+    {% endif %}
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/dist/main.css" | prepend: site.baseurl }}">
 </head>
