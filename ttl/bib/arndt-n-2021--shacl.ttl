@@ -3,6 +3,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2021--shacl> a bibtex:InProceedings ;
+    dct:abstract """On the Semantic Web, vocabularies and ontologies play a fundamental role to express the terminology and rules of certain domains.
+New technologies like SHACL provide the possibility to express data schemata specific to certain data sets, applications, and domains.
+However, the domain modeling process is collaborative and when using RDF, it requires technical knowledge.
+In this paper, we present a tool to support a two-step-process to model a terminology and a schema with a combined graphical RDF Schema editor and visual SHACL editor.
+This tool allows domain experts to create a terminology and schema without the need for a deep understanding of RDF Schema or SHACL.""" ;
     dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/NatanaelArndt> ;
             rdf:_2 <http://aksw.org/AndreValdestilhas> ;
