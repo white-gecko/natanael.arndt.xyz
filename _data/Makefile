@@ -40,3 +40,8 @@ bibtex2rdf.jar:
 
 white_gecko.bib:
 	wget https://www.bibsonomy.org/bib/user/white_gecko -O white_gecko.bib
+
+update_ttl:
+	./extract.py --file bib.ttl --base https://natanael.arndt.xyz/ --selection selection.sparql
+	echo "Move TTLs to target"
+	cp bib/* ../ttl/bib
