@@ -2,7 +2,7 @@
 layout: post
 title: "Animate the History of your Git Repository"
 tags: ["Git", "Animation"]
-date: 2021-11-13 20:09:00+02:00
+date: 2021-11-13 17:54:00+01:00
 ---
 
 I was looking for a way to get an impression of the temporal development of my git repository.
