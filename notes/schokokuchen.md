@@ -22,11 +22,11 @@ Da mir alle Rezepte zum Teil zugesagt haben, aber keins vollständig habe ich da
 |200 g |  Butter |
 
 
-Die 200 g Mehl und Nüsse entsprechen jeweils etwa 2 Gläsern, der Zucker etwa 1½ Gläsern, Kakaopulver nach Gefühl wohl etwa ein halbes Glas.
+Die 200 g Mehl und Nüsse entsprechen jeweils etwa 2 Gläsern, der Zucker etwas weniger als 1 Glas, Kakaopulver nach Gefühl wohl etwa ein halbes Glas.
 Butter kommt in der Regel in 250 g Packungen und es sind manchmal Striche in 50 g Abständen aufgezeichnet, sonst nimmt man eben ein Lineal zu Hilfe.
 So kann man das ganze auch ohne Waage backen.
 In zwei der Ausgangsrezepte kommen noch 200 ml Wasser bzw. 1 Glas Milch dazu, die Komponente hatte ich aber vergessen und der Kuchen hat trotzdem super geschmeckt.
 
 Eine Backform (Kasten- oder Gugelhupfform sind gut geeignet) fetten.
 In einer Schüssel die trockenen Zutaten vermengen und ebenso die flüssigen Zutaten vermengen und anschließend alles miteinander verkneten.
-Den Teig in die Backform füllen und bei 160°C für 45 min im Ofen backen.
+Den Teig in die Backform füllen und bei 160°C oder 180 °C für 45 min bis 1 h im Ofen backen.
