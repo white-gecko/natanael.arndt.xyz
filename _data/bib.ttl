@@ -1503,7 +1503,7 @@ This enables content management and knowledge management systems to serve datase
         rdf:_1 <http://aksw.org/NatanaelArndt> ;
         a rdf:Seq
     ] ;
-    dct:hasFormat <https://skil.informatik.uni-leipzig.de/blog/wp-content/uploads/proceedings/2011/Arndt2011.1.pdf> ;
+    dct:hasFormat <https://ul.qucosa.de/api/qucosa%3A11381/attachment/ATT-0/#page=15> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/SKIL2011> ;
     dct:title "TriplePlace: A flexible triple store for Android with six indices" ;
     bibtex:keywords "dssn myown" ;
