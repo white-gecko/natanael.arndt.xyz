@@ -13,8 +13,11 @@
             rdf:_3 <http://aksw.org/NormanRadtke> ;
             rdf:_4 <http://aksw.org/MichaelMartin> ;
             rdf:_5 <http://aksw.org/EdgardMarx> ] ;
+    dct:dateAccepted "2018-08" ;
+    dct:dateSubmitted "2017-10" ;
     dct:hasFormat <https://arxiv.org/pdf/1805.03721> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Journal_of_Web_Semantics> ;
+    dct:issued "2018-09" ;
     dct:title "Decentralized Collaborative Knowledge Management using Git" ;
     bibtex:keywords "myown quit versioning" ;
     bibo:doi "10.1016/j.websem.2018.08.002" ;

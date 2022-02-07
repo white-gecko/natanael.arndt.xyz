@@ -1184,6 +1184,9 @@ This enables content management and knowledge management systems to serve datase
     dct:title "Decentralized Collaborative Knowledge Management using Git" ;
     bibtex:keywords "myown quit versioning" ;
     bibo:doi "10.1016/j.websem.2018.08.002" ;
+    dct:issued "2018-09" ;
+    dct:dateAccepted "2018-08" ;
+    dct:dateSubmitted "2017-10" ;
     a bibo:AcademicArticle ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2a01687a0f7e5109fbd0df3d03661a99b/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2801562840> .
