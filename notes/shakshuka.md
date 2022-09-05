@@ -31,7 +31,7 @@ Währenddessen die Tomaten schneiden.
 Anschließend die Tomaten und das Tomatenmark in die Pfanne geben und 10 Minuten köcheln lassen.
 Jetzt 4 Kuhlen in der Tomatenmasse machen und die Eier hineingeben.
 Ab jetzt sollte die Pfanne nicht mehr aus den Augen gelassen werden, denn für ein gutes Shakshuka sind gut pochierte Eier entscheidend.
-Wenn das Eiweis fest geworden ist und das Eigelb die genau richtige Konsistenz hat, ist das Essen fertig.
-Jetzt großzüig zerbröselten Feta und frischen Koriander über das Gericht geben und mit Pita oder Weißbrot servieren.
+Wenn das Eiweiß fest geworden ist und das Eigelb die genau richtige Konsistenz hat, ist das Essen fertig.
+Jetzt großzügig zerbröselten Feta und frischen Koriander über das Gericht geben und mit Pita oder Weißbrot servieren.
 
 Wir essen das Shakshuka meist mit dem Brot gemeinsam direkt aus einer Pfanne.
