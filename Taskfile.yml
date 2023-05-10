@@ -8,6 +8,7 @@ vars:
   ID_GID:
     sh: id -g
   TARGET: '{{.TARGET | default "_site"}}'
+  BUILD_WATCH_FILES: find . -name '*' -not -path "./.git/*" -not -path "./.git" -not -path "./.jekyll-cache/*" -not -path "./.jekyll-cache" -not -path "./{{.TARGET}}" -not -path "./{{.TARGET}}/*"
 
 tasks:
 
@@ -15,6 +16,16 @@ tasks:
     desc: List the available tasks
     cmds:
       - task -l
+
+  bib:update:
+    desc: Update the ttl files for the individual bibliography resources
+    cmds:
+      - |
+        cd _data
+        ./extract.py --file bib.ttl --base https://natanael.arndt.xyz/ --selection selection.sparql
+        cd ..
+        rm -r ttl/bib || true
+        cp -r _data/bib ttl/
 
   build:
     desc: Build the page from source
@@ -39,6 +50,19 @@ tasks:
         -v {{.WORKING_DIRECTORY}}:/github/workspace \
         -e TZ=Europe/Berlin {{.JEKYLL_USER_ARG}} -e BUNDLE_PATH={{.BUNDLE_PATH}} \
         {{.JEKYLL_IMAGE}} jekyll build -d {{.TARGET}}
+
+  watch:
+    desc: Serve the page and rebuild it on changes
+    deps:
+      - task: serve
+      - task: build:watch
+    cmds:
+      - echo "Terminate"
+
+  build:watch:
+    desc: Watch for changes in the directory and rebuild the page, should be combined with task serve in a second terminal
+    cmds:
+      - '{{.BUILD_WATCH_FILES}} | entr task build'
 
   serve:
     desc: Serve the locally built site
