@@ -313,6 +313,28 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+<https://natanael.arndt.xyz/bib/iswc2022>
+    dct:issued "2022-10" ;
+    dct:title "The Semantic Web–ISWC 2022: 21st International Semantic Web Conference, Virtual Event" ;
+    bibtex:month "October" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/frey-j-2022--reproducibility>
+    dct:abstract """The reproducibility crisis is an ongoing problem that affects data-driven science to a big extent. The highly connected decentral Web of Ontologies represents the backbone for semantic data and the Linked Open Data Cloud and provides terminological context information crucial for the usage and interpretation of the data, which in turn is key for the reproducibility of research results making use of it. In this paper, we identify, analyze, and quantify reproducibility issues related to capturing terminological context (e.g. caused by unavailable ontologies) and delineate the impact on the reproducibility crisis in the Linked Open Data Cloud. Our examinations are backed by a frequent and ongoing monitoring of online available vocabularies and ontologies that results in the DBpedia Archivo dataset. We also show the extent to which the reproducibility crisis can be countered with the aid of ontology archiving in DBpedia Archivo and the Linked Open Vocabularies platforms.""" ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/JohannesFrey> ;
+        rdf:_2 <http://aksw.org/DenisStreitmatter> ;
+        rdf:_3 <http://aksw.org/NatanaelArndt> ;
+        rdf:_5 <http://aksw.org/SebastianHellmann> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/iswc2022> ;
+    dct:hasFormat <https://iswc2022.semanticweb.org/wp-content/uploads/2022/11/978-3-031-19433-7_6.pdf> ;
+    dct:title "Reproducibility Crisis in the LOD Cloud? Studying the Impact of Ontology Accessibility and Archiving as a Counter Measure" ;
+    bibo:doi "10.1007/978-3-031-19433-7_6" ;
+    dct:issued "2022" ;
+    a bibtex:InProceedings .
+
 <https://natanael.arndt.xyz/bib/sematnics-pd-2021>
     dct:issued "2021-09" ;
     dct:title "Joint Proceedings of the Semantics co-located events: Poster&Demo track and Workshop on Ontology-Driven Conceptual Modelling of Digital Twins co-located with Semantics 2021, Amsterdam" ;
