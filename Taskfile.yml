@@ -22,6 +22,7 @@ tasks:
     cmds:
       - |
         cd _data
+        rm -r bib
         ./extract.py --file bib.ttl --base https://natanael.arndt.xyz/ --selection selection.sparql
         cd ..
         rm -r ttl/bib || true
