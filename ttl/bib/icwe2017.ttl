@@ -1,5 +1,0 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-
-<https://natanael.arndt.xyz/bib/icwe2017> a dct:BibliographicResource ;
-    dct:title "17th International Conference on Web Engineering (ICWE 2017)" .
-
