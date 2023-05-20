@@ -259,6 +259,22 @@
     ] ;
     foaf:name "Konrad Höffner" .
 
+<http://aksw.org/SabineGruenderFahrer>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Gründer-Fahrer" ;
+        vcard:Given "Sabine"
+    ] ;
+    foaf:name "Sabine Gründer-Fahrer" .
+
+<http://aksw.org/JuliaHolze>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Holze" ;
+        vcard:Given "Julia"
+    ] ;
+    foaf:name "Julia Holze" .
+
 <https://platona-m.technology/Nagel> a foaf:Person;
   foaf:name "Matthias Nagel" .
 
@@ -312,6 +328,31 @@ bibo:Report
 
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
+
+<https://natanael.arndt.xyz/bib/d2r2-22>
+    dct:date "2022-07-06"^^xsd:date ;
+    dct:issued "2023-04-18"^^xsd:date ;
+    dct:dateSubmitted "2023-03-30"^^xsd:date ;
+    dct:dateCopyrighted "2023-03-30"^^xsd:date ;
+    dct:title "Proceedings of the International Workshop on Data-driven Resilience Research 2022, Leipzig" ;
+    bibtex:month "July" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2023--d2r2-22>
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <http://aksw.org/SabineGruenderFahrer> ;
+        rdf:_3 <http://aksw.org/JuliaHolze> ;
+        rdf:_4 <http://aksw.org/MichaelMartin> ;
+        rdf:_5 <http://aksw.org/SebastianTramp> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/d2r2-22> ;
+    dct:title "Data-driven Resilience Research 2022 (D2R2'22, Preface)" ;
+    dct:issued "2022" ;
+    dct:hasFormat <https://ceur-ws.org/Vol-3376/preface.pdf> ;
+    a bibtex:InProceedings ;
+    dct:abstract """In the face of continuously changing contextual conditions and ubiquitous disruptive crisis events, the concept of resilience refers to some of the most urgent, challenging, and interesting issues of nowadays society. Economic value networks, technical infrastructures, health systems, and social textures alike need to unfold capacities to withstand, adapt, recover or even refine and transform themselves to stay ahead of changes.""" .
 
 <https://natanael.arndt.xyz/bib/iswc2022>
     dct:issued "2022-10" ;
@@ -449,6 +490,25 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     The workshop series is situated in the field of digital humanities andtargets the interconnection of subjects of historical research, knowledge engineering, and informationscience.
     The common interlink of this disciplines is the use of research data, data management, andall accompanying activities as well as the organization of collaborative community processes.""" .
 
+<https://natanael.arndt.xyz/bib/info2021>
+    dct:issued "2021-05" ;
+    dct:title "Netzwerke und Kooperationen in der Instandhaltung, Tagungsband zum InstandhaltungsForum 2021, Dortmund" ;
+    bibtex:month "May" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2021--instandhaltung>
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 <https://platona-m.technology/Foerster> ;
+        rdf:_3 "Marvin Ferber" ;
+        rdf:_4 <https://platona-m.technology/Nagel> ;
+        a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/info2021> ;
+    dct:title "Ein Plattform-basiertes Wertschöpfungsnetzwerk für innovatives prädiktives Instandhaltungsmanagement" ;
+    dct:issued "2021" ;
+    dct:hasFormat <https://www.iml.fraunhofer.de/de/abteilungen/b2/anlagenmanagement/auftritte/instandhaltungsforum/jcr:content/contentPar/sectioncomponent_1799661103/teaserParsys/teaser/linklistParsys/downloadcomponent/file.res/InFo21_Tagungsband.pdf> ;
+    a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/vpp2019>
     dct:issued "2019-11" ;

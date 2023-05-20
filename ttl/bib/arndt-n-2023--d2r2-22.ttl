@@ -1,0 +1,17 @@
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2023--d2r2-22> a bibtex:InProceedings ;
+    dct:abstract "In the face of continuously changing contextual conditions and ubiquitous disruptive crisis events, the concept of resilience refers to some of the most urgent, challenging, and interesting issues of nowadays society. Economic value networks, technical infrastructures, health systems, and social textures alike need to unfold capacities to withstand, adapt, recover or even refine and transform themselves to stay ahead of changes." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ;
+            rdf:_2 <http://aksw.org/SabineGruenderFahrer> ;
+            rdf:_3 <http://aksw.org/JuliaHolze> ;
+            rdf:_4 <http://aksw.org/MichaelMartin> ;
+            rdf:_5 <http://aksw.org/SebastianTramp> ] ;
+    dct:hasFormat <https://ceur-ws.org/Vol-3376/preface.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/d2r2-22> ;
+    dct:issued "2022" ;
+    dct:title "Data-driven Resilience Research 2022 (D2R2'22, Preface)" .
+

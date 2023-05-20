@@ -1,0 +1,13 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/d2r2-22> a bibo:Proceedings ;
+    dct:date "2022-07-06"^^xsd:date ;
+    dct:dateCopyrighted "2023-03-30"^^xsd:date ;
+    dct:dateSubmitted "2023-03-30"^^xsd:date ;
+    dct:issued "2023-04-18"^^xsd:date ;
+    dct:title "Proceedings of the International Workshop on Data-driven Resilience Research 2022, Leipzig" ;
+    bibtex:month "July" .
+
