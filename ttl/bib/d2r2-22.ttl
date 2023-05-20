@@ -9,5 +9,6 @@
     dct:dateSubmitted "2023-03-30"^^xsd:date ;
     dct:issued "2023-04-18"^^xsd:date ;
     dct:title "Proceedings of the International Workshop on Data-driven Resilience Research 2022, Leipzig" ;
-    bibtex:month "July" .
+    bibtex:month "July" ;
+    bibo:issn "1613-0073" .
 
