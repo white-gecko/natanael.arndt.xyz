@@ -1,6 +1,7 @@
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2021--shacl> a bibtex:InProceedings ;
     dct:abstract """On the Semantic Web, vocabularies and ontologies play a fundamental role to express the terminology and rules of certain domains.
@@ -17,6 +18,6 @@ This tool allows domain experts to create a terminology and schema without the n
             rdf:_6 <http://aksw.org/ThomasRiechert> ] ;
     dct:hasFormat <http://ceur-ws.org/Vol-2941/paper16.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/sematnics-pd-2021> ;
-    dct:issued "2021" ;
+    dct:issued "2021-01-01"^^xsd:date ;
     dct:title "A Visual SHACL Shapes Editor Based On OntoPad" .
 

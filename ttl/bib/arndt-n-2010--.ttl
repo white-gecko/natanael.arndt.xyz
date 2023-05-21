@@ -8,8 +8,7 @@
     dct:creator [ a rdf:Seq ;
             rdf:_1 <http://aksw.org/NatanaelArndt> ] ;
     dct:hasFormat <https://dl.gi.de/bitstream/handle/20.500.12116/19365/1004.pdf> ;
-    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2010--_GI-Edition---Lecture_Notes_in_Informatics>,
-        <https://natanael.arndt.xyz/bib/arndt-n-2010--_Proceedings_of_the_INFORMATIK_2010__Service_Science_--_Neue_Perspektiven_für_die_Informatik> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2010--INFORMATIK_2010> ;
     dct:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
     bibtex:keywords "dssn myown" ;
     bibtex:note "2010 Gesellschaft für Informatik" ;

@@ -3,6 +3,7 @@
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2019--collaborative> a bibtex:InProceedings ;
     dct:abstract """Collaboration of people and machines is a major aspect of the World Wide Web and as well of the Semantic Web.
@@ -19,7 +20,7 @@
             rdf:_2 <http://aksw.org/MichaelMartin> ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
-    dct:issued "2019" ;
+    dct:issued "2019-01-01"^^xsd:date ;
     dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
     bibtex:keywords "2019 group_aksw myown quit" ;
     bibo:doi "10.1145/3308560.3316523" ;

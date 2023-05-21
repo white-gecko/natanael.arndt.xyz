@@ -1,9 +1,10 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)> a bibo:Proceedings ;
-    dct:issued "2016-04" ;
+    dct:issued "2016-04-01"^^xsd:date ;
     dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
     bibtex:month "April" .
 

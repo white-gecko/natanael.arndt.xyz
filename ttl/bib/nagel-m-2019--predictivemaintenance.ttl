@@ -1,6 +1,7 @@
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/nagel-m-2019--predictivemaintenance> a bibtex:InProceedings ;
     dct:abstract """Autonome Steuerungsverfahren gelten als vielversprechender Ansatz, um einer zunehmend dynamisch und komplexer werdenden Produktionsumgebung gerecht zu werden.
@@ -15,6 +16,6 @@
             rdf:_5 "Ralph Riedel" ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/VPP_PredictiveMaintenance/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/vpp2019> ;
-    dct:issued "2019" ;
+    dct:issued "2019-01-01"^^xsd:date ;
     dct:title "Ein Plattform-Ökosystem für Predictive Maintenance zur Erhöhung der Effizienz und Effektivität der Instandhaltung in kleinen und mittleren Unternehmen (KMU)" .
 

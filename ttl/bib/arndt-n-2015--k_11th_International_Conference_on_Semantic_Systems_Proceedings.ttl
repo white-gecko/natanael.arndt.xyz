@@ -2,10 +2,11 @@
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings> a bibo:Proceedings ;
     dct:isPartOf "International Conference on Semantic Systems Proceedings" ;
-    dct:issued "2015-09" ;
+    dct:issued "2015-09-01"^^xsd:date ;
     dct:title "11th International Conference on Semantic Systems Proceedings" ;
     bibtex:month "September" ;
     vcard:ADR [ vcard:Country "Austria" ;

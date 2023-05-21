@@ -2,6 +2,7 @@
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2019--jekyll-rdf> a bibtex:InProceedings ;
     dct:abstract """Over the last decades the Web has evolved from a human–human communication network to a network of complex human–machine interactions.
@@ -17,7 +18,7 @@ This enables content management and knowledge management systems to serve datase
             rdf:_4 <http://aksw.org/SebastianTramp> ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/ICWE_JekyllRDF/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/icwe2019> ;
-    dct:issued "2019" ;
+    dct:issued "2019-01-01"^^xsd:date ;
     dct:title "Jekyll RDF: Template-Based Linked Data Publication with Minimized Effort and Maximum Scalability" ;
     bibtex:keywords "2019 group_aksw myown" ;
     bibo:doi "10.1007/978-3-030-19274-7_24" .

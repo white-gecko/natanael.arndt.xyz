@@ -1,6 +1,7 @@
 @prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/riechert-t-2019--rodbh> a bibtex:InProceedings ;
     dct:abstract """This editorial provides an introduction to the field of research of the Doctoral Symposiumon Research on Online Databases in History (RODBH 2019) which was collocated with the 3rdData for History workshop.
@@ -18,6 +19,6 @@
     dct:hasFormat <http://ceur-ws.org/Vol-2532/introduction.pdf>,
         <https://svn.aksw.org/papers/2019/RODBH_editorial/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/rodbh2019> ;
-    dct:issued "2019" ;
+    dct:issued "2019-01-01"^^xsd:date ;
     dct:title "Doctoral Symposium on Research on Online Databases in History (RODBH 2019)" .
 
