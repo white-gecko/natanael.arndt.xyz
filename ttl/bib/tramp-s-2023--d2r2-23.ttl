@@ -14,5 +14,5 @@
     dct:hasFormat <https://ceur-ws.org/Vol-3401/preface.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/d2r2-23> ;
     dct:issued "2023-05"^^xsd:gYearMonth ;
-    dct:title "Linked Data-driven Resilience Research 2023 (D2R2'23, Preface)" .
+    dct:title "Second International Workshop on Linked Data-driven Resilience Research 2023 (D2R2'23, Preface)" .
 
