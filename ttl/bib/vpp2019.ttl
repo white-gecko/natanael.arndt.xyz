@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/vpp2019> a bibo:Proceedings ;
-    dct:issued "2019-11-01"^^xsd:date ;
+    dct:issued "2019-11"^^xsd:gYearMonth ;
     dct:title "Die hybride Fabrik – menschliche und künstliche Intelligenz im Einklang VPP2019 – Vernetzt planen und produzieren, Chemnitz" ;
     bibtex:month "November" .
 

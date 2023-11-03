@@ -5,7 +5,7 @@
 
 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> a bibo:Proceedings ;
     dct:isPartOf "ekaw2016" ;
-    dct:issued "2016-11-01"^^xsd:date ;
+    dct:issued "2016-11"^^xsd:gYearMonth ;
     dct:title "Proceedings of 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW'2016)" ;
     bibtex:month "November" .
 

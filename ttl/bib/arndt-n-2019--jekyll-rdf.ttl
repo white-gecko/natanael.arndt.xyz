@@ -18,7 +18,7 @@ This enables content management and knowledge management systems to serve datase
             rdf:_4 <http://aksw.org/SebastianTramp> ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/ICWE_JekyllRDF/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/icwe2019> ;
-    dct:issued "2019-01-01"^^xsd:date ;
+    dct:issued "2019-06"^^xsd:gYearMonth ;
     dct:title "Jekyll RDF: Template-Based Linked Data Publication with Minimized Effort and Maximum Scalability" ;
     bibtex:keywords "2019 group_aksw myown" ;
     bibo:doi "10.1007/978-3-030-19274-7_24" .

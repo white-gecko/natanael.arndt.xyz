@@ -6,7 +6,7 @@
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)> a bibo:Proceedings ;
     dct:isPartOf "ICWE 2017" ;
-    dct:issued "2017-06-01"^^xsd:date ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:title "17th International Conference on Web Engineering (ICWE 2017)" ;
     bibtex:month "June" ;
     vcard:ADR [ vcard:Country "Italy" ;

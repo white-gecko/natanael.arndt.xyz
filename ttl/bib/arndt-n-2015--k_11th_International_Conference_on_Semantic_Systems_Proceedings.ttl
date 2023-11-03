@@ -6,7 +6,7 @@
 
 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings> a bibo:Proceedings ;
     dct:isPartOf "International Conference on Semantic Systems Proceedings" ;
-    dct:issued "2015-09-01"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "11th International Conference on Semantic Systems Proceedings" ;
     bibtex:month "September" ;
     vcard:ADR [ vcard:Country "Austria" ;

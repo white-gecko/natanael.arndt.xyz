@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/sematnics-pd-2021> a bibo:Proceedings ;
-    dct:issued "2021-09-01"^^xsd:date ;
+    dct:issued "2021-09"^^xsd:gYearMonth ;
     dct:title "Joint Proceedings of the Semantics co-located events: Poster&Demo track and Workshop on Ontology-Driven Conceptual Modelling of Digital Twins co-located with Semantics 2021, Amsterdam" ;
     bibtex:month "September" ;
     bibo:issn "1613-0073" .

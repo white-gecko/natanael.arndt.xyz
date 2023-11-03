@@ -18,7 +18,7 @@ While the *reject* strategy gives full control to the client, with *branch* and 
             rdf:_2 <http://aksw.org/NormanRadtke> ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/MEPDaW_QEICC/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
-    dct:issued "2019-01-01"^^xsd:date ;
+    dct:issued "2019-05"^^xsd:gYearMonth ;
     dct:title "Conflict Detection, Avoidance, and Resolution in a Non-Linear RDF Version Control System: The Quit Editor Interface Concurrency Control" ;
     bibtex:keywords "2019 group_aksw myown quit" ;
     bibo:doi "10.1145/3308560.3316519" ;

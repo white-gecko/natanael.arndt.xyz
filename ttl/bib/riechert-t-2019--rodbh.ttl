@@ -19,6 +19,6 @@
     dct:hasFormat <http://ceur-ws.org/Vol-2532/introduction.pdf>,
         <https://svn.aksw.org/papers/2019/RODBH_editorial/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/rodbh2019> ;
-    dct:issued "2019-01-01"^^xsd:date ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
     dct:title "Doctoral Symposium on Research on Online Databases in History (RODBH 2019)" .
 

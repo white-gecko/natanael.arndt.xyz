@@ -3,6 +3,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/tramp-s-2011--a_Proceedings_of_the_ESWC2011> a bibo:Proceedings ;
-    dct:issued "2011-01-01"^^xsd:date ;
+    dct:issued "2011"^^xsd:gYear ;
     dct:title "Proceedings of the ESWC2011" .
 

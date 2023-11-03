@@ -6,7 +6,7 @@
 
 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern> a bibo:Proceedings ;
     dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
-    dct:issued "2014-09-01"^^xsd:date ;
+    dct:issued "2014-09"^^xsd:gYearMonth ;
     dct:title "Proceedings of the INFORMATIK 2014: Big Data -- Komplexität meistern" ;
     bibtex:editor [ a rdf:Seq ;
             rdf:_1 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard> ;

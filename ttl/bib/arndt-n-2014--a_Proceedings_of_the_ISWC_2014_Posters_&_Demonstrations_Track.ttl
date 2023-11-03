@@ -7,7 +7,7 @@
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track> a bibo:Proceedings ;
     dct:isPartOf "CEUR Workshop Proceedings" ;
-    dct:issued "2014-10-01"^^xsd:date ;
+    dct:issued "2014-10"^^xsd:gYearMonth ;
     dct:title "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
     bibtex:editor [ a rdf:Seq ;
             rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;

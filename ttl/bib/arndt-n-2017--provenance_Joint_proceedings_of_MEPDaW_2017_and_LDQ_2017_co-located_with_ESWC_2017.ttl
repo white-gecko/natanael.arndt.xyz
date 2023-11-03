@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017> a bibo:Proceedings ;
-    dct:issued "2017-05-01"^^xsd:date ;
+    dct:issued "2017-05"^^xsd:gYearMonth ;
     dct:title "Joint proceedings of the 3rd Workshop on Managing the Evolution and Preservation of the Data Web (MEPDaW 2017) and the 4th Workshop on Linked Data Quality (LDQ 2017) co-located with 14th European Semantic Web Conference (ESWC 2017)" ;
     bibtex:editor [ a rdf:Seq ;
             rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Fernández_Javier_D_> ;

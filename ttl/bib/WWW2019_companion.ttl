@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/WWW2019_companion> a bibo:Proceedings ;
-    dct:issued "2019-05-01"^^xsd:date ;
+    dct:issued "2019-05"^^xsd:gYearMonth ;
     dct:title "Companion Proceedings of the 2019 World Wide Web Conference (WWW '19 Companion), San Francisco, CA, USA" ;
     bibtex:month "May" .
 

@@ -27,7 +27,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     dct:dateAccepted "2020-06" ;
     dct:dateSubmitted "2020-02" ;
     dct:hasFormat <https://oa-hochschulverlag.htwk-leipzig.de/fileadmin/portal/m_oa_hochschulverlag/Katalog/Arndt/2020-08-04-natanael-diss-final-pdfx.pdf> ;
-    dct:issued "2020-12-01"^^xsd:date ;
+    dct:issued "2020-12"^^xsd:gYearMonth ;
     dct:publisher "HTWK Open-Access-Hochschulverlag" ;
     dct:title "Distributed Collaboration on Versioned Decentralized RDF Knowledge Bases" ;
     bibtex:keywords "group_aksw",

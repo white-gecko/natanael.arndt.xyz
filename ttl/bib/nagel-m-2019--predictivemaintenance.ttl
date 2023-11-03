@@ -16,6 +16,6 @@
             rdf:_5 "Ralph Riedel" ] ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/VPP_PredictiveMaintenance/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/vpp2019> ;
-    dct:issued "2019-01-01"^^xsd:date ;
+    dct:issued "2019-11"^^xsd:gYearMonth ;
     dct:title "Ein Plattform-Ökosystem für Predictive Maintenance zur Erhöhung der Effizienz und Effektivität der Instandhaltung in kleinen und mittleren Unternehmen (KMU)" .
 

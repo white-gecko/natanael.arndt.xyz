@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/info2021> a bibo:Proceedings ;
-    dct:issued "2021-05-01"^^xsd:date ;
+    dct:issued "2021-05"^^xsd:gYearMonth ;
     dct:title "Netzwerke und Kooperationen in der Instandhaltung, Tagungsband zum InstandhaltungsForum 2021, Dortmund" ;
     bibtex:month "May" .
 

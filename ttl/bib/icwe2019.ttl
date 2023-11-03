@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/icwe2019> a bibo:Proceedings ;
-    dct:issued "2019-06-01"^^xsd:date ;
+    dct:issued "2019-06"^^xsd:gYearMonth ;
     dct:title "Proceedings of the 19th International Conference on Web Engineering (ICWE 2019), Daejeon, South Korea" ;
     bibtex:month "June" .
 

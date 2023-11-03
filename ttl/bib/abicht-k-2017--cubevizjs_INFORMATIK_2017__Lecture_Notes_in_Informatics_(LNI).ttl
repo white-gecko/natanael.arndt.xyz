@@ -8,7 +8,7 @@
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)> a bibo:Proceedings ;
     dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
     dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
-    dct:issued "2017-09-01"^^xsd:date ;
+    dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
     bibtex:editor [ a rdf:Seq ;
             rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;

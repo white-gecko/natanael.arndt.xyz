@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/iswc2022> a bibo:Proceedings ;
-    dct:issued "2022-10-01"^^xsd:date ;
+    dct:issued "2022-10"^^xsd:gYearMonth ;
     dct:title "The Semantic Web–ISWC 2022: 21st International Semantic Web Conference, Virtual Event" ;
     bibtex:month "October" .
 

@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015> a bibo:Proceedings ;
-    dct:issued "2015-09-01"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEMANTiCS 2015" ;
     bibtex:month "September" .
 
