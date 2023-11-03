@@ -350,13 +350,13 @@ bibo:Thesis
     ] ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/d2r2-22> ;
     dct:title "Data-driven Resilience Research 2022 (D2R2'22, Preface)" ;
-    dct:issued "2022"^^xsd:date ;
+    dct:issued "2022-07"^^xsd:gYearMonth ;
     dct:hasFormat <https://ceur-ws.org/Vol-3376/preface.pdf> ;
     a bibtex:InProceedings ;
     dct:abstract """In the face of continuously changing contextual conditions and ubiquitous disruptive crisis events, the concept of resilience refers to some of the most urgent, challenging, and interesting issues of nowadays society. Economic value networks, technical infrastructures, health systems, and social textures alike need to unfold capacities to withstand, adapt, recover or even refine and transform themselves to stay ahead of changes.""" .
 
 <https://natanael.arndt.xyz/bib/iswc2022>
-    dct:issued "2022-10"^^xsd:date ;
+    dct:issued "2022-10"^^xsd:gYearMonth ;
     dct:title "The Semantic Web–ISWC 2022: 21st International Semantic Web Conference, Virtual Event" ;
     bibtex:month "October" ;
     a bibo:Proceedings .
@@ -374,11 +374,11 @@ bibo:Thesis
     dct:hasFormat <https://iswc2022.semanticweb.org/wp-content/uploads/2022/11/978-3-031-19433-7_6.pdf> ;
     dct:title "Reproducibility Crisis in the LOD Cloud? Studying the Impact of Ontology Accessibility and Archiving as a Counter Measure" ;
     bibo:doi "10.1007/978-3-031-19433-7_6" ;
-    dct:issued "2022"^^xsd:date ;
+    dct:issued "2022-10"^^xsd:gYearMonth ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/sematnics-pd-2021>
-    dct:issued "2021-09"^^xsd:date ;
+    dct:issued "2021-09"^^xsd:gYearMonth ;
     dct:title "Joint Proceedings of the Semantics co-located events: Poster&Demo track and Workshop on Ontology-Driven Conceptual Modelling of Digital Twins co-located with Semantics 2021, Amsterdam" ;
     bibtex:month "September" ;
     bibo:issn "1613-0073" ;
@@ -402,7 +402,7 @@ This tool allows domain experts to create a terminology and schema without the n
     dct:isPartOf <https://natanael.arndt.xyz/bib/sematnics-pd-2021> ;
     dct:hasFormat <http://ceur-ws.org/Vol-2941/paper16.pdf> ;
     dct:title "A Visual SHACL Shapes Editor Based On OntoPad" ;
-    dct:issued "2021"^^xsd:date ;
+    dct:issued "2021-01"^^xsd:gYearMonth ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/dissertation>
@@ -434,7 +434,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     bibo:gtin14 "9783966270199";
     bibo:isbn10 "3966270196";
     bibo:doi "10.33968/9783966270205-00" ;
-    dct:issued "2020-12"^^xsd:date ;
+    dct:issued "2020-12"^^xsd:gYearMonth ;
     dct:dateAccepted "2020-06" ;
     dct:dateSubmitted "2020-02" ;
     a bibo:Thesis, bibo:Book ;
@@ -450,7 +450,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
         rdf:_5 <http://aksw.org/NatanaelArndt> ;
         a rdf:Seq
     ] ;
-    dct:issued "2020-09"^^xsd:date ;
+    dct:issued "2020-09"^^xsd:gYearMonth ;
     dct:hasFormat <https://svn.aksw.org/papers/2020/semantics_archivo/public.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/SEMANTiCS_2020> ;
     bibo:doi "10.1007/978-3-030-59833-4_2" ;
@@ -460,13 +460,13 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/20773b0a3db90d1111c523172cbd75db4/white_gecko> .
 
 <https://natanael.arndt.xyz/bib/SEMANTiCS_2020>
-    dct:issued "2020-09"^^xsd:date ;
+    dct:issued "2020-09"^^xsd:gYearMonth ;
     dct:title "SEMANTiCS 2020" ;
     bibtex:month "September" ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/rodbh2019>
-    dct:issued "2019-04"^^xsd:date ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
     dct:title "Proceedings of the Doctoral Symposium on Research on Online Databases in History co-located with 3rd Data for History Workshop, Leipzig" ;
     bibtex:month "April" ;
     bibo:issn "1613-0073" ;
@@ -486,7 +486,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     ] ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/rodbh2019> ;
     dct:title "Doctoral Symposium on Research on Online Databases in History (RODBH 2019)" ;
-    dct:issued "2019"^^xsd:date ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
     dct:hasFormat <http://ceur-ws.org/Vol-2532/introduction.pdf>, <https://svn.aksw.org/papers/2019/RODBH_editorial/public.pdf> ;
     a bibtex:InProceedings ;
     dct:abstract """This editorial provides an introduction to the field of research of the Doctoral Symposiumon Research on Online Databases in History (RODBH 2019) which was collocated with the 3rdData for History workshop.
@@ -494,7 +494,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     The common interlink of this disciplines is the use of research data, data management, andall accompanying activities as well as the organization of collaborative community processes.""" .
 
 <https://natanael.arndt.xyz/bib/info2021>
-    dct:issued "2021-05"^^xsd:date ;
+    dct:issued "2021-05"^^xsd:gYearMonth ;
     dct:title "Netzwerke und Kooperationen in der Instandhaltung, Tagungsband zum InstandhaltungsForum 2021, Dortmund" ;
     bibtex:month "May" ;
     a bibo:Proceedings .
@@ -509,13 +509,13 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     ] ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/info2021> ;
     dct:title "Ein Plattform-basiertes Wertschöpfungsnetzwerk für innovatives prädiktives Instandhaltungsmanagement" ;
-    dct:issued "2021"^^xsd:date ;
+    dct:issued "2021-05"^^xsd:gYearMonth ;
     bibo:doi "10.24406/iml-n-634575" ;
     dct:hasFormat <https://www.iml.fraunhofer.de/de/abteilungen/b2/anlagenmanagement/auftritte/instandhaltungsforum/jcr:content/contentPar/sectioncomponent_1799661103/teaserParsys/teaser/linklistParsys/downloadcomponent/file.res/InFo21_Tagungsband.pdf> ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/vpp2019>
-    dct:issued "2019-11"^^xsd:date ;
+    dct:issued "2019-11"^^xsd:gYearMonth ;
     dct:title "Die hybride Fabrik – menschliche und künstliche Intelligenz im Einklang VPP2019 – Vernetzt planen und produzieren, Chemnitz" ;
     bibtex:month "November" ;
     a bibo:Proceedings .
@@ -531,7 +531,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     ] ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/vpp2019> ;
     dct:title "Ein Plattform-Ökosystem für Predictive Maintenance zur Erhöhung der Effizienz und Effektivität der Instandhaltung in kleinen und mittleren Unternehmen (KMU)" ;
-    dct:issued "2019"^^xsd:date ;
+    dct:issued "2019-11"^^xsd:gYearMonth ;
     dct:hasFormat <https://svn.aksw.org/papers/2019/VPP_PredictiveMaintenance/public.pdf> ;
     a bibtex:InProceedings ;
     dct:abstract """Autonome Steuerungsverfahren gelten als vielversprechender Ansatz, um einer zunehmend dynamisch und komplexer werdenden Produktionsumgebung gerecht zu werden.
@@ -557,7 +557,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     owl:sameAs <http://ma-graph.org/entity/2401032967> .
 
 <https://natanael.arndt.xyz/bib/AndreDBpediaSameAs_SEMANTiCS_2015>
-    dct:issued "2015-09"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEMANTiCS 2015" ;
     bibtex:month "September" ;
     a bibo:Proceedings .
@@ -595,7 +595,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     foaf:name "Sebastian Krause" .
 
 <https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož>
-    dct:issued "2016-05"^^xsd:date ;
+    dct:issued "2016-05"^^xsd:gYearMonth ;
     dct:title "The 10th edition of the Language Resources and Evaluation Conference, 23-28 May 2016, Slovenia, Portorož" ;
     bibtex:month "May" ;
     a bibo:Proceedings .
@@ -633,7 +633,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>
     dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
     dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
-    dct:issued "2017-09"^^xsd:date ;
+    dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
@@ -646,7 +646,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Lecture_Notes_in_Informatics_(LNI)>
     dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
     dct:isPartOf "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
-    dct:issued "2017-09"^^xsd:date ;
+    dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "Lecture Notes in Informatics (LNI)" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
@@ -677,7 +677,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     owl:sameAs <http://ma-graph.org/entity/2575460185> .
 
 <https://natanael.arndt.xyz/bib/arndt-2016-ldow-structured-feedback--_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)>
-    dct:issued "2016-04"^^xsd:date ;
+    dct:issued "2016-04"^^xsd:gYearMonth ;
     dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
     bibtex:month "April" ;
     a bibo:Proceedings .
@@ -721,7 +721,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
 
 <https://natanael.arndt.xyz/bib/arndt-n-2010--INFORMATIK_2010>
     dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
-    dct:issued "2010-09"^^xsd:date ;
+    dct:issued "2010-09"^^xsd:gYearMonth ;
     dct:title "Proceedings of the INFORMATIK 2010: Service Science -- Neue Perspektiven für die Informatik" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2010--_Fähnrich_Klaus-Peter> ;
@@ -733,13 +733,13 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/MEPDaW2019>
-    dct:issued "2019-05"^^xsd:date ;
+    dct:issued "2019-05"^^xsd:gYearMonth ;
     dct:title "5th Workshop on Managing the Evolution and Preservation of the Data Web, 14 May 2019, San Francisco, CA, USA" ;
     bibtex:month "May" ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/WWW2019_companion>
-    dct:issued "2019-05"^^xsd:date ;
+    dct:issued "2019-05"^^xsd:gYearMonth ;
     dct:title "Companion Proceedings of the 2019 World Wide Web Conference (WWW '19 Companion), San Francisco, CA, USA" ;
     bibtex:month "May" ;
     a bibo:Proceedings .
@@ -764,7 +764,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
     dct:title "Decentralized Collaborative Knowledge Management using Git (Extended Abstract)" ;
     bibtex:keywords "2019 group_aksw myown quit" ;
-    dct:issued "2019"^^xsd:date ;
+    dct:issued "2019-05"^^xsd:gYearMonth ;
     bibo:doi "10.1145/3308560.3316523" ;
     a bibtex:InProceedings .
 
@@ -786,12 +786,12 @@ While the *reject* strategy gives full control to the client, with *branch* and 
     dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2019_companion> ;
     dct:title "Conflict Detection, Avoidance, and Resolution in a Non-Linear RDF Version Control System: The Quit Editor Interface Concurrency Control" ;
     bibtex:keywords "2019 group_aksw myown quit" ;
-    dct:issued "2019"^^xsd:date ;
+    dct:issued "2019-05"^^xsd:gYearMonth ;
     bibo:doi "10.1145/3308560.3316519" ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/icwe2019>
-    dct:issued "2019-06"^^xsd:date ;
+    dct:issued "2019-06"^^xsd:gYearMonth ;
     dct:title "Proceedings of the 19th International Conference on Web Engineering (ICWE 2019), Daejeon, South Korea" ;
     bibtex:month "June" ;
     a bibo:Proceedings .
@@ -814,7 +814,7 @@ This enables content management and knowledge management systems to serve datase
     dct:isPartOf <https://natanael.arndt.xyz/bib/icwe2019> ;
     dct:title "Jekyll RDF: Template-Based Linked Data Publication with Minimized Effort and Maximum Scalability" ;
     bibtex:keywords "2019 group_aksw myown" ;
-    dct:issued "2019"^^xsd:date ;
+    dct:issued "2019-06"^^xsd:gYearMonth ;
     bibo:doi "10.1007/978-3-030-19274-7_24" ;
     a bibtex:InProceedings .
 
@@ -842,7 +842,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_CEUR_Workshop_Proceedings>
     dct:isPartOf "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
-    dct:issued "2014-10"^^xsd:date ;
+    dct:issued "2014-10"^^xsd:gYearMonth ;
     dct:title "CEUR Workshop Proceedings" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
@@ -869,7 +869,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track>
     dct:isPartOf "CEUR Workshop Proceedings" ;
-    dct:issued "2014-10"^^xsd:date ;
+    dct:issued "2014-10"^^xsd:gYearMonth ;
     dct:title "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
@@ -922,7 +922,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--b_CEUR_Workshop_Proceedings>
     dct:isPartOf "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
-    dct:issued "2014-10"^^xsd:date ;
+    dct:issued "2014-10"^^xsd:gYearMonth ;
     dct:title "CEUR Workshop Proceedings" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
@@ -940,7 +940,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--b_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track>
     dct:isPartOf "CEUR Workshop Proceedings" ;
-    dct:issued "2014-10"^^xsd:date ;
+    dct:issued "2014-10"^^xsd:gYearMonth ;
     dct:title "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
@@ -978,7 +978,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_11th_International_Conference_on_Semantic_Systems_Proceedings>
     dct:isPartOf "International Conference on Semantic Systems Proceedings" ;
-    dct:issued "2015-09"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "11th International Conference on Semantic Systems Proceedings" ;
     bibtex:month "September" ;
     a bibo:Proceedings ;
@@ -989,7 +989,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2015--k_International_Conference_on_Semantic_Systems_Proceedings>
     dct:isPartOf "11th International Conference on Semantic Systems Proceedings" ;
-    dct:issued "2015-09"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "International Conference on Semantic Systems Proceedings" ;
     bibtex:month "September" ;
     a bibo:Series ;
@@ -1019,7 +1019,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_12th_International_Conference_on_Semantic_Systems_Proceedings>
     dct:isPartOf "International Conference on Semantic Systems Proceedings" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "12th International Conference on Semantic Systems Proceedings" ;
     bibtex:month "September" ;
     a bibo:Proceedings ;
@@ -1030,7 +1030,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2016--quit_International_Conference_on_Semantic_Systems_Proceedings>
     dct:isPartOf "12th International Conference on Semantic Systems Proceedings" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "International Conference on Semantic Systems Proceedings" ;
     bibtex:month "September" ;
     a bibo:Series ;
@@ -1058,7 +1058,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>
     dct:isPartOf "SEMANTiCS '16" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
     bibtex:month "September" ;
     a bibo:Proceedings ;
@@ -1069,7 +1069,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2016--quitdiff_SEMANTiCS_'16>
     dct:isPartOf "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "SEMANTiCS '16" ;
     bibtex:month "September" ;
     a bibo:Series ;
@@ -1089,7 +1089,6 @@ This enables content management and knowledge management systems to serve datase
     dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>, <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_ICWE_2017> ;
     dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:issued "2017-06"^^xsd:date ;
     dct:language "en-US" ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
     bibtex:keywords "leds myown quit" ;
@@ -1101,7 +1100,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_17th_International_Conference_on_Web_Engineering_(ICWE_2017)>
     dct:isPartOf "ICWE 2017" ;
-    dct:issued "2017-06"^^xsd:date ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:title "17th International Conference on Web Engineering (ICWE 2017)" ;
     bibtex:month "June" ;
     a bibo:Proceedings ;
@@ -1112,7 +1111,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--decentralized_ICWE_2017>
     dct:isPartOf "17th International Conference on Web Engineering (ICWE 2017)" ;
-    dct:issued "2017-06"^^xsd:date ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:title "ICWE 2017" ;
     bibtex:month "June" ;
     a bibo:Series ;
@@ -1156,7 +1155,7 @@ This enables content management and knowledge management systems to serve datase
     foaf:name "Javier D. Fernández" .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017>
-    dct:issued "2017-05"^^xsd:date ;
+    dct:issued "2017-05"^^xsd:gYearMonth ;
     dct:title "Joint proceedings of the 3rd Workshop on Managing the Evolution and Preservation of the Data Web (MEPDaW 2017) and the 4th Workshop on Linked Data Quality (LDQ 2017) co-located with 14th European Semantic Web Conference (ESWC 2017)" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Fernández_Javier_D_> ;
@@ -1221,7 +1220,7 @@ This enables content management and knowledge management systems to serve datase
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>
     dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
     dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
-    dct:issued "2017-09"^^xsd:date ;
+    dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
@@ -1234,7 +1233,7 @@ This enables content management and knowledge management systems to serve datase
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Lecture_Notes_in_Informatics_(LNI)>
     dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
     dct:isPartOf "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
-    dct:issued "2017-09"^^xsd:date ;
+    dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "Lecture Notes in Informatics (LNI)" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
@@ -1259,7 +1258,7 @@ This enables content management and knowledge management systems to serve datase
     dct:title "Decentralized Collaborative Knowledge Management using Git" ;
     bibtex:keywords "myown quit versioning" ;
     bibo:doi "10.1016/j.websem.2018.08.002" ;
-    dct:issued "2018-09"^^xsd:date ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
     dct:dateAccepted "2018-08" ;
     dct:dateSubmitted "2017-10" ;
     a bibo:AcademicArticle ;
@@ -1267,7 +1266,7 @@ This enables content management and knowledge management systems to serve datase
     owl:sameAs <http://ma-graph.org/entity/2801562840> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Journal_of_Web_Semantics>
-    dct:issued "2018"^^xsd:date ;
+    dct:issued "2018"^^xsd:gYear ;
     dct:title "Journal of Web Semantics" ;
     a bibo:Journal .
 
@@ -1298,7 +1297,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_CEUR_Workshop_Proceedings>
     dct:isPartOf "Joint Proceedings of the Posters and Demos Track of the 12th International Conference on Semantic Systems - SEMANTiCS2016 and the 1st International Workshop on Semantic Change & Evolving Semantics (SuCCESS'16)" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "CEUR Workshop Proceedings" ;
     bibtex:month "September" ;
     a bibo:Series ;
@@ -1309,7 +1308,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki_Joint_PD_SEMANTiCS2016_and_SuCCESS16>
     dct:isPartOf "CEUR Workshop Proceedings" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "Joint Proceedings of the Posters and Demos Track of the 12th International Conference on Semantic Systems - SEMANTiCS2016 and the 1st International Workshop on Semantic Change & Evolving Semantics (SuCCESS'16)" ;
     bibtex:month "September" ;
     a bibo:Proceedings ;
@@ -1344,7 +1343,7 @@ This enables content management and knowledge management systems to serve datase
     foaf:name "Niklas Petersen" .
 
 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)>
-    dct:issued "2016-04"^^xsd:date ;
+    dct:issued "2016-04"^^xsd:gYearMonth ;
     dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
     bibtex:month "April" ;
     a bibo:Proceedings .
@@ -1375,7 +1374,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_GI-Edition---Lecture_Notes_in_Informatics>
     dct:isPartOf "Proceedings of the INFORMATIK 2014: Big Data -- Komplexität meistern" ;
-    dct:issued "2014-09"^^xsd:date ;
+    dct:issued "2014-09"^^xsd:gYearMonth ;
     dct:title "GI-Edition---Lecture Notes in Informatics" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard> ;
@@ -1406,7 +1405,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern>
     dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
-    dct:issued "2014-09"^^xsd:date ;
+    dct:issued "2014-09"^^xsd:gYearMonth ;
     dct:title "Proceedings of the INFORMATIK 2014: Big Data -- Komplexität meistern" ;
     bibtex:editor [
         rdf:_1 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard> ;
@@ -1459,7 +1458,7 @@ This enables content management and knowledge management systems to serve datase
 <https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015>
     dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
     dct:isPartOf "SEM '15" ;
-    dct:issued "2015-09"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEMANTICS 2015" ;
     bibtex:month "September" ;
     a bibo:Proceedings ;
@@ -1471,7 +1470,7 @@ This enables content management and knowledge management systems to serve datase
 <https://natanael.arndt.xyz/bib/rex_pd_SEM_'15>
     dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
     dct:isPartOf "SEMANTICS 2015" ;
-    dct:issued "2015-09"^^xsd:date ;
+    dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEM '15" ;
     bibtex:month "September" ;
     a bibo:Series ;
@@ -1501,7 +1500,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>
     dct:isPartOf "SEMANTiCS '16" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
     bibtex:month "September" ;
     a bibo:Proceedings ;
@@ -1521,7 +1520,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/towardsversioning_SEMANTiCS_'16>
     dct:isPartOf "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
-    dct:issued "2016-09"^^xsd:date ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
     dct:title "SEMANTiCS '16" ;
     bibtex:month "September" ;
     a bibo:Series ;
@@ -1558,7 +1557,7 @@ This enables content management and knowledge management systems to serve datase
 
 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)>
     dct:isPartOf "ekaw2016" ;
-    dct:issued "2016-11"^^xsd:date ;
+    dct:issued "2016-11"^^xsd:gYearMonth ;
     dct:title "Proceedings of 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW'2016)" ;
     bibtex:month "November" ;
     a bibo:Proceedings .
@@ -1572,7 +1571,7 @@ This enables content management and knowledge management systems to serve datase
     foaf:name "Sahar Vahdati" .
 
 <https://natanael.arndt.xyz/bib/SKIL2011>
-    dct:issued "2011"^^xsd:date ;
+    dct:issued "2011"^^xsd:gYear ;
     dct:title "Proceedings of the Studentenkonferenz Informatik Leipzig 2011" ;
     a bibo:Proceedings .
 
@@ -1591,7 +1590,7 @@ This enables content management and knowledge management systems to serve datase
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/tramp-s-2011--a_Proceedings_of_the_ESWC2011>
-    dct:issued "2011"^^xsd:date ;
+    dct:issued "2011"^^xsd:gYear ;
     dct:title "Proceedings of the ESWC2011" ;
     a bibo:Proceedings .
 
