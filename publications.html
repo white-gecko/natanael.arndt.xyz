@@ -20,9 +20,21 @@ SELECT DISTINCT ?publication WHERE {
       ?publication dct:isPartOf ?collection .
       ?collection dct:issued ?issued
     }
+    BIND(STRDT(if(
+      datatype(?issued) = xsd:date,
+      CONCAT(STR(?issued), "T00:00:00"),
+      if(
+        datatype(?issued) = xsd:gYearMonth,
+        CONCAT(STR(?issued), "-01T00:00:00"),
+        if(datatype(?issued) = xsd:gYear,
+          CONCAT(STR(?issued), "-01-01T00:00:00"),
+          "2006-10-01T00:00:00"
+        )
+      )
+    ), xsd:dateTime) AS ?issued_order)
   }
 }
-ORDER BY DESC(?issued)
+ORDER BY DESC(?issued_order)
 {% endcapture %}
 {% assign resultset = page.rdf | sparql_query: query %}
 
