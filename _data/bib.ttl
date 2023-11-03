@@ -242,7 +242,6 @@
     ] ;
     foaf:name "Timofey Ermilov" .
 
-
 <http://aksw.org/GustavoPublio>
     a foaf:Person ;
     vcard:N [
@@ -274,6 +273,22 @@
         vcard:Given "Julia"
     ] ;
     foaf:name "Julia Holze" .
+
+<http://aksw.org/RicardoUsbeck>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Usbeck" ;
+        vcard:Given "Ricardo"
+    ] ;
+    foaf:name "Ricardo Usbeck" .
+
+<http://aksw.org/LarsPeterMeyer>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Meyer" ;
+        vcard:Given "Lars-Peter"
+    ] ;
+    foaf:name "Lars-Peter Meyer" .
 
 <https://platona-m.technology/Nagel> a foaf:Person;
   foaf:name "Matthias Nagel" .
@@ -328,6 +343,55 @@ bibo:Report
 
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
+
+<https://natanael.arndt.xyz/bib/dl4kg-23>
+    dct:date "2023-11-07"^^xsd:date ;
+    dct:issued "2023-09-29"^^xsd:date ;
+    dct:title "Workshop on Deep Learning for Knowledge Graphs (DL4KG), Athens, Greece" ;
+    bibtex:month "November" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/frey-j-2023--llm>
+    dct:creator [
+      rdf:_1 <http://aksw.org/JohannesFrey> ;
+      rdf:_2 <http://aksw.org/LarsPeterMeyer> ;
+      rdf:_3 <http://aksw.org/NatanaelArndt> ;
+      rdf:_4 "Felix Brei" ;
+      rdf:_5 "Kirill Bulert" ;
+      a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/dl4kg-23> ;
+    dct:title "Benchmarking the Abilities of Large Language Models for RDF Knowledge Graph Creation and Comprehension: How Well Do LLMs Speak Turtle?" ;
+    dct:issued "2023-09"^^xsd:gYearMonth ;
+    dct:hasFormat <https://arxiv.org/pdf/2309.17122.pdf> ;
+    a bibtex:InProceedings ;
+    dct:abstract """Large Language Models (LLMs) are advancing at a rapid pace, with significant improvements at natural language processing and coding tasks. Yet, their ability to work with formal languages representing data, specifically within the realm of knowledge graph engineering, remains under-investigated. To evaluate the proficiency of various LLMs, we created a set of five tasks that probe their ability to parse, understand, analyze, and create knowledge graphs serialized in Turtle syntax. These tasks, each embodying distinct degrees of complexity and being able to scale with the size of the problem, have been integrated into our automated evaluation system, the LLM-KG-Bench. The evaluation encompassed four commercially available LLMs - GPT-3.5, GPT-4, Claude 1.3, and Claude 2.0, as well as two freely accessible offline models, GPT4All Vicuna and GPT4All Falcon 13B. This analysis offers an in-depth understanding of the strengths and shortcomings of LLMs in relation to their application within RDF knowledge graph engineering workflows utilizing Turtle representation. While our findings show that the latest commercial models outperform their forerunners in terms of proficiency with the Turtle language, they also reveal an apparent weakness. These models fall short when it comes to adhering strictly to the output formatting constraints, a crucial requirement in this context. """ .
+
+<https://natanael.arndt.xyz/bib/d2r2-23>
+    dct:date "2023-05-28"^^xsd:date ;
+    dct:issued "2023-05-22"^^xsd:date ;
+    dct:dateSubmitted "2023-05-17"^^xsd:date ;
+    dct:dateCopyrighted "2023-05-17"^^xsd:date ;
+    dct:title "Proceedings of the Second International Workshop on Linked Data-driven Resilience Research 2023 co-located with Extended Semantic Web Conference 2023 (ESWC 2023), Hersonissos, Greece" ;
+    bibtex:month "May" ;
+    bibo:issn "1613-0073" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/tramp-s-2023--d2r2-23>
+    dct:creator [
+      rdf:_1 <http://aksw.org/SebastianTramp> ;
+      rdf:_2 <http://aksw.org/RicardoUsbeck> ;
+      rdf:_3 <http://aksw.org/NatanaelArndt> ;
+      rdf:_4 <http://aksw.org/JuliaHolze> ;
+      rdf:_5 <http://aksw.org/SoerenAuer> ;
+      a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/d2r2-23> ;
+    dct:title "Linked Data-driven Resilience Research 2023 (D2R2'23, Preface)" ;
+    dct:issued "2023-05"^^xsd:gYearMonth ;
+    dct:hasFormat <https://ceur-ws.org/Vol-3401/preface.pdf> ;
+    a bibtex:InProceedings ;
+    dct:abstract """In the face of continuously changing contextual conditions and ubiquitous disruptive crisis events, the concept of resilience refers to some of the most urgent, challenging, and interesting issues of nowadays society. Economic value networks, technical infrastructures, health systems, and social textures alike need to unfold capacities to withstand, adapt, recover, or even refine and transform themselves to stay ahead of changes.""" .
 
 <https://natanael.arndt.xyz/bib/d2r2-22>
     dct:date "2022-07-06"^^xsd:date ;

@@ -1,0 +1,11 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/dl4kg-23> a bibo:Proceedings ;
+    dct:date "2023-11-07"^^xsd:date ;
+    dct:issued "2023-09-29"^^xsd:date ;
+    dct:title "Workshop on Deep Learning for Knowledge Graphs (DL4KG), Athens, Greece" ;
+    bibtex:month "November" .
+

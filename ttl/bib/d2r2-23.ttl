@@ -1,0 +1,14 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/d2r2-23> a bibo:Proceedings ;
+    dct:date "2023-05-28"^^xsd:date ;
+    dct:dateCopyrighted "2023-05-17"^^xsd:date ;
+    dct:dateSubmitted "2023-05-17"^^xsd:date ;
+    dct:issued "2023-05-22"^^xsd:date ;
+    dct:title "Proceedings of the Second International Workshop on Linked Data-driven Resilience Research 2023 co-located with Extended Semantic Web Conference 2023 (ESWC 2023), Hersonissos, Greece" ;
+    bibtex:month "May" ;
+    bibo:issn "1613-0073" .
+
