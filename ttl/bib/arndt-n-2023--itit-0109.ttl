@@ -1,0 +1,15 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2023--itit-0109> a bibo:AcademicArticle ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ;
+            rdf:_2 "Paul Molitor" ;
+            rdf:_3 <http://aksw.org/RicardoUsbeck> ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/itit-2023-0109> ;
+    dct:issued "2023-11-06"^^xsd:date ;
+    dct:title "Machine learning applications (Editorial)" ;
+    bibo:doi "10.1515/itit-2023-0109" .
+

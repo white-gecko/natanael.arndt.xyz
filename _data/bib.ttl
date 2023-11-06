@@ -344,6 +344,27 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+<https://natanael.arndt.xyz/bib/itit-2023-0109>
+    dct:issued "2023-11-06"^^xsd:date ;
+    dct:title "it - Information Technology: Machine learning applications" ;
+    bibtex:month "November" ;
+    bibo:issn "2196-7032" ;
+    bibo:doi "10.1515/itit-2023-0109" ;
+    a bibo:Journal .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2023--itit-0109>
+    dct:creator [
+      rdf:_1 <http://aksw.org/NatanaelArndt> ;
+      rdf:_2 "Paul Molitor" ;
+      rdf:_3 <http://aksw.org/RicardoUsbeck> ;
+      a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/itit-2023-0109> ;
+    dct:title "Machine learning applications (Editorial)" ;
+    dct:issued "2023-11-06"^^xsd:date ;
+    bibo:doi "10.1515/itit-2023-0109" ;
+    a bibo:AcademicArticle .
+
 <https://natanael.arndt.xyz/bib/dl4kg-23>
     dct:date "2023-11-07"^^xsd:date ;
     dct:issued "2023-09-29"^^xsd:date ;
