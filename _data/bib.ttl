@@ -349,7 +349,7 @@ bibo:Thesis
     dct:title "it - Information Technology: Machine learning applications" ;
     bibtex:month "November" ;
     bibo:issn "2196-7032" ;
-    bibo:doi "10.1515/itit-2023-0109" ;
+    bibo:issn "1611-2776" ;
     a bibo:Journal .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2023--itit-0109>
