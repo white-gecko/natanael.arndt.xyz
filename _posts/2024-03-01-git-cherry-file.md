@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cherry pick files from an commit in a repository"
+title: "Cherry pick files from a commit in a repository"
 tags: ["Git", "cherry pick"]
 date: 2024-03-01 14:13:00+01:00
 ---
