@@ -11,7 +11,7 @@
             rdf:_3 <http://aksw.org/NatanaelArndt> ;
             rdf:_4 "Felix Brei" ;
             rdf:_5 "Kirill Bulert" ] ;
-    dct:hasFormat <https://arxiv.org/pdf/2309.17122.pdf> ;
+    dct:hasFormat <https://ceur-ws.org/Vol-3559/paper-3.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/dl4kg-23> ;
     dct:issued "2023-09"^^xsd:gYearMonth ;
     dct:title "Benchmarking the Abilities of Large Language Models for RDF Knowledge Graph Creation and Comprehension: How Well Do LLMs Speak Turtle?" .
