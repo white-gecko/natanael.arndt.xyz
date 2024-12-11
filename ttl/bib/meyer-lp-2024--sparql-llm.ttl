@@ -1,0 +1,17 @@
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/meyer-lp-2024--sparql-llm> a bibtex:InProceedings ;
+    dct:abstract "The integration of Large Language Models (LLMs) with Knowledge Graphs (KGs) offers significant synergistic potential for knowledge-driven applications. One possible integration is the interpretation and generation of formal languages, such as those used in the Semantic Web, with SPARQL being a core technology for accessing KGs. In this paper, we focus on measuring out-of-the box capabilities of LLMs to work with SPARQL and more specifically with SPARQL SELECT queries applying a quantitative approach. We implemented various benchmarking tasks in the LLM-KG-Bench framework for automated execution and evaluation with several LLMs. The tasks assess capabilities along the dimensions of syntax, semantic read, semantic create, and the role of knowledge graph prompt inclusion. With this new benchmarking tasks, we evaluated a selection of GPT, Gemini, and Claude models. Our findings indicate that working with SPARQL SELECT queries is still challenging for LLMs and heavily depends on the specific LLM as well as the complexity of the task. While fixing basic syntax errors seems to pose no problems for the best of the current LLMs evaluated, creating semantically correct SPARQL SELECT queries is difficult in several cases." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/LarsPeterMeyer> ;
+            rdf:_2 <http://aksw.org/JohannesFrey> ;
+            rdf:_3 <http://aksw.org/FelixBrei> ;
+            rdf:_4 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <https://arxiv.org/pdf/2409.05925> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/3rdnlp4kgc> ;
+    dct:issued "2024-09"^^xsd:gYearMonth ;
+    dct:title "Assessing SPARQL capabilities of Large Language Models" .
+
