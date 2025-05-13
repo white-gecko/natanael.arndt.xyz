@@ -352,6 +352,28 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+<https://natanael.arndt.xyz/bib/WWW2025_companion>
+    dct:date "2025-05-01"^^xsd:date ;
+    dct:issued "2025-05-01"^^xsd:date ;
+    dct:title "Companion Proceedings of The Web Conference 2025 (WWW '25 Companion), Sydney, NSW, Australia" ;
+    bibtex:month "May" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/frey-y-2025--time-travel>
+    dct:creator [
+      rdf:_1 <http://aksw.org/JohannesFrey> ;
+      rdf:_2 "Jenifer Tabita Ciuciu-Kiss" ;
+      rdf:_3 <http://aksw.org/NatanaelArndt> ;
+      a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2025_companion> ;
+    dct:title "Breaking Accessibility Barriers: An Ontology Proxy with Failure Recovery and Time Travel Capabilities" ;
+    dct:issued "2025-05"^^xsd:gYearMonth ;
+    dct:hasFormat <https://www.researchgate.net/profile/Johannes-Frey-3/publication/389706296_Breaking_Accessibility_Barriers_An_Ontology_Proxy_with_Failure_Recovery_and_Time_Travel_Capabilities/links/67cef7d97c5b5569dcb938e4/Breaking-Accessibility-Barriers-An-Ontology-Proxy-with-Failure-Recovery-and-Time-Travel-Capabilities.pdf?__cf_chl_rt_tk=oRuP5js0eIZajBxgS9OlL99aoUHwCWA462D0EH96N7s-1747136807-1.0.1.1-Jn1LioYnGxNC.NlqiWkLra5WPK7gQ8xl9DqM396C33c> ;
+    bibo:doi "10.1145/3701716.3715531" ;
+    a bibtex:InProceedings ;
+    dct:abstract """This paper introduces a novel concept and implementation of an ontology proxy designed to seamlessly enhance accessibility and reliability of the Web of Ontologies by addressing challenges such as link rot, evolution inconsistencies, and communication failures. The proxy features a time travel mode, powered by DBpedia Archivo, that provides access to archived and versioned snapshots of ontologies. This enables failure recovery and the emulation of a consistent state in time, supporting reproducible research and enhancing the FAIRness of ontologies and associated (meta)data in a plug-and-play manner. Initial evaluations show significant improvements in ontology retrieval success rates, underscoring the proxy’s potential as a viable interface for breaking accessibility barriers.""" .
+
 <https://natanael.arndt.xyz/bib/zfbb-72-2_2025>
     dct:issued "2025-04-15"^^xsd:date ;
     dct:title "Zeitschrift für Bibliothekswesen und Bibliographie, Themenheft: Webarchivierung als kulturelle Gedächtnisaufgabe" ;
