@@ -1,0 +1,19 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2025--webarchiv> a bibo:AcademicArticle ;
+    dct:abstract "Zum gesetzlichen Sammelauftrag der Deutschen Nationalbiblio­thek (DNB) gehört auch die Sammlung von Websites aus dem deutschen Web. Hierfür betreibt die DNB seit 2012 ein Web­archiv, das in den nächsten Jahren deutlich ausgebaut werden soll. Um diesen Ausbau zu bewältigen, wird ein neues Webarchivsystem entwickelt und es müssen Fragen zur Auswahl der zu sammelnden Websites betrachtet werden. In diesem Beitrag werden die Besonderheiten des Mediums Web, die bei der Auswahl zu berücksichtigen sind, das Prinzip der exemplarischen Vielfalt und Ansätze einer systematisierten Auswahl diskutiert sowie die Stakeholder, die Basisanforderungen und die Eckpfeiler eines neuen Webarchivsystems skizziert."@de,
+        "The statutory collection mandate of the German National Library (DNB) includes collecting websites in the German web. The DNB has operated a web archive for this purpose since 2012. It is to be significantly expanded over the next few years. In order to accommodate this expansion, a new web archive system is currently under development and questions now need to be addressed regarding the selection of websites to be collected. The article discusses various aspects, including the special features of the web medium that need to be taken into account when making selections, the principle of representative diversity, and systematised selection approaches. It also outlines the stake­ holders, the basic requirements and the cornerstones of a new web archive system."@en ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ;
+            rdf:_2 "Britta Woldering" ] ;
+    dct:hasFormat <https://doi.org/10.3196/186429502572237> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/zfbb-72-2_2025> ;
+    dct:issued "2025-04-15"^^xsd:date ;
+    dct:title "Webarchivierung an der Deutschen Nationalbibliothek: Ein Blick in die Zukunft" ;
+    bibtex:pages "93-99" ;
+    bibo:doi "10.3196/186429502572237" .
+
