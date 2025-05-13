@@ -352,6 +352,9 @@ bibo:Report
 bibo:Thesis
     rdfs:subClassOf dct:BibliographicResource .
 
+bibo:Journal
+    rdfs:subClassOf bibo:Periodical .
+
 <https://natanael.arndt.xyz/bib/WWW2025_companion>
     dct:date "2025-05-01"^^xsd:date ;
     dct:issued "2025-05-01"^^xsd:date ;
