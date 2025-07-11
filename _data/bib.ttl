@@ -1359,6 +1359,27 @@ This enables content management and knowledge management systems to serve datase
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2b35ee2852d8ca02f8ccf7210b70b2b01/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2773313421> .
 
+<https://natanael.arndt.xyz/bib/arndt-n-2017--ledsplay>
+    dct:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
+    dct:creator [
+        rdf:_1 <http://aksw.org/NatanaelArndt> ;
+        rdf:_2 "André Langer" ;
+        rdf:_3 <http://aksw.org/MichaelMartin> ;
+        rdf:_4 <http://aksw.org/SebastianTramp> ;
+        a rdf:Seq
+    ] ;
+    dct:hasFormat <https://dl.gi.de/bitstreams/6d38f5e1-1a2e-4f1a-9350-bb497ecd8240/download> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>, <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Lecture_Notes_in_Informatics_(LNI)> ;
+    dct:title "LEDSPLaY17: Workshop on Linked Enterprise Data Services, Provenance, Linking and QualitY" ;
+    bibtex:keywords "2017", "group_aksw", "myown", "quit", "editorial" ;
+    bibtex:pages "1863" ;
+    bibo:doi "10.18420/in2017_185" ;
+    bibo:isbn "978-3-88579-669-5" ;
+    bibo:issn "1617-5468" ;
+    a bibtex:InProceedings ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2b35ee2852d8ca02f8ccf7210b70b2b01/white_gecko>;
+    owl:sameAs <http://ma-graph.org/entity/2773313421> .
+
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian>
     a foaf:Person ;
     vcard:N [
