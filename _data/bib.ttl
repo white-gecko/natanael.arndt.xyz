@@ -1376,9 +1376,7 @@ This enables content management and knowledge management systems to serve datase
     bibo:doi "10.18420/in2017_185" ;
     bibo:isbn "978-3-88579-669-5" ;
     bibo:issn "1617-5468" ;
-    a bibtex:InProceedings ;
-    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2b35ee2852d8ca02f8ccf7210b70b2b01/white_gecko>;
-    owl:sameAs <http://ma-graph.org/entity/2773313421> .
+    a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian>
     a foaf:Person ;
