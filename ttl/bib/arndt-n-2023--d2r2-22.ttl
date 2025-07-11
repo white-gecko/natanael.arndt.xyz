@@ -14,5 +14,5 @@
     dct:hasFormat <https://ceur-ws.org/Vol-3376/preface.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/d2r2-22> ;
     dct:issued "2022-07"^^xsd:gYearMonth ;
-    dct:title "Data-driven Resilience Research 2022 (D2R2'22, Preface)" .
+    dct:title "International Workshop on Data-driven Resilience Research 2022 (D2R2'22, Preface)" .
 
