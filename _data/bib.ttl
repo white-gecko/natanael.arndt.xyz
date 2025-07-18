@@ -1718,6 +1718,7 @@ This enables content management and knowledge management systems to serve datase
         rdf:_4 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Lange_Christoph> ;
         a rdf:Seq
     ] ;
+    dct:hasFormat <https://2016.semantics.cc/sites/2016.semantics.cc/files/files/SubmittedTo_EKAW_2016.compressed.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> ;
     dct:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
     bibtex:keywords "myown" ;
