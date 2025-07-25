@@ -11,16 +11,21 @@ The software listed here are mainly scientific prototypes created, where I had a
 <!-- https://getbootstrap.com/examples/carousel/ -->
 
 {% for member in site.data.projects %}
+  {% if member.image %}
+  {% assign col_class = "col-md-9" %}
+  {% else %}
+  {% assign col_class = "col-md-12" %}
+  {% endif %}
   <div class="row featurette">
-    <div class="col-md-9 {% cycle '', 'order-2' %}">
+    <div class="{{col_class}} {% cycle '', 'order-2' %}">
       <h3 class="featurette-heading">{{ member.name }} {% if member.subtitle %}<small class="text-muted">{{ member.subtitle }}.</small>{% endif %}</h3>
       <p>{{ member.abstract }}</p>
       {% if member.url %}<a href="{{ member.url }}">Project Webpage</a>{% endif %}
     </div>
-    <div class="col-md-3 {% cycle '', 'col-md-pull-9' %}">
     {% if member.image %}
-      <img class="featurette-image img-fluid center-block" src="{{ member.image }}" alt="Generic placeholder image" loading="lazy">{% endif %}
-    </div>
+    <div class="col-md-3 {% cycle '', 'col-md-pull-9' %}">
+      <img class="featurette-image img-fluid center-block" src="{{ member.image }}" alt="Generic placeholder image" loading="lazy">
+    </div>{% endif %}
   </div>
 
 <hr class="featurette-divider">
