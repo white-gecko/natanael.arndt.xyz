@@ -20,7 +20,9 @@
     dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:language "en-US" ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
-    bibtex:keywords "leds myown quit" ;
+    bibtex:keywords "leds",
+        "myown",
+        "quit" ;
     bibo:doi "10.1007/978-3-319-60131-1_2" ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/27d67a40a45533c30b6bd4ea3a8ce525b/white_gecko> ;
     owl:sameAs <http://ma-graph.org/entity/2618270959> ;
