@@ -1,0 +1,4 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix aksw: <http://aksw.org/> .
+
+<https://github.com/AKSW/pfarrerbuch.de> doap:maintainer aksw:NatanaelArndt .

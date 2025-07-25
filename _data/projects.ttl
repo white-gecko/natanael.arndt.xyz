@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix siodc: <https://siodc.example.org/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/AKSW> a foaf:Agent,
+        foaf:Organization .
+
+<https://github.com/AKSW/pfarrerbuch.de.svn> a doap:SVNRepository ;
+    doap:location <https://github.com/AKSW/pfarrerbuch.de> .
+
+<https://github.com/AKSW/pfarrerbuch.de> a doap:Project ;
+    dcterms:date "2020-08-27T21:54:16+00:00"^^xsd:dateTime ;
+    doap:created "2013-09-05T09:26:00+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://pfarrerbuch.de/> ;
+    doap:repository <https://github.com/AKSW/pfarrerbuch.de.git>,
+        <https://github.com/AKSW/pfarrerbuch.de.svn> ;
+    siodc:issue_tracker <https://github.com/AKSW/pfarrerbuch.de/issues> ;
+    siodc:num_stars 0 ;
+    siodc:num_watchers 9 .
+
+<https://github.com/AKSW/pfarrerbuch.de.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/pfarrerbuch.de> ;
+    doap:location <git://github.com/AKSW/pfarrerbuch.de.git>,
+        <git@github.com:AKSW/pfarrerbuch.de.git>,
+        <https://github.com/AKSW/pfarrerbuch.de.git> .
