@@ -14,7 +14,15 @@
   and blogs”. This enables people without deep programming knowledge to publish data, which is
   encoded in complicated RDF structures, on the web in an easy to browse format."
 
-- name: "MMoOn Open Hebred"
+- name: "OntoPad"
+  abstract: "The OntoPad is a simple RDF editor written in JavaScript.
+  With the Vocabulary module it provides the possibility to generate a simple RDFS vocabulary and visually
+  compose SHACL shapes based on the vocabulary.
+  The OntoPad is setup on a Quit Store which makes the system collaborative by
+  providing the possibility to exchange data via Git."
+  url: "https://aksw.github.io/OntoPad/"
+
+- name: "MMoOn Open Hebrew"
   abstract: "A Modern Hebrew inventory based on the Multilingual Morpheme Ontology (MMoOn). With a nice browsing interface to explore the Modern Hebrew morphology."
   url: "https://aksw.org/Projects/MMoOnHeb.html"
 
