@@ -14,6 +14,17 @@
   and blogs”. This enables people without deep programming knowledge to publish data, which is
   encoded in complicated RDF structures, on the web in an easy to browse format."
 
+- name: "MMoOn Open Hebred"
+  abstract: "A Modern Hebrew inventory based on the Multilingual Morpheme Ontology (MMoOn). With a nice browsing interface to explore the Modern Hebrew morphology."
+  url: "https://aksw.org/Projects/MMoOnHeb.html"
+
+- name: "Pfarrerbuch"
+  abstract: "Pfarrerbuch is a project of the Working Group for Saxon Church History in cooperation with
+  the Institute for Church History at the University of Leipzig, the Institute for Computer Science at the University of Leipzig,
+  and the Institute for Church History at the Evangelical Lutheran Theological University in Budapest.
+  Its goal is to record all pastors since the Reformation."
+  url: "http://aksw.org/Projects/Pfarrerbuch"
+
 - name: OntoWiki
   url: "http://aksw.org/Projects/OntoWiki"
   subtitle: "a tool providing support for agile, distributed knowledge engineering scenarios"
@@ -55,6 +66,3 @@ The software is written in PHP and based on the Erfurt-Framework and lib-dssn-ph
   abstract: "ShareNote is a simple and handy app to write down your ideas, thoughts and other notes.
 It can share the notes with other apps through the Android share functionality.
 I developed this App while I was travelling across Canada and had no pen nor paper with me but many thoughts."
-
-- name: "Pfarrerbuch"
-  url: "http://aksw.org/Projects/Pfarrerbuch"
