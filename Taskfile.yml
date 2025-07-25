@@ -17,6 +17,14 @@ tasks:
     cmds:
       - task -l
 
+  data:
+    desc: Build the graph.ttl file
+    cmds:
+      - |
+        cd _data
+        cat projects.ttl bib.ttl extra.ttl > graph.ttl
+      - task: bib:update
+
   bib:update:
     desc: Update the ttl files for the individual bibliography resources
     cmds:
@@ -30,6 +38,8 @@ tasks:
 
   build:
     desc: Build the page from source
+    deps:
+      - task: data
     cmds:
       - task: build:docker
         vars:
