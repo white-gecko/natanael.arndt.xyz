@@ -30,7 +30,7 @@ exclude:
   - package.json
   - package-lock.json
 jekyll_rdf:
-    path: "_data/bib.ttl"
+    path: "_data/graph.ttl"
     restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), \"https://natanael.arndt.xyz/\") }"
     class_template_mappings:
         "http://purl.org/dc/terms/BibliographicResource" : "publication.html"
