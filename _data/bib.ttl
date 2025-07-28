@@ -393,7 +393,7 @@ bibo:Journal
     dct:isPartOf <https://natanael.arndt.xyz/bib/zfbb-72-2_2025> ;
     dct:title "Webarchivierung an der Deutschen Nationalbibliothek: Ein Blick in die Zukunft" ;
     dct:issued "2025-04-15"^^xsd:date ;
-    dct:hasFormat <https://doi.org/10.3196/186429502572237> ;
+    dct:hasFormat <https://zs.thulb.uni-jena.de/servlets/MCRFileNodeServlet/jportal_derivate_00362332/Arndt_Woldering_zfbb_2_25.pdf> ;
     a bibo:AcademicArticle ;
     bibtex:pages "93-99" ;
     bibo:doi "10.3196/186429502572237" ;
