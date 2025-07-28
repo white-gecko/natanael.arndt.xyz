@@ -17,6 +17,12 @@ tasks:
     cmds:
       - task -l
 
+  ci:
+    desc: CI Target to build the page
+    cmds:
+      - task: data
+      - task: build
+
   data:
     desc: Build the graph.ttl file
     cmds:

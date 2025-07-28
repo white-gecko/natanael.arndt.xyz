@@ -1,0 +1,30 @@
+name: Page Build CI
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  BRANCH: main
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup task command 📋
+      uses: arduino/setup-task@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout the repository 🗃️
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ env.BRANCH }}
+    - name: Run CI task 🦾
+      run: task ci
+    - name: Deploy page 🚀
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        publish_branch: page-live  # default: gh-pages
