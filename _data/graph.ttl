@@ -326,11 +326,206 @@
     ] ;
     foaf:name "Felix Brei" .
 
+<https://natanael.arndt.xyz/bib/MMoOnHeb_Arndt_Timotheus>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Arndt" ;
+        vcard:Given "Timotheus"
+    ] ;
+    foaf:name "Timotheus Arndt" .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb_Krause_Sebastian>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Krause" ;
+        vcard:Given "Sebastian"
+    ] ;
+    foaf:name "Sebastian Krause" .
+
 <https://platona-m.technology/Nagel> a foaf:Person;
+  vcard:N [
+      vcard:Family "Nagel" ;
+      vcard:Given "Matthias"
+  ] ;
   foaf:name "Matthias Nagel" .
 
 <https://platona-m.technology/Foerster> a foaf:Person;
+  vcard:N [
+      vcard:Family "Förster" ;
+      vcard:Given "Fabian"
+  ] ;
   foaf:name "Fabian Förster" .
+
+<https://natanael.arndt.xyz/bib/towardsversioning_Piris_Rubén_Navarro>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Piris" ;
+        vcard:Given "Rubén" ;
+        vcard:Other "Navarro"
+    ] ;
+    foaf:name "Rubén Navarro Piris" .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Lange_Christoph>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Lange" ;
+        vcard:Given "Christoph"
+    ] ;
+    foaf:name "Christoph Lange" .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Vahdati_Sahar>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Vahdati" ;
+        vcard:Given "Sahar"
+    ] ;
+    foaf:name "Sahar Vahdati" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Schneider_Eric>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Schneider" ;
+        vcard:Given "Eric"
+    ] ;
+    foaf:name "Eric Schneider" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Ull_Dominik>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Ull" ;
+        vcard:Given "Dominik"
+    ] ;
+    foaf:name "Dominik Ull" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Grunske_Lars>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Grunske" ;
+        vcard:Given "Lars"
+    ] ;
+    foaf:name "Lars Grunske" .
+
+<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Plödereder" ;
+        vcard:Given "Erhard"
+    ] ;
+    foaf:name "Erhard Plödereder" .
+
+<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Petersen" ;
+        vcard:Given "Niklas"
+    ] ;
+    foaf:name "Niklas Petersen" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Naumann" ;
+        vcard:Given "Patrick"
+    ] ;
+    foaf:name "Patrick Naumann" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Eibl" ;
+        vcard:Given "Maximilian"
+    ] ;
+    foaf:name "Maximilian Eibl" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Gaedke" ;
+        vcard:Given "Martin"
+    ] ;
+    foaf:name "Martin Gaedke" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Umbrich_Jürgen>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Umbrich" ;
+        vcard:Given "Jürgen"
+    ] ;
+    foaf:name "Jürgen Umbrich" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Debattista_Jeremy>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Debattista" ;
+        vcard:Given "Jeremy"
+    ] ;
+    foaf:name "Jeremy Debattista" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Fernández_Javier_D_>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Fernández" ;
+        vcard:Given "Javier" ;
+        vcard:Other "D."
+    ] ;
+    foaf:name "Javier D. Fernández" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Rospocher" ;
+        vcard:Given "Marco"
+    ] ;
+    foaf:name "Marco Rospocher" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Ossenbruggen" ;
+        vcard:Given "Jacco" ;
+        vcard:Prefix "van"
+    ] ;
+    foaf:name "Jacco van Ossenbruggen" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Horridge" ;
+        vcard:Given "Matthew"
+    ] ;
+    foaf:name "Matthew Horridge" .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Alkhouri_Georges>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Alkhouri" ;
+        vcard:Given "Georges"
+    ] ;
+    foaf:name "Georges Alkhouri" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_Franczyk_Bogdan>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Franczyk" ;
+        vcard:Given "Bogdan"
+    ] ;
+    foaf:name "Bogdan Franczyk" .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--_Fähnrich_Klaus-Peter>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Fähnrich" ;
+        vcard:Given "Klaus-Peter"
+    ] ;
+    foaf:name "Klaus-Peter Fähnrich" .
+
+<https://natanael.arndt.xyz/bib/org-GI>
+    a bibtex:Organization ;
+    foaf:name "Gesellschaft für Informatik e.V." .
+
+<https://natanael.arndt.xyz/bib/org-ACM>
+    a bibtex:Organization ;
+    foaf:name "ACM" .
 
 dct:BibliographicResource
     rdfs:subClassOf foaf:Document .
@@ -421,7 +616,7 @@ bibo:Journal
     dct:isPartOf <https://natanael.arndt.xyz/bib/zfbb-72-2_2025> ;
     dct:title "Webarchivierung an der Deutschen Nationalbibliothek: Ein Blick in die Zukunft" ;
     dct:issued "2025-04-15"^^xsd:date ;
-    dct:hasFormat <https://doi.org/10.3196/186429502572237> ;
+    dct:hasFormat <https://zs.thulb.uni-jena.de/servlets/MCRFileNodeServlet/jportal_derivate_00362332/Arndt_Woldering_zfbb_2_25.pdf> ;
     a bibo:AcademicArticle ;
     bibtex:pages "93-99" ;
     bibo:doi "10.3196/186429502572237" ;
@@ -768,22 +963,6 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     a bibtex:InProceedings ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2b38463c8cbf803ee7538277ca35253b1/white_gecko> .
 
-<https://natanael.arndt.xyz/bib/MMoOnHeb_Arndt_Timotheus>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Arndt" ;
-        vcard:Given "Timotheus"
-    ] ;
-    foaf:name "Timotheus Arndt" .
-
-<https://natanael.arndt.xyz/bib/MMoOnHeb_Krause_Sebastian>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Krause" ;
-        vcard:Given "Sebastian"
-    ] ;
-    foaf:name "Sebastian Krause" .
-
 <https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož>
     dct:issued "2016-05"^^xsd:gYearMonth ;
     dct:title "The 10th edition of the Language Resources and Evaluation Conference, 23-28 May 2016, Slovenia, Portorož" ;
@@ -812,16 +991,8 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/220b44b8de52df76ee27cc3118bcf52c6/white_gecko> ;
     owl:sameAs <http://ma-graph.org/entity/2775705370> .
 
-<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Alkhouri_Georges>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Alkhouri" ;
-        vcard:Given "Georges"
-    ] ;
-    foaf:name "Georges Alkhouri" .
-
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>
-    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-GI> ;
     dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
     dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
@@ -834,7 +1005,7 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_Lecture_Notes_in_Informatics_(LNI)>
-    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-GI> ;
     dct:isPartOf "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
     dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "Lecture Notes in Informatics (LNI)" ;
@@ -882,32 +1053,12 @@ Finally, it can be concluded that the consequent approach followed by the Quit m
     dct:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
     bibtex:keywords "dssn myown" ;
     bibtex:note "2010 Gesellschaft für Informatik" ;
-    bibtex:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/org-GI> ;
     bibtex:pages "1004-1005" ;
     bibo:isbn "978-3-88579-270-3" ;
     bibo:issn "1617-5468" ;
     a bibtex:InProceedings ;
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/268fe7fb4d031c441fda37ba835b94308/white_gecko> .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2010--_Franczyk_Bogdan>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Franczyk" ;
-        vcard:Given "Bogdan"
-    ] ;
-    foaf:name "Bogdan Franczyk" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2010--_Fähnrich_Klaus-Peter>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Fähnrich" ;
-        vcard:Given "Klaus-Peter"
-    ] ;
-    foaf:name "Klaus-Peter Fähnrich" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_>
-    a bibtex:Organization ;
-    foaf:name "Gesellschaft für Informatik e.V." .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2010--INFORMATIK_2010>
     dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
@@ -1049,14 +1200,6 @@ This enables content management and knowledge management systems to serve datase
         vcard:Locality "Riva del Garda"
     ] .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Horridge" ;
-        vcard:Given "Matthew"
-    ] ;
-    foaf:name "Matthew Horridge" .
-
 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track>
     dct:isPartOf "CEUR Workshop Proceedings" ;
     dct:issued "2014-10"^^xsd:gYearMonth ;
@@ -1074,23 +1217,6 @@ This enables content management and knowledge management systems to serve datase
         vcard:Country "Italy" ;
         vcard:Locality "Riva del Garda"
     ] .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Rospocher" ;
-        vcard:Given "Marco"
-    ] ;
-    foaf:name "Marco Rospocher" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Ossenbruggen" ;
-        vcard:Given "Jacco" ;
-        vcard:Prefix "van"
-    ] ;
-    foaf:name "Jacco van Ossenbruggen" .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2014--b>
     dct:abstract "We present Xodx (http://aksw.org/Projects/Xodx) an implementation of a node for the Distributed Semantic Social Network (DSSN). DSSN is a general architecture for building an online social network using Semantic Web standards and additional protocols for real-time communication such as Semantic Pingback and PubSubHubbub. Xodx provides functionality for publishing and editing personal profiles, adding friends to the friend list, sending and receiving friendship requests, publishing posts and subscribing to update feeds across distributed nodes." ;
@@ -1327,23 +1453,6 @@ This enables content management and knowledge management systems to serve datase
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/221142bb1e3a2650439e68b10f631ec92/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2724588376> .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Debattista_Jeremy>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Debattista" ;
-        vcard:Given "Jeremy"
-    ] ;
-    foaf:name "Jeremy Debattista" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Fernández_Javier_D_>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Fernández" ;
-        vcard:Given "Javier" ;
-        vcard:Other "D."
-    ] ;
-    foaf:name "Javier D. Fernández" .
-
 <https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Joint_proceedings_of_MEPDaW_2017_and_LDQ_2017_co-located_with_ESWC_2017>
     dct:issued "2017-05"^^xsd:gYearMonth ;
     dct:title "Joint proceedings of the 3rd Workshop on Managing the Evolution and Preservation of the Data Web (MEPDaW 2017) and the 4th Workshop on Linked Data Quality (LDQ 2017) co-located with 14th European Semantic Web Conference (ESWC 2017)" ;
@@ -1359,14 +1468,6 @@ This enables content management and knowledge management systems to serve datase
         vcard:Country "Slovenia" ;
         vcard:Locality "Portoroz"
     ] .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2017--provenance_Umbrich_Jürgen>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Umbrich" ;
-        vcard:Given "Jürgen"
-    ] ;
-    foaf:name "Jürgen Umbrich" .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack>
     dct:abstract "The distributed character and the manifold possibilities for interchanging data on the Web lead to the problem of getting hold of the provenance of the data. Especially in the domain of digital humanities and when dealing with Linked Data in an enterprise context provenance information is needed to support the collaborative process of data management. We are proposing a possibility for capturing and exploring provenance information, based on the methodology of managing RDF data in a tool stack on top of the decentralized source code management system Git. This comprises a queriable history graph, the possibility to query arbitrary revisions of a Git versioned store and in the minimal granularity the possibility to annotate individual statements with their provenance information." ;
@@ -1405,28 +1506,8 @@ This enables content management and knowledge management systems to serve datase
     bibo:issn "1617-5468" ;
     a bibtex:InProceedings .
 
-<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Eibl" ;
-        vcard:Given "Maximilian"
-    ] ;
-    foaf:name "Maximilian Eibl" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Gaedke" ;
-        vcard:Given "Martin"
-    ] ;
-    foaf:name "Martin Gaedke" .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik>
-    a bibtex:Organization ;
-    foaf:name "Gesellschaft für Informatik" .
-
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)>
-    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-GI> ;
     dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
     dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
@@ -1439,7 +1520,7 @@ This enables content management and knowledge management systems to serve datase
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Lecture_Notes_in_Informatics_(LNI)>
-    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-GI> ;
     dct:isPartOf "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
     dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "Lecture Notes in Informatics (LNI)" ;
@@ -1477,14 +1558,6 @@ This enables content management and knowledge management systems to serve datase
     dct:issued "2018"^^xsd:gYear ;
     dct:title "Journal of Web Semantics" ;
     a bibo:Journal .
-
-<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Naumann" ;
-        vcard:Given "Patrick"
-    ] ;
-    foaf:name "Patrick Naumann" .
 
 <https://natanael.arndt.xyz/bib/frischmuth-semantics-2016-ontowiki>
     dct:abstract "In this demonstration (with supportive poster) we present the semantic data wiki OntoWiki, which was released in version 1.0 just recently. We focus on the changes introduced to the tool in the latest release and showcase the generic data wiki, improvements we made with regard to the documentation as well as three success stories where OntoWiki was adapted and deployed." ;
@@ -1542,14 +1615,6 @@ This enables content management and knowledge management systems to serve datase
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/212f9a15e107b422d7df136b518bf2035/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2551906201> .
 
-<https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Petersen" ;
-        vcard:Given "Niklas"
-    ] ;
-    foaf:name "Niklas Petersen" .
-
 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Proceedings_of_the_Workshop_on_Linked_Data_on_the_Web_co-located_with_the_25th_International_World_Wide_Web_Conference_(WWW_2016)>
     dct:issued "2016-04"^^xsd:gYearMonth ;
     dct:title "Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016)" ;
@@ -1572,7 +1637,7 @@ This enables content management and knowledge management systems to serve datase
     dct:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
     bibtex:keywords "amsl erm group_aksw myown" ;
     bibtex:note "2014 Gesellschaft für Informatik" ;
-    bibtex:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/org-GI> ;
     bibtex:pages "1017-1026" ;
     bibo:isbn "978-3-88579-626-8" ;
     bibo:issn "1617-5468" ;
@@ -1595,22 +1660,6 @@ This enables content management and knowledge management systems to serve datase
     bibtex:volume "P-232" ;
     a bibo:Series .
 
-<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Grunske_Lars>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Grunske" ;
-        vcard:Given "Lars"
-    ] ;
-    foaf:name "Lars Grunske" .
-
-<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Plödereder_Erhard>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Plödereder" ;
-        vcard:Given "Erhard"
-    ] ;
-    foaf:name "Erhard Plödereder" .
-
 <https://natanael.arndt.xyz/bib/nareike-a-2014--a_Proceedings_of_the_INFORMATIK_2014__Big_Data_--_Komplexität_meistern>
     dct:isPartOf "GI-Edition---Lecture Notes in Informatics" ;
     dct:issued "2014-09"^^xsd:gYearMonth ;
@@ -1625,22 +1674,6 @@ This enables content management and knowledge management systems to serve datase
     bibtex:month "September" ;
     bibtex:volume "P-232" ;
     a bibo:Proceedings .
-
-<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Schneider_Eric>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Schneider" ;
-        vcard:Given "Eric"
-    ] ;
-    foaf:name "Eric Schneider" .
-
-<https://natanael.arndt.xyz/bib/nareike-a-2014--a_Ull_Dominik>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Ull" ;
-        vcard:Given "Dominik"
-    ] ;
-    foaf:name "Dominik Ull" .
 
 <https://natanael.arndt.xyz/bib/rex_pd>
     dct:abstract "While several tools for simplifying the task of visualizing (SPARQL accessible) RDF data on the Web are available today, there is a lack of corresponding tools for exploiting standard HTML forms directly for RDF editing. The few related existing systems roughly fall in the categories of (a) applications that are not aimed at being reused as components, (b) form generators, which automatically create forms from a given schema -- possibly derived from instance data -- or (c) form template processors which create forms from a manually created specification. Furthermore, these systems usually come with their own widget library, which can only be extended by wrapping existing widgets. In this paper, we present the AngularJS-based Rdf Edit eXtension (REX) system, which facilitates the enhancement of standard HTML forms as well as many existing AngularJS widgets with RDF editing support by means of a set of HTML attributes. We demonstrate our system though the realization of several usage scenarios." ;
@@ -1659,12 +1692,8 @@ This enables content management and knowledge management systems to serve datase
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2ec130f8992ea778eec487e84aea8dfd4/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2407919997> .
 
-<https://natanael.arndt.xyz/bib/rex_pd_ACM>
-    a bibtex:Organization ;
-    foaf:name "ACM" .
-
 <https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015>
-    dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-ACM> ;
     dct:isPartOf "SEM '15" ;
     dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEMANTICS 2015" ;
@@ -1676,7 +1705,7 @@ This enables content management and knowledge management systems to serve datase
     ] .
 
 <https://natanael.arndt.xyz/bib/rex_pd_SEM_'15>
-    dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-ACM> ;
     dct:isPartOf "SEMANTICS 2015" ;
     dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEM '15" ;
@@ -1717,15 +1746,6 @@ This enables content management and knowledge management systems to serve datase
         vcard:Locality "Leipzig"
     ] .
 
-<https://natanael.arndt.xyz/bib/towardsversioning_Piris_Rubén_Navarro>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Piris" ;
-        vcard:Given "Rubén" ;
-        vcard:Other "Navarro"
-    ] ;
-    foaf:name "Rubén Navarro Piris" .
-
 <https://natanael.arndt.xyz/bib/towardsversioning_SEMANTiCS_'16>
     dct:isPartOf "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
     dct:issued "2016-09"^^xsd:gYearMonth ;
@@ -1756,28 +1776,12 @@ This enables content management and knowledge management systems to serve datase
     rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko>;
     owl:sameAs <http://ma-graph.org/entity/2546689421> .
 
-<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Lange_Christoph>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Lange" ;
-        vcard:Given "Christoph"
-    ] ;
-    foaf:name "Christoph Lange" .
-
 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)>
     dct:isPartOf "ekaw2016" ;
     dct:issued "2016-11"^^xsd:gYearMonth ;
     dct:title "Proceedings of 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW'2016)" ;
     bibtex:month "November" ;
     a bibo:Proceedings .
-
-<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Vahdati_Sahar>
-    a foaf:Person ;
-    vcard:N [
-        vcard:Family "Vahdati" ;
-        vcard:Given "Sahar"
-    ] ;
-    foaf:name "Sahar Vahdati" .
 
 <https://natanael.arndt.xyz/bib/SKIL2011>
     dct:issued "2011"^^xsd:gYear ;
