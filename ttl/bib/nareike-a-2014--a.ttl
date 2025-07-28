@@ -20,7 +20,7 @@
     dct:title "AMSL: Managing Electronic Resources for Libraries Based on Semantic Web" ;
     bibtex:keywords "amsl erm group_aksw myown" ;
     bibtex:note "2014 Gesellschaft für Informatik" ;
-    bibtex:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/org-GI> ;
     bibtex:pages "1017-1026" ;
     bibo:isbn "978-3-88579-626-8" ;
     bibo:issn "1617-5468" ;

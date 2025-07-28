@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)> a bibo:Proceedings ;
-    dc:publisher <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gesellschaft_für_Informatik> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-GI> ;
     dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
     dct:issued "2017-09"^^xsd:gYearMonth ;
     dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;

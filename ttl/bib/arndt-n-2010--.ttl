@@ -12,7 +12,7 @@
     dct:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
     bibtex:keywords "dssn myown" ;
     bibtex:note "2010 Gesellschaft für Informatik" ;
-    bibtex:organization <https://natanael.arndt.xyz/bib/arndt-n-2010--_Gesellschaft_für_Informatik_e_V_> ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/org-GI> ;
     bibtex:pages "1004-1005" ;
     bibo:isbn "978-3-88579-270-3" ;
     bibo:issn "1617-5468" ;

@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://natanael.arndt.xyz/bib/rex_pd_SEMANTICS_2015> a bibo:Proceedings ;
-    dc:publisher <https://natanael.arndt.xyz/bib/rex_pd_ACM> ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-ACM> ;
     dct:isPartOf "SEM '15" ;
     dct:issued "2015-09"^^xsd:gYearMonth ;
     dct:title "SEMANTICS 2015" ;
