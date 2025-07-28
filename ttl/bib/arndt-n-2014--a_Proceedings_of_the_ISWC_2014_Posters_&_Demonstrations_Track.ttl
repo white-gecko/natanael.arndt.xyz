@@ -1,0 +1,20 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2014--a_Proceedings_of_the_ISWC_2014_Posters_&_Demonstrations_Track> a bibo:Proceedings ;
+    dct:isPartOf "CEUR Workshop Proceedings" ;
+    dct:issued "2014-10"^^xsd:gYearMonth ;
+    dct:title "Proceedings of the ISWC 2014 Posters & Demonstrations Track" ;
+    bibtex:editor [ a rdf:Seq ;
+            rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Horridge_Matthew> ;
+            rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_Rospocher_Marco> ;
+            rdf:_3 <https://natanael.arndt.xyz/bib/arndt-n-2014--a_vanOssenbruggen_Jacco> ] ;
+    bibtex:month "October" ;
+    bibtex:volume "Vol-1272" ;
+    vcard:ADR [ vcard:Country "Italy" ;
+            vcard:Locality "Riva del Garda" ] .
+

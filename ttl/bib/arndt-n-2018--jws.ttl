@@ -1,0 +1,27 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws> a bibo:AcademicArticle ;
+    dct:abstract "The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets. The distributed character of the Web brings manifold collaborative possibilities to interchange data. The commonly adopted collaborative solutions for RDF data are centralized (e.g. SPARQL endpoints and wiki systems). But to support distributed collaboration, a system is needed, that supports divergence of datasets, brings the possibility to conflate diverged states, and allows distributed datasets to be synchronized. In this paper, we present Quit Store, it was inspired by and it builds upon the successful Git system. The approach is based on a formal expression of evolution and consolidation of distributed datasets. During the collaborative curation process, the system automatically versions the RDF dataset and tracks provenance information. It also provides support to branch, merge, and synchronize distributed RDF datasets. The merging process is guarded by specific merge strategies for RDF data. Finally, we use our reference implementation to show overall good performance and demonstrate the practical usability of the system." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ;
+            rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Naumann_Patrick> ;
+            rdf:_3 <http://aksw.org/NormanRadtke> ;
+            rdf:_4 <http://aksw.org/MichaelMartin> ;
+            rdf:_5 <http://aksw.org/EdgardMarx> ] ;
+    dct:dateAccepted "2018-08" ;
+    dct:dateSubmitted "2017-10" ;
+    dct:hasFormat <https://arxiv.org/pdf/1805.03721> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Journal_of_Web_Semantics> ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:title "Decentralized Collaborative Knowledge Management using Git" ;
+    bibtex:keywords "myown quit versioning" ;
+    bibo:doi "10.1016/j.websem.2018.08.002" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2a01687a0f7e5109fbd0df3d03661a99b/white_gecko> ;
+    owl:sameAs <http://ma-graph.org/entity/2801562840> .
+

@@ -1,0 +1,18 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/frey-y-2025--time-travel> a bibtex:InProceedings ;
+    dct:abstract "This paper introduces a novel concept and implementation of an ontology proxy designed to seamlessly enhance accessibility and reliability of the Web of Ontologies by addressing challenges such as link rot, evolution inconsistencies, and communication failures. The proxy features a time travel mode, powered by DBpedia Archivo, that provides access to archived and versioned snapshots of ontologies. This enables failure recovery and the emulation of a consistent state in time, supporting reproducible research and enhancing the FAIRness of ontologies and associated (meta)data in a plug-and-play manner. Initial evaluations show significant improvements in ontology retrieval success rates, underscoring the proxy’s potential as a viable interface for breaking accessibility barriers." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/JohannesFrey> ;
+            rdf:_2 "Jenifer Tabita Ciuciu-Kiss" ;
+            rdf:_3 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <https://www.researchgate.net/profile/Johannes-Frey-3/publication/389706296_Breaking_Accessibility_Barriers_An_Ontology_Proxy_with_Failure_Recovery_and_Time_Travel_Capabilities/links/67cef7d97c5b5569dcb938e4/Breaking-Accessibility-Barriers-An-Ontology-Proxy-with-Failure-Recovery-and-Time-Travel-Capabilities.pdf?__cf_chl_rt_tk=oRuP5js0eIZajBxgS9OlL99aoUHwCWA462D0EH96N7s-1747136807-1.0.1.1-Jn1LioYnGxNC.NlqiWkLra5WPK7gQ8xl9DqM396C33c> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/WWW2025_companion> ;
+    dct:issued "2025-05"^^xsd:gYearMonth ;
+    dct:title "Breaking Accessibility Barriers: An Ontology Proxy with Failure Recovery and Time Travel Capabilities" ;
+    bibo:doi "10.1145/3701716.3715531" .
+

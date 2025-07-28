@@ -1,0 +1,20 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2010--> a bibtex:InProceedings ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <https://dl.gi.de/bitstream/handle/20.500.12116/19365/1004.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/arndt-n-2010--INFORMATIK_2010> ;
+    dct:title "Entwicklung eines mobilen Social Semantic Web Clients" ;
+    bibtex:keywords "dssn myown" ;
+    bibtex:note "2010 Gesellschaft für Informatik" ;
+    bibtex:organization <https://natanael.arndt.xyz/bib/org-GI> ;
+    bibtex:pages "1004-1005" ;
+    bibo:isbn "978-3-88579-270-3" ;
+    bibo:issn "1617-5468" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/268fe7fb4d031c441fda37ba835b94308/white_gecko> .
+

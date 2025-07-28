@@ -1,0 +1,10 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/MMoOnHeb_The_10th_edition_of_the_Language_Resources_and_Evaluation_Conference__23-28_May_2016__Slovenia__Portorož> a bibo:Proceedings ;
+    dct:issued "2016-05"^^xsd:gYearMonth ;
+    dct:title "The 10th edition of the Language Resources and Evaluation Conference, 23-28 May 2016, Slovenia, Portorož" ;
+    bibtex:month "May" .
+

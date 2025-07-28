@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+
+$FontPathOpenSans: "~npm-font-open-sans/fonts";
+@import '~npm-font-open-sans/open-sans';
+$FontPathLato: "./fonts";
+@import './fonts/Lato-stylesheet';
+$FontPathUnderwoodChampion: "./fonts";
+@import './fonts/Underwood_champion-stylesheet';
+@import "custom";

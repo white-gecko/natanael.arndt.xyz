@@ -1,0 +1,11 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/WWW2025_companion> a bibo:Proceedings ;
+    dct:date "2025-05-01"^^xsd:date ;
+    dct:issued "2025-05-01"^^xsd:date ;
+    dct:title "Companion Proceedings of The Web Conference 2025 (WWW '25 Companion), Sydney, NSW, Australia" ;
+    bibtex:month "May" .
+

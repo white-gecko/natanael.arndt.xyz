@@ -1,0 +1,44 @@
+@base <https://natanael.arndt.xyz/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix aksw: <http://aksw.org/> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pim: <http://www.w3.org/ns/pim/space#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+
+
+<> a foaf:PersonalProfileDocument ;
+  foaf:maker <#i> ;
+  foaf:primaryTopic <#i> .
+
+<#i> a foaf:Person ;
+  owl:sameAs aksw:NatanaelArndt, <http://ma-graph.org/entity/2098112019>, <https://scigraph.springernature.com/person.014570654151.21> ;
+  foaf:name "Natanael Arndt" ;
+  foaf:image <https://avatars1.githubusercontent.com/u/1018168> ;
+  foaf:nick "white_gecko", "white-gecko", "natanael" ;
+  foaf:img <https://www.gravatar.com/avatar/9bd2fa005d80986390510518f00476e8?s=500> ;
+  foaf:knows aksw:NormanRadtke, aksw:MichaelMartin, aksw:SebastianTramp, aksw:SoerenAuer, aksw:RoyMeissner, aksw:KurtJunghanns, aksw:JoergUnbehauen, aksw:ThomasRiechert, aksw:PhilippFrishmuth, aksw:EdgardMarx ;
+
+  # taken from https://natanael.solid.community/profile/card
+  solid:account <https://natanael.solid.community/> ;  # link to the account uri
+  pim:storage <https://natanael.solid.community/> ;    # root storage
+
+  ldp:inbox <https://natanael.solid.community/inbox/> ;
+
+  pim:preferencesFile <https://natanael.solid.community/settings/prefs.ttl> ;  # private settings/preferences
+  solid:publicTypeIndex <https://natanael.solid.community/settings/publicTypeIndex.ttl> ;
+  solid:privateTypeIndex <https://natanael.solid.community/settings/privateTypeIndex.ttl> ;
+
+  # check out https://github.com/dbpedia/webid
+  cert:key [
+         a cert:RSAPublicKey;
+         rdfs:label "Made on my computer at 28 November 2018";
+         cert:modulus "A5F198962EC8BF9075A32FF62C358160480A05DCA323E5C5D12A554C7E8E369784DAEA050892D643D25E16EF003DFCA8C730F479E4C5180CC57846B96193A94B4AB2D3E994F5244C5A0997A9EAABF60AFBB73781604FFB1987731568D16BC0FEB292DDDDCF6E06850E533E54ACC6CAF6EEFD31032D1D3250CF3F036E6B3715E23579305B3D68F19A06DC42A8112E9FD646BF9303DF039F717B5BC024D15F5B42CD155C440C3C717089C864A407A49D14C0BF22B42B14F08C022DBBE8182396D663C591C3ED0D77D2AE6DFA0AEE7AE21CC5E8CDC1A95956D3A14245DF0663832547EA122F78B6CD3D5381B54D9B3E283747AB4980BFD846CB2789C81347123D27"^^xsd:hexBinary;
+         cert:exponent "65537"^^xsd:nonNegativeInteger
+        ] .

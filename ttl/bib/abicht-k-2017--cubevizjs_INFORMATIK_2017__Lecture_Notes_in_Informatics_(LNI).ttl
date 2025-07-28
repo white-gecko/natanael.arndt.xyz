@@ -1,0 +1,17 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/abicht-k-2017--cubevizjs_INFORMATIK_2017__Lecture_Notes_in_Informatics_(LNI)> a bibo:Proceedings ;
+    dc:publisher <https://natanael.arndt.xyz/bib/org-GI> ;
+    dct:isPartOf "Lecture Notes in Informatics (LNI)" ;
+    dct:issued "2017-09"^^xsd:gYearMonth ;
+    dct:title "INFORMATIK 2017, Lecture Notes in Informatics (LNI)" ;
+    bibtex:editor [ a rdf:Seq ;
+            rdf:_1 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Eibl_Maximilian> ;
+            rdf:_2 <https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack_Gaedke_Martin> ] ;
+    bibtex:month "September" .
+

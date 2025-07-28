@@ -1,0 +1,8 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/arndt-n-2018--jws_Journal_of_Web_Semantics> a bibo:Journal ;
+    dct:issued "2018"^^xsd:gYear ;
+    dct:title "Journal of Web Semantics" .
+

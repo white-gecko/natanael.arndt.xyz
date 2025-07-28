@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>natanael.arndt.xyz</title>
+    <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
+    <link>https://natanael.arndt.xyz/</link>
+    <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 28 Jul 2025 16:50:38 +0200</pubDate>
+    <lastBuildDate>Mon, 28 Jul 2025 16:50:38 +0200</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+      
+        <title>Convert a Presentation to a Video</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;At some event we had a screen to show some slides, as well as a pre-produced video, to summarize our project outcomes.
+Since my presentation tool-chain mostly involves LaTeX beamer slides, I came up with the following script to convert the PDF pages into video frames and concatenate another video file.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+
+convert &lt;span class=&quot;nt&quot;&gt;-density&lt;/span&gt; 609 &lt;span class=&quot;nt&quot;&gt;-resize&lt;/span&gt; 1920x1080 main.pdf video/picture.png
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;video
+ffmpeg &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; 1/6 &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; picture-%01d.png &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;:v libx264 &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; 30 video.mp4
+ffmpeg &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; video.mp4 &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; second_video.mp4 &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; lavfi &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; anullsrc &lt;span class=&quot;nt&quot;&gt;-filter_complex&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;[0:v][2:a] [1:v] [1:a] concat=n=2:v=1:a=1 [v] [a]&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-map&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;[v]&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-map&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;[a]&quot;&lt;/span&gt; out.mkv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The inputs are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main.pdf&lt;/code&gt; with your slides&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video/second_video.mp4&lt;/code&gt; with the video you want to attach&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The output will be at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video/out.mkv&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The slides should be in 16:9 format, so that it nicely scales to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1920x1080&lt;/code&gt; (Full-HD).
+All other options should be documented at &lt;a href=&quot;https://ffmpeg.org/&quot;&gt;https://ffmpeg.org/&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Jun 2025 15:46:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2025/06/20/slides-to-video</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2025/06/20/slides-to-video</guid>
+        
+        <category>Presentation</category>
+        
+        <category>LaTeX</category>
+        
+        <category>Video</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>Cherry pick files from a commit in a repository</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;In git there is the command &lt;a href=&quot;https://git-scm.com/docs/git-cherry-pick&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git cherry-pick&lt;/code&gt;&lt;/a&gt; that allows to “apply the changes introduced by some existing commits”.
+This is nice if you want to reorder entire commits or things like that.&lt;/p&gt;
+
+&lt;p&gt;I often have the use case that I want to see individual files side-by-side to compare them or overwrite files with a previous version, your might have more precise use cases in mind.
+At the beginning I thought &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git cherry-pick&lt;/code&gt; is the command I was looking for but I sound found out, it is not. So I went back, often to the GitHub web interface and just browsed the history and then the file tree to view the file at a certain state.&lt;/p&gt;
+
+&lt;p&gt;But since &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; has a very nice object storage I found out, that I can get any object with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git show ${object_id}&lt;/code&gt; resp. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git show --format=raw ${object_id}&lt;/code&gt;. An object can be a commit, a tree (directory), or a blob (file). So I needed to get the object id of the blob that I want to see. This can be done with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git ls-tree&lt;/code&gt; command resp. to just get the specific id of the file I’m looking for: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git ls-tree --object-only -r ${commit} ${file}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;All to gather I have put this into these lines, which you can find at &lt;a href=&quot;https://github.com/white-gecko/git-cherry-file&quot;&gt;https://github.com/white-gecko/git-cherry-file&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;## Done by Natanael 2023-01-31&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# see also: https://stackoverflow.com/a/42623347/414075&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;target_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:-${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.cherry&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Pick &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; from commit &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;file_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt; git ls-tree &lt;span class=&quot;nt&quot;&gt;--object-only&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;It has the object id &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file_id&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+git show &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;raw &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file_id&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;target_file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Written to &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;target_file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just make it executable and put it into your path, e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.local/bin/git-cherry-file&lt;/code&gt; and call it with:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git-cherry-file HEAD~2 README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It will create a new file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md.cherry&lt;/code&gt;. If you want to specify the target path you can add it as an additional argument, e.g. to overwrite the current file:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git-cherry-file HEAD~2 README.md README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I hope you like it.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Mar 2024 14:13:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2024/03/01/git-cherry-file</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2024/03/01/git-cherry-file</guid>
+        
+        <category>Git</category>
+        
+        <category>cherry pick</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>Animate the History of your Git Repository</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;I was looking for a way to get an impression of the temporal development of my git repository.
+So I chose to check for ways to animate the history of a git repository.&lt;/p&gt;
+
+&lt;p&gt;I found some DIY approach that should provide very nice results, but it requires some more effort.
+Basically you iterate through all of your commits, execute a command to visualize this commit, what ever that means to you, and then merge all of these visualizations as frames together as a movie file.
+The exect steps are here: &lt;a href=&quot;http://eptcomic.com/ept1movie.htm&quot;&gt;http://eptcomic.com/ept1movie.htm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another tool is Gource (&lt;a href=&quot;https://gource.io/&quot;&gt;https://gource.io/&lt;/a&gt;).
+It renders your repository in a 3D animation, that looks quite fancy.
+A good startingpoint is:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ apt install gource
+$ gource -c 4.0 -s 1 -a 1 .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The major difference between the two tools and their results is, that with the first on you can visualize the content of the repository as it evolves, while the Gource mainly visualizes the file structure and the collaboration process on it.&lt;/p&gt;
+
+&lt;p&gt;(This post was originally started on 2020-10-18)&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Nov 2021 17:54:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2021/11/13/git-animation</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2021/11/13/git-animation</guid>
+        
+        <category>Git</category>
+        
+        <category>Animation</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>Backup done right … and what about config?</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;From time to time it is important to create a backup of your data.
+There are some tools that help one to copy files in some sophisticated ways onto a different medium.
+I chose &lt;a href=&quot;https://restic.net/&quot;&gt;restic&lt;/a&gt; for this job.&lt;/p&gt;
+
+&lt;p&gt;But this only works well for the data you are working on, we call it &lt;em&gt;user data&lt;/em&gt;, but not for your configuration.
+Some backup articles suggest to just backup the complete users home directory which stores the &lt;em&gt;user configuration&lt;/em&gt;, but this will not include the &lt;em&gt;system configuration&lt;/em&gt;.
+On top of this for me a backup is not a raw copy of the current system I’m working on, but just the actually relevant data and configuration.
+This can also come along with an additional use case for a backup, that I want to use it to setup a clean new system where I only want to take over the data that I actually need.&lt;/p&gt;
+
+&lt;p&gt;So far I have not found any system, that covers the aspects mentioned, which leads me to the point that I’ve started to write down a concept for a &lt;a href=&quot;/notes/backup&quot;&gt;&lt;em&gt;configuration backup system&lt;/em&gt;&lt;/a&gt;.
+You are welcome to send any hints and suggestions.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Dec 2020 20:01:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2020/12/23/backup</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/12/23/backup</guid>
+        
+        <category>Git</category>
+        
+        <category>Backup</category>
+        
+        <category>Linux</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>Dissertation: “Distributed Collaboration on Versioned Decentralized RDF Knowledge Bases”</title>
+        <category>blog-post</category>
+      
+        <description>&lt;noscript class=&quot;loading-lazy&quot;&gt;
+  &lt;img src=&quot;/img/2020-12-16-dissertation.jpg&quot; alt=&quot;Six books lie on the table, three show the cover and three are open on different pages.&quot; style=&quot;width: 60%&quot; loading=&quot;lazy&quot; /&gt;
+&lt;/noscript&gt;
+
+&lt;p&gt;If you are looking for a good read for the holiday season or even a geeky present check this out. My dissertation “Distributed Collaboration on Versioned Decentralized RDF Knowledge Bases” is now published at the &lt;a href=&quot;https://fim.htwk-leipzig.de/forschung/forschungsthemen/open-access-hochschulverlag/&quot;&gt;Open Access University Press Leipzig (Open-Access-Hochschulverlag Leipzig)&lt;/a&gt; which is situated at the Leipzig
+University of Applied Sciences (HTWK Leipzig). It is available online as Open Access (DOI &lt;a href=&quot;https://doi.org/10.33968/9783966270205-00&quot;&gt;10.33968/9783966270205-00&lt;/a&gt;) and at your favorite book shop (isbn: 978-3-96627-019-9).
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;The book comes along with a preface by by supervisor Prof. Dr. Thomas Riechert and my reviewer Prof. Dr. Cesare Pautasso.
+The book cover is a design from Annett Riechert a local designer from Leipzig (&lt;a href=&quot;https://annett-riechert-design.de/typografie/2020/covergestaltung-dissertation-in-der-reihe-publikationen-in-der-informatik/&quot;&gt;her blog post&lt;/a&gt;).
+The epub version is still in production.
+The book is the first volume in the new series “Publikationen in der Informatik” (Publications in Computer Science), expect more to come …&lt;/p&gt;
+
+&lt;p&gt;You can find the abstract as well as the full text in the &lt;a href=&quot;https://natanael.arndt.xyz/bib/dissertation&quot;&gt;according entry&lt;/a&gt; in my &lt;a href=&quot;https://natanael.arndt.xyz/publications&quot;&gt;publication list&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2020 13:07:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2020/12/15/dissertation</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/12/15/dissertation</guid>
+        
+        <category>Dissertation</category>
+        
+        <category>Quit Store</category>
+        
+        <category>Collaboration</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2020-10-14  18.05</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;If you are doing #SoftwareDevelopment resp. #SoftwareEngineering an looking for a #LaTeX/#TikZ version of a simple agile development #cycle check out my page ;-) &lt;a href=&quot;https://natanael.arndt.xyz/notes/agile&quot;&gt;https://natanael.arndt.xyz/notes/agile&lt;/a&gt; #SCRUM #agile&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Oct 2020 18:05:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2020/10/14/agile-tikz</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/10/14/agile-tikz</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2019-11-19  12.52</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;If you want to read my papers but you are to lazy to download them and open them with your favorite PDF reader you now get the service to read them all directly on my web page. Some as #HTML some as embedded #PDF. https://natanael.arndt.xyz/publications #OpenResearch #OpenAccess&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Nov 2019 12:52:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2019/11/19/preprints</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2019/11/19/preprints</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2019-08-06  17.03</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;If you are working on #SemanticWeb an looking for a #LaTeX/#TikZ version of the #LayerCake and the #LODCycle check out my page ;-) &lt;a href=&quot;https://natanael.arndt.xyz/notes/semantic-web-layer-cake&quot;&gt;https://natanael.arndt.xyz/notes/semantic-web-layer-cake&lt;/a&gt; and &lt;a href=&quot;https://natanael.arndt.xyz/notes/lod-cycle&quot;&gt;https://natanael.arndt.xyz/notes/lod-cycle&lt;/a&gt; #LOD&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Aug 2019 17:03:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2019/08/06/semantic-tikz</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2019/08/06/semantic-tikz</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2018-11-27  18.26</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;Just released #JekyllRDF 3.1.0! The cool new feature is that you can now build pages from a #SPARQL endpoint. Checkout the CHANGELOG and README for details. We hope you like it. &lt;a href=&quot;https://rubygems.org/gems/jekyll-rdf&quot;&gt;https://rubygems.org/gems/jekyll-rdf&lt;/a&gt; &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf&quot;&gt;https://github.com/white-gecko/jekyll-rdf&lt;/a&gt; @akswgroup (&lt;a href=&quot;https://mobile.twitter.com/white_gecko/status/1067452594954661889&quot;&gt;https://mobile.twitter.com/white_gecko/status/1067452594954661889&lt;/a&gt;)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Nov 2018 18:26:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2018/11/27/JekyllRDF-3.1.0</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/11/27/JekyllRDF-3.1.0</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2018-10-20  19.26</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;Now you can find my paper “A Method for Distributed and Collaborative Curation of RDF Datasets Utilizing the Quit Stack” &lt;a href=&quot;https://dx.doi.org/10.18420/in2017_187&quot;&gt;10.18420/in2017_187&lt;/a&gt; with the full text published as HTML and #OpenAccess #OpenResearch on my #JekyllRDF blog &lt;a href=&quot;https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack&quot;&gt;https://natanael.arndt.xyz/bib/arndt-n-2017–quitstack&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Oct 2018 19:26:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2018/10/20/fulltext</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/10/20/fulltext</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>My Bibliography with Jekyll RDF</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;From now on the list of &lt;a href=&quot;/publications&quot;&gt;my publications&lt;/a&gt; is rendered using Jekyll-RDF. I’ve used the &lt;a href=&quot;http://bibtex2rdf.sourceforge.net/&quot;&gt;bibtex2rdf&lt;/a&gt; script together with a &lt;a href=&quot;https://github.com/white-gecko/natanael.arndt.xyz/blob/master/_data/schema.map&quot;&gt;customized mapping&lt;/a&gt; to convert my &lt;a href=&quot;https://www.bibsonomy.org/bib/user/white_gecko&quot;&gt;bibtex file&lt;/a&gt; to &lt;a href=&quot;https://github.com/white-gecko/natanael.arndt.xyz/blob/master/_data/bib.ttl&quot;&gt;RDF&lt;/a&gt;.
+This file is consumed by &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf&quot;&gt;JekyllRDF&lt;/a&gt; and rendered together with the rest of my blog using the &lt;a href=&quot;https://github.com/white-gecko/natanael.arndt.xyz/blob/master/publications.html&quot;&gt;publications template&lt;/a&gt; for the lost of all publications and an &lt;a href=&quot;https://github.com/white-gecko/natanael.arndt.xyz/blob/master/_layouts/publication.html&quot;&gt;additional template&lt;/a&gt; to render a page for each individual publication resource.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Oct 2018 15:10:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2018/10/10/bibliography-with-jekyll-rdf</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/10/10/bibliography-with-jekyll-rdf</guid>
+        
+        <category>JekyllRDF</category>
+        
+        <category>Jekyll</category>
+        
+        <category>RDF</category>
+        
+        <category>Bibliography</category>
+        
+        <category>Bibtex</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>Jekyll RDF Tutorial Screencast</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;Today I’ve released my #jekyllrdf Tutorial Screencast on Vimeo.
+It teaches you all the basics necessary to create a simple Jekyll page from an RDF knowledgebase.
+I hope that you enjoy it and that it is helpful for you!&lt;/p&gt;
+
+&lt;noscript class=&quot;loading-lazy&quot;&gt;
+  &lt;img src=&quot;/img/2018-08-07-JekyllRDF-VideoFrame.png&quot; alt=&quot;Jekyll RDF Basic Tutorial&quot; style=&quot;width: 60%&quot; loading=&quot;lazy&quot; /&gt;
+&lt;/noscript&gt;
+</description>
+        <pubDate>Tue, 07 Aug 2018 10:13:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2018/08/07/jekyll-rdf-tutorial-screencast</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/08/07/jekyll-rdf-tutorial-screencast</guid>
+        
+        <category>JekyllRDF</category>
+        
+        <category>Ruby</category>
+        
+        <category>Jekyll</category>
+        
+        <category>RDF</category>
+        
+        <category>Screencast</category>
+        
+        <category>Video</category>
+        
+        <category>Tutorial</category>
+        
+        <category>Basic</category>
+        
+        <category>Introduction</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>Generate a QR Code to Recover Your OTP Secret</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.bitcoin.de/de/r/puvb6r&quot;&gt;Bitcoin.de&lt;/a&gt; as some other pages is using a One-Time-Pad (OTP) as two-factor authentication method, actually it is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm&quot;&gt;Time-based One-Time Password algorithm (TOTP)&lt;/a&gt;.
+The Passwords are generated based on a &lt;a href=&quot;https://en.wikipedia.org/wiki/Shared_secret&quot;&gt;&lt;em&gt;shared secret&lt;/em&gt;&lt;/a&gt; as specified in &lt;a href=&quot;https://tools.ietf.org/html/rfc6238&quot;&gt;RFC6238&lt;/a&gt;.
+When activating the two-factor authentication on bitcoin.de the page shows a QR code which is used by OTP apps, such as &lt;a href=&quot;https://f-droid.org/packages/org.shadowice.flocke.andotp/&quot;&gt;andOTP&lt;/a&gt; (&lt;a href=&quot;https://github.com/andOTP/andOTP/&quot;&gt;github&lt;/a&gt;), &lt;a href=&quot;https://de.wikipedia.org/wiki/Google_Authenticator&quot;&gt;Google Authenticator&lt;/a&gt;, or &lt;a href=&quot;https://f-droid.org/packages/net.bierbaumer.otp_authenticator/&quot;&gt;OTP Authenticator&lt;/a&gt; (&lt;a href=&quot;https://github.com/0xbb/otp-authenticator&quot;&gt;github&lt;/a&gt;), to transfer the &lt;em&gt;shared secret&lt;/em&gt; to the phone. Additionally the page shows the &lt;em&gt;shared secret&lt;/em&gt; as a string of letters and numbers, which one should write down and deposit in a safe place.&lt;/p&gt;
+
+&lt;p&gt;But what happens, if due to some circumstances you have to bring this &lt;em&gt;shared secret&lt;/em&gt; back into the app?&lt;!--more--&gt;
+The google app provides the possibility to manually enter the string of letters and numbers, but the other two apps don’t.
+Thus it is necessary to generate a QR code which encodes the &lt;em&gt;shared secret&lt;/em&gt;.
+Unfortunately I didn’t find a comprehensive guide how to do this but I found some pieces, which I had to put together.
+The first pieces was in the &lt;a href=&quot;https://www.linotp.org/doc/latest/part-management/managingtokens/enroll.html#enroll-hotp-totp-and-ocra-tokens&quot;&gt;LinOTP documentation&lt;/a&gt; which told me that the QR code actually just encodes a URI, but the example was not TOTP.
+After some more web search I found &lt;a href=&quot;https://gist.github.com/habnabit/e3f0691a932a70b8646f1e5f724490c7&quot;&gt;a python script&lt;/a&gt;, which generates all sorts of &lt;a href=&quot;https://gist.github.com/habnabit/e3f0691a932a70b8646f1e5f724490c7&quot;&gt;OATH&lt;/a&gt; URIs.
+Now I know, that the syntax of the URI actually is:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;otpauth://totp/&amp;lt;name&amp;gt;?secret=&amp;lt;secret&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As we know already we can use qrencode to generate QR codes (see also &lt;a href=&quot;https://fordodone.com/2014/01/06/create-qr-code-for-automatic-wifi-access-using-qrencode/&quot;&gt;this post about WiFi access QR-codes&lt;/a&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qrencode -o code.png -t png &quot;otpauth://totp/&amp;lt;name&amp;gt;?secret=&amp;lt;secret&amp;gt;&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now just open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code.png&lt;/code&gt; with an image viewer on your PC and scan the code with your phone.&lt;/p&gt;
+
+&lt;p&gt;Some more stuff which I found during my web search:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://blogs.forgerock.org/petermajor/2014/02/one-time-passwords-hotp-and-totp/&lt;/li&gt;
+  &lt;li&gt;http://www.nongnu.org/oath-toolkit/&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 27 Feb 2018 13:18:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2018/02/27/totp</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/02/27/totp</guid>
+        
+        <category>OATP</category>
+        
+        <category>QR</category>
+        
+        <category>bitcoin.de</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2018-01-02  14.03</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;Ein neues Rezept ist online: &lt;a href=&quot;/notes/kartoffelsalat&quot;&gt;Kartoffelsalat mit Räuchertofu&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Jan 2018 14:03:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2018/01/02/rezept</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/01/02/rezept</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2017-11-04  18.44</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;Now I’m able to write status posts from my mobile using #FastHub-Libre :nerd:&lt;/p&gt;
+</description>
+        <pubDate>Sat, 04 Nov 2017 18:44:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2017/11/04/mobile</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/11/04/mobile</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2017-10-23  15.51</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;Today we’ve released #jekyllrdf 2.3.0 at #rubygems &lt;a href=&quot;https://rubygems.org/gems/jekyll-rdf&quot;&gt;https://rubygems.org/gems/jekyll-rdf&lt;/a&gt;, read more: &lt;a href=&quot;https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0&quot;&gt;https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0&lt;/a&gt; #ruby #jekyllrb&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/white_gecko/status/922460422095196166&quot;&gt;https://twitter.com/white_gecko/status/922460422095196166&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Oct 2017 15:51:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>JekyllRDF 2.3.0</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;Today we’ve released #jekyllrdf 2.3.0 at rubygems &lt;a href=&quot;https://rubygems.org/gems/jekyll-rdf&quot;&gt;https://rubygems.org/gems/jekyll-rdf&lt;/a&gt;.
+The &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/blob/2.3.0/README.md&quot;&gt;documentation&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/blob/2.3.0/CHANGELOG.md&quot;&gt;changelog&lt;/a&gt; can be found as always at GitHub: &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/&quot;&gt;https://github.com/white-gecko/jekyll-rdf/&lt;/a&gt;.
+We are very happy about all &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/graphs/contributors&quot;&gt;contributors&lt;/a&gt;, from the past and the presence, but would also like to welcome you as a future contributor ;-)
+As of today this should be the last version of the 2.x branch, since we are already working hard on the next major release 3.0.0.
+If you are interested in what is coming next, have a look at the &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/milestone/5&quot;&gt;3.0.0-milestone&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Oct 2017 15:48:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0</guid>
+        
+        <category>JekyllRDF</category>
+        
+        <category>Ruby</category>
+        
+        <category>Jekyll</category>
+        
+        <category>RDF</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>#DigitalisierungFirstBedenkenSecond</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;Als ich den Beitrag &lt;a href=&quot;https://www.zdf.de/verbraucher/volle-kanne/videoueberwachung-fuer-die-kundenanalyse-100.html&quot;&gt;ZDF „volle kanne“: „Heimliche Videoüberwachung im Supermarkt“ Beitrag vom 21.09.2017&lt;/a&gt; gesehen habe war eine meiner ersten Assoziationen das Wahlkampf-Motto der FDP im Bundestagswahlkampf: „Digitalisierung first Bedenken second“.
+Ich denk, dass vor der Installation oder Akzeptanz von dem was digital Möglich ist durchaus Bedenken hinsichtlich der gesellschaftlichen Auswirkungen angebracht sind:
+Müssen wir es tatsächlich in Kauf nehmen ungefragt dazu beizutragen unsere Freiheit einzuschränken?
+Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Weise gläsern wird, wird ihm sein Stimme in der liberalen Marktwirtschaft genommen?
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Regeln aus dem Video sind ein Möglichkeit sich deren Wirkung bewusst zu machen:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Schalten Sie Bluetooth und W-LAN im Laden ab (Anmerkung: &lt;a href=&quot;https://www.heise.de/mac-and-i/meldung/Buergerrechtler-Apples-neuer-Bluetooth-und-WLAN-Schalter-schlecht-fuer-Sicherheit-3852464.html&quot;&gt;Das ist mit aktuellen iOS Versionen gar nicht so einfach&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Nehmen Sie keine Kundenkarten&lt;/li&gt;
+  &lt;li&gt;Zahlen Sie bar&lt;/li&gt;
+  &lt;li&gt;Beschweren Sie sich, wenn sie ein kleines Löchlein finden
+ a. bei der Supermarktleitung
+ b. bei dem Landesdatenschutzbeauftragten&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Da hänge ich gleich noch eine Liste der &lt;a href=&quot;https://de.wikipedia.org/wiki/Landesbeauftragter_f%C3%BCr_den_Datenschutz&quot;&gt;Landesdatenschutzbeauftragten&lt;/a&gt; an:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;B:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.baden-wuerttemberg.datenschutz.de/&quot;&gt;Baden-Württemberg&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datenschutz-bayern.de/&quot;&gt;Bayern&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://datenschutz-berlin.de/&quot;&gt;Berlin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lda.brandenburg.de/&quot;&gt;Brandenburg&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.datenschutz.bremen.de/&quot;&gt;Bremen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;H, M, N, R:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datenschutz-hamburg.de/&quot;&gt;Hamburg&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datenschutz-mv.de/&quot;&gt;Mecklenburg-Vorpommern&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lfd.niedersachsen.de/&quot;&gt;Niedersachsen&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ldi.nrw.de/&quot;&gt;Nordrhein-Westfalen&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datenschutz.rlp.de/&quot;&gt;Rheinladn-Pfalz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;S:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://datenschutz.saarland.de/&quot;&gt;Saarland&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.saechsdsb.de/&quot;&gt;Sachsen&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://datenschutz.sachsen-anhalt.de/nc/datenschutz-sachsen-anhalt/&quot;&gt;Sachsen-Anhalt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datenschutzzentrum.de/&quot;&gt;Schleswig-Holstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;T:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tlfdi.de/tlfdi/&quot;&gt;Thüringen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 18 Oct 2017 16:03:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2017/10/18/bedenken-second</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/18/bedenken-second</guid>
+        
+        <category>Digitalisierung</category>
+        
+        <category>DigitalisierungFirstBedenkenSecond</category>
+        
+        <category>Überwachung</category>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2017-09-27  16.13</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;.@SoerenAuer from @TIBHannover is showing some old computing stuff, recipies, functions, and chinese pots at his keynote at #informatik2017&lt;/p&gt;
+
+&lt;noscript class=&quot;loading-lazy&quot;&gt;
+  &lt;img src=&quot;/img/2017-09-27-Soeren.jpg&quot; alt=&quot;Soeren Auer bei am Rednerpult&quot; style=&quot;width: 30%&quot; loading=&quot;lazy&quot; /&gt;
+&lt;/noscript&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/white_gecko/status/913043822178963456&quot;&gt;https://twitter.com/white_gecko/status/913043822178963456&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Sep 2017 16:13:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer</guid>
+        
+        
+      </item>
+    
+      <item>
+      
+        <title>@white_gecko at 2017-09-27  11.45</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;&lt;a href=&quot;https://stallman.org/&quot;&gt;Richard Stallman&lt;/a&gt; is speaking at the &lt;a href=&quot;http://informatik2017.de/&quot;&gt;GI INFORMATIK 2017&lt;/a&gt;. In his talk he is using “Person” and the pronouns “per”, and “per’s” which work like “her” and “her’s” but for any gender.
+This post was purely created with free software (vim, git, jekyll) and is licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nd/4.0/&quot;&gt;CC BY-ND&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Sep 2017 11:45:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-RichardStallman</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-RichardStallman</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

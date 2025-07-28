@@ -1,0 +1,14 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)> a bibo:Proceedings ;
+    dct:isPartOf "SEMANTiCS '16" ;
+    dct:issued "2016-09"^^xsd:gYearMonth ;
+    dct:title "12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016)" ;
+    bibtex:month "September" ;
+    vcard:ADR [ vcard:Country "Germany" ;
+            vcard:Locality "Leipzig" ] .
+

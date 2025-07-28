@@ -1,0 +1,10 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/SEMANTiCS_2020> a bibo:Proceedings ;
+    dct:issued "2020-09"^^xsd:gYearMonth ;
+    dct:title "SEMANTiCS 2020" ;
+    bibtex:month "September" .
+

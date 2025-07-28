@@ -1,0 +1,8 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/SKIL2011> a bibo:Proceedings ;
+    dct:issued "2011"^^xsd:gYear ;
+    dct:title "Proceedings of the Studentenkonferenz Informatik Leipzig 2011" .
+

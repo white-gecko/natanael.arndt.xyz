@@ -1,0 +1,23 @@
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://natanael.arndt.xyz/bib/towardsversioning> a bibtex:InProceedings ;
+    dct:abstract "Coherent and consistent tracking of provenance data and in particular update history information is a crucial building block for any serious information system architecture. Version Control Systems can be a part of such an architecture enabling users to query and manipulate versioning information as well as content revisions. In this paper, we introduce an RDF versioning approach as a foundation for a full featured RDF Version Control System. We argue that such a system needs support for all concepts of the RDF specification including support for RDF datasets and blank nodes. Furthermore, we placed special emphasis on the protection against unperceived history manipulation by hashing the resulting patches. In addition to the conceptual analysis and an RDF vocabulary for representing versioning information, we present a mature implementation which captures versioning information for changes to arbitrary RDF datasets." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/MarvinFrommhold> ;
+            rdf:_2 <https://natanael.arndt.xyz/bib/towardsversioning_Piris_Rubén_Navarro> ;
+            rdf:_3 <http://aksw.org/NatanaelArndt> ;
+            rdf:_4 <http://aksw.org/SebastianTramp> ;
+            rdf:_5 <https://natanael.arndt.xyz/bib/frommhold-m-pubsub-2016_Petersen_Niklas> ;
+            rdf:_6 <http://aksw.org/MichaelMartin> ] ;
+    dct:hasFormat <https://www.researchgate.net/publication/303924732_Towards_Versioning_of_Arbitrary_RDF_Data> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/towardsversioning_12th_International_Conference_on_Semantic_Systems_Proceedings_(SEMANTiCS_2016)>,
+        <https://natanael.arndt.xyz/bib/towardsversioning_SEMANTiCS_'16> ;
+    dct:title "Towards Versioning of Arbitrary RDF Data" ;
+    bibtex:keywords "myown" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/26a024a32f54be804f25665598bc97376/white_gecko> ;
+    owl:sameAs <http://ma-graph.org/entity/2528968297> .
+

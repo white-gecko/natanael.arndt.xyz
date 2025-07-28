@@ -1,0 +1,23 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://natanael.arndt.xyz/bib/vahdati-2016-openresearch> a bibtex:InProceedings ;
+    dct:abstract "Scholars often need to search for matching, high-profile scientific events to publish their research results. Information about topical focus and quality of events is not made sufficiently explicit in the existing communication channels where events are announced. Therefore, scholars have to spend a lot of time on reading and assessing calls for papers but might still not find the right event. Additionally, events might be overlooked because of the large number of events announced every day. We introduce OpenResearch, a crowd sourcing platform that supports researchers in collecting, organizing, sharing and disseminating information about scientific events in a structured way. It enables quality-related queries over a multidisciplinary collection of events according to a broad range of criteria such as acceptance rate, sustainability of event series, and reputation of people and organizations. Events are represented in different views using map extensions, calendar and time-line visualizations. We have systematically evaluated the timeliness, usability and performance of OpenResearch." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Vahdati_Sahar> ;
+            rdf:_2 <http://aksw.org/NatanaelArndt> ;
+            rdf:_3 <http://aksw.org/SoerenAuer> ;
+            rdf:_4 <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Lange_Christoph> ] ;
+    dct:hasFormat <https://2016.semantics.cc/sites/2016.semantics.cc/files/files/SubmittedTo_EKAW_2016.compressed.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/vahdati-2016-openresearch_Proceedings_of_20th_International_Conference_on_Knowledge_Engineering_and_Knowledge_Management_(EKAW'2016)> ;
+    dct:title "OpenResearch: Collaborative Management of Scholarly Communication Metadata" ;
+    bibtex:keywords "myown" ;
+    bibo:doi "10.1007/978-3-319-49004-5_50" ;
+    bibo:isbn "978-3-319-49003-8" ;
+    rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2fc1744be2b8a0800e2667d580116e9fa/white_gecko> ;
+    owl:sameAs <http://ma-graph.org/entity/2546689421> .
+
