@@ -20,7 +20,6 @@ tasks:
   ci:
     desc: CI Target to build the page
     cmds:
-      - task: data
       - task: build
 
   data:
