@@ -43,8 +43,6 @@ tasks:
 
   build:
     desc: Build the page from source
-    deps:
-      - task: data
     cmds:
       - task: build:docker
         vars:
