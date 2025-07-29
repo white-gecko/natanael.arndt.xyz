@@ -96,7 +96,7 @@
             </a>
         </li>
     </ul>
-    <nav class="blog-nav"><a class="blog-nav-item" href="/">Blog</a><a class="blog-nav-item" href="/notes/">Notes</a><a class="blog-nav-item" href="/projects">Projects</a><a class="blog-nav-item" href="/publications">Publications</a></nav>
+    <nav class="blog-nav"><a class="blog-nav-item" href="/">Blog</a><a class="blog-nav-item" href="/notes/">Notes</a><a class="blog-nav-item" href="/projects/">Projects</a><a class="blog-nav-item" href="/publications/">Publications</a></nav>
   </div>
 </div>
 
@@ -152,95 +152,16 @@
   
 
   
+  
+    
+    <h3>Preview</h3>
+    <object data="https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf" type="application/pdf" width="100%" style="height: 1000px">
+      <a href="https://svn.aksw.org/papers/2019/MEPDaW_DecentralizedCollaboration_Abstract/public.pdf">Download</a>
+    </object>
+  
+  
 
-  <dl>
-  <dt>Keywords:</dt>
-  <dd>Versioning; RDF; Semantic Web; Git; Distributed Version Control System; Distributed Collaboration; Knowledge Engineering; Quit Store</dd>
-</dl>
-<h3>Introduction</h3>
-<p>Apart from documents, datasets are gaining more attention on the World Wide Web.
-  An increasing number of the datasets on the Web are available as Linked Data, also called the <em><a href="http://lod-cloud.net/">Linked Open Data Cloud</a></em> or <em><a href="http://dig.csail.mit.edu/breadcrumbs/node/215">Giant Global Graph</a></em>.
-Collaboration of people and machines is a major aspect of the World Wide Web and as well of the Semantic Web.
-Currently, the access to RDF data on the Semantic Web is possible by applying the <a href="http://www.w3.org/DesignIssues/LinkedData.html">Linked Data principles</a>, and the <a href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/">SPARQL specification</a>, which enables clients to access and retrieve data stored and published via SPARQL endpoints.
-RDF resources in the Semantic Web are interconnected and often correspond to previously created vocabularies and patterns.
-This way of reusing existing knowledge facilitates the modeling and representation of information and may optimally reduce the development costs of a knowledge base.
-As a result of the collaborative reuse process, structural and content interferences as well as varying models and contradictory statements are inevitable.</p>
-
-<p>Projects from a number of domains are striving for distributed models to collaborate on common knowledge bases.
-In the domain of e-humanities projects often come with a need to explore and track provenance and the evolution of the domain data&#x00A0;<span class="cite">[<a href="#RMA10">RMA<sup>+</sup>10</a>,&#x00A0;<a href="#RB16">RB16</a>]</span>.
-  In the context of managing historical prosopographical data, the source of the statements is relevant to evaluate their credibility and to consider the influence of their environment.
-  In libraries, metadata of electronic library resources are gathered and shared among stakeholders to collaboratively curate and manage the resources as Linked Data&#x00A0;<span class="cite">[<a href="#ANN14">ANN<sup>+</sup>14</a>,&#x00A0;<a href="#NAR14">NAR<sup>+</sup>14</a>]</span>.
-  In a collaborative data curation setup the origin of any statement needs to be identified in order to be able to track back the conclusion of license contracts and identify sources of defective metadata.
-  But even enterprises have a need to manage data in distributed setups to organize the communication of data along supply chains or business processes&#x00A0;<span class="cite">[<a href="#FATP16">FATP16</a>]</span>.</p>
-
-<p>Distributed systems such as the <em><a href="https://solid.mit.edu/">Solid</a></em> platform as an advancement of the architecture of a distributed semantic social network provide possibilities to collaborate in a distributed network.
-Nevertheless, the subject of collaboration is currently kept in a central place where all contributions are incorporated; the organization of a fully decentralized collaboration process is still subject to future work.
-In general, currently the collaboration on Linked Data Sets is mainly done by keeping a central version of a dataset.
-The systems available to collaborate on Linked Data are central SPARQL endpoints and Wiki systems where collaboration happens on a single, shared instance.
-This central approach for a synchronized state has drawbacks in scenarios in which the existence of different versions of the dataset is preferable.
-Furthermore, the evolution of a dataset in a distributed setup is not necessarily happening in a linear manner.
-Multiple versions of a dataset occur if the participants do not all have simultaneous access to the central dataset.
-If a consensus on the statements in a dataset is not yet reached, multiple viewpoints need to be expressed as different versions of the dataset.
-Hence, a system that fosters the evolution of a dataset in a distributed collaboration setup needs to <strong>support divergence</strong> of datasets as asynchrony and dissent; <strong>reconcile diverged states</strong> of datasets; and <strong>synchronize</strong> different distributed derivatives of the dataset.
-As a consequence of the reconciliation we also needs to identify possible occurring conflicts and contradictions, and offer workflows to resolve identified conflicts and contradictions.
-The dimensions of <em>consensus</em> vs.&#x00A0;<em>dissent</em> and <em>synchronicity</em> vs.&#x00A0;<em>asynchrony</em> are depicted in <a href="#fig:dimensions">fig.&#x00A0;1</a>.
-While the <em>dissent</em>-dimension comes with the collaborative character, <em>asynchrony</em> is introduced due to the <em>distributed</em> conception of our setup.
-Both of the dimensions can lead to a diverged state of a dataset in a collaborative curation scenario.</p>
-
-<dl id="fig:dimensions" class="bildunterschrift">
- <dt><noscript class="loading-lazy" markdown="0">
-  <img src="/bib/arndt-n-2019--collaborative/dimensions.svg" alt="The aspects consensus vs. dissent, synchronicity vs. asynchrony, and distributed vs. (centralized) build a star of ortogonal dimensions." style="" loading="lazy"/>
-</noscript></dt>
- <dd>Figure 1: Collaboration can be organized <em>centralized</em> or <em>distributed</em>.
- When dealing with distributed collaboration, workspaces can <em>diverge</em> and the aspects <em>dissent</em> and <em>asynchrony</em> have to be considered.
- Even so supporting distribution, dissent, and asynchrony increases the flexibility of a collaboration process, collaboration aims for <em>consensus</em> which requires all participants to have access to a common shared knowledge, expressed in <em>synchronous</em> workspaces.
- Thus processes to <em>synchronize</em> and <em>reconcile</em> are needed.</dd>
-</dl>
-
-<p>In the early days of computers, the term <em>software crisis</em> was coined to describe the immaturity of the software engineering process and software engineering domain.
-The process of creating software could be made more reliable and controllable by introducing software engineering methods.
-Version control is an important aspect to organize the collaborative evolution of software.
-Early <em>version control</em> <em>systems</em> (VCS), such as <em>CVS</em> and <em>Subversion</em>, allowed central repositories with a linear version history to be created.
-Distributed VCS (DVCS), such as <em>Darcs</em>, <em>Mercurial</em>, and <em>Git</em>, were developed to allow every member of a distributed team to fork the current state of the programs source code and individually contribute new features or bug-fixes as pull-requests.
-Learning from software engineering history where DVCS have helped to overcome the software crisis, we claim that adapting DVCS to Linked Data is a means to support decentralized and distributed collaboration processes in knowledge management.
-The subject of collaboration in the context of Linked Data are datasets instead of source code files.
-Similar to source code development with DVCS, individual local versions of a dataset are curated by data scientists and domain experts.</p>
-
-<p>In our previously published paper&#x00A0;<span class="cite">[<a href="#ANR18">ANR<sup>+</sup>18</a>]</span> we present <em>Quit Store</em>, it was inspired by and it builds upon the successful Git system.
-The approach is based on a formal expression of evolution and reconciliation of distributed datasets.
-It provides support to branch, merge, and synchronize distributed RDF datasets.
-During the collaborative curation process, the system automatically versions the RDF dataset and tracks provenance information.
-The provenance information is expressed in RDF using PROV-O and can be accessed through a dedicated SPARQL 1.1 endpoint.
-To version the data, the system relies on the pure RDF data model and not on support for additional semantics such as OWL or SKOS.
-To support distributed collaboration we propose a methodology of using a Git repository to store the data in combination with a SPARQL 1.1 interface to access it.
-The SPARQL 1.1 interface provides an integration layer to make the collaboration features of Quit accessible to applications operating on RDF datasets.
-Most recently we have extended the Quit system with the Quit Editor Interface Concurrency Control&#x00A0;<span class="cite">[<a href="#AR19">AR19</a>]</span> to support editors in managing overlapping operations.
-To reconcile diverged datasets a merge process is provided.
-The merge process is guarded by the specific merge strategies for RDF data: <em>Union Merge</em>, <em>All</em> <em>Ours/All Theirs</em>, <em>Three-Way-Merge</em>, and <em>Context Merge</em>.
-This setup can enable complex distributed collaboration strategies.
-As there is a big ecosystem of methodologies and tools around Git to support the software development process, the Quit Store can support the creation of such an ecosystem for RDF dataset management.</p>
-
-<h3>Acknowledgements</h3>
-<p>This work was partly supported by a grant from the German Federal Ministry of Education and Research (BMBF) for the LEDS Project under grant agreement No 03WKCG11C the Federal Ministry for Economic Affairs and Energy (BMWi) for the PlatonaM project under the grant number 01MT19005A, and the DFG project <em>Professorial Career Patterns of the Early Modern History: Development of a scientific method for research on online available and distributed research databases of academic history</em> under the grant agreement No 317044652.</p>
-
-<h3>References</h3>
-<dl>
-<dt id="ANN14">[ANN<sup>+</sup>14]</dt>
-<dd>Natanael Arndt, Sebastian Nuck, Andreas Nareike, Norman Radtke, Leander Seige, and Thomas Riechert. <cite>AMSL: Creating a linked data infrastructure for managing electronic resources in libraries</cite>. In Proceedings of the ISWC 2014 Posters &amp; Demonstrations Track, Riva del Garda, Italy, October 2014.</dd>
-<dt id="ANR18">[ANR<sup>+</sup>18]</dt>
-<dd>Natanael Arndt, Patrick Naumann, Norman Radtke, Michael Martin, and Edgard Marx. <cite>Decentralized collaborative knowledge management using git</cite>. Journal of Web Semantics, 2018. </dd>
-<dt id="AR19">[AR19]</dt>
-<dd>Natanael Arndt and Norman Radtke. <cite>Conflict detection, avoidance, and resolution in a non-linear rdf version control system: The  quit  editor  interface  concurrency  control</cite>. In  Companion Proceedings of the 2019 World Wide Web Conference (WWW &#8217;19 Companion), San Francisco, CA, USA, May 2019.</dd>
-<dt id="FATP16">[FATP16]</dt>
-<dd>Marvin  Frommhold,  Natanael  Arndt,  Sebastian  Tramp,  and Niklas  Petersen.   <cite>Publish  and  Subscribe  for  RDF  in  Enterprise Value Networks</cite>.  In Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016), 2016.</dd>
-<dt id="NAR14">[NAR<sup>+</sup>14] </dt>
-<dd>Andreas Nareike, Natanael Arndt, Norman Radtke, Sebastian Nuck,  Leander  Seige,  and  Thomas  Riechert.   <cite>AMSL:  Managing electronic  resources  for  libraries  based  on  semantic  web</cite>. In Proceedings of the INFORMATIK 2014: Big Data &#8211; Komplexität meistern,  Stuttgart,  Germany,  September  2014.  Gesellschaft  für Informatik e.V.</dd>
-<dt id="RB16">[RB16]</dt>
-<dd>Thomas Riechert and Francesco Beretta. <cite>Collaborative research on  academic  history  using  linked  open  data:  A  proposal  for  the heloise common research model</cite>.  CIAN-Revista de Historia de las Universidades, 19(0), 2016.</dd>
-<dt id="RMA10">[RMA<sup>+</sup>10]</dt>
-<dd>Thomas  Riechert,  Ulf  Morgenstern,  Sören  Auer,  Sebastian Tramp, and Michael Martin.  <cite>Knowledge engineering for historians on  the  example  of  the  catalogus  professorum  lipsiensis</cite>.     In Proceedings  of  the  9th  International  Semantic  Web  Conference (ISWC2010), Shanghai, China, 2010. Springer.</dd>
-</dl>
-
+  
 </div>
 
       </div>

@@ -79,7 +79,7 @@
             </a>
         </li>
     </ul>
-    <nav class="blog-nav"><a class="blog-nav-item" href="/">Blog</a><a class="blog-nav-item" href="/notes/">Notes</a><a class="blog-nav-item" href="/projects">Projects</a><a class="blog-nav-item" href="/publications">Publications</a></nav>
+    <nav class="blog-nav"><a class="blog-nav-item" href="/">Blog</a><a class="blog-nav-item" href="/notes/">Notes</a><a class="blog-nav-item" href="/projects/">Projects</a><a class="blog-nav-item" href="/publications/">Publications</a></nav>
   </div>
 </div>
 
@@ -123,228 +123,16 @@
   
 
   
+  
+    
+    <h3>Preview</h3>
+    <object data="https://dl.gi.de/bitstream/handle/20.500.12116/3955/B26-2.pdf" type="application/pdf" width="100%" style="height: 1000px">
+      <a href="https://dl.gi.de/bitstream/handle/20.500.12116/3955/B26-2.pdf">Download</a>
+    </object>
+  
+  
 
-  <dl>
-  <dt>Keywords:</dt>
-  <dd>distributed collaboration; collaborative curation; quit; git; SPARQL Update; rdf dataset; domain specific; semantic web; distributed version control system; knowledge engineering</dd>
-</dl>
-
-<h3>Introduction</h3>
-<p>Experts from various domains are working with knowledge engineering tools for organizing their domain knowledge.
-Collaboration, especially in science, is a key factor for successfully gaining value from the data.
-A need for distributed models to collaborate on common knowledge bases is recognizable in various domains.
-Examples are projects from the e-humanities, the <a href="http://aksw.org/Projects/Pfarrerbuch"><em>Pfarrerbuch</em></a>, the <a href="http://catalogus-professorum.org/projects/pcp-on-web/"><em>Professorial Career Patterns of the Early Modern History</em> project</a> [<a href="#Ri10">Ri10</a>], and the <a href="http://heloisenetwork.eu/"><em>Heloise – European Network on Digital Academic History</em></a> [<a href="#RB16">RB16</a>].
-In libraries meta-data of more and more electronic resources is gathered and shared among stakeholders.
-The <a href="http://amsl.technology/"><em>AMSL</em></a> project is looking for collaborative curation and management of electronic resources as Linked Data [<a href="#Ar14">Ar14</a>, <a href="#Na14">Na14</a>].
-Also in Life Science a need for sharing data between researchers is recognizable, especially on the way to Big New Biology [<a href="#TP11">TP11</a>].
-Even businesses have a need for managing data in distributed setups.
-In the <a href="http://www.lucid-project.org/"><em>LUCID – Linked Value Chain Data</em></a> project [<a href="#Fr16">Fr16</a>] the communication of data along supply chains is subject of research, and in the <a href="http://www.leds-projekt.de/"><em>LEDS – Linked Enterprise Data Services</em></a> project there is a need for distributed collaboration on datasets to organize business procedures.</p>
-
-<p>Thessen et al. state that the three major challenges in Life Science, as they are transforming into more data-centric disciplines, are:
-1) lack of comprehensive standards;
-2) lack of incentives for individual scientists to share data;
-3) lack of appropriate infrastructure and support [<a href="#TP11">TP11</a>].
-As of our experience in e-humanities, libraries, and business the same challenges apply to these and other domains as well.
-The first challenge can be approached by Semantic Web and Linked Data technology [<a href="#TP11">TP11</a>], which are already adopted in various domains and appropriate domain vocabularies exist (<a href="https://lov.okfn.org/">Linked Open Vocabularies (LOV)</a>).
-The second challenge leads to the general debate on Open Data in science which is ongoing [<a href="#TP11">TP11</a>].
-The third challenge is a problem where we can and want to contribute to by providing an approach for a method to collaboratively curate datasets in a distributed setup.
-We are facing two problems, when multiple experts want to collaborate on creating and curating semantic data.
-The synchronization of the data on the technical level has to be ensured on the one hand.
-On the other hand, user interfaces adopted to the domain and appropriate for the regarding audience are needed.
-In the following we refer to the regarding audience as <em>domain experts</em>.
-<em>Domain experts</em> are experts in their field, which usually does not include Semantic Web.
-Thus in this paper we are focusing on filling the gap between the technical synchronization between the data and an interface usable by <em>domain experts</em>.
-We propose a three layered architecture which connects flexible RDF based user interfaces through a SPARQL interface with a Git repository and the whole Git infrastructure for distributed collaboration.</p>
-
-<p>The paper is structured as follows.
-The state of the art is presented and discussed in <a href="#sec:related_work">Section 2</a>.
-Our proposed setup and approach with the three layers: the domain specific layer, the store layer, and the repository layer is presented in <a href="#sec:approach">Section 3</a>.
-An exemplary application of the system stack is demonstrated in <a href="#sec:application">Section 4</a>.
-Finally the proposed stack is discussed together with a prospect to future work in <a href="#sec:conclusion">Section 5</a>.</p>
-
-<h3 id="sec:related_work">State of the Art</h3>
-
-<p>The Linked Open Data paradigm consists of four rules for making data accessible on the Web(<a href="http://www.w3.org/DesignIssues/LinkedData.html">Linked Data</a>).
-Different technologies were proposed for collaborating on Linked Data, such as <em>Structured Feedback</em> [<a href="#Ar16">Ar16</a>] and the <em>Linked Data Platform</em> (LDP) respectively based on LDP the notification protocol <a href="https://www.w3.org/TR/ldn/"><em>Linked Data Notifications</em> (LDN)</a> [<a href="#Ca17">Ca17</a>].
-The main aspect here is the resource centric collaboration approach.
-A Linked Data resource is under the management of a central authoritative instance, while contributors and comments can be distributed over the Internet and Web.
-For changing the central resource, contributors need to gain write access to it.
-Forking and merging resources in the Linked Data paradigm would include moving data to a different namespace, which would involve breaking the context of the data, especially incoming links.</p>
-
-<p>Curation systems, user interfaces and editors can give different kinds of contributors the possibility to editing RDF data.
-Semantic Data Wiki systems, such as <a href="http://ontowiki.net/">OntoWiki</a> [<a href="#Fr15">Fr15</a>, <a href="#FAM16">FAM16</a>, <a href="#KVV06">KVV06</a>] and RDF editors such as WebProtégé [<a href="#Tu13">Tu13</a>] allow mainly people familiar with the RDF data model to collaborate.
-Such Wiki systems provide a platform to manage and edit datasets in a centralized place.
-Customizable form generation tools, for example <a href="http://rdforms.org/">RDForms</a>, can be used to adapt the user interface directly to the needs of a domain expert, while it directly handles RDF data.
-With the current W3C Candidate Recommendation <a href="https://www.w3.org/TR/shacl/"><em>Shapes Constraint Language</em> (SHACL)</a> a standard is developed, which can be used to create very customized user interfaces for viewing, editing and validating RDF data.</p>
-
-<p>Customized RDF editing tools using RDForms and SHACL or editors like Protégé allow ontology and domain experts to locally curate data in a common RDF data model.
-Once a common RDF data model is established, still the RDF graphs have to be synchronized between parties to enable a collaboration process.
-In the field of software engineering source code editors are used for producing the individual artifacts of a program, while distributed source code management systems (DSCM) are used to synchronize the source code development process between participants.
-Widely used DSCMs are <a href="http://git-scm.com/">Git</a> and <a href="http://mercurial-scm.org/">Mercurial</a>.
-For RDF data multiple approaches exist for allowing versioning and synchronization of datasets.
-The TailR [<a href="#MKS15">MKS15</a>], R43ples [<a href="#GHU16">GHU16</a>] and R&Wbase [<a href="#Sa13">Sa13</a>] approaches provide versioning systems for tracking and exchanging the data's history, while they only provide limited or no support for branching and merging [<a href="#AM17">AM17</a>].</p>
-
-<h3 id="sec:approach">Our Setup and Approach</h3>
-
-<p>We have identified three layers of abstraction which can be used to create a flexible collaboration setup.
-The layers, as depicted in <a href="#fig:layers">figure 1</a>, are: (1) Domain Specific Layer, (2) Store Layer, and (3) Repository Layer.
-The top layer (1) represents the interface to domain experts with domain specific tools, which are already able to produce RDF data.
-This layer especially allows the system to be adapted to any domain and could also allow the collaboration between heterogeneous editors.
-On the lowest layer (3) the technical infrastructure for synchronizing and transporting the data on the network of participants is organized.
-At this level the system relies on already established and successfully used technology from the software engineering domain.
-The store layer (2) between the domain specific UI layer and the technical infrastructure layer provides the glue.
-It transforms change operations on the RDF data to the corresponding synchronization operations on the DSCM system.</p>
-
-<p>The individual layers of our setup provide interfaces to the outside and are connected with each other using respective interfaces and protocols for achieving the necessary levels of abstraction.
-The domain expert level provides <em>user interfaces</em> allowing to adjust the software to the respective audience.
-The store layer provides a <em>standard SPARQL Query and Update interface</em> allowing software, which is following this standard, to read and write the stored RDF graphs.
-The store layer in turn writes the RDF graphs to the Git repository using the <em>Git API</em>.
-The network layer is then able to synchronize the stored repository using the <a href="https://git-scm.com/book/en/v2/Git-Internals-Transfer-Protocols"><em>Git transfer protocol</em></a>.</p>
-
-<dl id="fig:layers" class="bildunterschrift">
- <dt><noscript class="loading-lazy" markdown="0">
-  <img src="/bib/arndt-n-2017--quitstack/functions-flow.svg" alt="The functions and flow of information" style="" loading="lazy"/>
-</noscript></dt>
- <dd>Figure 1: The functions and flow of information</dd>
-</dl>
-
-<h4>Domain Specific Layer</h4>
-
-<p>Data models in RDF can be very complex for expressing the relations of a domain, also domain experts want to express their knowledge in complete and very complex models.
-But a domain expert might not be familiar with the technical structure and vocabulary of RDF.
-The topmost layer is the layer of domain specific user interfaces.
-This layer is used by domain experts providing an interface adapted to the needs of the domain and expressed in the language of the domain.
-Components in this layer are connected to the store layer, from where it can read and to where it can write RDF graph data.
-The relevant interface to be addressed by these components is SPARQL.
-Providing a SPARQL interface to this layer allows that already existing components, which are capable of communicating with a SPARQL endpoint, can be integrated into the system.
-This enables reuse of non-collaborative software in a distributed collaboration setup.
-Furthermore the process of selecting a proper user interface for an editor is independent from the underlaying distributed communication stack.</p>
-
-<h4>The Store Layer</h4>
-<p>This layer connects to the domain specific layer on the top and to the repository layer on the bottom.
-This intermediary role is implemented by providing a SPARQL endpoint and the usage of the Git API.
-SPARQL Update operations are transformed to filesystem operations and the according Git operations.
-On changes in the underlaying repository layer, the RDF graphs in the store are updated accordingly.
-Concurrent edit operations on a dataset, which are detected on the repository layer (merge conflicts) are resolved by according merge strategies for RDF datasets on the store layer
-(cf. [<a href="#ARM16">ARM16</a>, <a href="#AM17">AM17</a>]).
-Translating SPARQL operations to Git operations allows to make the Git API and transfer protocol transparent for systems connecting to the SPARQL interface.</p>
-
-<h4>Repository Layer</h4>
-
-<p>Distributed collaborative curation of RDF graphs supposes that data must be available from and at different locations on the Web.
-Git provides the possibility to store repositories in different places on the Web, which can individually and independently evolve and be synchronized at any time using the Git transfer protocol.
-In each repository again the Git system allows to store multiple versioning-branches in parallel, which allows to postpone the consolidation and conflict resolution.
-The branching system of Git also allows operations like <em>Fork</em> (Copy an entire repository into an own namespace for an independent development but keep a reference to the origin) and <em>Pull Request</em> (A request to merge a given branch into another branch, this can even happen across repositories).
-To organize the workflow of branching and merging for the development of an RDF vocabulary, Halilay et al. have developed the Git4Voc method [<a href="#Ha16">Ha16</a>].</p>
-
-<h3 id="sec:application">Application</h3>
-
-<p>For showcasing the presented method and the interplay between the individual layers, we have developed a prototype.
-The prototype provides an editing interface to create RDF resources, which are submitted to the SPARQL endpoint of a Quit Store [<a href="#ARM16">ARM16</a>].
-The Quit Store commits the changed triples to a Git repository and triggers a synchronization with a Git push operation.
-As depicted in <a href="#fig:collaborative-setup">figure 2</a>, this stack can be setup on multiple clients simultaneously.
-In addition to the collaboration setup a server is subscribed for changes (web hook) on an on-line repository.
-As soon as new commits are submitted to the repository, a webpage presenting the content of the collaboratively created RDF graph is rendered and updated using Jekyll (<a href="https://jekyllrb.com/">Jekyll static website generation system</a>) and Jekyll-RDF (<a href="https://rubygems.org/gems/jekyll-rdf">RDF plugin for Jekyll</a>).</p>
-
-<dl id="fig:collaborative-setup" class="bildunterschrift">
- <dt><noscript class="loading-lazy" markdown="0">
-  <img src="/bib/arndt-n-2017--quitstack/distributed-collaboration.svg" alt="A collaboration setup using the Quit Stack" style="" loading="lazy"/>
-</noscript></dt>
- <dd>Figure 2: A collaboration setup using the Quit Stack</dd>
-</dl>
-
-<p>The aim of the domain specific layer is to address domain experts which might not be familiar with RDF.
-Thus we abstract the underlaying data model by employing the form rendering library <a href="http://rdforms.com/">RDForms</a>.
-The forms are generated based on templates, which also ensure the adherence of the generated data to the applications data model.
-Furthermore the template based static website generation process with Jekyll-RDF creates a browsing interface on the data taking out the complexity of the RDF data model for visitors.
-The store layer is implemented using the Quit Store as a file based in-memory-quad-store.
-The Quit Store provides a SPARQL Update Endpoint, which receives the changes made using the generated forms and performs the respective transactions on the Git repository.
-This demonstration setup is similar to the principle of <a href="https://pages.github.com/">GitHub pages</a>, but adapted to the collaboration and publication of RDF data.
-Multiple commiters can contribute to a commonly synchronized Git repository, while the consensus expressed in a specific branch is rendered to a public webpage.
-We have published the source code of the <a href="https://github.com/white-gecko/vgaf">editing interface</a>, the store layer implementation of the <a href="https://github.com/AKSW/QuitStore">Quit Store</a> and the <a href="https://github.com/white-gecko/jekyll-rdf">Jekyll-RDF plugin</a> as Open Source.</p>
-
-<h3 id="sec:conclusion">Discussion and Conclusion</h3>
-
-<p>With the presented three layer architecture and the associated method of distributed collaborative data creation and curation we are able to make the complexity of an RDF data model and the necessary SPARQL and Git interfaces transparent to domain experts.
-Also using the underlaying Git repository system it is possible to formulate feedback to the RDF datasets as pull-requests.
-In turn this allows multi-staged review and curation process as known from the <a href="http://nvie.com/posts/a-successful-git-branching-model/"><em>successful Git branching model</em> (aka. gitflow)</a> and as adapted to RDF vocabularies by Halilay et al. [<a href="#Ha16">Ha16</a>].
-Thinking further this as well enables workflows known from <em>Content Management Systems</em> (CMS) and would allow data based CMS workflows in Data Management System (<em>DMS</em>).
-Tracking all changes on the data in a non linear system as Git, in the end also tracks the provenance of the data throughout the collaborative curation process [<a href="#ANM17">ANM17</a>].</p>
-
-<p>With the abstraction towards the domain specific layer it is possible to use multiple editors which might provide varying advantages for the author of the data, while the editor does not need any synchronization and collaboration support.
-This setup can also be understood as a foundation for an Integrated Development Environment (IDE) for data.
-Due to the distributed character <em>Continuous Integration</em> processes can be attached to the network, as know from software engineering, for testing and verifying the data against SHACL shapes or RDFUnit test cases [<a href="#MJ16">MJ16</a>].
-In the future we also want to investigate the interplay between the validation and consistency check step based on SHACL shapes and the generation of edit interfaces, which can as well be based on <a href="https://www.w3.org/TR/shacl-ucr/">SHACL shapes</a>.</p>
-
-<p>With this method we are providing the foundation to build further data management systems around a Git infrastructure for RDF datasets, as it already exists for software engineering.
-This allows us as computer scientists to concentrate on the architecture of the software, since the data curation process should be pursued by data scientists and domain experts rather then computer scientists and semantic web experts.</p>
-
-
-<h3>Acknowledgement</h3>
-<p>This work was partly supported by a grant from the German Federal Ministry of Education and Research (BMBF) for the LEDS Project under grant agreement No 03WKCG11C.</p>
-
-<h3>References</h3>
-
-<dl>
-  <dt id="AM17">[AM17]</dt>
-  <dd>Arndt, Natanael; Martin, Michael: <cite>Decentralized Evolution and Consolidation of RDF Graphs</cite>. In: 17th International Conference on Web Engineering (ICWE 2017). ICWE 2017, Rome, Italy, June 2017.</dd>
-  <dt id="ANM17">[ANM17]</dt>
-  <dd>Arndt, Natanael; Naumann, Patrick; Marx, Edgard: <cite>Exploring the Evolution and Provenance of Git Versioned RDF Data</cite>. In (Fernández, Javier D.; Debattista, Jeremy; Umbrich, Jürgen, eds): 3rd Workshop on Managing the Evolution and Preservation of the Data Web (MEPDaW) co-located with 14th European Semantic Web Conference (ESWC 2017). Portoroz, Slovenia, May 2017.</dd>
-  <dt id="Ar14">[Ar14]</dt>
-  <dd>Arndt, Natanael; Nuck, Sebastian; Nareike, Andreas; Radtke, Norman; Seige, Leander; Riechert, Thomas: <cite>AMSL: Creating a Linked Data Infrastructure for Managing Electronic Resources in Libraries</cite>. In (Horridge, Matthew; Rospocher, Marco; van Ossenbruggen, Jacco, eds): Proceedings of the ISWC 2014 Posters & Demonstrations Track. volume Vol-1272 of CEUR Workshop Proceedings, Riva del Garda, Italy, pp. 309–312, October 2014.
-  </dd>
-  <dt id="Ar16">[Ar16]</dt>
-  <dd>Arndt, Natanael; Junghanns, Kurt; Meissner, Roy; Frischmuth, Philipp; Radtke, Norman; Frommhold, Marvin; Martin, Michael: <cite>Structured Feedback: A Distributed Protocol for Feedback and Patches on the Web of Data</cite>. In: Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016). volume 1593 of CEUR Workshop Proceedings, Montreal, Canada, April 2016.
-  </dd>
-  <dt id="ARM16">[ARM16]</dt>
-  <dd>Arndt, Natanael; Radtke, Norman; Martin, Michael: <cite>Distributed Collaboration on RDF Datasets Using Git: Towards the Quit Store</cite>.  In: 12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016). SEMANTiCS ’16, Leipzig, Germany, September 2016.
-  </dd>
-  <dt id="Ca17">[Ca17]</dt>
-  <dd>Capadisli, Sarven; Guy, Amy; Lange, Christoph; Auer, Sören; Sambra, Andrei; Berners- Lee, Tim: <cite>Linked Data Notifications: a resource-centric communication protocol</cite>. In: 14th European Semantic Web Conference (ESWC 2017). Portoroz, Slovenia, 2017.
-  </dd>
-  <dt id="FAM16">[FAM16]</dt>
-  <dd>Frischmuth, Philipp; Arndt, Natanael; Martin, Michael: <cite>OntoWiki 1.0: 10 Years of Development - What’s New in OntoWiki</cite>. In: SEMANTiCS2016 Poster and Demo Track. CEUR Workshop Proceedings, Leipzig, Germany, September 2016.
-  </dd>
-  <dt id="Fr15">[Fr15]</dt>
-  <dd>Frischmuth, Philipp; Martin, Michael; Tramp, Sebastian; Riechert, Thomas; Auer, Sören: <cite>OntoWiki—An Authoring, Publication and Visualization Interface for the Data Web</cite>. Semantic Web Journal, 6(3):215–240, 2015.
-  </dd>
-  <dt id="Fr16">[Fr16]</dt>
-  <dd>Frommhold, Marvin; Arndt, Natanael; Tramp, Sebastian; Petersen, Niklas: <cite>Publish and Subscribe for RDF in Enterprise Value Networks</cite>. In: Proceedings of the Workshop on Linked Data on the Web co-located with the 25th International World Wide Web Conference (WWW 2016). 2016.
-  </dd>
-  <dt id="GHU16">[GHU16]</dt>
-  <dd>Graube, Markus; Hensel, Stephan; Urbas, Leon: <cite>Open Semantic Revision Control with R43Ples: Extending SPARQL to Access Revisions of Named Graphs</cite>. SEMANTiCS 2016, ACM, New York, NY, USA, pp. 49–56, 2016.
-  </dd>
-  <dt id="Ha16">[Ha16]</dt>
-  <dd>Halilaj, Lavdim; Grangel-González, Irlán; Coskun, Gökhan; Auer, Sören: <cite>Git4Voc: Git- based Versioning for Collaborative Vocabulary Development</cite>. In: 10th International Conference on Semantic Computing. Laguna Hills, California, February 2016.
-  </dd>
-  <dt id="KVV06">[KVV06]</dt>
-  <dd>Krötzsch, Markus; Vrandečić, Denny; Völkel, Max: <cite>Semantic MediaWiki</cite>.  In: 5th International Semantic Web Conference, ISWC 2006. Springer Berlin Heidelberg, Berlin, Heidelberg, pp. 935–942, November 2006.
-  </dd>
-  <dt id="MJ16">[MJ16]</dt>
-  <dd>Meissner, Roy; Junghanns, Kurt: <cite>Using DevOps Principles to Continuously Monitor RDF Data Quality</cite>. In: 12th International Conference on Semantic Systems Proceedings (SEMANTiCS 2016). CEUR Workshop Proceedings, Leipzig, Germany, September 2016.
-  </dd>
-  <dt id="MKS15">[MKS15]</dt>
-  <dd>Meinhardt, Paul; Knuth, Magnus; Sack, Harald: <cite>TailR: A Platform for Preserving History on the Web of Data</cite>. In: Proceedings of the 11th International Conference on Semantic Systems. SEMANTICS ’15, ACM, New York, NY, USA, pp. 57–64, 2015.
-  </dd>
-  <dt id="Na14">[Na14]</dt>
-  <dd>Nareike, Andreas; Arndt, Natanael; Radtke, Norman; Nuck, Sebastian; Seige, Leander; Riechert, Thomas: <cite>AMSL: Managing Electronic Resources for Libraries Based on Semantic Web</cite>. In: Proceedings of the INFORMATIK 2014. volume P-232, pp. 1017–1026, September 2014.
-  </dd>
-  <dt id="RB16">[RB16]</dt>
-  <dd>Riechert, Thomas; Beretta, Francesco: <cite>Collaborative Research on Academic History using Linked Open Data: A Proposal for the Heloise Common Research Model</cite>. CIAN-Revista de Historia de las Universidades, 19(0), 2016.
-  </dd>
-  <dt id="Ri10">[Ri10]</dt>
-  <dd>Riechert, Thomas; Morgenstern, Ulf; Auer, Sören; Tramp, Sebastian; Martin, Michael: <cite>Knowledge Engineering for Historians on the Example of the Catalogus Professorum Lipsiensis</cite>. In: Proceedings of the 9th International Semantic Web Conference. volume 6497 of Lecture Notes in Computer Science, Springer, Shanghai, China, pp. 225–240, 2010.
-  </dd>
-  <dt id="Sa13">[Sa13]</dt>
-  <dd>Sande, Miel Vander; Colpaert, Pieter; Verborgh, Ruben; Coppens, Sam; Mannens, Erik; de Walle, Rik Van: <cite>R&Wbase: git for triples</cite>. In (Bizer, Christian; Heath, Tom; Berners-Lee, Tim; Hausenblas, Michael; Auer, Sören, eds): LDOW. volume 996 of CEUR Workshop Proceedings. CEUR-WS.org, 2013.
-  </dd>
-  <dt id="TP11">[TP11]</dt>
-  <dd>Thessen, Anne E.; Patterson, David J.: <cite>Data issues in the life sciences</cite>.  ZooKeys, 150(150):15–51, 2011.
-  </dd>
-  <dt id="Tu13">[Tu13]</dt>
-  <dd>Tudorache, Tania; Nyulas, Csongor; Noy, Natalya F; Musen, Mark A: <cite>WebProtégé: A collaborative ontology editor and knowledge acquisition tool for the web</cite>. Semantic web, 4(1):89–99, 2013.</dd>
-</dl>
-
+  
 </div>
 
       </div>

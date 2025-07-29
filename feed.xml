@@ -5,8 +5,8 @@
     <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
     <link>https://natanael.arndt.xyz/</link>
     <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 28 Jul 2025 16:50:38 +0200</pubDate>
-    <lastBuildDate>Mon, 28 Jul 2025 16:50:38 +0200</lastBuildDate>
+    <pubDate>Tue, 29 Jul 2025 02:28:07 +0200</pubDate>
+    <lastBuildDate>Tue, 29 Jul 2025 02:28:07 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -37,8 +37,8 @@ ffmpeg &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; video.mp4 &lt;span class
 All other options should be documented at &lt;a href=&quot;https://ffmpeg.org/&quot;&gt;https://ffmpeg.org/&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 20 Jun 2025 15:46:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2025/06/20/slides-to-video</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2025/06/20/slides-to-video</guid>
+        <link>https://natanael.arndt.xyz/2025/06/20/slides-to-video/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2025/06/20/slides-to-video/</guid>
         
         <category>Presentation</category>
         
@@ -90,8 +90,8 @@ git show &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&q
 &lt;p&gt;I hope you like it.&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Mar 2024 14:13:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2024/03/01/git-cherry-file</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2024/03/01/git-cherry-file</guid>
+        <link>https://natanael.arndt.xyz/2024/03/01/git-cherry-file/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2024/03/01/git-cherry-file/</guid>
         
         <category>Git</category>
         
@@ -125,8 +125,8 @@ $ gource -c 4.0 -s 1 -a 1 .
 &lt;p&gt;(This post was originally started on 2020-10-18)&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Nov 2021 17:54:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2021/11/13/git-animation</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2021/11/13/git-animation</guid>
+        <link>https://natanael.arndt.xyz/2021/11/13/git-animation/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2021/11/13/git-animation/</guid>
         
         <category>Git</category>
         
@@ -149,12 +149,12 @@ Some backup articles suggest to just backup the complete users home directory wh
 On top of this for me a backup is not a raw copy of the current system I’m working on, but just the actually relevant data and configuration.
 This can also come along with an additional use case for a backup, that I want to use it to setup a clean new system where I only want to take over the data that I actually need.&lt;/p&gt;
 
-&lt;p&gt;So far I have not found any system, that covers the aspects mentioned, which leads me to the point that I’ve started to write down a concept for a &lt;a href=&quot;/notes/backup&quot;&gt;&lt;em&gt;configuration backup system&lt;/em&gt;&lt;/a&gt;.
+&lt;p&gt;So far I have not found any system, that covers the aspects mentioned, which leads me to the point that I’ve started to write down a concept for a &lt;a href=&quot;/notes/backup/&quot;&gt;&lt;em&gt;configuration backup system&lt;/em&gt;&lt;/a&gt;.
 You are welcome to send any hints and suggestions.&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Dec 2020 20:01:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2020/12/23/backup</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/12/23/backup</guid>
+        <link>https://natanael.arndt.xyz/2020/12/23/backup/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/12/23/backup/</guid>
         
         <category>Git</category>
         
@@ -186,8 +186,8 @@ The book is the first volume in the new series “Publikationen in der Informati
 &lt;p&gt;You can find the abstract as well as the full text in the &lt;a href=&quot;https://natanael.arndt.xyz/bib/dissertation&quot;&gt;according entry&lt;/a&gt; in my &lt;a href=&quot;https://natanael.arndt.xyz/publications&quot;&gt;publication list&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Dec 2020 13:07:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2020/12/15/dissertation</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/12/15/dissertation</guid>
+        <link>https://natanael.arndt.xyz/2020/12/15/dissertation/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/12/15/dissertation/</guid>
         
         <category>Dissertation</category>
         
@@ -206,8 +206,8 @@ The book is the first volume in the new series “Publikationen in der Informati
         <description>&lt;p&gt;If you are doing #SoftwareDevelopment resp. #SoftwareEngineering an looking for a #LaTeX/#TikZ version of a simple agile development #cycle check out my page ;-) &lt;a href=&quot;https://natanael.arndt.xyz/notes/agile&quot;&gt;https://natanael.arndt.xyz/notes/agile&lt;/a&gt; #SCRUM #agile&lt;/p&gt;
 </description>
         <pubDate>Wed, 14 Oct 2020 18:05:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2020/10/14/agile-tikz</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/10/14/agile-tikz</guid>
+        <link>https://natanael.arndt.xyz/2020/10/14/agile-tikz/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2020/10/14/agile-tikz/</guid>
         
         
       </item>
@@ -220,8 +220,8 @@ The book is the first volume in the new series “Publikationen in der Informati
         <description>&lt;p&gt;If you want to read my papers but you are to lazy to download them and open them with your favorite PDF reader you now get the service to read them all directly on my web page. Some as #HTML some as embedded #PDF. https://natanael.arndt.xyz/publications #OpenResearch #OpenAccess&lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Nov 2019 12:52:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2019/11/19/preprints</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2019/11/19/preprints</guid>
+        <link>https://natanael.arndt.xyz/2019/11/19/preprints/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2019/11/19/preprints/</guid>
         
         
       </item>
@@ -234,8 +234,8 @@ The book is the first volume in the new series “Publikationen in der Informati
         <description>&lt;p&gt;If you are working on #SemanticWeb an looking for a #LaTeX/#TikZ version of the #LayerCake and the #LODCycle check out my page ;-) &lt;a href=&quot;https://natanael.arndt.xyz/notes/semantic-web-layer-cake&quot;&gt;https://natanael.arndt.xyz/notes/semantic-web-layer-cake&lt;/a&gt; and &lt;a href=&quot;https://natanael.arndt.xyz/notes/lod-cycle&quot;&gt;https://natanael.arndt.xyz/notes/lod-cycle&lt;/a&gt; #LOD&lt;/p&gt;
 </description>
         <pubDate>Tue, 06 Aug 2019 17:03:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2019/08/06/semantic-tikz</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2019/08/06/semantic-tikz</guid>
+        <link>https://natanael.arndt.xyz/2019/08/06/semantic-tikz/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2019/08/06/semantic-tikz/</guid>
         
         
       </item>
@@ -248,8 +248,8 @@ The book is the first volume in the new series “Publikationen in der Informati
         <description>&lt;p&gt;Just released #JekyllRDF 3.1.0! The cool new feature is that you can now build pages from a #SPARQL endpoint. Checkout the CHANGELOG and README for details. We hope you like it. &lt;a href=&quot;https://rubygems.org/gems/jekyll-rdf&quot;&gt;https://rubygems.org/gems/jekyll-rdf&lt;/a&gt; &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf&quot;&gt;https://github.com/white-gecko/jekyll-rdf&lt;/a&gt; @akswgroup (&lt;a href=&quot;https://mobile.twitter.com/white_gecko/status/1067452594954661889&quot;&gt;https://mobile.twitter.com/white_gecko/status/1067452594954661889&lt;/a&gt;)&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Nov 2018 18:26:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2018/11/27/JekyllRDF-3.1.0</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/11/27/JekyllRDF-3.1.0</guid>
+        <link>https://natanael.arndt.xyz/2018/11/27/JekyllRDF-3.1.0/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/11/27/JekyllRDF-3.1.0/</guid>
         
         
       </item>
@@ -262,8 +262,8 @@ The book is the first volume in the new series “Publikationen in der Informati
         <description>&lt;p&gt;Now you can find my paper “A Method for Distributed and Collaborative Curation of RDF Datasets Utilizing the Quit Stack” &lt;a href=&quot;https://dx.doi.org/10.18420/in2017_187&quot;&gt;10.18420/in2017_187&lt;/a&gt; with the full text published as HTML and #OpenAccess #OpenResearch on my #JekyllRDF blog &lt;a href=&quot;https://natanael.arndt.xyz/bib/arndt-n-2017--quitstack&quot;&gt;https://natanael.arndt.xyz/bib/arndt-n-2017–quitstack&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Oct 2018 19:26:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2018/10/20/fulltext</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/10/20/fulltext</guid>
+        <link>https://natanael.arndt.xyz/2018/10/20/fulltext/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/10/20/fulltext/</guid>
         
         
       </item>
@@ -277,8 +277,8 @@ The book is the first volume in the new series “Publikationen in der Informati
 This file is consumed by &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf&quot;&gt;JekyllRDF&lt;/a&gt; and rendered together with the rest of my blog using the &lt;a href=&quot;https://github.com/white-gecko/natanael.arndt.xyz/blob/master/publications.html&quot;&gt;publications template&lt;/a&gt; for the lost of all publications and an &lt;a href=&quot;https://github.com/white-gecko/natanael.arndt.xyz/blob/master/_layouts/publication.html&quot;&gt;additional template&lt;/a&gt; to render a page for each individual publication resource.&lt;/p&gt;
 </description>
         <pubDate>Wed, 10 Oct 2018 15:10:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2018/10/10/bibliography-with-jekyll-rdf</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/10/10/bibliography-with-jekyll-rdf</guid>
+        <link>https://natanael.arndt.xyz/2018/10/10/bibliography-with-jekyll-rdf/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/10/10/bibliography-with-jekyll-rdf/</guid>
         
         <category>JekyllRDF</category>
         
@@ -307,8 +307,8 @@ I hope that you enjoy it and that it is helpful for you!&lt;/p&gt;
 &lt;/noscript&gt;
 </description>
         <pubDate>Tue, 07 Aug 2018 10:13:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2018/08/07/jekyll-rdf-tutorial-screencast</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/08/07/jekyll-rdf-tutorial-screencast</guid>
+        <link>https://natanael.arndt.xyz/2018/08/07/jekyll-rdf-tutorial-screencast/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/08/07/jekyll-rdf-tutorial-screencast/</guid>
         
         <category>JekyllRDF</category>
         
@@ -365,8 +365,8 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 27 Feb 2018 13:18:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2018/02/27/totp</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/02/27/totp</guid>
+        <link>https://natanael.arndt.xyz/2018/02/27/totp/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/02/27/totp/</guid>
         
         <category>OATP</category>
         
@@ -385,8 +385,8 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
         <description>&lt;p&gt;Ein neues Rezept ist online: &lt;a href=&quot;/notes/kartoffelsalat&quot;&gt;Kartoffelsalat mit Räuchertofu&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Jan 2018 14:03:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2018/01/02/rezept</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/01/02/rezept</guid>
+        <link>https://natanael.arndt.xyz/2018/01/02/rezept/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2018/01/02/rezept/</guid>
         
         
       </item>
@@ -399,8 +399,8 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
         <description>&lt;p&gt;Now I’m able to write status posts from my mobile using #FastHub-Libre :nerd:&lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Nov 2017 18:44:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2017/11/04/mobile</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/11/04/mobile</guid>
+        <link>https://natanael.arndt.xyz/2017/11/04/mobile/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/11/04/mobile/</guid>
         
         
       </item>
@@ -415,8 +415,8 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/white_gecko/status/922460422095196166&quot;&gt;https://twitter.com/white_gecko/status/922460422095196166&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Oct 2017 15:51:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status</guid>
+        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status/</guid>
         
         
       </item>
@@ -433,8 +433,8 @@ As of today this should be the last version of the 2.x branch, since we are alre
 If you are interested in what is coming next, have a look at the &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/milestone/5&quot;&gt;3.0.0-milestone&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Oct 2017 15:48:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0</guid>
+        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0/</guid>
         
         <category>JekyllRDF</category>
         
@@ -503,8 +503,8 @@ Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Wei
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 18 Oct 2017 16:03:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/10/18/bedenken-second</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/18/bedenken-second</guid>
+        <link>https://natanael.arndt.xyz/2017/10/18/bedenken-second/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/18/bedenken-second/</guid>
         
         <category>Digitalisierung</category>
         
@@ -529,8 +529,8 @@ Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Wei
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/white_gecko/status/913043822178963456&quot;&gt;https://twitter.com/white_gecko/status/913043822178963456&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Sep 2017 16:13:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer</guid>
+        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer/</guid>
         
         
       </item>
@@ -544,8 +544,8 @@ Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Wei
 This post was purely created with free software (vim, git, jekyll) and is licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nd/4.0/&quot;&gt;CC BY-ND&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Sep 2017 11:45:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-RichardStallman</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-RichardStallman</guid>
+        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-RichardStallman/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-RichardStallman/</guid>
         
         
       </item>
