@@ -13,7 +13,7 @@ wikipedia-de_username: "white_gecko"
 excerpt_separator: <!--more-->
 
 # Build settings
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title/
 timezone: Europe/Berlin
 markdown: kramdown
 kramdown:
