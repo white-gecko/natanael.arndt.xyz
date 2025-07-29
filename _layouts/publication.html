@@ -74,7 +74,7 @@ ttl: true
         {% if doi %}<a href="https://dx.doi.org/{{ doi }}"><i class="fa fa-circle"></i> DOI</a>,{% endif %}
         {% if isbn %}<a href="https://en.wikipedia.org/wiki/Special:BookSources/{{ isbn }}"><i class="fa fa-info-circle"></i> ISBN</a>,{% endif %}
         {% if bibsonomy %}<a href="{{ bibsonomy }}"><i class="fa fa-database"></i> Bibsonomy</a>,{% endif %}
-        <a href="{{ page.url | remove: ".html" | prepend: "/ttl" | prepend: site.baseurl }}"><i class="fa fa-share-alt"></i> RDF (Turtle)</a>
+        <a href="{{ page.url | remove: ".html" | prepend: "/ttl" | prepend: site.baseurl | append: ".ttl" }}"><i class="fa fa-share-alt"></i> RDF (Turtle)</a>
         <!-- concat('http://www.bibsonomy.org/bibtex/', .intraHash, '/', .user) -->
     </div>
   </header>
