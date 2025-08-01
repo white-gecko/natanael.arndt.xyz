@@ -519,6 +519,14 @@
     ] ;
     foaf:name "Klaus-Peter Fähnrich" .
 
+<https://scholar.google.com/citations?user=mM4F-1EAAAAJ&hl=de&oi=ao>
+    a foaf:Person ;
+    vcard:N [
+        vcard:Family "Reichelt" ;
+        vcard:Given "David Georg"
+    ] ;
+    foaf:name "David Georg Reichelt" .
+
 <https://natanael.arndt.xyz/bib/org-GI>
     a bibtex:Organization ;
     foaf:name "Gesellschaft für Informatik e.V." .
@@ -526,6 +534,7 @@
 <https://natanael.arndt.xyz/bib/org-ACM>
     a bibtex:Organization ;
     foaf:name "ACM" .
+
 
 dct:BibliographicResource
     rdfs:subClassOf foaf:Document .
@@ -589,7 +598,7 @@ bibo:Journal
 
 <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente>
     dct:creator [
-        rdf:_1 "David Georg Reichelt" ;
+        rdf:_1 <https://scholar.google.com/citations?user=mM4F-1EAAAAJ&hl=de&oi=ao> ;
         rdf:_2 <http://aksw.org/NatanaelArndt> ;
         a rdf:Seq
     ] ;
