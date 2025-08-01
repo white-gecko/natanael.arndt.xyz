@@ -568,8 +568,8 @@ bibo:Journal
 
 <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente>
     dct:creator [
-        rdf:_1 <http://aksw.org/NatanaelArndt> ;
-        rdf:_2 "David Georg Reichelt" ;
+        rdf:_1 "David Georg Reichelt" ;
+        rdf:_2 <http://aksw.org/NatanaelArndt> ;
         a rdf:Seq
     ] ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre> ;
