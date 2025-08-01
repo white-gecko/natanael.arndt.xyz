@@ -579,12 +579,19 @@ bibo:Journal
     rdfs:subClassOf bibo:Periodical .
 
 <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre>
-    dct:issued "2025-05"^^xsd:gYearMonth ;
+    dct:issued "2025-07-29"^^xsd:date ;
     dct:title "Tagungsband 3. Workshop Digitale Lehre im Rahmen der Grundausbildung in MINT-Fächern an Hochschulen. Leipzig, 16.-17.09.2024" ;
     bibo:doi "10.33968/2025.01" ;
     dct:hasFormat <https://htwk-leipzig.qucosa.de/api/qucosa%3A98097/attachment/ATT-0/> ;
-    bibtex:month "September" ;
-    bibtex:year 2024 ;
+    bibtex:editor [
+        rdf:_1 "Jochen Merker" ;
+        rdf:_2 "Reinhold Hübl" ;
+        rdf:_3 "Eckhard Liebscher" ;
+        rdf:_4 "Melanie Eulitz" ;
+        a rdf:Seq
+    ] ;
+    bibtex:month "July" ;
+    bibtex:year 2025 ;
     a bibo:Proceedings .
 
 <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente>
@@ -595,7 +602,7 @@ bibo:Journal
     ] ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre> ;
     dct:title "Digitale Selbstlern-Elemente für Grundlagen der Informatik" ;
-    dct:issued "2025-07-29"^^xsd:gYearMonth ;
+    dct:issued "2025-07-29"^^xsd:date ;
     bibo:doi "10.33968/2025.01" ;
     dct:hasFormat <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente.pdf> ;
     a bibtex:InProceedings .
