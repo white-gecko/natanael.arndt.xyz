@@ -1,0 +1,17 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente> a bibtex:InProceedings ;
+    dct:abstract "Module zu theoretischen Grundlagen der Informatik haben oft hohe Durchfallquoten und niedrige Grade der Lernzielerreichung. Im internationalen Kontext wird das Lernen zusätzlich dadurch erschwert, dass Studierende an unterschiedliche Lern- und Lehrmethoden gewöhnt sind. Durch Unterstützung der Lehrmethoden mit digitalen Selbstlern-Elementen werden Studierende befähigt, eigenständig Lerninhalte zu wiederholen und zu vertiefen, und dadurch die Lernzielerreichung zu erhöhen. An der Lancaster University ist das Modul Grundlagen der Informatik (Fundamentals of Computer Science) für die Bachelorstudiengänge in Informatik und Softwaretechnik verpflichtend. Die Prüfungsergebnisse zeigen, dass bei der Lernzielerreichung Verbesserungspotenzial besteht. Der vorliegende Beitrag beschreibt den Ausgangsstand des Moduls, der ohne digitale Lehrtechnologien stattfand, sowie zwei Iterationen eines Konzepts zur Verbesserung der Lehre durch regelmäßige, freiwillige Online-Quizze und deren Evaluationen." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 "David Georg Reichelt" ;
+            rdf:_2 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre> ;
+    dct:issued "2025-07-29"^^xsd:date ;
+    dct:title "Digitale Selbstlern-Elemente für Grundlagen der Informatik" ;
+    bibo:doi "10.33968/2025.01" .
+
