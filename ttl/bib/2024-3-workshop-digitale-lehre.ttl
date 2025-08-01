@@ -6,7 +6,7 @@
 
 <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre> a bibo:Proceedings ;
     dct:hasFormat <https://htwk-leipzig.qucosa.de/api/qucosa%3A98097/attachment/ATT-0/> ;
-    dct:issued "2025-07-29"^^xsd:date ;
+    dct:issued "2025-07"^^xsd:gYearMonth ;
     dct:title "Tagungsband 3. Workshop Digitale Lehre im Rahmen der Grundausbildung in MINT-Fächern an Hochschulen. Leipzig, 16.-17.09.2024" ;
     bibtex:editor [ a rdf:Seq ;
             rdf:_1 "Jochen Merker" ;

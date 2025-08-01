@@ -11,7 +11,7 @@
             rdf:_2 <http://aksw.org/NatanaelArndt> ] ;
     dct:hasFormat <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre> ;
-    dct:issued "2025-07-29"^^xsd:date ;
+    dct:issued "2025-07"^^xsd:gYearMonth ;
     dct:title "Digitale Selbstlern-Elemente für Grundlagen der Informatik" ;
     bibo:doi "10.33968/2025.01" .
 
