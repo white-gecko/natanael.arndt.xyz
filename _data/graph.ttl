@@ -597,7 +597,7 @@ bibo:Journal
     dct:title "Digitale Selbstlern-Elemente für Grundlagen der Informatik" ;
     dct:issued "2025-07-29"^^xsd:gYearMonth ;
     bibo:doi "10.33968/2025.01" ;
-    dct:hasFormat <https://htwk-leipzig.qucosa.de/api/qucosa%3A98097/attachment/ATT-0/> ;
+    dct:hasFormat <https://natanael.arndt.xyz/bib/reichelt-dg-2024--selbstlern-elemente.pdf> ;
     a bibtex:InProceedings .
 
 <https://natanael.arndt.xyz/bib/WWW2025_companion>
