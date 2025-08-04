@@ -5,8 +5,8 @@
     <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
     <link>https://natanael.arndt.xyz/</link>
     <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 04 Aug 2025 21:44:07 +0200</pubDate>
-    <lastBuildDate>Mon, 04 Aug 2025 21:44:07 +0200</lastBuildDate>
+    <pubDate>Mon, 04 Aug 2025 21:54:02 +0200</pubDate>
+    <lastBuildDate>Mon, 04 Aug 2025 21:54:02 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -51,10 +51,24 @@ All other options should be documented at &lt;a href=&quot;https://ffmpeg.org/&q
     
       <item>
       
+        <title>@white_gecko at 2025-04-09  11.55</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;Talk: &lt;a href=&quot;https://netpreserve.org/ga2025/programme/wac/&quot;&gt;IIPC WAC&lt;/a&gt; - &lt;a href=&quot;https://www.youtube.com/watch?v=78_SCbYxbto&amp;amp;list=PL5AWMCpp1Dii-VsLRMpXXChNhNQmCJahJ&amp;amp;index=3&quot;&gt;Under Construction: Web Archive of the German National Library by Natanael Arndt&lt;/a&gt; (Video)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Apr 2025 11:55:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2025/04/09/iipc-wac-dnb-webarchive/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2025/04/09/iipc-wac-dnb-webarchive/</guid>
+        
+        
+      </item>
+    
+      <item>
+      
         <title>@white_gecko at 2024-11-19  19.30</title>
         <category>status-post</category>
       
-        <description>&lt;p&gt;Talk: ISKO UK Meetup - Introducing Jekyll RDF by Natanael Arndt https://www.iskouk.org/event-5923859&lt;/p&gt;
+        <description>&lt;p&gt;Talk: ISKO UK Meetup - &lt;a href=&quot;https://www.iskouk.org/event-5923859&quot;&gt;Introducing Jekyll RDF by Natanael Arndt&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Nov 2024 19:30:00 +0100</pubDate>
         <link>https://natanael.arndt.xyz/2024/11/19/isko-uk-jekyll-rdf/</link>
@@ -525,26 +539,6 @@ Wenn der Kunde zwar nicht im Einzelnen aber als Gesamtheit auf diese Art und Wei
         <category>DigitalisierungFirstBedenkenSecond</category>
         
         <category>Überwachung</category>
-        
-        
-      </item>
-    
-      <item>
-      
-        <title>@white_gecko at 2017-09-27  16.13</title>
-        <category>status-post</category>
-      
-        <description>&lt;p&gt;.@SoerenAuer from @TIBHannover is showing some old computing stuff, recipies, functions, and chinese pots at his keynote at #informatik2017&lt;/p&gt;
-
-&lt;noscript class=&quot;loading-lazy&quot;&gt;
-  &lt;img src=&quot;/img/2017-09-27-Soeren.jpg&quot; alt=&quot;Soeren Auer bei am Rednerpult&quot; style=&quot;width: 30%&quot; loading=&quot;lazy&quot; /&gt;
-&lt;/noscript&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/white_gecko/status/913043822178963456&quot;&gt;https://twitter.com/white_gecko/status/913043822178963456&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Sep 2017 16:13:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer/</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/09/27/INFORMATIK-SoerenAuer/</guid>
         
         
       </item>
