@@ -7,7 +7,7 @@ date:   2017-12-31 16:44:00
 update: 2018-01-02 14:01:00
 ---
 
-Für unsere Sylvesterfeier wollte ich mal wieder einen leckeren Kartoffelsalat machen, ich hatte ein Rezept mit geräuchertem Tofu im Kopf, war garnicht so leicht zu finden ;-) [sz.de](http://www.sueddeutsche.de/stil/rezepte-von-attila-hildmann-fuenf-vegane-gerichte-die-jedem-gelingen-1.2699518-5)
+Für eine Sylvesterfeier oder eine Herbstfeier bei Freunden 😉 lohnt sich immer wieder ein leckerer Kartoffelsalat, ich hatte ein Rezept mit geräuchertem Tofu im Kopf, war garnicht so leicht zu finden [sz.de](http://www.sueddeutsche.de/stil/rezepte-von-attila-hildmann-fuenf-vegane-gerichte-die-jedem-gelingen-1.2699518-5)
 Damit ich es wiederfinde habe ich es jetzt hier gespeichert und noch etwas angepasst.
 
 ## Zutaten
