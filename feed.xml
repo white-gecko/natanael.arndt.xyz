@@ -5,9 +5,23 @@
     <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
     <link>https://natanael.arndt.xyz/</link>
     <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Nov 2025 13:52:30 +0100</pubDate>
-    <lastBuildDate>Tue, 18 Nov 2025 13:52:30 +0100</lastBuildDate>
+    <pubDate>Tue, 18 Nov 2025 14:02:48 +0100</pubDate>
+    <lastBuildDate>Tue, 18 Nov 2025 14:02:48 +0100</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+      
+        <title>@white_gecko at 2025-11-17  15.50</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;At the &lt;a href=&quot;https://forum.swib.org/t/swib25-welcome/921&quot;&gt;17th Semantic Web in Libraries Conference (SWIB2025)&lt;/a&gt; &lt;a href=&quot;https://openbiblio.social/@nabatz&quot;&gt;Tracy&lt;/a&gt; gave a talk about our joint work on describing the web archives collection as linekd data &lt;a href=&quot;https://forum.swib.org/t/how-to-describe-the-past-web-a-data-model-for-web-archiving/1435&quot;&gt;How to describe the past Web? A data model for web archiving by Tracy Arndt and Natanael Arndt&lt;/a&gt; (&lt;a href=&quot;https://forum.swib.org/uploads/short-url/euJhUeZH6rLqczz1vxAHFcB2Cp8.pdf&quot;&gt;Slides&lt;/a&gt;).&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Nov 2025 15:50:00 +0100</pubDate>
+        <link>https://natanael.arndt.xyz/2025/11/17/swib25/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2025/11/17/swib25/</guid>
+        
+        
+      </item>
     
       <item>
       
@@ -459,32 +473,6 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
         <pubDate>Mon, 23 Oct 2017 15:51:00 +0200</pubDate>
         <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status/</link>
         <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status/</guid>
-        
-        
-      </item>
-    
-      <item>
-      
-        <title>JekyllRDF 2.3.0</title>
-        <category>blog-post</category>
-      
-        <description>&lt;p&gt;Today we’ve released #jekyllrdf 2.3.0 at rubygems &lt;a href=&quot;https://rubygems.org/gems/jekyll-rdf&quot;&gt;https://rubygems.org/gems/jekyll-rdf&lt;/a&gt;.
-The &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/blob/2.3.0/README.md&quot;&gt;documentation&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/blob/2.3.0/CHANGELOG.md&quot;&gt;changelog&lt;/a&gt; can be found as always at GitHub: &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/&quot;&gt;https://github.com/white-gecko/jekyll-rdf/&lt;/a&gt;.
-We are very happy about all &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/graphs/contributors&quot;&gt;contributors&lt;/a&gt;, from the past and the presence, but would also like to welcome you as a future contributor ;-)
-As of today this should be the last version of the 2.x branch, since we are already working hard on the next major release 3.0.0.
-If you are interested in what is coming next, have a look at the &lt;a href=&quot;https://github.com/white-gecko/jekyll-rdf/milestone/5&quot;&gt;3.0.0-milestone&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Oct 2017 15:48:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0/</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0/</guid>
-        
-        <category>JekyllRDF</category>
-        
-        <category>Ruby</category>
-        
-        <category>Jekyll</category>
-        
-        <category>RDF</category>
         
         
       </item>
