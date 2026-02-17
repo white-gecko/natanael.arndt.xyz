@@ -72,7 +72,7 @@ jsonld: |
         "text": "Jetzt großzügig zerbröselten Feta und frischen Koriander über das Gericht geben und mit Pita oder Weißbrot servieren."
         }
     ],
-    "recipeCategory": "Frühstück",
+    "recipeCategory": "Frühstück"
     }
 ---
 
