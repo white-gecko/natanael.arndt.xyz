@@ -2,13 +2,13 @@
 layout: page
 parent: notes
 title: Kartoffelsalat mit Räuchertofu
-description: "Ein Rezept für einen lekeren Kartoffelsalat, geht auch vegan."
+description: "Ein Rezept für einen leckeren Kartoffelsalat—geht auch vegan."
 date:   2017-12-31 16:44:00
 update: 2018-01-02 14:01:00
 ---
 
-Für eine Sylvesterfeier oder eine Herbstfeier bei Freunden 😉 lohnt sich immer wieder ein leckerer Kartoffelsalat, ich hatte ein Rezept mit geräuchertem Tofu im Kopf, war garnicht so leicht zu finden [sz.de](http://www.sueddeutsche.de/stil/rezepte-von-attila-hildmann-fuenf-vegane-gerichte-die-jedem-gelingen-1.2699518-5)
-Damit ich es wiederfinde habe ich es jetzt hier gespeichert und noch etwas angepasst.
+Für eine Silvesterfeier oder eine Herbstfeier bei Freunden 😉 lohnt sich immer wieder ein leckerer Kartoffelsalat, ich hatte ein Rezept mit geräuchertem Tofu im Kopf, war gar nicht so leicht zu finden [sz.de](http://www.sueddeutsche.de/stil/rezepte-von-attila-hildmann-fuenf-vegane-gerichte-die-jedem-gelingen-1.2699518-5).
+Damit ich es wiederfinde, habe ich es jetzt hier gespeichert und noch etwas angepasst.
 
 ## Zutaten
 (Für zwei Personen)
