@@ -1,3 +1,4 @@
 <script src="{{ "/dist/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 {% include poststempel.html %}
 {% include user.html %}
+{% if page.jsonld %}<script type="application/ld+json"></script>{{ page.jsonld }}</script>{% endif %}
