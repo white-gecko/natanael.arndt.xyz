@@ -1,0 +1,23 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/meyer-lp-2026--evaluating-llm-rdf-kg> a bibo:AcademicArticle ;
+    dct:abstract "Current Large Language Models (LLMs) can work with structured information and even assist developing program code, but can they support working with Knowledge Graphs (KGs) as well? Which LLM is offering the best capabilities in the field of Semantic Web and Knowledge Graph Engineering (KGE)? Is it possible to determine this without manually checking many answers? The LLM-KG-Bench framework is designed to answer these questions. It consists of an extensible set of tasks for which the LLM answers are automatically evaluated, and covers different aspects of working with semantic technologies. This article gives a description of the LLM-KG-Bench framework, its main concepts, and the tasks implemented. In a benchmark run, a comprehensive dataset has been generated with it, evaluating more than 40 contemporary open and proprietary LLMs with 26 benchmark tasks, resulting in interaction logs and evaluations of roughly 45 000 LLM task dialogues. Finally, this dataset is used for an analysis of the SPARQL-related capabilities of the LLMs tested." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 <http://aksw.org/LarsPeterMeyer> ;
+            rdf:_10 <http://aksw.org/MichaelMartin> ;
+            rdf:_2 <http://aksw.org/JohannesFrey> ;
+            rdf:_3 <http://aksw.org/FelixBrei> ;
+            rdf:_4 "Desiree Heim" ;
+            rdf:_5 <http://aksw.org/SabineGruenderFahrer> ;
+            rdf:_6 "Sara Todorovikj" ;
+            rdf:_7 <http://aksw.org/ClausStadler> ;
+            rdf:_8 "Markus Schröder" ;
+            rdf:_9 <http://aksw.org/NatanaelArndt> ] ;
+    dct:hasFormat <hhttps://www.semantic-web-journal.net/system/files/swj3994.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/swj-2026-llm-genai-kgs> ;
+    dct:issued "2026"^^xsd:gYear ;
+    dct:title "Evaluating Large Language Models for RDF Knowledge Graph Related Tasks - The LLM-KG-Bench-Framework 3 (Reviewed and Accepted)" .
+
