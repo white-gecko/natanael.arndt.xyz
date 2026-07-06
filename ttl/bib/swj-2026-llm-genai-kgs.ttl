@@ -4,5 +4,6 @@
 
 <https://natanael.arndt.xyz/bib/swj-2026-llm-genai-kgs> a bibo:Journal ;
     dct:date "2026"^^xsd:gYear ;
+    dct:issued "2026"^^xsd:gYear ;
     dct:title "Semantic Web Journal" .
 
