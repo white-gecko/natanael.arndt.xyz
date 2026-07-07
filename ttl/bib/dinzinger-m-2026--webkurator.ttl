@@ -1,0 +1,20 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/dinzinger-m-2026--webkurator> a bibtex:InProceedings ;
+    dct:abstract "The systematic curation of the Web remains a central challenge for national libraries and memory institutions that aim to preserve culturally and regionally relevant content. Existing directory-based approaches such as Curlie implement a predominantly topic-centric, one-dimensional hierarchy, where geographic aspects are intertwined with topical and linguistic categories. To address this limitation, we present WebKurator.de, a collaborative platform for combined regional and topical web curation, initially focused on the German web. WebKurator introduces a two-dimensional curation model that explicitly separates topical categorization and geographic annotation. The system integrates LLM–based topic classification and imprint-based address extraction with geocoding, and supports user suggestions together with moderated review. The platform is bootstrapped from the German Imprints Dataset, a large-scale collection of 5.54 million websites. Among them, 3.14 million contain imprint pages, for which we successfully extracted and geocoded postal addresses. Of these, 2.58 million (85.17%) are located in Germany and also have an assigned topic label. These websites form the initial foundation of WebKurator.de and can be continuously extended through user suggestions." ;
+    dct:creator [ a rdf:Seq ;
+            rdf:_1 "Michael Dinzinger" ;
+            rdf:_2 <http://aksw.org/NatanaelArndt> ;
+            rdf:_3 "Ben Böck" ;
+            rdf:_4 "Jelena Mitrović" ;
+            rdf:_5 "Michael Granitzer" ] ;
+    dct:hasFormat <https://dl.acm.org/doi/pdf/10.1145/3795513.3807433?download=true> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/2026-WebSci-Companion> ;
+    dct:issued "2026-05-25"^^xsd:date ;
+    dct:title "The WebKurator.de Platform: Combined Regional and Topical Web Curation" ;
+    bibo:doi "10.1145/3795513.3807433" .
+

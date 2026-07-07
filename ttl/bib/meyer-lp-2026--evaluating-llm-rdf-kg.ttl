@@ -16,7 +16,7 @@
             rdf:_7 <http://aksw.org/ClausStadler> ;
             rdf:_8 "Markus Schröder" ;
             rdf:_9 <http://aksw.org/NatanaelArndt> ] ;
-    dct:hasFormat <hhttps://www.semantic-web-journal.net/system/files/swj3994.pdf> ;
+    dct:hasFormat <https://www.semantic-web-journal.net/system/files/swj3994.pdf> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/swj-2026-llm-genai-kgs> ;
     dct:issued "2026"^^xsd:gYear ;
     dct:title "Evaluating Large Language Models for RDF Knowledge Graph Related Tasks - The LLM-KG-Bench-Framework 3 (Reviewed and Accepted)" .
