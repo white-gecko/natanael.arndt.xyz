@@ -38,7 +38,7 @@ tasks:
   update:
     desc: Update Ressources
     cmds:
-      - task: install
+      - task: install:data-deps
       - task: data
       - task: build
 
