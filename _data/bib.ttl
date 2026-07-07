@@ -559,6 +559,32 @@ bibo:Thesis
 bibo:Journal
     rdfs:subClassOf bibo:Periodical .
 
+<https://natanael.arndt.xyz/bib/2026-WebSci-Companion>
+    dct:date "2026-05-25"^^xsd:date ;
+    dct:issued "2026-05-25"^^xsd:date ;
+    bibo:isbn "979-8-4007-2492-3";
+    bibo:isbn13 "9798400724923";
+    dct:title "WebSci Companion '26: Companion Publication of the 2026 18th ACM Web Science Conference" ;
+    a bibo:Proceedings .
+
+<https://natanael.arndt.xyz/bib/dinzinger-m-2026--webkurator>
+    dct:creator [
+      rdf:_1 "Michael Dinzinger" ;
+      rdf:_2 <http://aksw.org/NatanaelArndt> ;
+      rdf:_3 "Ben Böck" ;
+      rdf:_4 "Jelena Mitrović" ;
+      rdf:_5 "Michael Granitzer" ;
+      a rdf:Seq
+    ] ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/2026-WebSci-Companion> ;
+    dct:title "The WebKurator.de Platform: Combined Regional and Topical Web Curation" ;
+    bibo:doi "10.1145/3795513.3807433" ;
+    dct:issued "2026-05-25"^^xsd:date ;
+    dct:hasFormat <https://dl.acm.org/doi/pdf/10.1145/3795513.3807433?download=true> ;
+    a bibtex:InProceedings ;
+    dct:abstract """The systematic curation of the Web remains a central challenge for national libraries and memory institutions that aim to preserve culturally and regionally relevant content. Existing directory-based approaches such as Curlie implement a predominantly topic-centric, one-dimensional hierarchy, where geographic aspects are intertwined with topical and linguistic categories. To address this limitation, we present WebKurator.de, a collaborative platform for combined regional and topical web curation, initially focused on the German web. WebKurator introduces a two-dimensional curation model that explicitly separates topical categorization and geographic annotation. The system integrates LLM–based topic classification and imprint-based address extraction with geocoding, and supports user suggestions together with moderated review. The platform is bootstrapped from the German Imprints Dataset, a large-scale collection of 5.54 million websites. Among them, 3.14 million contain imprint pages, for which we successfully extracted and geocoded postal addresses. Of these, 2.58 million (85.17%) are located in Germany and also have an assigned topic label. These websites form the initial foundation of WebKurator.de and can be continuously extended through user suggestions.""" .
+
+
 <https://natanael.arndt.xyz/bib/swj-2026-llm-genai-kgs>
     dct:date "2026"^^xsd:gYear ;
     dct:issued "2026"^^xsd:gYear ;
