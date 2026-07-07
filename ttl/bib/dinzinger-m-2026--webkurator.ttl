@@ -12,7 +12,7 @@
             rdf:_3 "Ben Böck" ;
             rdf:_4 "Jelena Mitrović" ;
             rdf:_5 "Michael Granitzer" ] ;
-    dct:hasFormat <https://dl.acm.org/doi/pdf/10.1145/3795513.3807433?download=true> ;
+    dct:hasFormat <https://dl.acm.org/doi/pdf/10.1145/3795513.3807433> ;
     dct:isPartOf <https://natanael.arndt.xyz/bib/2026-WebSci-Companion> ;
     dct:issued "2026-05-25"^^xsd:date ;
     dct:title "The WebKurator.de Platform: Combined Regional and Topical Web Curation" ;
