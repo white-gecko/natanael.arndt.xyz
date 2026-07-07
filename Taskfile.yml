@@ -19,6 +19,18 @@ tasks:
 
   install:
     desc: Install dependencies
+    cmds:
+      - task: install:data-deps
+      - task: install:npm
+
+
+  install:npm:
+    desc: Install npm dependencies
+    cmd: |
+      npm install
+
+  install:data-deps:
+    desc: Install data python dependencies
     cmd: |
       cd _data
       poetry install
@@ -61,6 +73,11 @@ tasks:
         vars:
           LANGUAGE: de
           TARGET: '{{.TARGET}}'
+
+  build:webpack:
+    desc: Build the JavaScript resources
+    cmds:
+      - npx webpack
 
   build:docker:
     desc: Build the page from source using docker
