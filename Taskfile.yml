@@ -23,11 +23,16 @@ tasks:
       cd _data
       poetry install
 
-  ci:
-    desc: CI Target to build the page
+  update:
+    desc: Update Ressources
     cmds:
       - task: install
       - task: data
+      - task: build
+
+  ci:
+    desc: CI Target to build the page
+    cmds:
       - task: build
 
   data:
