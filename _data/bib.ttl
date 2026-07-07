@@ -580,7 +580,7 @@ bibo:Journal
     dct:title "The WebKurator.de Platform: Combined Regional and Topical Web Curation" ;
     bibo:doi "10.1145/3795513.3807433" ;
     dct:issued "2026-05-25"^^xsd:date ;
-    dct:hasFormat <https://dl.acm.org/doi/pdf/10.1145/3795513.3807433?download=true> ;
+    dct:hasFormat <https://dl.acm.org/doi/pdf/10.1145/3795513.3807433> ;
     a bibtex:InProceedings ;
     dct:abstract """The systematic curation of the Web remains a central challenge for national libraries and memory institutions that aim to preserve culturally and regionally relevant content. Existing directory-based approaches such as Curlie implement a predominantly topic-centric, one-dimensional hierarchy, where geographic aspects are intertwined with topical and linguistic categories. To address this limitation, we present WebKurator.de, a collaborative platform for combined regional and topical web curation, initially focused on the German web. WebKurator introduces a two-dimensional curation model that explicitly separates topical categorization and geographic annotation. The system integrates LLM–based topic classification and imprint-based address extraction with geocoding, and supports user suggestions together with moderated review. The platform is bootstrapped from the German Imprints Dataset, a large-scale collection of 5.54 million websites. Among them, 3.14 million contain imprint pages, for which we successfully extracted and geocoded postal addresses. Of these, 2.58 million (85.17%) are located in Germany and also have an assigned topic label. These websites form the initial foundation of WebKurator.de and can be continuously extended through user suggestions.""" .
 
