@@ -5,9 +5,23 @@
     <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
     <link>https://natanael.arndt.xyz/</link>
     <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Jul 2026 23:46:43 +0200</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2026 23:46:43 +0200</lastBuildDate>
+    <pubDate>Tue, 07 Jul 2026 10:37:16 +0200</pubDate>
+    <lastBuildDate>Tue, 07 Jul 2026 10:37:16 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+      
+        <title>@white_gecko at 2026-04-22  19.45</title>
+        <category>status-post</category>
+      
+        <description>&lt;p&gt;At the &lt;a href=&quot;https://netpreserve.org/ga2026/schedule-overview/&quot;&gt;IIPC General Assembly &amp;amp; Web Archiving Conference (GA &amp;amp; WAC)&lt;/a&gt; I have presented a poster titled: “Linking the awesome: Building a Community Knowledge Graph for Web Archiving Resources” and had a talk on “Bridging the Web Archive and the Library: a Linked‑Data Model for FAIR Web Archive Integration” (the recordings are not yet online)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Apr 2026 19:45:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2026/04/22/iipc-wac-dnb-webarchive/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2026/04/22/iipc-wac-dnb-webarchive/</guid>
+        
+        
+      </item>
     
       <item>
       
@@ -457,22 +471,6 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
         <pubDate>Sat, 04 Nov 2017 18:44:00 +0100</pubDate>
         <link>https://natanael.arndt.xyz/2017/11/04/mobile/</link>
         <guid isPermaLink="true">https://natanael.arndt.xyz/2017/11/04/mobile/</guid>
-        
-        
-      </item>
-    
-      <item>
-      
-        <title>@white_gecko at 2017-10-23  15.51</title>
-        <category>status-post</category>
-      
-        <description>&lt;p&gt;Today we’ve released #jekyllrdf 2.3.0 at #rubygems &lt;a href=&quot;https://rubygems.org/gems/jekyll-rdf&quot;&gt;https://rubygems.org/gems/jekyll-rdf&lt;/a&gt;, read more: &lt;a href=&quot;https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0&quot;&gt;https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0&lt;/a&gt; #ruby #jekyllrb&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/white_gecko/status/922460422095196166&quot;&gt;https://twitter.com/white_gecko/status/922460422095196166&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Oct 2017 15:51:00 +0200</pubDate>
-        <link>https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status/</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/10/23/jekyll-rdf-2.3.0-status/</guid>
         
         
       </item>
