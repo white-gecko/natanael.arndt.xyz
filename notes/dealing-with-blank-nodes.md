@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: Dealing with Blank Nodes
+category: Technical Explorations
 description: "Blank Nodes are easy to introduce but hard to handle."
 date:   2018-12-12 12:00:00+01:00
 update: 2018-12-14 14:57:00+01:00

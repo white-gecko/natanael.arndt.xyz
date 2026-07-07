@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: The Semantic Web Layer Cake
+category: Technical Explorations
 description: "The Semantic Web Layer Cake tries to visualize the interplay of components on the Semantic Web."
 date:   2018-11-21 16:46:00+01:00
 update: 2018-11-21 16:46:00+01:00

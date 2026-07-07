@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: Shakshuka
+category: Recipes
 description: "Das perfekte Frühstück"
 date:   2018-09-06 14:16:00
 update: 2020-06-25 13:25:00

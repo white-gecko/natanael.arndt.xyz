@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: The Linked Data Life-Cycle
+category: Technical Explorations
 description: "The Linked Data Life-Cycle tries to visualize the relevant steps performed to generate, manage, publish Linked Data."
 date:   2019-08-06 23:51:00+09:00
 update: 2020-10-14 17:06:00+02:00
@@ -45,7 +46,7 @@ I was looking for a [TikZ](https://www.ctan.org/pkg/pgf) version of the life-cyc
 \newdimen\R % maximal diagram radius (config option)
 \R=4.5cm
 
-\newcommand{\A}{-360/\D} % calculated angle between dimension axes  
+\newcommand{\A}{-360/\D} % calculated angle between dimension axes
 
 % add the following two lines to your document to get bigger arrows
 \usetikzlibrary{arrows.meta}

@@ -1,13 +1,16 @@
 ---
 layout: page
-title: Notes
+title: Brain
 weight: 50
-description: "This is my private Wiki, shared with everybody. I am sometimes taking notes about things which would be too bad to forget."
+description: |
+  A personal knowledge base where I document ideas, experiments, and insights—technical, practical, and sometimes playful. These are not polished products, but reflections on the process of thinking and learning.
 ---
 
-{% for node in site.pages %}
-  {% if "notes" == node.parent %}
-<h3><a href="{{ node.url }}">{{ node.title }}</a></h3>
+{% assign categories = site.pages | where:"parent","notes" | group_by: "category" %}
+{% for category in categories %}
+<h3>{{ category.name }}</h3>
+{% for node in category.items %}
+<h4><a href="{{ node.url }}">{{ node.title }}</a></h4>
 {{ node.description }}
-  {% endif %}
+{% endfor %}
 {% endfor %}

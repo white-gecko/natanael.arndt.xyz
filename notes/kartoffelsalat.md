@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: Kartoffelsalat mit Räuchertofu
+category: Recipes
 description: "Ein Rezept für einen leckeren Kartoffelsalat—geht auch vegan."
 date:   2017-12-31 16:44:00
 update: 2018-01-02 14:01:00

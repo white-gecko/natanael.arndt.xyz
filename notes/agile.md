@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: Agile Development
+category: Technical Explorations
 description: "A diagram showing a simple agile development cycle."
 date:   2020-10-14 17:03:00+02:00
 update: 2020-10-14 17:03:00+02:00

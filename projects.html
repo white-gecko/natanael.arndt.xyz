@@ -1,16 +1,18 @@
 ---
 layout: page
-title: Projects
+title: 🛠️ Workbench
 weight: 90
-description: "Most of the software I'm using is Open Source and I really like the idea of Open Source and Free Software.
-This is one of the reasons why I try contribute my part usually under the terms of the GNU GPL.
-The software listed here are mainly scientific prototypes created, where I had a small or a big contribution, but it was never just my work, as it is usual in the scientific and the Open Source community."
+description: "A collection of projects, open-source tools, and prototypes I've contributed to or led—focused on semantic web technologies, knowledge graphs, and decentralized and distributed systems. Most are collaborative, research-driven, and released under open licenses."
 ---
 
 <hr class="featurette-divider">
 <!-- https://getbootstrap.com/examples/carousel/ -->
 
-{% for member in site.data.projects %}
+
+{% assign projects = site.data.projects | group_by: "category" %}
+{% for category in projects %}
+<h3>{{category.name}}</h3>
+{% for member in category.items %}
   {% if member.image %}
   {% assign col_class = "col-md-9" %}
   {% else %}
@@ -18,7 +20,7 @@ The software listed here are mainly scientific prototypes created, where I had a
   {% endif %}
   <div class="row featurette">
     <div class="{{col_class}} {% cycle '', 'order-2' %}">
-      <h3 class="featurette-heading">{{ member.name }} {% if member.subtitle %}<small class="text-muted">{{ member.subtitle }}.</small>{% endif %}</h3>
+      <h4 class="featurette-heading">{{ member.name }} {% if member.subtitle %}<small class="text-muted">{{ member.subtitle }}.</small>{% endif %}</h4>
       <p>{{ member.abstract }}</p>
       {% if member.url %}<a href="{{ member.url }}">Project Webpage</a>{% endif %}
     </div>
@@ -29,4 +31,5 @@ The software listed here are mainly scientific prototypes created, where I had a
   </div>
 
 <hr class="featurette-divider">
+{% endfor %}
 {% endfor %}

@@ -2,6 +2,7 @@
 layout: page
 parent: notes
 title: Concept for a configuration backup system
+category: How-To & Guides
 description: "Backup done right … and what about the configuration?"
 date: 2020-12-23 20:01:00+01:00
 update: 2020-12-23 20:01:00+01:00
