@@ -1,0 +1,11 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://natanael.arndt.xyz/bib/2026-WebSci-Companion> a bibo:Proceedings ;
+    dct:date "2026-05-25"^^xsd:date ;
+    dct:issued "2026-05-25"^^xsd:date ;
+    dct:title "WebSci Companion '26: Companion Publication of the 2026 18th ACM Web Science Conference" ;
+    bibo:isbn "979-8-4007-2492-3" ;
+    bibo:isbn13 "9798400724923" .
+

@@ -17,6 +17,19 @@ tasks:
     cmds:
       - task -l
 
+  install:
+    desc: Install dependencies
+    cmd: |
+      cd _data
+      poetry install
+
+  update:
+    desc: Update Ressources
+    cmds:
+      - task: install
+      - task: data
+      - task: build
+
   ci:
     desc: CI Target to build the page
     cmds:
