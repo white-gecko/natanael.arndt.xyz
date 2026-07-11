@@ -613,10 +613,10 @@ bibo:Journal
     dct:abstract """The systematic curation of the Web remains a central challenge for national libraries and memory institutions that aim to preserve culturally and regionally relevant content. Existing directory-based approaches such as Curlie implement a predominantly topic-centric, one-dimensional hierarchy, where geographic aspects are intertwined with topical and linguistic categories. To address this limitation, we present WebKurator.de, a collaborative platform for combined regional and topical web curation, initially focused on the German web. WebKurator introduces a two-dimensional curation model that explicitly separates topical categorization and geographic annotation. The system integrates LLM–based topic classification and imprint-based address extraction with geocoding, and supports user suggestions together with moderated review. The platform is bootstrapped from the German Imprints Dataset, a large-scale collection of 5.54 million websites. Among them, 3.14 million contain imprint pages, for which we successfully extracted and geocoded postal addresses. Of these, 2.58 million (85.17%) are located in Germany and also have an assigned topic label. These websites form the initial foundation of WebKurator.de and can be continuously extended through user suggestions.""" .
 
 
-<https://natanael.arndt.xyz/bib/swj-2026-llm-genai-kgs>
-    dct:date "2026"^^xsd:gYear ;
-    dct:issued "2026"^^xsd:gYear ;
-    dct:title "Semantic Web Journal" ;
+<https://natanael.arndt.xyz/bib/swj-2026-17-04>
+    dct:date "2026-07-11"^^xsd:date ;
+    dct:issued "2026-07-11"^^xsd:date ;
+    dct:title "Semantic Web Journal, Volume 17, Issue 4" ;
     a bibo:Journal .
 
 <https://natanael.arndt.xyz/bib/meyer-lp-2026--evaluating-llm-rdf-kg>
@@ -633,12 +633,13 @@ bibo:Journal
       rdf:_10 <http://aksw.org/MichaelMartin> ;
       a rdf:Seq
     ] ;
-    dct:isPartOf <https://natanael.arndt.xyz/bib/swj-2026-llm-genai-kgs> ;
-    dct:title "Evaluating Large Language Models for RDF Knowledge Graph Related Tasks - The LLM-KG-Bench-Framework 3 (Reviewed and Accepted)" ;
-    dct:issued "2026"^^xsd:gYear ;
-    dct:hasFormat <https://www.semantic-web-journal.net/system/files/swj3994.pdf> ;
+    dct:isPartOf <https://natanael.arndt.xyz/bib/swj-2026-17-04> ;
+    dct:title "Evaluating Large Language Models for RDF Knowledge Graph-Related Tasks—The LLM-KG-Bench-Framework 3" ;
+    dct:issued "2026-07-11"^^xsd:date ;
+    bibo:doi "10.1177/22104968261461351" ;
+    dct:hasFormat <https://journals.sagepub.com/doi/pdf/10.1177/22104968261461351>, <https://www.semantic-web-journal.net/system/files/swj3994.pdf> ;
     a bibo:AcademicArticle ;
-    dct:abstract """Current Large Language Models (LLMs) can work with structured information and even assist developing program code, but can they support working with Knowledge Graphs (KGs) as well? Which LLM is offering the best capabilities in the field of Semantic Web and Knowledge Graph Engineering (KGE)? Is it possible to determine this without manually checking many answers? The LLM-KG-Bench framework is designed to answer these questions. It consists of an extensible set of tasks for which the LLM answers are automatically evaluated, and covers different aspects of working with semantic technologies. This article gives a description of the LLM-KG-Bench framework, its main concepts, and the tasks implemented. In a benchmark run, a comprehensive dataset has been generated with it, evaluating more than 40 contemporary open and proprietary LLMs with 26 benchmark tasks, resulting in interaction logs and evaluations of roughly 45 000 LLM task dialogues. Finally, this dataset is used for an analysis of the SPARQL-related capabilities of the LLMs tested.""" .
+    dct:abstract """Current large language models (LLMs) can work with structured information and even assist developing program code, but can they support working with knowledge graphs (KGs) as well? Which LLM is offering the best capabilities in the field of semantic web and knowledge graph engineering (KGE)? Is it possible to determine this without manually checking many answers? The LLM-KG-Bench framework is designed to answer these questions. It consists of an extensible set of tasks for which the LLM answers are automatically evaluated, and covers different aspects of working with semantic technologies. This article gives a description of the LLM-KG-Bench framework, its main concepts, and the tasks implemented. In a benchmark run, a comprehensive dataset has been generated with it, evaluating more than 40 contemporary open and proprietary LLMs with 26 benchmark tasks, resulting in interaction logs and evaluations of roughly 45 000 LLM task dialogues. Finally, this dataset is used for an analysis of the SPARQL-related capabilities of the LLMs tested.""" .
 
 
 <https://natanael.arndt.xyz/bib/2024-3-workshop-digitale-lehre>
