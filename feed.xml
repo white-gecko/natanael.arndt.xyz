@@ -5,9 +5,114 @@
     <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
     <link>https://natanael.arndt.xyz/</link>
     <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 11 Jul 2026 17:26:14 +0200</pubDate>
-    <lastBuildDate>Sat, 11 Jul 2026 17:26:14 +0200</lastBuildDate>
+    <pubDate>Mon, 13 Jul 2026 22:26:02 +0200</pubDate>
+    <lastBuildDate>Mon, 13 Jul 2026 22:26:02 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+      
+        <title>Stop Rewriting CI: A Reusable GitHub Actions Workflow for OCI Image Publishing</title>
+        <category>blog-post</category>
+      
+        <description>&lt;p&gt;For many software projects I build container images (Podman, Docker, OCI images), be it for my work, research projects, open source projects, or private purposes.
+Most of these projects anyhow reside on GitHub, so I publish the images to the GitHub container registry as well.
+In the past I had to pick the GitHub action steps together from snippets, and it was an iterative process of trial and error on its own.
+So I decided to create one workflow-file to reuse it over and over again.
+This allows me to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;reduce the setup time for new builds,&lt;/li&gt;
+  &lt;li&gt;avoid making the same mistakes over and over again,&lt;/li&gt;
+  &lt;li&gt;keep best practices once I find them, and&lt;/li&gt;
+  &lt;li&gt;to maintain a certain homogeneity among repos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To use it for your project you can find the template here: &lt;a href=&quot;https://github.com/white-gecko/oci-publish-template&quot;&gt;https://github.com/white-gecko/oci-publish-template&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The workflow automates the entire lifecycle of building, tagging, pushing, and signing OCI images.
+I found the build matrix especially useful for handling multiple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Containerfile&lt;/code&gt;s.
+Beyond just supporting different filenames (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Containerfile&lt;/code&gt; vs &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; 🤷), the matrix lets you build multiple image variants: different base images, optional language runtimes, or custom feature flags.&lt;/p&gt;
+
+&lt;p&gt;The workflow also handles:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Authentication:&lt;/strong&gt; Secure token-based auth to GHCR using GitHub’s built-in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GITHUB_TOKEN&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; Automatic injection of git commit SHA, branch, and tags via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker/metadata-action&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Caching:&lt;/strong&gt; GitHub Actions cache backend for faster subsequent builds&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Signing:&lt;/strong&gt; Integration with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sigstore/cosign-action&lt;/code&gt; for image signing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;where-its-used&quot;&gt;Where it’s used&lt;/h2&gt;
+
+&lt;p&gt;The template has helped me a lot already:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/deutsche-nationalbibliothek/wacalog/blob/main/.github/workflows/oci-publish.yml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deutsche-nationalbibliothek/wacalog&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/deutsche-nationalbibliothek/warcio/blob/feature/oci-image/.github/workflows/oci-publish.yml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deutsche-nationalbibliothek/warcio&lt;/code&gt;&lt;/a&gt; (fork)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/deutsche-nationalbibliothek/wacli/blob/main/.github/workflows/oci-publish.yml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deutsche-nationalbibliothek/wacli&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/deutsche-nationalbibliothek/aras-py/blob/main/.github/workflows/oci-publish.yaml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deutsche-nationalbibliothek/aras-py&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/white-gecko/fuseki-geosparql/blob/main/.github/workflows/oci-publish.yml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;white-gecko/fuseki-geosparql&lt;/code&gt;&lt;/a&gt; (fork)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/white-gecko/alpine-texlive-full-plus/blob/main/.github/workflows/oci-publish.yml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;white-gecko/alpine-texlive-full-plus&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and maybe some more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-use-it&quot;&gt;How to use it&lt;/h2&gt;
+
+&lt;p&gt;The template is intended to be copied, so you keep the overview over the steps that you run, and it is easily extensible.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Copy the workflow&lt;/strong&gt; from &lt;a href=&quot;https://github.com/white-gecko/oci-publish-template/raw/refs/heads/main/oci-publish.yml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oci-publish.yml&lt;/code&gt;&lt;/a&gt; to your repository at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github/workflows/&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Update the triggers&lt;/strong&gt; to match your branch strategy (defaults to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;feature/*&lt;/code&gt;):
+    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;# TODO: Adjust to your branch names&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;main&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;feature/*&quot;&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;v*.*.*&apos;&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;main&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;feature/*&quot;&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;workflow_dispatch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Adjust the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;containerfile&lt;/code&gt;-value&lt;/strong&gt; in the build-matrix to match your file(s). You can even append more entries.
+    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;na&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+     &lt;span class=&quot;c1&quot;&gt;# Add all Containerfiles/Dockerfiles as you need it&lt;/span&gt;
+     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;containerfile&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Containerfile&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;suffix&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;containerfile&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Containerfile.slim&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;suffix&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;-slim&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Commit and push&lt;/strong&gt; to your repo to trigger the run.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you feel like updating, the URL referring to my repo is in the header together with a version counter, so you can easily detect changes.
+But running on an older version does not mean you are outdated, as long as you update the individual steps.&lt;/p&gt;
+
+&lt;p&gt;As always you are free to fork it and suggest pull-requests.&lt;/p&gt;
+
+&lt;p&gt;Happy building! 🐳✨&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Jul 2026 22:24:00 +0200</pubDate>
+        <link>https://natanael.arndt.xyz/2026/07/13/oci-publish/</link>
+        <guid isPermaLink="true">https://natanael.arndt.xyz/2026/07/13/oci-publish/</guid>
+        
+        <category>Containers</category>
+        
+        <category>Podman</category>
+        
+        <category>Docker</category>
+        
+        <category>OCI</category>
+        
+        <category>GitHub</category>
+        
+        <category>Actions</category>
+        
+        <category>DevOps</category>
+        
+        <category>CI/CD</category>
+        
+        
+      </item>
     
       <item>
       
@@ -457,20 +562,6 @@ Now I know, that the syntax of the URI actually is:&lt;/p&gt;
         <pubDate>Tue, 02 Jan 2018 14:03:00 +0100</pubDate>
         <link>https://natanael.arndt.xyz/2018/01/02/rezept/</link>
         <guid isPermaLink="true">https://natanael.arndt.xyz/2018/01/02/rezept/</guid>
-        
-        
-      </item>
-    
-      <item>
-      
-        <title>@white_gecko at 2017-11-04  18.44</title>
-        <category>status-post</category>
-      
-        <description>&lt;p&gt;Now I’m able to write status posts from my mobile using #FastHub-Libre :nerd:&lt;/p&gt;
-</description>
-        <pubDate>Sat, 04 Nov 2017 18:44:00 +0100</pubDate>
-        <link>https://natanael.arndt.xyz/2017/11/04/mobile/</link>
-        <guid isPermaLink="true">https://natanael.arndt.xyz/2017/11/04/mobile/</guid>
         
         
       </item>
