@@ -17,6 +17,7 @@ This allows me to:
 - to maintain a certain homogeneity among repos.
 
 To use it for your project you can find the template here: [https://github.com/white-gecko/oci-publish-template](https://github.com/white-gecko/oci-publish-template)
+<!--more-->
 
 The workflow automates the entire lifecycle of building, tagging, pushing, and signing OCI images.
 I found the build matrix especially useful for handling multiple `Containerfile`s.
@@ -59,7 +60,7 @@ The template is intended to be copied, so you keep the overview over the steps t
 3. **Adjust the `containerfile`-value** in the build-matrix to match your file(s). You can even append more entries.
     ```yaml
     matrix:
-    include:
+      include:
         # Add all Containerfiles/Dockerfiles as you need it
         - containerfile: Containerfile
           suffix: ""
