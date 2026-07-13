@@ -5,8 +5,8 @@
     <description>This is my part of the web, where I publish some ideas. Some as longer posts and some in short status messages, which should be somehow my part of a distributed twitter.</description>
     <link>https://natanael.arndt.xyz/</link>
     <atom:link href="https://natanael.arndt.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Jul 2026 22:26:02 +0200</pubDate>
-    <lastBuildDate>Mon, 13 Jul 2026 22:26:02 +0200</lastBuildDate>
+    <pubDate>Mon, 13 Jul 2026 22:33:14 +0200</pubDate>
+    <lastBuildDate>Mon, 13 Jul 2026 22:33:14 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -26,7 +26,8 @@ This allows me to:&lt;/p&gt;
   &lt;li&gt;to maintain a certain homogeneity among repos.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;To use it for your project you can find the template here: &lt;a href=&quot;https://github.com/white-gecko/oci-publish-template&quot;&gt;https://github.com/white-gecko/oci-publish-template&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To use it for your project you can find the template here: &lt;a href=&quot;https://github.com/white-gecko/oci-publish-template&quot;&gt;https://github.com/white-gecko/oci-publish-template&lt;/a&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The workflow automates the entire lifecycle of building, tagging, pushing, and signing OCI images.
 I found the build matrix especially useful for handling multiple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Containerfile&lt;/code&gt;s.
@@ -73,7 +74,7 @@ Beyond just supporting different filenames (&lt;code class=&quot;language-plaint
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Adjust the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;containerfile&lt;/code&gt;-value&lt;/strong&gt; in the build-matrix to match your file(s). You can even append more entries.
     &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;na&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
- &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
      &lt;span class=&quot;c1&quot;&gt;# Add all Containerfiles/Dockerfiles as you need it&lt;/span&gt;
      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;containerfile&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Containerfile&lt;/span&gt;
        &lt;span class=&quot;na&quot;&gt;suffix&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;

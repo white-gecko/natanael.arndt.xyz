@@ -105,69 +105,6 @@ This allows me to:</p>
 </ul>
 
 <p>To use it for your project you can find the template here: <a href="https://github.com/white-gecko/oci-publish-template">https://github.com/white-gecko/oci-publish-template</a></p>
-
-<p>The workflow automates the entire lifecycle of building, tagging, pushing, and signing OCI images.
-I found the build matrix especially useful for handling multiple <code class="language-plaintext highlighter-rouge">Containerfile</code>s.
-Beyond just supporting different filenames (<code class="language-plaintext highlighter-rouge">Containerfile</code> vs <code class="language-plaintext highlighter-rouge">Dockerfile</code> 🤷), the matrix lets you build multiple image variants: different base images, optional language runtimes, or custom feature flags.</p>
-
-<p>The workflow also handles:</p>
-<ul>
-  <li><strong>Authentication:</strong> Secure token-based auth to GHCR using GitHub’s built-in <code class="language-plaintext highlighter-rouge">GITHUB_TOKEN</code></li>
-  <li><strong>Metadata:</strong> Automatic injection of git commit SHA, branch, and tags via <code class="language-plaintext highlighter-rouge">docker/metadata-action</code></li>
-  <li><strong>Caching:</strong> GitHub Actions cache backend for faster subsequent builds</li>
-  <li><strong>Signing:</strong> Integration with <code class="language-plaintext highlighter-rouge">sigstore/cosign-action</code> for image signing</li>
-</ul>
-
-<h2 id="where-its-used">Where it’s used</h2>
-
-<p>The template has helped me a lot already:</p>
-
-<ul>
-  <li><a href="https://github.com/deutsche-nationalbibliothek/wacalog/blob/main/.github/workflows/oci-publish.yml"><code class="language-plaintext highlighter-rouge">deutsche-nationalbibliothek/wacalog</code></a></li>
-  <li><a href="https://github.com/deutsche-nationalbibliothek/warcio/blob/feature/oci-image/.github/workflows/oci-publish.yml"><code class="language-plaintext highlighter-rouge">deutsche-nationalbibliothek/warcio</code></a> (fork)</li>
-  <li><a href="https://github.com/deutsche-nationalbibliothek/wacli/blob/main/.github/workflows/oci-publish.yml"><code class="language-plaintext highlighter-rouge">deutsche-nationalbibliothek/wacli</code></a></li>
-  <li><a href="https://github.com/deutsche-nationalbibliothek/aras-py/blob/main/.github/workflows/oci-publish.yaml"><code class="language-plaintext highlighter-rouge">deutsche-nationalbibliothek/aras-py</code></a></li>
-  <li><a href="https://github.com/white-gecko/fuseki-geosparql/blob/main/.github/workflows/oci-publish.yml"><code class="language-plaintext highlighter-rouge">white-gecko/fuseki-geosparql</code></a> (fork)</li>
-  <li><a href="https://github.com/white-gecko/alpine-texlive-full-plus/blob/main/.github/workflows/oci-publish.yml"><code class="language-plaintext highlighter-rouge">white-gecko/alpine-texlive-full-plus</code></a></li>
-  <li>and maybe some more</li>
-</ul>
-
-<h2 id="how-to-use-it">How to use it</h2>
-
-<p>The template is intended to be copied, so you keep the overview over the steps that you run, and it is easily extensible.</p>
-
-<ol>
-  <li><strong>Copy the workflow</strong> from <a href="https://github.com/white-gecko/oci-publish-template/raw/refs/heads/main/oci-publish.yml"><code class="language-plaintext highlighter-rouge">oci-publish.yml</code></a> to your repository at <code class="language-plaintext highlighter-rouge">.github/workflows/</code>.</li>
-  <li><strong>Update the triggers</strong> to match your branch strategy (defaults to <code class="language-plaintext highlighter-rouge">main</code> and <code class="language-plaintext highlighter-rouge">feature/*</code>):
-    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1"># TODO: Adjust to your branch names</span>
- <span class="na">on</span><span class="pi">:</span>
-   <span class="na">push</span><span class="pi">:</span>
-     <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="s2">"</span><span class="s">main"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">feature/*"</span> <span class="pi">]</span>
-     <span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span> <span class="s1">'</span><span class="s">v*.*.*'</span> <span class="pi">]</span>
-   <span class="na">pull_request</span><span class="pi">:</span>
-     <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="s2">"</span><span class="s">main"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">feature/*"</span> <span class="pi">]</span>
-   <span class="na">workflow_dispatch</span><span class="pi">:</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Adjust the <code class="language-plaintext highlighter-rouge">containerfile</code>-value</strong> in the build-matrix to match your file(s). You can even append more entries.
-    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">matrix</span><span class="pi">:</span>
- <span class="na">include</span><span class="pi">:</span>
-     <span class="c1"># Add all Containerfiles/Dockerfiles as you need it</span>
-     <span class="pi">-</span> <span class="na">containerfile</span><span class="pi">:</span> <span class="s">Containerfile</span>
-       <span class="na">suffix</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
-     <span class="pi">-</span> <span class="na">containerfile</span><span class="pi">:</span> <span class="s">Containerfile.slim</span>
-       <span class="na">suffix</span><span class="pi">:</span> <span class="s2">"</span><span class="s">-slim"</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Commit and push</strong> to your repo to trigger the run.</li>
-</ol>
-
-<p>If you feel like updating, the URL referring to my repo is in the header together with a version counter, so you can easily detect changes.
-But running on an older version does not mean you are outdated, as long as you update the individual steps.</p>
-
-<p>As always you are free to fork it and suggest pull-requests.</p>
-
-<p>Happy building! 🐳✨</p>
  (<a href="/2026/07/13/oci-publish/">read on …</a>)
   </div>
   

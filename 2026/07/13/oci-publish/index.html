@@ -104,7 +104,8 @@ This allows me to:</p>
   <li>to maintain a certain homogeneity among repos.</li>
 </ul>
 
-<p>To use it for your project you can find the template here: <a href="https://github.com/white-gecko/oci-publish-template">https://github.com/white-gecko/oci-publish-template</a></p>
+<p>To use it for your project you can find the template here: <a href="https://github.com/white-gecko/oci-publish-template">https://github.com/white-gecko/oci-publish-template</a>
+<!--more--></p>
 
 <p>The workflow automates the entire lifecycle of building, tagging, pushing, and signing OCI images.
 I found the build matrix especially useful for handling multiple <code class="language-plaintext highlighter-rouge">Containerfile</code>s.
@@ -151,7 +152,7 @@ Beyond just supporting different filenames (<code class="language-plaintext high
   </li>
   <li><strong>Adjust the <code class="language-plaintext highlighter-rouge">containerfile</code>-value</strong> in the build-matrix to match your file(s). You can even append more entries.
     <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">matrix</span><span class="pi">:</span>
- <span class="na">include</span><span class="pi">:</span>
+   <span class="na">include</span><span class="pi">:</span>
      <span class="c1"># Add all Containerfiles/Dockerfiles as you need it</span>
      <span class="pi">-</span> <span class="na">containerfile</span><span class="pi">:</span> <span class="s">Containerfile</span>
        <span class="na">suffix</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
